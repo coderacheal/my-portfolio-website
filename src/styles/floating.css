@@ -1,0 +1,86 @@
+body {
+  /* background-color: black; */
+}
+
+/* .fa-thin {
+    color: red;
+    font-size: 30px;
+} */
+
+.floating-div {
+  position: relative;
+  background-color: red;
+  height: 80%;
+  width: 80%;
+
+}
+
+/* .item {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s;
+} */
+
+.floating {
+  height: 20px;
+  /* background-color: red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s;
+}
+
+.f1 {
+  position: absolute;
+  top: 150px;
+  left: 1150px;
+}
+
+.f2 {
+  position: absolute;
+  top: 80px;
+  left: 790px;
+}
+
+.f3 {
+  position: absolute;
+  top: 620px;
+  left: 960px;
+}
+
+.f4 {
+  position: absolute;
+  top: 550px;
+  left: 340px;
+}
+
+.f5 {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+
+.f6 {
+  position: absolute;
+  top: 400px;
+  left: 1250px;
+}
+
+.f7 {
+  position: absolute;
+  top: 455px;
+  left: 750px;
+}
+
+.f8 {
+  position: absolute;
+  top: 90px;
+  left: 300px;
+}
+

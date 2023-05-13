@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import WelcomePage from './WelcomePage';
+import Floating from './Floating';
 
-function App() {
+const App = () => {
   return (
     <div>
+      <WelcomePage />
     </div>
+  
   );
-}
+};
 
 export default App;

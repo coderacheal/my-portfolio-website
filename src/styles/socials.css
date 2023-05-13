@@ -1,0 +1,37 @@
+.fa-brands {
+  color: white;
+  font-size: 50px;
+  margin-top: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  background: linear-gradient(to right, #fff 50%, #000000 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s, transform 0.3s;
+}
+
+.fa-brands:hover {
+  background-position: left bottom;
+  transform: scale(1.2);
+  color: black;
+}
+
+.fa-medium {
+  font-size: 40px;
+}
+
+.socials-div {
+  display: flex;
+  margin-top: 90px;
+  justify-content: flex-end;
+}
+
+.all-socials {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.fa-thin {
+  color: red;
+}

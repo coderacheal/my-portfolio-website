@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  background: linear-gradient(to right, #000000, #111111);
+  height: 700px;
+  /* background-image: '../assets/r-logo.png'; */
+}
+
+.colorized-image {
+  filter: brightness(1000%);filter: hue-rotate(180deg); /* Adjust the hue value as per your desired color */
+}
+
+.my-name-intro {
+  margin: auto;
+  margin-top: 18%;
+  color: white;
+  text-align: center;
+  width: 70%;
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.name {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Euphoria Script', cursive;
+}
