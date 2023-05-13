@@ -5,9 +5,8 @@
   /* background-color: red; */
 }
 
-.allProjects {
-  
-}
+
+
 
 .case-study-intro {
   width: 50%;
@@ -27,47 +26,117 @@
   font-size: 30px;
 }
 
-.project1 {
-  background-image: url('../assets/cats.jpg');
+.project1, .project3 {
+  background-image: url('../assets/cute-cat.jpg');
   background-size: fill;
   background-repeat: no-repeat;
   height: 440px;
-  width: 50%;
   margin: auto;
+  width: 50%;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
   /* filter: blur(100%); */
 }
 
-.project-number {
-  font-size: 110px;
+.project2 {
+  background-image: url('../assets/cute-cat.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+  height: 440px;
+  margin: auto;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 320px
+}
+
+.allProjects:nth-child(odd) {
+  margin-left: 320px;
+}
+
+.project-number-odd {
+  font-size: 140px;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  text-align: left;
+  text-align: right;
+  margin-right: 20px;
 }
 
-.project-name {
+/* .about-case-study-odd {
+  display: flex;
+  width: 80%;
+}
+
+.about-case-study {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+} */
+
+.project-name-odd {
   color: white;
   font-size: 50px;
-  padding-top: 20px;
+  margin-top: 0;
+  /* padding-top: 20px; */
   padding-left: 50px;
   margin-bottom: 10px;
 }
 
-.project-description {
+.project-description-odd {
   width: 40%;
   color: white;
   padding-left: 50px;
 }
 
-.view-button {
+.view-button-odd {
   padding: 10px;
-  margin-left: 50px;
+  margin-left: 7%;
   margin-top: 20px;
   background-color: white;
   color: black;
   border: 0;
   font-weight: bold;
 }
+
+.project-number {
+  font-size: 140px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.project-name {
+  color: white;
+  font-size: 50px;
+  text-align: right;
+  padding-right: 50px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  display: flex;
+  text-align: right;
+  width: 40%;
+  margin: auto;
+  margin-right: 50px;
+  color: white;
+  padding-left: 50px;
+  justify-content: flex-end;
+}
+
+.view-button {
+  padding: 10px;
+  margin-left: 80%;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  border: 0;
+  font-weight: bold;
+  text-align: right;
+}
+
