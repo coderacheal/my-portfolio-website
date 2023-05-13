@@ -4,19 +4,17 @@ import React from 'react';
 // import medium from '../assets/medium - Copy (2).png'
 // import wellfound from '../assets/hand.png'
 
-const Socials = () => {
-  return (
-    <div className='socials-div'>
-      <div className='all-socials'>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-medium"></i>
-        <i class="fa-brands fa-angellist"></i>
-      </div>
+const Socials = () => (
+  <div className="socials-div">
+    <div className="all-socials">
+      <i className="fa-brands fa-twitter" />
+      <i className="fa-brands fa-linkedin-in" />
+      <i className="fa-brands fa-github" />
+      <i className="fa-brands fa-medium" />
+      <i className="fa-brands fa-angellist" />
     </div>
-  )
-}
+  </div>
+);
 
 // export const Floating = () => {
 //   return (
