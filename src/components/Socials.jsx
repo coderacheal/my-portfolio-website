@@ -17,15 +17,4 @@ const Socials = () => {
     </div>
   )
 }
-
-// export const Floating = () => {
-//   return (
-//     <div>
-//       <i class="fa-thin fa-violin floating"></i>
-//       <i class="fa-thin fa-violin"></i>
-//       <i class="fa-thin fa-chess"></i>
-//     </div>
-//   )
-// }
-
 export default Socials;

@@ -1,10 +1,12 @@
 .fa-brands {
   color: white;
-  font-size: 50px;
-  margin-top: 30px;
-  border-radius: 50%;
+  font-size: 35px;
+  margin-top: 25px;
+  border-radius: 55%;
   padding: 10px;
-  background: linear-gradient(to right, #fff 50%, #000000 50%);
+  background: linear-gradient(to right, #fff 50%, #111111 50%);
+  /* background: linear-gradient(to right, #000000, #111111); */
+
   background-size: 200% 100%;
   background-position: right bottom;
   transition: background-position 0.4s, transform 0.3s;
@@ -30,8 +32,5 @@
   display: flex;
   flex-direction: column;
   margin-right: 50px;
-}
-
-.fa-thin {
-  color: red;
+  margin-top: 110px;
 }

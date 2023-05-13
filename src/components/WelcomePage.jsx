@@ -3,6 +3,7 @@ import Header from './Header';
 import Socials from './Socials';
 import logo from '../assets/logo-r.png'
 import Floating from './Floating';
+import Projects from './Projects';
 
 const WelcomePage = () => {
   return (
@@ -13,11 +14,12 @@ const WelcomePage = () => {
         <section className='intro-section'>
             <div className='my-name-intro'>
               <p className='name'>Racheal Appiah-kubi</p>
-              <p>Full Stack Web Developer with a love for AI & Block Chain </p>
-              {/* <img src={logo} alt="" /> */}
-              {/* <img src={logo} alt="Image" class="colorized-image" /> */}
+              <p className='tagline'>Full Stack Web Developer with a love for AI & Block Chain </p>
             </div>
             <Socials />
+        </section>
+        <section>
+          <Projects />
         </section>
       </main>
       <footer className="portfolio-footer">

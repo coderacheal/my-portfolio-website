@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+
+.projectSection {
+  /* background-color: red; */
+}
+
+.allProjects {
+  
+}
+
+.case-study-intro {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.case-title {
+  font-size: 20px;
+  color: rgb(131, 131, 131);
+}
+
+.my-latest-work {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(1, 1, 35);
+  font-size: 30px;
+}
+
+.project1 {
+  background-image: url('../assets/cats.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+  height: 440px;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
+  /* filter: blur(100%); */
+}
+
+.project-number {
+  font-size: 110px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+.project-name {
+  color: white;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-left: 50px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  width: 40%;
+  color: white;
+  padding-left: 50px;
+}
+
+.view-button {
+  padding: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  border: 0;
+  font-weight: bold;
+}

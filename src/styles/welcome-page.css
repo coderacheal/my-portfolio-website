@@ -11,11 +11,6 @@ body {
   grid-template-columns: 5fr 1fr;
   background: linear-gradient(to right, #000000, #111111);
   height: 700px;
-  /* background-image: '../assets/r-logo.png'; */
-}
-
-.colorized-image {
-  filter: brightness(1000%);filter: hue-rotate(180deg); /* Adjust the hue value as per your desired color */
 }
 
 .my-name-intro {
@@ -35,4 +30,12 @@ p {
   font-size: 100px;
   font-weight: bold;
   font-family: 'Euphoria Script', cursive;
+}
+
+.portfolio-footer {
+  background-color: navy;
+}
+
+.tagline {
+  font-size: 22px;
 }
