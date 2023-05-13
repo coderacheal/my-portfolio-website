@@ -13,7 +13,7 @@ const Projects = () => {
           <div className='about-case-study-odd'>
             <h3 className='project-name-odd'>It's Sunday</h3>
             <div className='project-description-odd'>A live messaging app embbeded with a bert model to predict sentiment of your message before you send them</div>
-            <button className='view-button-odd'>Case study</button>
+            <button className='view-button-odd'>Case study <i class="fa-sharp fa-solid fa-forward fa-beat-fade"></i></button>
           </div>
           
         </div>
@@ -22,14 +22,14 @@ const Projects = () => {
           <div className='about-case-study'>
             <h3 className='project-name'>It's Sunday</h3>
             <div className='project-description'>A live messaging app embbeded with a bert model to predict sentiment of your message before you send them</div>
-            <button className='view-button'>Case study</button>
+            <button className='view-button'>Case study <i class="fa-sharp fa-solid fa-forward fa-beat-fade"></i></button>
           </div>
         </div>
         <div className='project3'>
           <p className='project-number-odd'>03</p>
           <h3 className='project-name-odd'>It's Sunday</h3>
           <div className='project-description-odd'>A live messaging app embbeded with a bert model to predict sentiment of your message before you send them</div>
-          <button className='view-button-odd'>Case study</button>
+          <button className='view-button-odd'>Case study <i class="fa-sharp fa-solid fa-forward fa-beat-fade"></i></button>
         </div>
       </div>
     </section>

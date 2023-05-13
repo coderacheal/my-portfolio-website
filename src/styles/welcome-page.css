@@ -33,7 +33,17 @@ p {
 }
 
 .portfolio-footer {
-  background-color: navy;
+  background-color: black;
+  height: 120px;
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+  font-weight: bold;
+}
+
+.reserved-footer {
+  /* width: 50%; */
+  margin: auto;
 }
 
 .tagline {

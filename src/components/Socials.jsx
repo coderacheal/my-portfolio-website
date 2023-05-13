@@ -8,11 +8,11 @@ const Socials = () => {
   return (
     <div className='socials-div'>
       <div className='all-socials'>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-medium"></i>
-        <i class="fa-brands fa-angellist"></i>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-medium"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-angellist"></i></a>
       </div>
     </div>
   )

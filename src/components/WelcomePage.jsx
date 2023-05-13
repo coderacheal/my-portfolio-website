@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import Socials from './Socials';
-import logo from '../assets/logo-r.png'
 import Floating from './Floating';
 import Projects from './Projects';
 
@@ -23,7 +22,7 @@ const WelcomePage = () => {
         </section>
       </main>
       <footer className="portfolio-footer">
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <p className='reserved-footer'>&copy; 2023 My Portfolio. All rights reserved.</p>
       </footer>
     </div>
   );
