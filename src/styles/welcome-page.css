@@ -11,6 +11,7 @@ body {
   grid-template-columns: 5fr 1fr;
   background: linear-gradient(to right, #000, #111);
   height: 700px;
+}
 
 .my-name-intro {
   margin: auto;
