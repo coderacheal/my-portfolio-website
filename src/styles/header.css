@@ -9,9 +9,11 @@
   padding-right: 15%;
 }
 
-.brand {
-  font-size: 24px;
+.brand img {
+  height: 50px;
+  border-radius: 50%;
 }
+
 
 .nav {
   display: flex;

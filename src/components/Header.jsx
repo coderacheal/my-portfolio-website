@@ -1,4 +1,5 @@
 import React from 'react';
+// import myLogo from '../assets/my-portfolio-logo.png'
 
 const Header = () => (
   <div>

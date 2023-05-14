@@ -3,6 +3,8 @@
 @import 'socials.css';
 @import 'floating.css';
 @import 'projects.css';
+@import 'contact.css';
+@import 'about-me.css';
 
 body {
   margin: 0;
