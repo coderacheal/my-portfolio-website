@@ -4,26 +4,18 @@ import React from 'react';
 // import medium from '../assets/medium - Copy (2).png'
 // import wellfound from '../assets/hand.png'
 
-const Socials = () => (
-  <div className="socials-div">
-    <div className="all-socials">
-      <i className="fa-brands fa-twitter" />
-      <i className="fa-brands fa-linkedin-in" />
-      <i className="fa-brands fa-github" />
-      <i className="fa-brands fa-medium" />
-      <i className="fa-brands fa-angellist" />
+const Socials = () => {
+  return (
+    <div className='socials-div'>
+      <div className='all-socials'>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-medium"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='blank'><i class="fa-brands fa-angellist"></i></a>
+      </div>
     </div>
-  </div>
-);
-
-// export const Floating = () => {
-//   return (
-//     <div>
-//       <i class="fa-thin fa-violin floating"></i>
-//       <i class="fa-thin fa-violin"></i>
-//       <i class="fa-thin fa-chess"></i>
-//     </div>
-//   )
-// }
+  )
+}
 
 export default Socials;
