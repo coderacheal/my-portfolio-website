@@ -3,12 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background: linear-gradient(to right, #000000, #111111);
+  background: linear-gradient(to right, #000, #111);
   color: #fff;
   padding-left: 15%;
   padding-right: 15%;
 }
-  
+
 .brand {
   font-size: 24px;
 }
@@ -30,5 +30,3 @@
   font-size: 22px;
   font-weight: bold;
 }
-
-

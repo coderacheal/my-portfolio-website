@@ -4,6 +4,7 @@ import Socials from './Socials';
 import Floating from './Floating';
 import Projects from './Projects';
 
+
 const WelcomePage = () => {
   return (
     <div className="welcome-page">
@@ -27,5 +28,6 @@ const WelcomePage = () => {
     </div>
   );
 };
+
 
 export default WelcomePage;

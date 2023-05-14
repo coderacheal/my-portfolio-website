@@ -9,9 +9,8 @@ body {
 .intro-section {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  background: linear-gradient(to right, #000000, #111111);
+  background: linear-gradient(to right, #000, #111);
   height: 700px;
-}
 
 .my-name-intro {
   margin: auto;

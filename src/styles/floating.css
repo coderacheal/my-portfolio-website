@@ -12,7 +12,6 @@ body {
   background-color: red;
   height: 80%;
   width: 80%;
-
 }
 
 /* .item {
@@ -28,6 +27,7 @@ body {
 
 .floating {
   height: 20px;
+
   /* background-color: red; */
   position: absolute;
   top: 50%;
@@ -83,4 +83,3 @@ body {
   top: 90px;
   left: 300px;
 }
-
