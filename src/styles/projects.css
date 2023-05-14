@@ -29,6 +29,12 @@
   margin-top: 50px;
   margin-bottom: 90px;
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.project1:hover {
+  background-color: green;
+  z-index: 2;
 }
 
 .project2 {
@@ -41,7 +47,8 @@
   margin-top: 50px;
   margin-bottom: 90px;
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
-  margin-left: 320px
+  margin-left: 320px;
+  cursor: pointer;
 }
 
 .allProjects:nth-child(odd) {
@@ -82,6 +89,17 @@
   font-weight: bold;
   padding: 15px;
   font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s, transform 0.3s;
+}
+
+.view-button-odd:hover {
+  background-position: left bottom;
+  transform: scale(1.1);
+  color: white;
 }
 
 .project-number {
@@ -124,4 +142,21 @@
   font-weight: bold;
   text-align: right;
   font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s, transform 0.3s;
+}
+
+.view-button:hover {
+  background-position: left bottom;
+  transform: scale(1.1);
+  color: white;
+}
+
+.project-description-odd {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
 }
