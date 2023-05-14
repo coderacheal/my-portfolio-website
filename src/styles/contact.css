@@ -1,4 +1,57 @@
+body {
+   background-image: url('../assets/violin-contact.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 form {
     width: 50%;
     margin: auto;
 }
+
+.form-page {
+    width: 50%;
+    margin: auto;
+    border: 2px solid purple;
+    padding: 30px;
+    margin-top: 10%;
+    
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+    outline: none;
+}
+
+textarea {
+    border: 0;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    width: 80%; 
+}
+
+.submit-button {
+    padding: 10px;
+    /* margin-left: 73%; */
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid purple;
+    font-weight: bold;
+    text-align: right;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.4s, transform 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-position: left bottom;
+    transform: scale(1.1);
+    color: white;
+  }

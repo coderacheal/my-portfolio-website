@@ -22,6 +22,9 @@ const WelcomePage = () => {
         <section>
           <AboutMe />
           <Projects />
+          <section id='contact-me-section'>
+            <div className='contact-me-div'><p className='contact-anime'>Contact Me</p> </div>
+          </section>
         </section>
         <Footer />
       </main>

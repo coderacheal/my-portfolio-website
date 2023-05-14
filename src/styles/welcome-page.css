@@ -32,7 +32,37 @@ p {
   font-family: 'Euphoria Script', cursive;
 }
 
+.contact-me-div {
+  width: 20%;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  font-size: 40px;
+  border: 10px solid rgb(101, 101, 101);
+  padding: 50px 60px;
+  padding-top: 65px;
+  font-weight: bold;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center;
+  font-family: 'Roboto';
+  cursor: pointer;
+  transition: 1s ease-in;
+  vertical-align: middle;
+}
 
+.contact-me-div:hover {
+  border-radius: 50%;
+  border: 10px solid #7d037d;
+  padding: 70px;
+  /* font-family: 'Euphoria Script', cursive; */
+}
+
+.contact-anime {
+  margin-top: 45px;
+  vertical-align: center;
+  text-align: center;
+}
 
 .tagline {
   font-size: 22px;

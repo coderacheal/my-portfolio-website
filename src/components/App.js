@@ -4,8 +4,8 @@ import Contact from './Contact';
 
 const App = () => (
   <div>
-    {/* <Contact /> */}
-    <WelcomePage />
+    <Contact />
+    {/* <WelcomePage /> */}
   </div>
 
 );
