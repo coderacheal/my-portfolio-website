@@ -1,0 +1,27 @@
+.portfolio-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 120px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .reserved-footer {
+    margin: auto;
+    /* padding-bottom: 50px; */
+  }
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-socials a {
+    margin-right: 30px;
+}

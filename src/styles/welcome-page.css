@@ -32,18 +32,7 @@ p {
   font-family: 'Euphoria Script', cursive;
 }
 
-.portfolio-footer {
-  background-color: black;
-  height: 120px;
-  color: white;
-  text-align: center;
-  padding-top: 90px;
-  font-weight: bold;
-}
 
-.reserved-footer {
-  margin: auto;
-}
 
 .tagline {
   font-size: 22px;

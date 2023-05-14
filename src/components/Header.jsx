@@ -7,13 +7,14 @@ const Header = () => (
       <div className="brand">Racheal</div>
       <nav className="nav">
         <ul className="nav-list">
-          <li className="nav-item text">Case Studies</li>
-          <li className="nav-item">Projects</li>
-          <li className="nav-item">Contacts</li>
+          <a href="#projectSection"><li className="nav-item text">Projects</li></a>
+          <a href="#projectSection"><li className="nav-item text" download>Resume</li></a>
+          <a href="#projectSection"><li className="nav-item text">Contacts</li></a>
         </ul>
       </nav>
     </header>
   </div>
 );
+<a href="/path/to/your/file.pdf" download>Download PDF</a>
 
 export default Header;
