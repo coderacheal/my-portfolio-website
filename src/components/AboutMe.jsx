@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const AboutMe = () => {
+
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (event) => {
+    setPosition({ x: event.clientX, y: event.clientY });
+  };
+
   return (
     <div>
       <section className='about-me-section'>
@@ -10,7 +17,7 @@ const AboutMe = () => {
         <div className='my-skills-div'>
           <p className='my-skills'>Full Stack Developer with a love for ML & AI, Block Chain, Interactive Websites with React, and Cloud Computing. Learning to play the violin. </p>
         </div>
-        <div className='pubbles-div'>
+        <div className='pubbles-div' >
           <div className='awsBubble'>AWS</div>
           <div className='mlBubble'>ML</div>
           <div className='pythonBubble'>Python</div>
