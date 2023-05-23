@@ -1,53 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
+// import Header from './Header';
+// import Footer from './Footer';
 
 function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Clear form fields
-    setName('');
-    setEmail('');
-    setMessage('');
-  };
-
-  return (
-    <div className='form-page'>
-      <h1>Get in Touch</h1>
-      <p>If you want to chat about a collaboartion or project, or to say hi</p>
-      <form onSubmit={handleSubmit}>
+  (
+    <div className="form-page">
+      <div className="contact-intro">
+        <h1>Say Hello</h1>
+        {/* <p>If you want to chat about a collaboartion or project, or to say hi</p> */}
+      </div>
+      <form>
         <input
-        type="text"
-        placeholder='Name'
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        required
+          type="text"
+          placeholder="Name"
+          required
         />
         <br />
-          <input
+        <input
           type="email"
-          placeholder='Email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
           required
         />
         <br />
-          <textarea
-          value={message}
-          placeholder='I would love to hear from you '
-          onChange={(e) => setMessage(e.target.value)}
+        <textarea
+          placeholder="I would love to hear from you "
           required
-          />
+        />
         <br />
-        <button className='submit-button' type="submit">Say Hello</button>
-      </form>   
+        <button className="submit-button" type="submit">Send</button>
+      </form>
+      <div className="mainPage">Back to Main Page</div>
     </div>
-    
+
   );
 }
 
 export default Contact;
-

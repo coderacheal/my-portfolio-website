@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './Header';
 import Socials from './Socials';
 import Floating from './Floating';
@@ -7,6 +7,8 @@ import AboutMe from './AboutMe';
 import Footer from './Footer';
 
 const WelcomePage = () => {
+  
+
   return (
     <div className="welcome-page">
       <main className="portfolio-content">

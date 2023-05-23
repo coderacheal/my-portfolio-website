@@ -28,6 +28,7 @@
   width: 50%;
   margin-top: 50px;
   margin-bottom: 90px;
+  color: black;
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -35,6 +36,13 @@
 .project1:hover {
   background-color: green;
   z-index: 2;
+  background-position: left bottom;
+  transform: scale(1.1);
+  color: black;
+  background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right top;
+  transition: background-position 0.4s, transform 0.3s;
 }
 
 .project2 {

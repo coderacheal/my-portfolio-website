@@ -204,7 +204,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    animation: bounce1 5s infinite ease-in-out;
+    /* animation: bounce1 5s infinite ease-in-out; */
   }
 
   .awsBubble, .mlBubble, .pythonBubble, .rubyBubble {
@@ -212,12 +212,12 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    animation: bounce2 5s infinite ease-in-out;
+    /* animation: bounce2 5s infinite ease-in-out; */
   }
 
   
 
-  @keyframes float-right {
+  /* @keyframes float-right {
     0% {
       transform: translate(0, 0);
     }
@@ -227,7 +227,7 @@
     100% {
       transform: translate(0, 0);
     }
-  }
+  } */
 
 /* 
   @keyframes bounce {

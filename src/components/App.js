@@ -1,11 +1,11 @@
 import React from 'react';
 import WelcomePage from './WelcomePage';
-import Contact from './Contact';
+// import Contact from './Contact';
 
 const App = () => (
   <div>
-    <Contact />
-    {/* <WelcomePage /> */}
+    {/* <Contact /> */}
+    <WelcomePage />
   </div>
 
 );

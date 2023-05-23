@@ -1,20 +1,41 @@
-body {
-   background-image: url('../assets/violin-contact.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
+.contact-intro {
+    width: 70%;
+    margin: auto;
+    color: black;
+    margin-top: 4%;
+
 }
+
+.contact-intro p {
+    font-size: 18px;
+}
+
+h1 {
+    color: rgba(4, 4, 52, 0.879);
+    font-size: 50px;
+}
+
 form {
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
 .form-page {
-    width: 50%;
-    margin: auto;
-    border: 2px solid purple;
-    padding: 30px;
-    margin-top: 10%;
-    
+    overflow: hidden;
+    padding-top: 50px;
+    /* width: 70%; */
+    /* margin: auto; */
+    padding-bottom: 90px;
+    /* margin-top: 7%; */
+    border-radius: 5px;
+    /* margin-bottom: 5%; */
+    position: relative;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh
 }
 
 input {
@@ -23,7 +44,9 @@ input {
     padding: 20px;
     width: 80%;
     margin-bottom: 40px;
+    font-family: 'Roboto';
     outline: none;
+    font-size: 20px;
 }
 
 textarea {
@@ -31,27 +54,89 @@ textarea {
     border-bottom: 1px solid grey;
     padding: 20px;
     width: 80%; 
+    font-size: 20px;
+    outline: none;
+}
+
+input::placeholder {
+    font-weight: lighter;
 }
 
 .submit-button {
-    padding: 10px;
-    /* margin-left: 73%; */
-    margin-top: 20px;
-    background-color: white;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: rgb(232, 149, 241);
     color: black;
-    border: 1px solid purple;
+    border: 0;
+    /* border: 1px solid rgb(32, 5, 32); */
+    border-radius: 3px;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     font-size: 18px;
     cursor: pointer;
-    background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
+    width: 20%;
+    transition: 1s ease;
+    /* background: linear-gradient(to right, rgb(240, 102, 255) 50%, #fff 50%); */
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: background-position 0.4s, transform 0.3s;
+    /* transition: background-position 0.4s, transform 0.3s; */
   }
   
   .submit-button:hover {
     background-position: left bottom;
     transform: scale(1.1);
     color: white;
+    border: 0;
   }
+
+  .mainPage {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    background-color: rgb(204, 253, 212);
+    background-color: mint;
+    /* align-content: flex-end; */
+    align-self: flex-end;
+    position: absolute;
+    font-weight: bold;
+    /* bottom:0; */
+    right: 0;
+    left: 1290px;
+    top: 550px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 120px;
+    text-align: center;
+    cursor: pointer;
+    transition: 3s ease-in-out;
+    color: rgb(41, 4, 41);
+  }
+
+  .mainPage:hover {
+    padding: 150px;
+    color: black;
+    background-color: mistyrose;
+    font-size: 20px;
+    top: 480px;
+    left: 1190px;
+    font-weight: bold;
+  }
+
+  /* @keyframes bounce1 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(200px, -200px);
+    }
+    50% {
+      transform: translate(400px, 0);
+    }
+    75% {
+      transform: translate(200px, 200px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  } */
