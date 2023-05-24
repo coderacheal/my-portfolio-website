@@ -1,0 +1,39 @@
+body {
+  cursor: none;
+}
+
+.cursor-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .cursor {
+    cursor: crosshair;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #898989;
+    border: 1px solid #c5c5c5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.3;
+    z-index: 9999;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .cursor:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* border: 2px solid #a9a9a9; */
+    opacity: 0.4;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+  }
+  

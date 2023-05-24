@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import Header from './Header';
-import Socials from './Socials';
-import Floating from './Floating';
+// import Socials from './Socials';
+// import Floating from './Floating';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
 import Footer from './Footer';
+import Hero from './Hero';
+import Contact from './Contact';
+import MouseHalo from './MouseHalo'
 
 const WelcomePage = () => {
   
@@ -13,21 +16,16 @@ const WelcomePage = () => {
     <div className="welcome-page">
       <main className="portfolio-content">
         <Header />
-        <Floating />
-        <section className='intro-section'>
-            <div className='my-name-intro'>
-              <p className='name'>Racheal Appiah-kubi</p>
-              <p className='tagline'>Remote Full Stack Web Developer with a love for AI & ML </p>
-            </div>
-            <Socials />
-        </section>
+        <Hero />
         <section>
           <AboutMe />
           <Projects />
+          <Contact />
           <section id='contact-me-section'>
             <div className='contact-me-div'><p className='contact-anime'>Contact Me</p> </div>
           </section>
         </section>
+        <MouseHalo />
         <Footer />
       </main>
     </div>

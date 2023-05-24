@@ -12,7 +12,10 @@ const Header = () =>{
   return (
     <div>
       <header className="header">
-        <div className="brand">Racheal</div>
+        <div className="brand">
+          <p className='rest'>K U B I</p>
+          <p></p>
+        </div>
         <nav className="nav">
           <div className="desktop-brand-and-nav-links-div">
             <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
@@ -22,9 +25,14 @@ const Header = () =>{
             </ul>
           </div>
           <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={handleClick}>
-            <span className="bar" />
-            <span className="bar" />
-            <span className="bar" />
+            <div>
+              <span className="bar" />
+              <span className="bar" />
+              <span className="bar" />
+            </div>
+            <div>
+              <span className="fourthbar" />
+            </div>
           </div>
         </nav>
       </header>

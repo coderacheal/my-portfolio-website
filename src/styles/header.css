@@ -5,13 +5,19 @@
   padding: 16px;
   background: linear-gradient(to right, #000, #111);
   color: #fff;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 100px;
+  padding-right: 45px;
 }
 
-.brand img {
-  height: 50px;
-  border-radius: 50%;
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.rest{
+  font-size: 35px;
+  text-align: end;
 }
 
 
@@ -41,11 +47,12 @@ a {
 
 
 
-desktop-brand-and-nav-links-div {
+
+/* .desktop-brand-and-nav-links-div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
+} */
 
 .nav-links-ul {
   display: flex;
@@ -59,14 +66,15 @@ desktop-brand-and-nav-links-div {
   top: 70px;
   gap: 0;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
   transition: 0.3s;
+  padding: 0;
 }
 
 .nav-links {
   top: 70px;
   padding: 10px;
-  padding: 20px;
+  /* padding: 20px; */
   width: 100%;
   align-content: center;
 }
@@ -91,33 +99,66 @@ desktop-brand-and-nav-links-div {
 }
 
 .hamburger {
-  display: block;
+  display: flex;
   cursor: pointer;
   margin-top: 20px;
+  /* border: 1.5px solid green;
+  padding: 15px;
+  border-radius: 50%; */
 }
 
 .bar {
   display: block;
-  width: 30px;
-  height: 4px;
+  width: 40px;
+  height: 2.5px;
   margin: 7px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  background-color: black;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(12px) rotate(45deg);
+  background-color: rgb(233, 217, 217);
+  border-radius: 2px;
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(20px) rotate(70deg);
 }
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(-20px) rotate(-70deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  /* opacity: 0; */
+  height: 45px;
+  width: 2.5px;
+  margin-left: 60px;
+  /* align-self: flex-end; */
+}
+
+/* .hamburger.active .bar:nth-child(4) {
+  height: 45px;
+  width: 2.5px;
+  background-color: blue;
+  background-color: rgb(233, 217, 217);
+} */
 
 .nav-links-ul.active {
   left: 0;
+  margin: 0;
+}
+
+.fourthbar-div {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.fourthbarsddf {
+  display: block;
+  height: 45px;
+  width: 2.5px;
+  margin: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  /* background-color: red ; */
+  border-radius: 2px;
+  background-color: rgb(233, 217, 217);
 }
