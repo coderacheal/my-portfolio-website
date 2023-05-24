@@ -8,6 +8,7 @@
 @import 'footer.css';
 @import 'hero_pillars.css';
 @import 'mouse_halo.css';
+@import 'hero.css';
 
 body {
   margin: 0;

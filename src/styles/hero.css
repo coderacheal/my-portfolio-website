@@ -1,0 +1,167 @@
+.intro-section {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  background: linear-gradient(to right, #000, #111);
+  height: 700px;
+}
+
+.my-case-study-intro {
+  display: flex;
+  margin: auto;
+  margin-top: 48%;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.name-job-div {
+  margin-top: 25%;
+  margin-left: 5%;
+}
+
+.navigate-numbers {
+  padding: 15px 40px;
+  line-height: 60px;
+  text-align: left;
+  color: rgb(233, 217, 217);
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navigate-numbers-each {
+  transform: rotate(270deg);
+  opacity: 0.3;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navigate {
+  padding: 15px 40px;
+  line-height: 60px;
+  text-align: left;
+  color: rgb(233, 217, 217);
+  font-family: 'Work Sans', sans-serif;
+  opacity: 0.7;
+}
+
+p {
+  margin: 0;
+}
+
+.name {
+  font-size: 105px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: left;
+}
+
+.contact-me-div {
+  width: 20%;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  font-size: 40px;
+  border: 10px solid rgb(101, 101, 101);
+  padding: 50px 60px;
+  padding-top: 65px;
+  font-weight: bold;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center;
+  font-family: 'Roboto';
+  cursor: pointer;
+  transition: 1s ease-in;
+  vertical-align: middle;
+}
+
+.contact-me-div:hover {
+  border-radius: 50%;
+  border: 10px solid #7d037d;
+  padding: 70px;
+}
+
+.contact-anime {
+  margin-top: 45px;
+  vertical-align: center;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 22px;
+  color: rgb(233, 217, 217);
+  font-style: italic;
+}
+
+.lines-div {
+  display: flex;
+  /* gap: 50px; */
+}
+
+.line {
+  display: block;
+  height: 40px;
+  width: 1.5px;
+  margin: 7px;
+  /* -webkit-transition: all 0.3s ease-in-out; */
+  /* transition: 0.3s ease-in-out; */
+  /* background-color: rgb(118, 189, 156); */
+  border-radius: 2px;
+  /* margin-right: 50px; */
+}
+
+.lines-div:nth-child(2) {
+  height: 70px;
+}
+.lines-div:nth-child(2) {
+  height: 70px;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+
+
+/* @keyframes fancy-text {
+  0% {
+    transform: scale(1) rotateY(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotateY(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+    opacity: 0;
+  }
+}
+
+.animated-text {
+  animation: fancy-text 3s ease-in-out infinite;
+  font-size: 24px;
+  color: #ff00ff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animated-text {
+  overflow: hidden; /* Ensure the text is not visible until animated */
+  animation: typing 3s steps(30) infinite;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+

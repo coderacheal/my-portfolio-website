@@ -20,8 +20,8 @@ const Hero = () => {
           </div>
         </div>
         <div className='name-job-div'>
-          <p className='name'>RACHEAL</p>
-          <p className='name surname'>APPIAH-KUBI</p>
+          <p className='name animated-text'>RACHEAL</p>
+          <p className='name surname animated-text'>APPIAH-KUBI</p>
           <p className='tagline'>Remote full stack developer</p>
         </div>
         <Socials />
