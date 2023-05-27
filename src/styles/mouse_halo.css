@@ -1,6 +1,7 @@
 body {
-  /* cursor: none; */
+  cursor: none;
 }
+
 
 .cursor-container {
     position: fixed;
@@ -11,6 +12,7 @@ body {
   
   .cursor {
     position: absolute;
+    z-index: 15;
     width: 70px;
     height: 70px;
     border-radius: 50%;

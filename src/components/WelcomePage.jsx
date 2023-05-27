@@ -1,13 +1,11 @@
 import React, {useState} from 'react';
 import Header from './Header';
-// import Socials from './Socials';
-// import Floating from './Floating';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
 import Footer from './Footer';
 import Hero from './Hero';
 import Contact from './Contact';
-// import MouseHalo from './MouseHalo'
+import MouseHalo from './MouseHalo'
 
 const WelcomePage = () => {
   
@@ -25,7 +23,7 @@ const WelcomePage = () => {
             <div className='contact-me-div'><p className='contact-anime'>Contact Me</p> </div>
           </section>
         </section>
-        {/* <MouseHalo /> */}
+        <MouseHalo />
         <Footer />
       </main>
     </div>

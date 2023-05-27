@@ -1,45 +1,39 @@
 import React, {useState} from 'react';
-// import myLogo from '../assets/my-portfolio-logo.png'
 
 const Header = () =>{
 
   const [isActive, setIsActive] = useState(false);
+  const [isBlackFont, setBlackFont] = useState(false)
 
   const handleClick = () => {
     setIsActive(!isActive);
+    setBlackFont(!isBlackFont)
   };
 
   return (
     <div>
       <header className="header">
-        <div className="brand">
-          <p className='rest'>K U B I</p>
-          <p></p>
-        </div>
+        <p className={`rest ${isBlackFont ? 'active' : ''}`}>רייצ'ל</p>
         <nav className="nav">
-          <div className="desktop-brand-and-nav-links-div">
-            <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
-              <li className="nav-links"><a href="https://www.google.com/">Home</a></li>
-              <li className="nav-links"><a href="https://www.google.com/">Project</a></li>
-              <li className="nav-links"><a href="https://www.google.com/">About</a></li>
-              <li className="nav-links"><a href="https://www.google.com/">Contact</a></li>
-            </ul>
-          </div>
           <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={handleClick}>
             <div>
               <span className="bar" />
               <span className="bar" />
               <span className="bar" />
+              <div>
+                <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
+                  <li className="nav-links"><a href="https://www.google.com/">Home</a></li>
+                  <li className="nav-links"><a href="https://www.google.com/">Project</a></li>
+                  <li className="nav-links"><a href="https://www.google.com/">About</a></li>
+                  <li className="nav-links"><a href="https://www.google.com/">Contact  </a></li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <span className="fourthbar" />
-            </div>
-          </div>
+          </div> 
         </nav>
       </header>
     </div>
  );
-
 }
   // <a href="/path/to/your/file.pdf" download>Download PDF</a>;
 
