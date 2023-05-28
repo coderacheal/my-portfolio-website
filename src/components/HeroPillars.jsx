@@ -1,27 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-const HeroPillars = () => {
-  return (
-    <div>
-      <div className='lines-div'>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
+const HeroPillars = () => (
+  <div>
+    <div className="lines-div">
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
     </div>
-  )
-}
+  </div>
+);
 
-export default HeroPillars
+export default HeroPillars;

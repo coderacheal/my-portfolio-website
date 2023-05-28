@@ -2,13 +2,14 @@ import React from 'react';
 // import Header from './Header';
 // import Footer from './Footer';
 
-function Contact() { (
-  <div className="form-page">
+function Contact() {
+  (
+    <div className="form-page">
       <div className="contact-intro">
         <h1>Say Hello</h1>
         {/* <p>If you want to chat about a collaboartion or project, or to say hi</p> */}
       </div>
-      <form >
+      <form>
         <input
           type="text"
           placeholder="Name"

@@ -1,15 +1,28 @@
-import React from 'react';
-import WelcomePage from './WelcomePage';
-import HeroPillars from './HeroPillars';
-// import Contact from './Contact';
+import React, { useState, useEffect } from 'react';
+import HomePage from './HomePage';
+import Loader from './Loader';
 
-const App = () => (
-  <div>
-    {/* <Contact /> */}
-    <WelcomePage />
-    {/* <HeroPillars /> */}
-  </div>
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
-);
+  useEffect(() => {
+    // Simulating an asynchronous task
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
+
+  return (
+    <div>
+      {isLoading ? (
+        <div className="loader"><Loader /></div>
+      ) : (
+        <div className="content">
+          <HomePage />
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default App;

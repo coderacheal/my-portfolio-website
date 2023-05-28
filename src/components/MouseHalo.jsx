@@ -17,7 +17,7 @@ const HaloMouseCursor = () => {
 
   return (
     <div className="cursor-container">
-      <div className="cursor" style={{ left: mousePosition.x, top: mousePosition.y }}></div>
+      <div className="cursor" style={{ left: mousePosition.x, top: mousePosition.y }} />
     </div>
   );
 };

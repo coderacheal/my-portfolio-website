@@ -6,15 +6,15 @@ import React from 'react';
 
 const Socials = () => (
   <div className="socials-div">
-    <div >
+    <div>
       <div className="all-socials">
-        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="blank"><i className="fa-brands fa-twitter" /></a>
-        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="blank"><i className="fa-brands fa-linkedin-in" /></a>
-        <a href="https://github.com/coderacheal" target="blank"><i className="fa-brands fa-github" /></a>
-        <a href="https://medium.com/@coderacheal" target="blank"><i className="fa-brands fa-medium" /></a>
-        <a href="https://wellfound.com/u/racheal-appiah-kubi" target="blank"><i className="fa-brands fa-angellist" /></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="blank"><i aria-label="Input Label" className="fa-brands fa-twitter" /></a>
+        <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="blank"><i aria-label="Input Label" className="fa-brands fa-linkedin-in" /></a>
+        <a href="https://github.com/coderacheal" target="blank"><i aria-label="Input Label" className="fa-brands fa-github" /></a>
+        <a href="https://medium.com/@coderacheal" target="blank"><i aria-label="Input Label" className="fa-brands fa-medium" /></a>
+        <a href="https://wellfound.com/u/racheal-appiah-kubi" target="blank"><i aria-label="Input Label" className="fa-brands fa-angellist" /></a>
       </div>
-      <div className='green-bar'></div>
+      <div className="green-bar" />
     </div>
   </div>
 );

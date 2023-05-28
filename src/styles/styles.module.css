@@ -1,0 +1,38 @@
+.loader {
+  height: 100vh; 
+  margin: 0;
+  background: black;
+}
+
+.loadingPercentage {
+  bottom: 0;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.dynamicPercentage {
+  font-size: 100px;
+  bottom: 10vh;
+  right: 10vw;
+  color: white; 
+  position: fixed;
+  color: rgb(233, 217, 217);
+}
+
+.progressBar {
+  height: 2px;
+  bottom: 10vh;
+  left: 10vh;
+  position: fixed;
+  border-radius: 1px;
+  background-color: rgb(233, 217, 217);
+  margin-top: 30px;
+
+}
+
+.loadingline {
+  width: 80%;
+  margin: auto;
+  background-color: red;
+}

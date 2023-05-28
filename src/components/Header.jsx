@@ -1,20 +1,22 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-const Header = () =>{
-
+const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [isBlackFont, setBlackFont] = useState(false)
+  const [isBlackFont, setBlackFont] = useState(false);
 
   const handleClick = () => {
     setIsActive(!isActive);
-    setBlackFont(!isBlackFont)
+    setBlackFont(!isBlackFont);
   };
 
   return (
     <div>
       <header className="header">
+        {/* eslint-disable react/no-unescaped-entities */}
         <p className={`rest ${isBlackFont ? 'active' : ''}`}>רייצ'ל</p>
         <nav className="nav">
+          {/* eslint-disable jsx-a11y/click-events-have-key-events */}
+          {/* eslint-disable jsx-a11y/no-static-element-interactions */}
           <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={handleClick}>
             <div>
               <span className="bar" />
@@ -29,12 +31,12 @@ const Header = () =>{
                 </ul>
               </div>
             </div>
-          </div> 
+          </div>
         </nav>
       </header>
     </div>
- );
-}
-  // <a href="/path/to/your/file.pdf" download>Download PDF</a>;
+  );
+};
+// <a href="/path/to/your/file.pdf" download>Download PDF</a>;
 
 export default Header;
