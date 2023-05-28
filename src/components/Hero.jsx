@@ -4,24 +4,37 @@ import gsap from 'gsap';
 import Socials from './Socials';
 
 const Hero = () => {
-  const textRef = useRef(null);
-  const { ref, inView } = useInView({
-    // triggerOnce: true, // Only trigger the animation once
-    threshold: 0.5, // Set the threshold for when the element is considered in view
+  const element1Ref = useRef(null);
+  const element2Ref = useRef(null);
+
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.5,
+  });
+
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.5,
   });
 
   useEffect(() => {
-    if (inView) {
-      gsap.to(textRef.current, {
+    if (inView1) {
+      gsap.to(element1Ref.current, {
         opacity: 1, y: 0, duration: 1, delay: 0.5,
       });
     } else {
-      gsap.to(textRef.current, { opacity: 0, y: -50, duration: 1 });
+      gsap.to(element1Ref.current, { opacity: 0, y: -50, duration: 1 });
     }
-  }, [inView]);
+
+    if (inView2) {
+      gsap.to(element2Ref.current, {
+        opacity: 1, y: 0, duration: 3, delay: 0.5,
+      });
+    } else {
+      gsap.to(element2Ref.current, { opacity: 0, y: -50, duration: 1 });
+    }
+  }, [inView1, inView2]);
 
   return (
-    <div ref={ref}>
+    <div>
       <section className="intro-section">
         <div className="my-case-study-intro">
           <div className="navigate-numbers">
@@ -38,8 +51,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="name-job-div">
-          <p className="name animated-text firstname" ref={textRef} style={{ opacity: 0, transform: 'translateY(-50px)', color: 'white' }}>RACHEAL</p>
-          <p className="name surname animated-text" ref={textRef} style={{ opacity: 0, transform: 'translateY(-50px)', color: 'white' }}>APPIAH-KUBI</p>
+          <div ref={ref1}>
+            <p className="name animated-text firstname" ref={element1Ref} style={{ opacity: 0, transform: 'translateY(-50px)', color: 'white' }}>RACHEAL</p>
+          </div>
+          <div ref={ref2}>
+            <p className="name surname animated-text" ref={element2Ref} style={{ opacity: 0, transform: 'translateY(-50px)', color: 'white' }}>APPIAH-KUBI</p>
+          </div>
           {/* <p className="name surname animated-text">KUBI</p> */}
           <p className="tagline">Remote full stack developer</p>
         </div>

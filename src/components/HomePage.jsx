@@ -6,7 +6,6 @@ import Footer from './Footer';
 import Hero from './Hero';
 import Contact from './Contact';
 import MouseHalo from './MouseHalo';
-import AnimatedTextScroll from './AnimatedTextScroll';
 
 const HomePage = () => (
   <div className="welcome-page">
@@ -19,7 +18,6 @@ const HomePage = () => (
         <Contact />
       </section>
       <MouseHalo />
-      <AnimatedTextScroll />
       <Footer />
     </main>
   </div>

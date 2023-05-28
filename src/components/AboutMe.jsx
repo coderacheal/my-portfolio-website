@@ -41,19 +41,6 @@ const AboutMe = () => {
         <div ref={ref2} className="my-skills-div">
           <p className="my-skills" ref={element2Ref} style={{ opacity: 0, transform: 'translateY(-50px)' }}>Full Stack Developer with a love for ML & AI, Block Chain, Interactive Websites with React, and Cloud Computing. Learning to play the violin. </p>
         </div>
-        {/* <div className="pubbles-div">
-        <div className="awsBubble">AWS</div>
-        <div className="mlBubble">ML</div>
-        <div className="pythonBubble">Python</div>
-        <div className="rubyBubble">Ruby</div>
-        <div className="sqlBubble">SQL</div>
-        <div className="javascriptBubble">JavaScript</div>
-        <div className="reactBubble">React</div>
-      </div>
-      <div className="fav-quote-div">
-        <p className="fav-quote">I am because we are</p>
-        <p className="fav-quote-source">-Ubuntu </p>
-      </div> */}
       </section>
     </div>
   );

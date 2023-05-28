@@ -6,11 +6,8 @@
 @import 'contact.css';
 @import 'about-me.css';
 @import 'footer.css';
-@import 'hero_pillars.css';
 @import 'mouse_halo.css';
 @import 'hero.css';
-
-/* @import 'loader.css'; */
 
 body {
   margin: 0;
