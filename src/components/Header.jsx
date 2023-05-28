@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HaloMouseCursor from './MouseHalo';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -34,6 +35,7 @@ const Header = () => {
           </div>
         </nav>
       </header>
+      <HaloMouseCursor />
     </div>
   );
 };

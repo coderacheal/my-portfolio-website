@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 .intro-section {
   display: grid;
-  grid-template-columns: 30% 50% 20%;
+  grid-template-columns: 25% 60% 10%;
+
   /* background: linear-gradient(to right, #000, #111); */
+
+  /* background-color: RED; */
   background-color: black;
   height: 700px;
 }
@@ -15,9 +20,22 @@
   font-size: 20px;
 }
 
+p {
+  margin: 0;
+}
+
 .name-job-div {
-  margin-top: 25%;
-  margin-left: 5%;
+  margin-top: 13%;
+
+  /* margin-left: 5%; */
+
+  /* text-align: center; */
+
+  /* background-color: red; */
+}
+
+.name-job-div p {
+  text-align: center;
 }
 
 .navigate-numbers {
@@ -26,6 +44,8 @@
   text-align: left;
   color: rgb(233, 217, 217);
   font-family: 'Work Sans', sans-serif;
+
+  /* background-color: yellow; */
 }
 
 .navigate-numbers-each {
@@ -41,24 +61,42 @@
   color: rgb(233, 217, 217);
   font-family: 'Work Sans', sans-serif;
   opacity: 0.7;
+  cursor: pointer;
+  transition: 1s;
+
+  /* background-color: yellow; */
 }
 
-p {
-  margin: 0;
+.navigate p {
+  transition: 1s;
+}
+
+.navigate p:hover {
+  color: white;
+  opacity: 1;
+  font-size: 22px;
 }
 
 .name {
-  font-size: 105px;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-size: 130px;
+
+  /* font-weight: bold; */
+
+  /* font-family: sans-serif; */
   font-weight: lighter;
   color: white;
-  font-family: 'IBM Plex Mono', monospace;
+
+  /* font-family: 'IBM Plex Mono', monospace; */
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+}
+
+.firstname {
   text-align: left;
 }
 
 .contact-me-div {
-  width: 20%;
+  /* width: 20%; */
   margin: auto;
   height: 200px;
   width: 200px;
@@ -70,10 +108,12 @@ p {
   margin-top: 150px;
   margin-bottom: 150px;
   text-align: center;
-  font-family: 'Roboto';
+
+  /* font-family: 'Roboto'; */
   cursor: pointer;
   transition: 1s ease-in;
-  vertical-align: middle;
+
+  /* vertical-align: middle; */
 }
 
 .contact-me-div:hover {
@@ -84,7 +124,8 @@ p {
 
 .contact-anime {
   margin-top: 45px;
-  vertical-align: center;
+
+  /* vertical-align: center; */
   text-align: center;
 }
 
@@ -92,6 +133,7 @@ p {
   font-size: 22px;
   color: rgb(233, 217, 217);
   font-style: italic;
+  text-align: justify;
 }
 
 .lines-div {
@@ -109,9 +151,8 @@ p {
 .lines-div:nth-child(2) {
   height: 70px;
 }
-.lines-div:nth-child(2) {
-  height: 70px;
-}
+
+
 
 /* Track */
 ::-webkit-scrollbar {

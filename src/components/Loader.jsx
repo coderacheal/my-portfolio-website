@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 import MouseHalo from './MouseHalo';
 import styles from '../styles/styles.module.css';
 
-const Loader = ({ duration = 2000 }) => {
+const Loader = ({ duration = 3000 }) => {
   const [progress, setProgress] = useState(0);
   // const duration = 2000;
 
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prevProgress) => {
-        const newProgress = prevProgress + 1;
+        const newProgress = prevProgress + 3;
         return newProgress <= 100 ? newProgress : 100;
       });
-    }, duration / 50);
+    }, duration / 40);
 
     return () => clearInterval(interval);
   }, [duration]);
@@ -29,7 +29,7 @@ const Loader = ({ duration = 2000 }) => {
         <div className={styles.loadingline}>
           <span
             className={styles.progressBar}
-            style={{ width: `${progress - 10}%`, transition: `${duration / 50}ms linear` }}
+            style={{ width: `${progress - 10}%`, transition: `${duration / 40}ms linear` }}
           />
         </div>
       </div>

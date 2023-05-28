@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
-
 .case-study-intro {
   width: 50%;
   margin: auto;
@@ -19,9 +18,10 @@
   font-size: 30px;
 }
 
-.project1, .project3 {
+.project1,
+.project3 {
+  /* background: fill; */
   background-image: url('../assets/cute-cat.jpg');
-  background-size: fill;
   background-repeat: no-repeat;
   height: 440px;
   margin: auto;
@@ -34,12 +34,13 @@
 }
 
 .project1:hover {
+  background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
   background-color: green;
   z-index: 2;
-  background-position: left bottom;
+
+  /* background-position: left bottom; */
   transform: scale(1.1);
   color: black;
-  background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: right top;
   transition: background-position 0.4s, transform 0.3s;
@@ -47,7 +48,8 @@
 
 .project2 {
   background-image: url('../assets/cute-cat.jpg');
-  background-size: fill;
+
+  /* background-size: fill; */
   background-repeat: no-repeat;
   height: 440px;
   margin: auto;
@@ -80,18 +82,12 @@
   margin-bottom: 10px;
 }
 
-.project-description-odd {
-  width: 40%;
-  color: white;
-  padding-left: 50px;
-  font-size: 18px;
-}
-
 .view-button-odd {
-  padding: 10px;
+  /* padding: 10px; */
   margin-left: 7%;
   margin-top: 20px;
-  background-color: white;
+
+  /* background-color: white; */
   color: black;
   border: 0;
   font-weight: bold;
@@ -144,7 +140,8 @@
   padding: 15px;
   margin-left: 73%;
   margin-top: 20px;
-  background-color: white;
+
+  /* background-color: white; */
   color: black;
   border: 0;
   font-weight: bold;
@@ -166,5 +163,8 @@
 .project-description-odd {
   position: relative;
   z-index: 1;
-  color: #ffffff;
+  color: #fff;
+  width: 40%;
+  padding-left: 50px;
+  font-size: 18px;
 }

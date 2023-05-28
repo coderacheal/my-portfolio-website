@@ -9,7 +9,7 @@ const App = () => {
     // Simulating an asynchronous task
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 0);
   }, []);
 
   return (

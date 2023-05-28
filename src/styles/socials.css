@@ -5,7 +5,7 @@
   border-radius: 50%;
   padding: 10px;
   height: 20px;
-  background: linear-gradient(to right, #fff 50%, #111111 50%);
+  background: linear-gradient(to right, #fff 50%, #111 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: background-position 0.4s, transform 0.3s;
@@ -15,14 +15,6 @@
   background-position: left bottom;
   transform: scale(1.2);
   color: black;
-}
-
-/* .fa-medium {
-  font-size: 25px;
-} */
-
-.green-bar {
-
 }
 
 .socials-div {
