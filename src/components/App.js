@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import HomePage from './HomePage';
 import Loader from './Loader';
+import Contact from './Contact'
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -9,7 +10,7 @@ const App = () => {
     // Simulating an asynchronous task
     setTimeout(() => {
       setIsLoading(false);
-    }, 0);
+    }, 2000);
   }, []);
 
   return (

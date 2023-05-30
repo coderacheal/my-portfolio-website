@@ -4,8 +4,8 @@ import Projects from './Projects';
 import AboutMe from './AboutMe';
 import Footer from './Footer';
 import Hero from './Hero';
-import Contact from './Contact';
 import MouseHalo from './MouseHalo';
+// import Contact from './Contact';
 
 const HomePage = () => (
   <div className="welcome-page">
@@ -15,9 +15,11 @@ const HomePage = () => (
       <section>
         <AboutMe />
         <Projects />
-        <Contact />
       </section>
       <MouseHalo />
+      <div>
+        
+      </div>
       <Footer />
     </main>
   </div>

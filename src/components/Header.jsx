@@ -26,9 +26,9 @@ const Header = () => {
               <div>
                 <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
                   <li className="nav-links"><a href="https://www.google.com/">Home</a></li>
-                  <li className="nav-links"><a href="https://www.google.com/">Project</a></li>
-                  <li className="nav-links"><a href="https://www.google.com/">About</a></li>
-                  <li className="nav-links"><a href="https://www.google.com/">Contact  </a></li>
+                  <li className="nav-links"><a href="https://www.google.com/">Projects</a></li>
+                  <li className="nav-links"><a href="https://www.google.com/">Resume</a></li>
+                  <li className="nav-links"><a href="https://www.google.com/">Contact </a></li>
                 </ul>
               </div>
             </div>

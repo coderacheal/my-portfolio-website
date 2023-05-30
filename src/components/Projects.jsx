@@ -14,7 +14,7 @@ const Projects = () => (
           <div className="project-description-odd">A live messaging app embbeded with a bert model to predict sentiment of your message before you send them</div>
           <button type="button" className="view-button-odd">
             Case study
-            <i className="fa-sharp fa-solid fa-forward fa-beat-fade" />
+             <i className="fa-sharp fa-solid fa-forward fa-beat-fade" />
           </button>
         </div>
 
@@ -26,7 +26,7 @@ const Projects = () => (
           <div className="project-description">A live messaging app embbeded with a bert model to predict sentiment of your message before you send them</div>
           <button type="button" className="view-button">
             Case study
-            <i className="fa-sharp fa-solid fa-forward fa-beat-fade" />
+             <i className="fa-sharp fa-solid fa-forward fa-beat-fade" />
           </button>
         </div>
       </div>
@@ -36,7 +36,7 @@ const Projects = () => (
         <div className="project-description-odd">A live messaging app embbeded with a bert model to predict sentiment of your message before you send them</div>
         <button type="button" className="view-button-odd">
           Case study
-          <i className="fa-sharp fa-solid fa-forward fa-beat-fade" />
+           <i className="fa-sharp fa-solid fa-forward fa-beat-fade" />
         </button>
       </div>
     </div>
