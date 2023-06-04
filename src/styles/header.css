@@ -3,19 +3,80 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background: linear-gradient(to right, #000, #111);
   color: #fff;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 100px;
+  padding-right: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
 }
 
 .brand {
-  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.rest {
+  font-size: 30px;
+  text-align: end;
+}
+
+.active {
+  color: black;
 }
 
 .nav {
   display: flex;
 }
+
+.logo {
+  display: none;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  gap: 0;
+  flex-direction: column;
+  transition: 0.3s;
+  padding: 0;
+  z-index: 10;
+}
+
+.bar {
+  display: block;
+  width: 40px;
+  height: 2.5px;
+  margin: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(233, 217, 217);
+  border-radius: 2px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+/* Sliding Navigation */
 
 .nav-list {
   display: flex;
@@ -29,4 +90,112 @@
   cursor: pointer;
   font-size: 22px;
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.slidingMenu {
+  display: flex;
+  position: fixed;
+  list-style-type: none;
+  height: 100%;
+  background-color: black;
+  align-items: start;
+  align-content: start;
+
+  /* position: fixed; */
+  left: -100%;
+  top: 0;
+  gap: 0;
+  flex-direction: column;
+  width: 100%;
+  transition: 1.2s;
+  padding: 0;
+  z-index: 10;
+  padding-top: 50px;
+}
+
+.slidingMenu.active {
+  left: 0;
+  margin: 0;
+}
+
+.menu-counter-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav-links-ul {
+  list-style-type: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  top: 70px;
+  padding: 10px;
+  align-content: flex-start;
+}
+
+.nav-links a {
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  width: 70%;
+  align-items: center;
+  color: white;
+  font-size: 120px;
+  transition: 1s;
+}
+
+.nav-links a:hover {
+  transform: rotateY(180deg);
+}
+
+.menuTopDescription {
+  font-size: 17px;
+  width: 50%;
+  margin: auto;
+  color: rgb(233, 217, 217);
+  opacity: 0.4;
+  margin-top: 50px;
+}
+
+.menuFooterCounter {
+  color: white;
+  font-size: 200px;
+  position: relative;
+  top: 300px;
+  margin-right: 100px;
+  text-align: right;
+}
+
+.sliding-digit.slide-in {
+  transition: transform 0.5s ease;
+  transform: translateY(100%);
+}
+
+.slidingMenuFooter {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -20px;
+  color: white;
+  color: rgb(233, 217, 217);
+
+  /* background-color: red; */
+  width: 95%;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+
+.social-linkedin {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  color: rgb(233, 217, 217);
+
+  /* background-color: red; */
 }

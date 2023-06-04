@@ -1,0 +1,242 @@
+.about-me-section {
+  position: relative;
+}
+
+.about-me {
+  font-size: 200px;
+  color: rgb(205, 205, 205);
+  margin: 0;
+
+  /* margin-left: 100px; */
+  margin-top: 100px;
+  opacity: 0.4;
+}
+
+.my-skills-div {
+  position: absolute;
+  left: 200px;
+  top: 120px;
+  width: 70%;
+  font-size: 32px;
+  text-align: right;
+  margin-left: 15%;
+}
+
+.pubbles-div {
+  margin: auto;
+  position: relative;
+  height: 880px;
+  margin-top: 120px;
+}
+
+.awsBubble {
+  margin: 0;
+  background-color: #dffdff;
+  position: relative;
+  left: 350px;
+  border-radius: 50%;
+  font-size: 50px;
+  height: 80px;
+  width: 100px;
+  padding: 115px;
+  text-align: center;
+}
+
+.mlBubble {
+  margin: 0;
+  background-color: #bdb2ff;
+  position: relative;
+  top: 40px;
+  left: 980px;
+  border-radius: 50%;
+  font-size: 50px;
+  height: 80px;
+  width: 100px;
+  padding: 60px;
+  text-align: center;
+}
+
+.sqlBubble {
+  margin: 0;
+  background-color: mistyrose;
+  position: relative;
+  left: 60px;
+  top: -900px;
+  border-radius: 50%;
+  font-size: 50px;
+  height: 80px;
+  width: 100px;
+  padding: 90px;
+  text-align: center;
+}
+
+.pythonBubble {
+  margin: 0;
+  background-color: rgb(204, 253, 212);
+
+  /* background-color: mint; */
+  position: relative;
+  left: 750px;
+  top: -520px;
+  border-radius: 50%;
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+  padding: 120px;
+  text-align: center;
+}
+
+.rubyBubble {
+  margin: 0;
+  background-color: #f1f7b5;
+  position: relative;
+  left: 200px;
+  top: -400px;
+  border-radius: 50%;
+  font-size: 50px;
+  height: 80px;
+  width: 100px;
+  padding: 70px;
+  text-align: center;
+}
+
+.javascriptBubble {
+  margin: 0;
+  background-color: #fad1fa;
+  position: relative;
+  left: 500px;
+  top: -1000px;
+  border-radius: 50%;
+  font-size: 50px;
+  height: 80px;
+  width: 100px;
+  padding: 170px;
+  text-align: center;
+}
+
+.reactBubble {
+  margin: 0;
+  background-color: #ffb9d3;
+  position: relative;
+  top: -1600px;
+  left: 1150px;
+  border-radius: 50%;
+  font-size: 50px;
+  height: 80px;
+  width: 100px;
+  padding: 50px;
+  text-align: center;
+}
+
+.fav-quote {
+  width: 50%;
+  margin: auto;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+  opacity: 0.8;
+  font-family: 'Euphoria Script', cursive;
+}
+
+.fav-quote-source {
+  width: 35%;
+  margin: auto;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+  opacity: 0.8;
+
+  /* font-family: 'Roboto'; */
+
+  /* font-size: 50px; */
+  font-style: italic;
+  text-align: right;
+  font-family: 'Euphoria Script', cursive;
+}
+
+.text-animation {
+  position: relative;
+}
+
+.text-animation:hover {
+  animation: slide-in-out 3s linear infinite;
+}
+
+@keyframes slide-in-out {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(40%);
+  }
+}
+
+.javascriptBubble,
+.reactBubble,
+.sqlBubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.awsBubble,
+.mlBubble,
+.pythonBubble,
+.rubyBubble {
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  /* animation: bounce2 5s infinite ease-in-out; */
+}
+
+@keyframes bounce1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(200px, -200px);
+  }
+
+  50% {
+    transform: translate(400px, 0);
+  }
+
+  75% {
+    transform: translate(200px, 200px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-200px, 200px);
+  }
+
+  50% {
+    transform: translate(0, 400px);
+  }
+
+  75% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(200px, 200px);
+  }
+
+  /* 100% {
+      transform: translate(0, 0);
+    } */
+}

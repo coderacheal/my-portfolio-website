@@ -1,11 +1,11 @@
 .fa-brands {
-  color: white;
-  font-size: 35px;
-  margin-top: 25px;
-  border-radius: 55%;
+  color: rgb(233, 217, 217);
+  font-size: 25px;
+  margin-top: 35px;
+  border-radius: 50%;
   padding: 10px;
-  height: 30px;
-  background: linear-gradient(to right, #fff 50%, #111111 50%);
+  height: 20px;
+  background: linear-gradient(to right, #fff 50%, #111 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: background-position 0.4s, transform 0.3s;
@@ -17,13 +17,18 @@
   color: black;
 }
 
-.fa-medium {
-  font-size: 25px;
-}
-
 .socials-div {
   display: flex;
-  margin-top: 90px;
+  /* justify-content: flex-end; */
+  /* background-color: red; */
+  width: 20%;
+  /* margin: auto; */
+  /* align-self: flex-end; */
+  position: relative;
+  left: 75%;
+  top: -85%;
+
+  /* margin-top: 90px; */
   justify-content: flex-end;
 }
 
@@ -31,5 +36,5 @@
   display: flex;
   flex-direction: column;
   margin-right: 50px;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.hero-intro {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: grid;
+  background-color: black;
+}
+
+.hello {
+  font-size: 300px;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  align-self: center;
+  color: rgb(233, 217, 217);
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+ 
+.visible {
+  opacity: 1;
+}
+
+/* .yhero-intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.about-me.visible {
+  opacity: 1;
+}
+
+.about-my-portfolio {
+  position: relative;
+  width: 100%;
+  color: rgb(233, 217, 217);
+  margin: auto;
+}
+
+.description {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
