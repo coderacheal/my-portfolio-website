@@ -13,12 +13,12 @@ const HomePage = () => (
     <main className="portfolio-content">
       <Header />
       <HelloHero />
-      <Hero />
+      {/* <Hero /> */}
       <section>
-        <AboutMe />
+        {/* <AboutMe /> */}
         <Projects />
       </section>
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </main>
   </div>
