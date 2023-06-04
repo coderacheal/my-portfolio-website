@@ -193,34 +193,6 @@
   /* animation: bounce2 5s infinite ease-in-out; */
 }
 
-/* @keyframes float-right {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-      transform: translate(200px, 200px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  } */
-
-/*
-  @keyframes bounce {
-    0%, 100% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(100px, 0);
-    }
-    50% {
-      transform: translate(100px, 100px);
-    }
-    75% {
-      transform: translate(0, 100px);
-    }
-  } */
-
 @keyframes bounce1 {
   0% {
     transform: translate(0, 0);

@@ -10,7 +10,11 @@
 
 .reserved-footer {
   margin: auto;
-  font-size: 12px;
+  font-size: 18px;
+  position: relative;
+  color: rgb(233, 217, 217);
+  /* background-color: red; */
+  bottom: -65%;
 }
 
 .footer-socials {
