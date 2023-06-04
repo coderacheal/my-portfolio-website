@@ -2,6 +2,19 @@ import React, { useEffect, useState } from 'react';
 
 const HelloHero = () => { 
   const [isVisible, setIsVisible] = useState(false);
+  const [showFirstElement, setShowFirstElement] = useState(true);
+  const [showSecondElement, setShowSecondElement] = useState(false);
+  // const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowFirstElement(false);
+      setShowSecondElement(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,14 +41,14 @@ const HelloHero = () => {
     <section className="hero-intro">
       <div className="name-job-div">
         <div>
-          <p className='hello'>Hello</p>
-          <div className='about-my-portfolio'>
-            <p className='tiny-about-me'> /About me </p>
+          {showFirstElement && <p className='hello'>Hello</p>}
+          {showSecondElement && <div className='about-my-portfolio'>
+            <p className='tiny-about-me'> &lt; /About me/ &gt; </p>
             <p className='description'>I am RACHEAL, I create</p>
             <p className='description'>interactive websites that</p>
             <p className='description'>leverage AI and ML</p>
             <p> <u>Full Stack</u> Developer</p>
-          </div>
+          </div>}
         </div>
       </div>
     </section>
@@ -43,4 +56,29 @@ const HelloHero = () => {
 }
 
 
-export default HelloHero
+export default HelloHero;
+
+// import React, { useState, useEffect } from 'react';
+
+// const ExampleComponent = () => {
+//   const [showFirstElement, setShowFirstElement] = useState(true);
+//   const [showSecondElement, setShowSecondElement] = useState(false);
+
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       setShowFirstElement(false);
+//       setShowSecondElement(true);
+//     }, 2000);
+
+//     return () => clearTimeout(timer);
+//   }, []);
+
+//   return (
+//     <div>
+//       {showFirstElement && <div>First Element</div>}
+//       {showSecondElement && <div>Second Element</div>}
+//     </div>
+//   );
+// };
+
+// export default ExampleComponent;

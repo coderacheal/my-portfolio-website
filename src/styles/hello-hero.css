@@ -5,32 +5,26 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: blue;
   display: grid;
-  margin-top: -100px;
   background-color: black;
 }
 
 .hello {
-  /* display: none; */
   font-size: 300px;
   font-weight: 100;
   font-family: 'Montserrat', sans-serif;
   color: white;
   margin: auto;
   align-self: center;
-  /* vertical-align: top; */
   color: rgb(233, 217, 217);
-  /* margin-bottom: 280px; */
 }
 
 .yhero-intro {
-  height: 100vh; /* Adjust the height as needed */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .about-me.visible {
   opacity: 1;
@@ -39,12 +33,9 @@
 .about-my-portfolio {
   color: white;
   position: relative;
-  width: 80%;
-  top: -30vh;
+  width: 100%;
   color: rgb(233, 217, 217);
   margin: auto;
-  /* left: 28%; */
-  /* background-color: red; */
 }
 
 .description {

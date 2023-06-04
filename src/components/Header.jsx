@@ -1,20 +1,25 @@
-import React, { useState } from 'react';
-import HaloMouseCursor from './MouseHalo';
+import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [isBlackFont, setBlackFont] = useState(false);
+  const [counter, setCounter] = useState(1)
+  const [slideIn, setSlideIn] = useState(false);
 
   const handleClick = () => {
     setIsActive(!isActive);
-    setBlackFont(!isBlackFont);
   };
+
+  const handleHover = (index) => {
+    setSlideIn(true); 
+    setCounter(index + 1)
+  };
+
 
   return (
     <div>
       <header className="header">
         {/* eslint-disable react/no-unescaped-entities */}
-        <p className={`rest ${isBlackFont ? 'active' : ''}`}>רייצ'ל</p>
+        <p className='rest'>רייצ'ל</p>
         <nav className="nav">
           {/* eslint-disable jsx-a11y/click-events-have-key-events */}
           {/* eslint-disable jsx-a11y/no-static-element-interactions */}
@@ -32,26 +37,27 @@ const Header = () => {
       <div className={`slidingMenu ${isActive ? 'active' : ''}`}>
         <div className='menu-counter-div'>
           <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
-            <li className={`nav-links ${isActive ? 'active' : ''}`} onClick={handleClick}><a href="#">Home</a></li>
-            <li className="nav-links"><a href="https://www.google.com/">Projects</a></li>
-            <li className="nav-links"><a href="https://www.google.com/">Resume</a></li>
-            <li className="nav-links"><a href="https://www.google.com/">Contact </a></li>
+            <li className='nav-links'><a href="#" onMouseEnter={() => handleHover(0)}>Home</a></li>
+            <li className="nav-links"><a href="#" onMouseEnter={() => handleHover(1)}>Projects</a></li>
+            <li className="nav-links"><a href="#" onMouseEnter={() => handleHover(2)}>Resume </a></li>
+            <li className="nav-links"><a href="#" onMouseEnter={() => handleHover(3)}>Contact </a></li>
           </ul>
           <div>
             <p className='menuTopDescription'>Full Stack Developer with a love for ML & AI, Block Chain, Interactive Websites with React, and Cloud Computing. Learning to play the violin.</p>
-            <p className='menuFooterCounter'>01</p>
+            <p className='menuFooterCounter'>0<span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>{counter}</span></p>
           </div>
         </div>
         <div className='slidingMenuFooter'>
-          <p>Professional Portfolio</p>
-          <p>LinkedIn GitHub</p>
-          <p>@c2023</p>
+          <a>Professional Portfolio</a>
+          <div className='social-linkedin'>
+            <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target='_blank'>LINKEDIN</a>
+            <a href="https://github.com/coderacheal" target='_blank'>GITHUB</a>
+          </div>
+          <p>&copy;2023</p>
         </div>
       </div>
-      <HaloMouseCursor />
     </div>
   );
 };
-// <a href="/path/to/your/file.pdf" download>Download PDF</a>;
 
 export default Header;
