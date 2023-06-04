@@ -21,6 +21,7 @@
 .project1,
 .project3 {
   /* background-image: url('../assets/cute-cat.jpg'); */
+
   /* background-repeat: no-repeat; */
   height: 440px;
   margin: auto;
@@ -32,11 +33,11 @@
   cursor: pointer;
   transition: background-position 0.4s, transform 0.3s;
   transition: 2s;
-
 }
 
-.project1:hover, .project3:hover {
-  background: linear-gradient(to left, rgb(255, 96, 27) 50%,  #fff 50%,);
+.project1:hover,
+.project3:hover {
+  /* background-color: linear-gradient(to left, rgb(255, 96, 27) 50%, #fff 50%,); */
   background-color: green;
   z-index: 2;
   transform: scale(1.1);

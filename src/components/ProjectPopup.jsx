@@ -10,13 +10,13 @@ const Popup = () => {
 
   return (
     <div>
-      <button onClick={togglePopup}>Open Pop-up</button>
+      <button type="button" onClick={togglePopup}>Open Pop-up</button>
       {isOpen && (
         <div className="popup">
           <div className="popup-content">
             <h2>Pop-up Content</h2>
             <p>This is the content of the pop-up.</p>
-            <button onClick={togglePopup}>Close</button>
+            <button type="button" onClick={togglePopup}>Close</button>
           </div>
         </div>
       )}

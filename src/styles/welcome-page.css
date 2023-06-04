@@ -16,7 +16,6 @@ body {
   background-color: white;
 }
 
-
 /* Mouse Handle */
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#c6e6ca, #ffb6c1); /* Mint Green to Pink Rose */

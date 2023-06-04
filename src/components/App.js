@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HomePage from './HomePage';
 import Loader from './Loader';
-import ExampleComponent from './Eg';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

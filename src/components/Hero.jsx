@@ -1,18 +1,12 @@
-import React, { useRef, useEffect, useState} from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import gsap from 'gsap';
 import Socials from './Socials';
-import HorizontalProjectsScroll from './HorizontalProjectsScroll';
-import MouseHalo from './MouseHalo'
+import MouseHalo from './MouseHalo';
 
 const Hero = () => {
   const element1Ref = useRef(null);
   const element2Ref = useRef(null);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const togglePopup = () => {
-    setIsOpen(!isOpen)
-  }
 
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.5,
@@ -51,8 +45,7 @@ const Hero = () => {
             <p className="navigate-numbers-each">04</p>
           </div>
           <div className="navigate">
-            <p className="eachNavigate" onClick={togglePopup}>FRONT END</p>
-            {isOpen && (<HorizontalProjectsScroll />)}
+            <p className="eachNavigate">FRONT END</p>
             <p className="eachNavigate">BACKEND</p>
             <p className="eachNavigate">AI & ML</p>
             <p className="eachNavigate">BLOCKCHAIN</p>
@@ -63,7 +56,7 @@ const Hero = () => {
             <p className="name animated-text firstname" ref={element1Ref} style={{ opacity: 0, transform: 'translateY(-50px)', color: 'white' }}>RACHEAL</p>
           </div>
           <div ref={ref2}>
-            <p className="name surname animated-text" >APPIAH</p>
+            <p className="name surname animated-text">APPIAH</p>
             <p className="name surname animated-text" ref={element2Ref} style={{ opacity: 0, transform: 'translateY(-50px)', color: 'white' }}>KUBI</p>
           </div>
           <p className="tagline">Remote full stack developer</p>
