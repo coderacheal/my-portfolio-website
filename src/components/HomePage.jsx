@@ -5,21 +5,20 @@ import AboutMe from './AboutMe';
 import Footer from './Footer';
 import Hero from './Hero';
 import MouseHalo from './MouseHalo';
-// import Contact from './Contact';
+import Contact from './Contact';
+import HelloHero from './HelloHero';
 
 const HomePage = () => (
   <div className="welcome-page">
     <main className="portfolio-content">
       <Header />
+      <HelloHero />
       <Hero />
       <section>
         <AboutMe />
         <Projects />
       </section>
-      <MouseHalo />
-      <div>
-        
-      </div>
+      <Contact />
       <Footer />
     </main>
   </div>

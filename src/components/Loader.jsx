@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import MouseHalo from './MouseHalo';
 import styles from '../styles/styles.module.css';
 
-const Loader = ({ duration = 3000 }) => {
+const Loader = ({ duration = 1000 }) => {
   const [progress, setProgress] = useState(0);
   // const duration = 2000;
 

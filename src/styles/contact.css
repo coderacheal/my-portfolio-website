@@ -22,7 +22,8 @@ form {
 .form-page {
   overflow: hidden;
   padding-top: 50px;
-
+  /* background-color: rgba(240,163,169,255); */
+  /* background-color: #f6c1bc; */
   /* width: 70%; */
 
   /* margin: auto; */
@@ -34,10 +35,10 @@ form {
   /* margin-bottom: 5%; */
 
   /* position: relative; */
-  border: 1px solid black;
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* border: 1px solid black; */
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
   width: 100vw;
   height: 100vh;
 }
@@ -99,13 +100,13 @@ input::placeholder {
   align-self: flex-end;
   position: absolute;
   font-weight: bold;
-  right: 0;
-  left: 1290px;
-  top: 550px;
-  border-radius: 50%;
+  /* right: 0; */
+  left: 1000px;
+  /* top: 550px; */
+  /* border-radius: 50%; */
   height: 100px;
   width: 100px;
-  padding: 120px;
+  padding: 20px;
   text-align: center;
   cursor: pointer;
   transition: 3s ease-in-out;
@@ -113,11 +114,11 @@ input::placeholder {
 }
 
 .mainPage:hover {
-  padding: 150px;
+  padding: 50px;
   color: black;
   background-color: mistyrose;
   font-size: 20px;
-  top: 480px;
-  left: 1190px;
+  /* top: 480px; */
+  /* left: 1190px; */
   font-weight: bold;
 }

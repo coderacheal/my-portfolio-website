@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import gsap from 'gsap';
 import Socials from './Socials';
 import HorizontalProjectsScroll from './HorizontalProjectsScroll';
+import MouseHalo from './MouseHalo'
 
 const Hero = () => {
   const element1Ref = useRef(null);
@@ -70,6 +71,7 @@ const Hero = () => {
         </div>
         <Socials />
       </section>
+      <MouseHalo />
     </div>
   );
 };
