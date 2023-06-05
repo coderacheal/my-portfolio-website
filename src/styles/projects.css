@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
+/* .projectSection {
+  padding-bottom: 150px;
+} */
+
 .case-study-intro {
   width: 50%;
   margin: auto;
@@ -28,7 +32,8 @@
   width: 50%;
   margin-top: 50px;
   margin-bottom: 90px;
-  color: black;
+  background-color: white;
+  /* color: black; */
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-position 0.4s, transform 0.3s;
@@ -41,7 +46,7 @@
   background-color: green;
   z-index: 2;
   transform: scale(1.1);
-  color: black;
+  /* color: black; */
   background-size: 200% 100%;
   background-position: right bottom;
 }

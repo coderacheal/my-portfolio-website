@@ -3,7 +3,6 @@ import React from 'react';
 const Projects = () => (
   <section id="projectSection" className="projectSection">
     <div className="case-study-intro">
-      {/* <p className="case-title">CASE STUDIES</p> */}
       <h2 className="my-latest-work">My Latest Work</h2>
     </div>
     <div className="allProjects">

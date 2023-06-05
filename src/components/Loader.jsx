@@ -20,6 +20,10 @@ const Loader = ({ duration = 1000 }) => {
 
   return (
     <div className={styles.loader}>
+      <div className={styles.loaderNameDiv}>
+        <p className={styles.loaderMyName}>RACHEAL APPIAH-KUBI</p>
+        <p className={styles.loaderMyYear}>PORTFOLIO &copy;2023</p>
+      </div>
       <div className={styles.loadingPercentage}>
         <MouseHalo />
         <p className={styles.dynamicPercentage}>
