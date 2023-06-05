@@ -1,41 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
-import gsap from 'gsap';
+import React, { useEffect, useState } from 'react';
+// eslint-disable react/no-unused-vars
 
 const HelloHero = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false); // eslint-disable-line no-unused-vars
   const [showFirstElement, setShowFirstElement] = useState(true);
   const [showSecondElement, setShowSecondElement] = useState(false);
-
-  const element1Ref = useRef(null);
-  const element2Ref = useRef(null);
-
-  const { ref: ref1, inView: inView1 } = useInView({
-    threshold: 0.5,
-  });
-
-  const { ref: ref2, inView: inView2 } = useInView({
-    threshold: 0.5,
-  });
-
-  useEffect(() => {
-    if (inView1) {
-      gsap.to(element1Ref.current, {
-        opacity: 1, y: 0, duration: 1, delay: 0.5,
-      });
-    } else {
-      gsap.to(element1Ref.current, { opacity: 0, y: -50, duration: 1 });
-    }
-
-    if (inView2) {
-      gsap.to(element2Ref.current, {
-        opacity: 1, y: 0, duration: 3, delay: 0.5,
-      });
-    } else {
-      gsap.to(element2Ref.current, { opacity: 0, y: -50, duration: 1 });
-    }
-  }, [inView1, inView2]);
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
