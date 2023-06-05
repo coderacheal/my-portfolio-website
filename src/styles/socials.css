@@ -1,13 +1,13 @@
 .fa-brands {
   color: rgb(233, 217, 217);
-  font-size: 25px;
+  font-size: 18px;
   margin-top: 35px;
   border-radius: 50%;
   padding: 10px;
-  height: 20px;
   background: linear-gradient(to right, #fff 50%, #111 50%);
   background-size: 200% 100%;
   background-position: right bottom;
+  background-color: black;
   transition: background-position 0.4s, transform 0.3s;
 }
 
@@ -19,16 +19,8 @@
 
 .socials-div {
   display: flex;
-  /* justify-content: flex-end; */
-  /* background-color: red; */
   width: 20%;
-  /* margin: auto; */
-  /* align-self: flex-end; */
   position: relative;
-  left: 75%;
-  top: -85%;
-
-  /* margin-top: 90px; */
   justify-content: flex-end;
 }
 
@@ -36,5 +28,45 @@
   display: flex;
   flex-direction: column;
   margin-right: 50px;
-  /* margin-top: 150px; */
+}
+
+.social-and-pole {
+  display: flex;
+}
+
+.poles {
+  display: flex;
+  align-items: flex-end;
+}
+
+.green-pole {
+  display: block;
+  margin-right: 10px;
+  width: 1px;
+  height: 220px;
+  margin-top: 140px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(80, 242, 80);
+  border-radius: 2px;
+}
+
+.one {
+  width: 0.5px;
+  height: 150px;
+}
+
+/* .two {
+  width: 0.5px;
+  height: 310px;
+} */
+
+.two {
+  width: 0.5px;
+  height: 40px;
+}
+
+.four {
+  width: 0.5px;
+  height: 90px;
 }

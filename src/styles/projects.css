@@ -24,7 +24,7 @@
 
 .project1,
 .project3 {
-  /* background-image: url('../assets/cute-cat.jpg'); */
+  background-image: url('Crypto_app.png');
 
   /* background-repeat: no-repeat; */
   height: 440px;
@@ -33,19 +33,23 @@
   margin-top: 50px;
   margin-bottom: 90px;
   background-color: white;
+
   /* color: black; */
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-position 0.4s, transform 0.3s;
   transition: 2s;
+  border: 2px solid white;
 }
 
 .project1:hover,
 .project3:hover {
   /* background-color: linear-gradient(to left, rgb(255, 96, 27) 50%, #fff 50%,); */
-  background-color: green;
+
+  /* background-color: green; */
   z-index: 2;
   transform: scale(1.1);
+
   /* color: black; */
   background-size: 200% 100%;
   background-position: right bottom;
@@ -145,7 +149,7 @@
 .view-button {
   padding: 15px;
   margin-left: 73%;
-  margin-top: 20px;
+  margin-top: 70px;
   color: black;
   border: 0;
   font-weight: bold;
