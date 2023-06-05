@@ -9,7 +9,7 @@ const App = () => {
     // Simulating an asynchronous task
     setTimeout(() => {
       setIsLoading(false);
-    }, 10);
+    }, 3000);
   }, []);
 
   return (
@@ -19,7 +19,6 @@ const App = () => {
       ) : (
         <div className="content">
           <HomePage />
-          {/* <ExampleComponent /> */}
         </div>
       )}
     </div>

@@ -38,3 +38,22 @@
   height: 100vh;
   margin: 0;
 }
+
+.loaderMyName, .loaderMyYear {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.loaderMyYear {
+  text-align: center;
+}
+
+.loaderNameDiv {
+  position: relative;
+  top: 60px;
+  left: 100px;
+  /* background-color: red; */
+  width: 20%;
+}

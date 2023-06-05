@@ -19,7 +19,7 @@ const Header = () => {
       <header className="header">
         {/* eslint-disable react/no-unescaped-entities */}
         <p className="rest">רייצ'ל</p>
-        <nav className="nav">
+        <nav className="nav-item">
           {/* eslint-disable jsx-a11y/click-events-have-key-events */}
           {/* eslint-disable jsx-a11y/no-static-element-interactions */}
           <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={handleClick}>
