@@ -22,12 +22,10 @@
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
- 
+
 .visible {
   opacity: 1;
 }
-
-
 
 .about-me.visible {
   opacity: 1;

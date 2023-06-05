@@ -1,20 +1,22 @@
 .portfolio-footer {
   display: flex;
-  flex-direction: column;
-  background-color: black;
-  height: 250px;
+  justify-content: space-around;
   color: white;
   text-align: center;
   font-weight: bold;
+  margin-right: 5%;
+  margin-left: 10%;
 }
 
 .reserved-footer {
-  margin: auto;
+  /* margin: auto; */
+  width: 70%;
+  height: 60px;
   font-size: 18px;
   position: relative;
   color: rgb(233, 217, 217);
-  /* background-color: red; */
-  bottom: -65%;
+  margin: auto;
+  margin-top: 300px;
 }
 
 .footer-socials {

@@ -6,7 +6,7 @@ import React from 'react';
 
 const Socials = () => (
   <div className="socials-div">
-    <div>
+    <div className="social-and-pole">
       <div className="all-socials">
         <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="blank"><i aria-label="Input Label" className="fa-brands fa-twitter" /></a>
         <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="blank"><i aria-label="Input Label" className="fa-brands fa-linkedin-in" /></a>
@@ -14,7 +14,12 @@ const Socials = () => (
         <a href="https://medium.com/@coderacheal" target="blank"><i aria-label="Input Label" className="fa-brands fa-medium" /></a>
         <a href="https://wellfound.com/u/racheal-appiah-kubi" target="blank"><i aria-label="Input Label" className="fa-brands fa-angellist" /></a>
       </div>
-      <div className="green-bar" />
+      <div className="poles">
+        <span className="green-pole one" />
+        <span className="green-pole two" />
+        <span className="green-pole three" />
+        <span className="green-pole four" />
+      </div>
     </div>
   </div>
 );

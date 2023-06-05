@@ -39,7 +39,8 @@
   margin: 0;
 }
 
-.loaderMyName, .loaderMyYear {
+.loaderMyName,
+.loaderMyYear {
   color: white;
   font-size: 25px;
   font-weight: bold;
@@ -54,6 +55,7 @@
   position: relative;
   top: 60px;
   left: 100px;
+
   /* background-color: red; */
   width: 20%;
 }
