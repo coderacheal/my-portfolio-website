@@ -9,7 +9,8 @@
 @import 'mouse_halo.css';
 @import 'hero.css';
 @import 'hello-hero.css';
-@import 'project-details.css';
+
+/* @import 'project-details.css'; */
 
 body {
   margin: 0;

@@ -22,6 +22,8 @@
 .rest {
   font-size: 30px;
   text-align: end;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
 }
 
 .active {
@@ -105,8 +107,6 @@ a {
   background-color: black;
   align-items: start;
   align-content: start;
-
-  /* position: fixed; */
   left: -100%;
   top: 0;
   gap: 0;

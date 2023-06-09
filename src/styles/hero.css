@@ -3,7 +3,8 @@
 .intro-section {
   display: grid;
   grid-template-columns: 25% 60% 10%;
-  background-color: black;
+
+  /* background-color: black; */
   height: 700px;
 }
 

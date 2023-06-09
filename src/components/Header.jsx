@@ -5,6 +5,7 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [counter, setCounter] = useState(1);
   const [slideIn, setSlideIn] = useState(false);
+  const [hebrewName, setHebrewName] = useState("רייצ'ל");
 
   const handleClick = () => {
     setIsActive(!isActive);
@@ -15,11 +16,25 @@ const Header = () => {
     setCounter(index + 1);
   };
 
+  const handleMouseEnter = () => {
+    setHebrewName('Racheal');
+  };
+
+  const handleMouseLeave = () => {
+    setHebrewName("רייצ'ל");
+  };
+
   return (
     <div>
       <header className="header">
         {/* eslint-disable react/no-unescaped-entities */}
-        <p className="rest">רייצ'ל</p>
+        <p
+          className="rest"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          {hebrewName}
+        </p>
         <nav className="nav-item">
           {/* eslint-disable jsx-a11y/click-events-have-key-events */}
           {/* eslint-disable jsx-a11y/no-static-element-interactions */}
