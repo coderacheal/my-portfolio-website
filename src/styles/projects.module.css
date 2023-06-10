@@ -80,6 +80,10 @@
   border-bottom: 1px solid white;
 }
 
+.projectListView span {
+  padding-right: 70px;
+}
+
 .projectListView p:hover {
   opacity: 0.7;
 }

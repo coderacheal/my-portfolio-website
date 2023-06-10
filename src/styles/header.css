@@ -156,11 +156,13 @@ a {
 }
 
 .menuTopDescription {
-  font-size: 17px;
-  width: 50%;
+  font-size: 12px;
+  width: 40%;
   margin: auto;
-  color: rgb(233, 217, 217);
-  opacity: 0.4;
+  color: white;
+  /* font-family: Montserrat, san-serif; */
+  /* color: rgb(233, 217, 217); */
+  /* opacity: 0.4; */
   margin-top: 100px;
   margin-right: 80px;
 }

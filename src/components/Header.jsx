@@ -57,7 +57,7 @@ const Header = () => {
             <li className="nav-links"><Link to="/contact" onMouseEnter={() => handleHover(3)}>Contact </Link></li>
           </ul>
           <div>
-            <p className="menuTopDescription">Full Stack Developer with a love for ML & AI, Block Chain, Interactive Websites with React, and Cloud Computing. Learning to play the violin.</p>
+            <p className="menuTopDescription">FULL STACK DEVELOPER WITH A LOVE FOR ML& AI, BLOCKCHAIN AND BUILDING INTERACTIVE WEBSITES WITH REACT. LEARNING TO PLAY THE VIOLIN </p>
             <p className="menuFooterCounter">
               0
               <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>{counter}</span>

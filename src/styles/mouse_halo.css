@@ -2,29 +2,32 @@
   position: fixed;
   top: 0;
   left: 0;
+  cursor: none;
 }
 
 .cursor {
   position: absolute;
   z-index: 15;
-  width: 70px;
-  height: 70px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  background-color: #898989;
   border: 1px solid #c5c5c5;
+  color: white;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  opacity: 0.3;
   transition: transform 0.1s ease-out;
 }
 
-.cursor::before {
-  content: '';
+.cursor p {
+  margin-top: 40%;
+  margin-left: 20%;
+  color: white
+}
+
+.cursor::after {
   position: absolute;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   opacity: 0.4;
-  top: -10px;
-  left: -10px;
 }

@@ -26,7 +26,7 @@ const App = () => {
             <div>
               {isLoading ? (<div className="loader"><Loader duration={1000} /></div>
               ) : (
-                <div className="content"><HomePage /></div>)}
+                <div className="content"><Loader /></div>)}
             </div>
       )}
         />
