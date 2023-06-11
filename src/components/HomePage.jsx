@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './Header';
-import Projects from './Projects';
 import Footer from './Footer';
 import HelloHero from './HelloHero';
+import Cards from './Cards';
 
 const HomePage = () => (
   <div className="welcome-page">
@@ -10,7 +10,7 @@ const HomePage = () => (
       <Header />
       <HelloHero />
       <section>
-        <Projects />
+        <Cards />
       </section>
       <Footer />
     </main>

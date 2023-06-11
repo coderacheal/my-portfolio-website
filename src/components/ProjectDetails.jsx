@@ -71,13 +71,13 @@ const ProjectDetails = () => {
               {' '}
               <span>03</span>
               {' '}
-              SCHOOL X
+              WATERFALL
             </p>
             <p>
               {' '}
               <span>04</span>
               {' '}
-              WATERFALL
+              SCHOOL X
             </p>
             <p>
               {' '}
