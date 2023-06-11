@@ -1,33 +1,31 @@
 .portfolio-footer {
+  width: 85%;
   display: flex;
-  justify-content: space-around;
-  color: white;
+  justify-content: space-between;
+  color: black;
   text-align: center;
-  font-weight: bold;
-  margin-right: 5%;
-  margin-left: 10%;
+  /* font-weight: bold; */
+  padding: 50px 0;
+  margin: auto;
+  /* margin-right: 5%; */
+  /* margin-left: 10%; */
+  /* background-color: red; */
 }
 
-.reserved-footer {
-  /* margin: auto; */
-  width: 70%;
-  height: 60px;
+.footer-component {
+  /* background-color: #e1dfdd; */
+  background-color: rgb(254, 244, 230);
+  padding-top: 50px;
+}
+
+.footer-text {
+  color: black;
   font-size: 18px;
-  position: relative;
-  color: rgb(233, 217, 217);
-  margin: auto;
-  margin-top: 300px;
 }
 
-.footer-socials {
+.social-text-div {
   display: flex;
-  flex-direction: row;
-  width: 30%;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-}
-
-.footer-socials a {
-  margin-right: 30px;
+  gap: 20px;
+  vertical-align: center;
+  margin-top: 15px;
 }

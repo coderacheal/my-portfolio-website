@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import seemore from '../styles/see-more-mouse.module.css'
+import seemore from '../styles/see-more-mouse.module.css';
 
 const SeeMoreMouse = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -24,4 +24,4 @@ const SeeMoreMouse = () => {
     </div>
   );
 };
-export default SeeMoreMouse
+export default SeeMoreMouse;
