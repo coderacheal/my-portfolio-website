@@ -18,7 +18,7 @@
   border: 0;
 }
 
-.project-image-div:hover  {
+.project-image-div:hover {
   background-size: 110%;
   transition: 2s;
 }
@@ -33,7 +33,6 @@
   text-align: center;
   border: 0;
   cursor: none;
-
 }
 
 .underline-reveal {

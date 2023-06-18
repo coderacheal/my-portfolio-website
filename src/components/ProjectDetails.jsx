@@ -101,10 +101,14 @@ const ProjectDetails = () => {
       </div>
       <div className={projects.projectsFooter}>
         <p>PROFESSIONAL PORTFOLIO</p>
+        {/* eslint-disable jsx-a11y/click-events-have-key-events */}
+        {/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */}
         <p
           className={projects.listView}
           onClick={() => { handleClick(); handleTextChange(); }}
         >
+          {' '}
+
           {displayText}
         </p>
         <p>&copy;2023</p>

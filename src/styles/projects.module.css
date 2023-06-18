@@ -31,6 +31,10 @@
   vertical-align: middle;
 }
 
+.projectInfo p {
+  width: 80%;
+}
+
 .projectsFooter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -96,12 +100,4 @@
 
 .projectPlusInfo {
   display: flex;
-  
-
 }
-
-.projectInfo p {
-  width: 80%;
-}
-
-

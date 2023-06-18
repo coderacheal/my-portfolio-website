@@ -40,19 +40,40 @@ const AboutMe = () => {
           <h1 className="about-me" ref={element1Ref} style={{ opacity: 0, transform: 'translateY(-50px)' }}>Hi there!</h1>
         </div>
         <div ref={ref2} className="my-skills-div">
-          <p className="my-skills" ref={element2Ref} style={{ opacity: 0, transform: 'translateY(-0px)' }}
+          <p
+            className="my-skills"
+            ref={element2Ref}
+            style={{ opacity: 0, transform: 'translateY(-0px)' }}
           >
-            I'm a full stack developer with a background in data science and machine learning, who fell in love with web development.</p>
+            I&lsquo;m a full stack developer with a background in data science and machine learning,
+            who fell in love with web development.
+          </p>
         </div>
-        <div className='professional-photo-and-text'>
-          <div className='headshot-div'>
-            <img className='headshot' src={headshot}/>
+        <div className="professional-photo-and-text">
+          <div className="headshot-div">
+            <img className="headshot" src={headshot} alt="headshot" />
           </div>
-          <div className='more-about-me-div'>
-            <p className='more-about-me'>
-            MY CREATIVITY LIES IN CREATING SLEEK INTERACTIVE WEBSITES THAT LEVERAGE ARTIFICIAL INTELLIGENCE. I LOVE DATA AS MUCH AS THE CODE. I BUILD ACCESSIBLE AND HELPFUL APPLICATIONS FOR MY COMMUNITY </p>
-            <p className='more-about-me'>LATELY, I'VE BEEN DIVING INTO THE FASCINATING REALM OF BLOCKCHAIN, EXPLORING ITS POTENTIAL APPLICATIONS. MY AIM IS TO MERGE CUTTING-EDGE TECH WITH USER-FRIENDLY EXPERIENCES, ALWAYS SEEKING NEW CHALLENGES AND REFINING MY SKILLS. </p>
-            <p className='more-about-me'><i><u>OH, AND DID I MENTION?</u></i> I'M ALSO LEARNING TO PLAY THE VIOLIN TRYING TO CREATE BEAUTIFUL MELODIES IN MY SPARE TIME. </p>.
+          <div className="more-about-me-div">
+            <p className="more-about-me">
+              MY CREATIVITY LIES IN CREATING SLEEK INTERACTIVE WEBSITES THAT LEVERAGE ARTIFICIAL
+              INTELLIGENCE. I LOVE DATA AS MUCH AS THE CODE. I BUILD ACCESSIBLE AND HELPFUL
+              APPLICATIONS FOR MY COMMUNITY
+              {' '}
+            </p>
+            <p className="more-about-me">
+              LATELY, I&lsquo;VE BEEN DIVING INTO THE FASCINATING REALM OF BLOCKCHAIN,
+              EXPLORING ITS POTENTIAL APPLICATIONS. MY AIM IS TO MERGE CUTTING-EDGE TECH WITH
+              USER-FRIENDLY EXPERIENCES, ALWAYS SEEKING NEW CHALLENGES AND REFINING MY SKILLS.
+              {' '}
+            </p>
+            <p className="more-about-me">
+              <i><u>OH, AND DID I MENTION?</u></i>
+              {' '}
+              I&lsquo;M ALSO LEARNING TO PLAY THE VIOLIN TRYING TO CREATE BEAUTIFUL MELODIES
+              IN MY SPARE TIME.
+              {' '}
+            </p>
+            .
           </div>
         </div>
       </section>

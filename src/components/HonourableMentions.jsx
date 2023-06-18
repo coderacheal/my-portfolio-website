@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const HonourableMentions = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const HonourableMentions = () => (
+  <div />
+);
 
 export default HonourableMentions;

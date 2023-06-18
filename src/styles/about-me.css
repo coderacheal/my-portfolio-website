@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap');
 
 .about-me-section {
   position: relative;
@@ -22,7 +24,9 @@
   margin-left: 15%;
   font-family: 'Montserrat', sans-serif;
   color: black;
+  font-weight: 200;
 }
+
 .professional-photo-and-text {
   display: flex;
   width: 90%;
@@ -43,14 +47,13 @@
 
 .more-about-me {
   width: 75%;
-  font-size: 24px;
+  font-size: 28px;
   align-self: flex-end;
   line-height: 40px;
-  margin-bottom: 30px;
-  font-weight: bold;
   margin: auto;
   margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 

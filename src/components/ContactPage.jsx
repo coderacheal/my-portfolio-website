@@ -1,7 +1,7 @@
 import React from 'react';
 // import Header from './Header';
 
-const Contact = () => (
+const ContactPage = () => (
   <section className="form-page">
     <div className="contact-intro">
       <h1>Say Hello</h1>
@@ -29,3 +29,5 @@ const Contact = () => (
     <div className="mainPage">Back to Main Page</div>
   </section>
 );
+
+export default ContactPage;
