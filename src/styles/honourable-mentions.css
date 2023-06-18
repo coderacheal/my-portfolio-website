@@ -14,7 +14,7 @@
 .honourable-div {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 75%;
   margin: auto;
   display: flex;
   color: black;
@@ -26,8 +26,8 @@
   font-family: 'Montserrat', sans-serif;
   padding: 20px;
   background-color: rgb(255, 246, 246);
-  font-size: 35px;
-  width: 40%;
+  font-size: 40px;
+  width: 35%;
   text-align: center;
   font-weight: 300;
 }

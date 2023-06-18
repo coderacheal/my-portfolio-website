@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import projects from '../../styles/projects.module.css';
-import Header from './Header';
+import Header from '../Home-page/Header';
 import project2 from '../../assets/brooke-lark-V4MBq8kue3U-unsplash.jpg';
 
-const ProjectDetails = () => {
+const ProjectsPage = () => {
   const [scrollLeft, setScrollLeft] = useState(0);
   const [divVisibility, setVisibility] = useState(true);
   const [displayText, setDisplayText] = useState('LIST VIEW');
@@ -117,4 +117,4 @@ const ProjectDetails = () => {
   );
 };
 
-export default ProjectDetails;
+export default ProjectsPage;

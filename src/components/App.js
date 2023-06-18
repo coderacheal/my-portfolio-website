@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './Home-page/HomePage';
 import Loader from './Home-page/Loader';
-import ProjectDetails from './Home-page/ProjectDetails';
-import Contact from './Home-page/Contact';
-import AboutMe from './Home-page/AboutMe';
+import AboutPage from './main-nav-pages/AboutPage';
+import ContactPage from './main-nav-pages/ContactPage';
+import ProjectsPage from './main-nav-pages/ProjectsPage';
+
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,9 +30,9 @@ const App = () => {
             </div>
       )}
         />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/projects" element={<ProjectDetails />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   );
