@@ -58,7 +58,6 @@
   font-weight: 300;
 }
 
-
 /* bubble nightmare */
 
 .pubbles-div {
@@ -184,10 +183,6 @@
   font-weight: bold;
   color: rgb(59, 59, 59);
   opacity: 0.8;
-
-  /* font-family: 'Roboto'; */
-
-  /* font-size: 50px; */
   font-style: italic;
   text-align: right;
   font-family: 'Euphoria Script', cursive;
@@ -274,8 +269,4 @@
   100% {
     transform: translate(200px, 200px);
   }
-
-  /* 100% {
-      transform: translate(0, 0);
-    } */
 }
