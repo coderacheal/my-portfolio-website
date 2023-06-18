@@ -47,7 +47,7 @@ const ProjectImageAndInfo = () => {
 
     return (
       <div>
-        <button className='backity' onClick={handleBack}>Back</button>
+        <button className="backity" type="button" onClick={handleBack}>Back</button>
         {selectedComponent}
       </div>
     );
@@ -56,8 +56,15 @@ const ProjectImageAndInfo = () => {
   return (
     <div>
       <div className={projects.allProjectsImages} onWheel={handleScroll}>
+
+        {/* eslint-disable jsx-a11y/click-events-have-key-events */}
+        {/* eslint-disable jsx-a11y/no-static-element-interactions */}
         {projectData.map((project) => (
-          <div className={projects.projectPlusInfo} key={project.id} onClick={() => handleClick(project)}>
+          <div
+            className={projects.projectPlusInfo}
+            key={project.id}
+            onClick={() => handleClick(project)}
+          >
             <div>
               <img src={project.image} alt="" className={projects.projectImage} />
             </div>

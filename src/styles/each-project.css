@@ -1,10 +1,10 @@
 .each-project-page {
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
 .backity {
-    position: absolute;
-    top: 500px;
+  position: absolute;
+  top: 500px;
 }

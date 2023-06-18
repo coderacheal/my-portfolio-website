@@ -12,7 +12,8 @@
 
 //     return (
 //       <div ref={drag}>
-//         <img className="headshot" src={headshot} alt="headshot" style={{ opacity: isDragging ? 0.5 : 1 }} />
+//         <img className="headshot" src={headshot} alt="headshot"
+// style={{ opacity: isDragging ? 0.5 : 1 }} />
 //       </div>
 //     );
 //   };

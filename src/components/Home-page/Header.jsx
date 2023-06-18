@@ -53,7 +53,7 @@ const Header = () => {
           <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
             <li className="nav-links"><Link to="/" onMouseEnter={() => handleHover(0)}>Home</Link></li>
             <li className="nav-links"><Link to="/about" onMouseEnter={() => handleHover(1)}>About me </Link></li>
-            <li className="nav-links" onClick={handleClick}><Link to="/projects" onMouseEnter={() => handleHover(2)}>Projects</Link></li>
+            <li className="nav-links"><Link to="/projects" onMouseEnter={() => handleHover(2)}>Projects</Link></li>
             <li className="nav-links"><Link to="/contact" onMouseEnter={() => handleHover(3)}>Contact </Link></li>
           </ul>
           <div>
