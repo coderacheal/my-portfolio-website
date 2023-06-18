@@ -4,17 +4,13 @@
   justify-content: space-between;
   color: black;
   text-align: center;
-  /* font-weight: bold; */
   padding: 50px 0;
   margin: auto;
-  /* margin-right: 5%; */
-  /* margin-left: 10%; */
-  /* background-color: red; */
 }
 
 .footer-component {
-  /* background-color: #e1dfdd; */
-  background-color: rgb(254, 244, 230);
+  /* background-color: rgb(254, 244, 230); */
+  background-color: #f0f0f0;
   padding-top: 50px;
 }
 

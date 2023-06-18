@@ -55,7 +55,7 @@ const ProjectCards = () => {
           >
             EVEREST
           </button>
-          <p className="project-brief">A CHAT APP EMBEDDED WITH A DEEP LEARNING MODEL</p>
+          <p className="project-brief">A FINANCE APP THAT ENABLES YOU TO TRACK YOUR EXPENSES BASED ON THE TYPE OF EXPENSES YOU DEFINE. COMPLETE WITH AUTHENTICATION, IT HELPS YOU STAY ON TOP OF THE DOLLAR</p>
         </div>
       </div>
       <div className="each-project">
@@ -68,7 +68,7 @@ const ProjectCards = () => {
           >
             WATER FALL
           </button>
-          <p className="project-brief">A CHAT APP EMBEDDED WITH A DEEP LEARNING MODEL</p>
+          <p className="project-brief">I CERTIFED AS A SCRUM MASTER TO BECOME A BETTER TEAM PLAYER AND DECIDED TO BUILD A PRODUCT MANAGEMENT TOOL FOR MY COMPANY WITH PURE JAVASCRIPT</p>
         </div>
         <button
           aria-label="third project"

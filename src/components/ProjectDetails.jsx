@@ -37,8 +37,19 @@ const ProjectDetails = () => {
       <div>
         { divVisibility ? (
           <div className={projects.allProjectsImages} onWheel={handleScroll}>
-            <div>
-              <img src={project2} alt="" className={projects.projectImage} />
+            <div className={projects.projectPlusInfo}>
+              <div>
+                <img src={project2} alt="" className={projects.projectImage} />
+              </div>
+              <span />
+              <div className={projects.projectInfo}>
+                <p>01</p>
+                <p>Its Sunday</p>
+                <p>A CHAT APP EMBEDDED WITH A DEEP LEARNING MODEL</p>
+                <p>
+                  TO PREDICT THE SENTIMENT OF YOUR TEXT BEFORE YOU SHOOT YOURSELF IN THE FOOT
+                </p>
+              </div>
             </div>
             <div>
               <img src={project2} alt="" className={projects.projectImage} />

@@ -87,3 +87,21 @@
 .projectListView p:hover {
   opacity: 0.7;
 }
+
+.projectInfo {
+  color: black;
+  width: 250px;
+  background-color: white;
+}
+
+.projectPlusInfo {
+  display: flex;
+  
+
+}
+
+.projectInfo p {
+  width: 80%;
+}
+
+
