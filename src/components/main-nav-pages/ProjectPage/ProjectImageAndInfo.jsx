@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import projects from '../../../styles/projects.module.css';
 import projectData from '../Data/projectData';
+import Everest from '../../Indivual-Projects/Everest';
+import Foretell from '../../Indivual-Projects/Foretell';
+import SchoolX from '../../Indivual-Projects/SchoolX';
+import Sunday from '../../Indivual-Projects/Sunday';
+import Waterfall from '../../Indivual-Projects/Waterfall';
 
 const ProjectImageAndInfo = () => {
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const handleScroll = (e) => {
     if (e.deltaY !== 0 && e.deltaX === 0) {
@@ -14,11 +20,44 @@ const ProjectImageAndInfo = () => {
       container.scrollLeft = scrollLeft + e.deltaY;
     }
   };
+
+  const handleClick = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleBack = () => {
+    setSelectedProject(null);
+  };
+
+  if (selectedProject) {
+    // Render the selected project's page component
+    let selectedComponent = null;
+
+    if (selectedProject.id === 1) {
+      selectedComponent = <Sunday />;
+    } else if (selectedProject.id === 2) {
+      selectedComponent = <Everest />;
+    } else if (selectedProject.id === 3) {
+      selectedComponent = <Waterfall />;
+    } else if (selectedProject.id === 4) {
+      selectedComponent = <SchoolX />;
+    } else if (selectedProject.id === 5) {
+      selectedComponent = <Foretell />;
+    }
+
+    return (
+      <div>
+        <button className='backity' onClick={handleBack}>Back</button>
+        {selectedComponent}
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className={projects.allProjectsImages} onWheel={handleScroll}>
         {projectData.map((project) => (
-          <div className={projects.projectPlusInfo} key={project.id}>
+          <div className={projects.projectPlusInfo} key={project.id} onClick={() => handleClick(project)}>
             <div>
               <img src={project.image} alt="" className={projects.projectImage} />
             </div>

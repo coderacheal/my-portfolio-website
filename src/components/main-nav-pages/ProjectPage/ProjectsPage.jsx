@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import projects from '../../../styles/projects.module.css';
 import Header from '../../Home-page/Header';
-
 import ProjectImageAndInfo from './ProjectImageAndInfo';
 import ProjectList from './ProjectList';
 
@@ -26,10 +25,7 @@ const ProjectsPage = () => {
     <div className={projects.ProjectDiv}>
       <Header />
       <div>
-        {divVisibility ? (<ProjectImageAndInfo />
-        ) : (
-          <ProjectList />
-        )}
+        {divVisibility ? (<ProjectImageAndInfo />) : (<ProjectList />)}
       </div>
       <div className={projects.projectsFooter}>
         <p>PROFESSIONAL PORTFOLIO</p>
