@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import gsap from 'gsap';
-import headshot from '../assets/headshot.jpg';
+import headshot from '../../assets/headshot.jpg';
 
 const AboutMe = () => {
   const element1Ref = useRef(null);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import projects from '../styles/projects.module.css';
+import projects from '../../styles/projects.module.css';
 import Header from './Header';
-import project2 from '../assets/brooke-lark-V4MBq8kue3U-unsplash.jpg';
+import project2 from '../../assets/brooke-lark-V4MBq8kue3U-unsplash.jpg';
 
 const ProjectDetails = () => {
   const [scrollLeft, setScrollLeft] = useState(0);

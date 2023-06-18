@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import MouseHalo from '../MouseHalo';
-import styles from '../styles/styles.module.css';
+import MouseHalo from '../Utils/MouseHalo';
+import styles from '../../styles/styles.module.css';
 
 const Loader = ({ duration = 1000 }) => {
   const [progress, setProgress] = useState(0);

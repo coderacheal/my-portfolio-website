@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage';
-import Loader from './Loader';
-import ProjectDetails from './ProjectDetails';
-import Contact from './Contact';
-import AboutMe from './AboutMe';
+import HomePage from './Home-page/HomePage';
+import Loader from './Home-page/Loader';
+import ProjectDetails from './Home-page/ProjectDetails';
+import Contact from './Home-page/Contact';
+import AboutMe from './Home-page/AboutMe';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

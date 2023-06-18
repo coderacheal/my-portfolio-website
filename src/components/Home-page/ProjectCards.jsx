@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SeeMoreMouse from '../SeeMoreMouse';
+import SeeMoreMouse from '../Utils/SeeMoreMouse';
 
 const ProjectCards = () => {
   const [showSeeMoreMouse, setShowSeeMoreMouse] = useState(false);
