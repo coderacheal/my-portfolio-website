@@ -1,12 +1,10 @@
-import React from 'react'
-import Header from '../Home-page/Header'
+import React from 'react';
+import Header from '../Home-page/Header';
 
-const ContactPage = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  )
-}
+const ContactPage = () => (
+  <div>
+    <Header />
+  </div>
+);
 
-export default ContactPage
+export default ContactPage;

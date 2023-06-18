@@ -95,10 +95,62 @@
 
 .projectInfo {
   color: black;
-  width: 250px;
-  background-color: white;
+  width: 20vw;
+  height: 60vh;
+  margin: auto;
+  background-color: rgb(252, 252, 252);
+  border-radius: 4px;
 }
 
 .projectPlusInfo {
   display: flex;
+}
+
+.connectingString {
+  display: block;
+  height: 0.3px;
+  background-color: greenyellow;
+  width: 450px;
+  margin-top: 40vh;
+  opacity: 0.8;
+
+}
+
+.eachProjectDescription {
+  white-space: normal;
+  margin: auto;
+}
+
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.techStackDiv {
+  width: 100%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+} 
+
+.techStackDiv div p{
+  margin-bottom: 10px;
+}
+
+.techStack {
+  /* width: 80%; */
+  margin: auto;
+  padding: 8px 4px;
+  border: 1px solid rgb(206, 252, 214);
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgb(227, 255, 232);
+  font-size: 15px;
+  margin-right: 8px;
 }

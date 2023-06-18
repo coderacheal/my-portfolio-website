@@ -4,8 +4,7 @@ import HomePage from './Home-page/HomePage';
 import Loader from './Home-page/Loader';
 import AboutPage from './main-nav-pages/AboutPage';
 import ContactPage from './main-nav-pages/ContactPage';
-import ProjectsPage from './main-nav-pages/ProjectsPage';
-
+import ProjectsPage from './main-nav-pages/ProjectPage/ProjectsPage';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
