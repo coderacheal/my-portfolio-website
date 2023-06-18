@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import MouseHalo from './MouseHalo';
+import MouseHalo from '../MouseHalo';
 import styles from '../styles/styles.module.css';
 
 const Loader = ({ duration = 1000 }) => {

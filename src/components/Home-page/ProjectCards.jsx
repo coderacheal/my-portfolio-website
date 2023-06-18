@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SeeMoreMouse from './SeeMoreMouse';
+import SeeMoreMouse from '../SeeMoreMouse';
 
 const ProjectCards = () => {
   const [showSeeMoreMouse, setShowSeeMoreMouse] = useState(false);
@@ -14,7 +14,10 @@ const ProjectCards = () => {
 
   return (
     <div>
-      <p className='ribbon-case-study'>CASE STUDIE<u>S</u></p>
+      <p className="ribbon-case-study">
+        CASE STUDIE
+        <u>S</u>
+      </p>
       <div className="each-project">
         <div className="project-details">
           <button

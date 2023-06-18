@@ -6,7 +6,7 @@
   text-decoration: underline;
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300
+  font-weight: 300;
 }
 
 .each-project {
@@ -87,7 +87,7 @@
   cursor: none;
   border: 0;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300
+  font-weight: 300;
 }
 
 .legacy-projects::after {
