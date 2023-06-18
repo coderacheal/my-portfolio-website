@@ -14,6 +14,7 @@ const ProjectCards = () => {
 
   return (
     <div>
+      <p className='ribbon-case-study'>CASE STUDIE<u>S</u></p>
       <div className="each-project">
         <div className="project-details">
           <button
@@ -79,14 +80,14 @@ const ProjectCards = () => {
         />
       </div>
       <div className="">
-        <p
+        <div
           type="button"
           className="legacy-projects"
           onMouseEnter={handleSeeMoreMouseEnter}
           onMouseLeave={handleSeeMoreMouseLeave}
         >
           SEE LEGACY PROJECTS
-        </p>
+        </div>
       </div>
       {showSeeMoreMouse && <SeeMoreMouse />}
     </div>

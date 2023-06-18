@@ -1,9 +1,20 @@
+.ribbon-case-study {
+  text-align: center;
+  font-size: 42px;
+  color: gray;
+  margin-top: 80px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300
+}
+
 .each-project {
   width: 80%;
   display: grid;
   grid-template-columns: 50% 50%;
   margin: auto;
-  margin-top: 120px;
+  margin-bottom: 120px;
   position: relative;
 }
 
@@ -64,7 +75,7 @@
 }
 
 .legacy-projects {
-  width: 45%;
+  width: 50%;
   margin: auto;
   margin-top: 120px;
   background-color: white;
@@ -75,6 +86,8 @@
   position: relative;
   cursor: none;
   border: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300
 }
 
 .legacy-projects::after {
@@ -98,7 +111,7 @@
   left: 0;
   bottom: -3px;
   width: 0;
-  height: 4px;
+  height: 10px;
   background-color: black;
   transition: width 0.5s ease;
 }

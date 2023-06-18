@@ -14,12 +14,12 @@ const Socials = () => (
         <a href="https://medium.com/@coderacheal" target="blank"><i aria-label="Input Label" className="fa-brands fa-medium" /></a>
         <a href="https://wellfound.com/u/racheal-appiah-kubi" target="blank"><i aria-label="Input Label" className="fa-brands fa-angellist" /></a>
       </div>
-      <div className="poles">
+      {/* <div className="poles">
         <span className="green-pole one" />
         <span className="green-pole two" />
         <span className="green-pole three" />
         <span className="green-pole four" />
-      </div>
+      </div> */}
     </div>
   </div>
 );

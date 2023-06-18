@@ -6,6 +6,7 @@
   height: 100vh;
   display: grid;
   background-color: black;
+  /* display: flex; */
 }
 
 .hello {

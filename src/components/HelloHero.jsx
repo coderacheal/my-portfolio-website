@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Socials from './Socials';
 // eslint-disable react/no-unused-vars
 
 const HelloHero = () => {
@@ -36,6 +37,7 @@ const HelloHero = () => {
           )}
         </div>
       </div>
+      <Socials />
     </section>
   );
 };
