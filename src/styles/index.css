@@ -9,7 +9,9 @@
 @import 'mouse_halo.css';
 @import 'hero.css';
 @import 'hello-hero.css';
-@import 'project-details.css';
+@import 'project-cards.css';
+@import 'honourable-mentions.css';
+@import 'each-project.css';
 
 body {
   margin: 0;

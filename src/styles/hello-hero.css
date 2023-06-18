@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 .hero-intro {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   height: 100vh;
   display: grid;
   background-color: black;
+
+  /* display: flex; */
 }
 
 .hello {
   font-size: 300px;
-  font-weight: 100;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
   margin: auto;
   align-self: center;
   color: rgb(233, 217, 217);
@@ -41,4 +42,5 @@
 .description {
   font-size: 50px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }

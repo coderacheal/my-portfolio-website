@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contact = () => (
+const ContactPage = () => (
   <section className="form-page">
     <div className="contact-intro">
       <h1>Say Hello</h1>
@@ -29,4 +29,4 @@ const Contact = () => (
   </section>
 );
 
-export default Contact;
+export default ContactPage;

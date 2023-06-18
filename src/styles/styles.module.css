@@ -2,6 +2,7 @@
   height: 100vh;
   margin: 0;
   background: black;
+  cursor: none;
 }
 
 .loadingPercentage {

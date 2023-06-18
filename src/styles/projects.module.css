@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.ProjectDiv {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0f0f0f;
+  overflow: hidden;
+}
+
+.allProjectsImages {
+  display: flex;
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  padding-top: 7%;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.allProjectsImages img {
+  width: 390px;
+  height: 550px;
+  margin-right: 10px;
+}
+
+.allProjectsImages img:nth-child(even) {
+  width: 350px;
+  height: 450px;
+  vertical-align: middle;
+}
+
+.projectInfo p {
+  width: 80%;
+}
+
+.projectsFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  margin: auto;
+}
+
+.projectsFooter p {
+  color: white;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
+
+.listView {
+  cursor: pointer;
+  text-decoration: underline;
+  line-height: 10px;
+}
+
+.projectListView {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+  z-index: 5;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  overflow-y: auto;
+  font-family: Montserrat, sans-serif;
+  line-height: 200px;
+  margin: auto;
+}
+
+.projectListView p {
+  color: white;
+  font-size: 140px;
+  cursor: pointer;
+  transition: 1s;
+  border: 0;
+  border-bottom: 1px solid white;
+}
+
+.projectListView span {
+  padding-right: 70px;
+}
+
+.techStackDiv div p {
+  margin-bottom: 10px;
+}
+
+.projectListView p:hover {
+  opacity: 0.7;
+}
+
+.projectInfo {
+  color: black;
+  width: 20vw;
+  height: 60vh;
+  margin: auto;
+  background-color: rgb(252, 252, 252);
+  border-radius: 4px;
+}
+
+.projectPlusInfo {
+  display: flex;
+}
+
+.connectingString {
+  display: block;
+  height: 0.3px;
+  background-color: greenyellow;
+  width: 450px;
+  margin-top: 40vh;
+  opacity: 0.8;
+}
+
+.eachProjectDescription {
+  white-space: normal;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.techStackDiv {
+  width: 100%;
+
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.techStack {
+  margin: auto;
+  padding: 8px 4px;
+  border: 1px solid rgb(206, 252, 214);
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgb(227, 255, 232);
+  font-size: 15px;
+  margin-right: 8px;
+}

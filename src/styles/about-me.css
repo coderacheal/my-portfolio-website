@@ -1,26 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,400&display=swap');
+
 .about-me-section {
   position: relative;
+  margin: auto;
+
+  /* background-color: #f0f0f0; */
 }
 
 .about-me {
-  font-size: 200px;
-  color: rgb(205, 205, 205);
+  font-size: 240px;
+  color: rgb(244, 244, 244);
   margin: 0;
-
-  /* margin-left: 100px; */
-  margin-top: 100px;
-  opacity: 0.4;
+  margin-top: 70px;
+  opacity: 0.1;
 }
 
 .my-skills-div {
   position: absolute;
   left: 200px;
-  top: 120px;
+  top: 140px;
   width: 70%;
-  font-size: 32px;
+  font-size: 34px;
   text-align: right;
   margin-left: 15%;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: 200;
 }
+
+.professional-photo-and-text {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.headshot {
+  height: 280px;
+  width: 550px;
+  margin-bottom: 30px;
+}
+
+.more-about-me-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-about-me {
+  width: 75%;
+  font-size: 28px;
+  align-self: flex-end;
+  line-height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+/* bubble nightmare */
 
 .pubbles-div {
   margin: auto;
@@ -145,10 +183,6 @@
   font-weight: bold;
   color: rgb(59, 59, 59);
   opacity: 0.8;
-
-  /* font-family: 'Roboto'; */
-
-  /* font-size: 50px; */
   font-style: italic;
   text-align: right;
   font-family: 'Euphoria Script', cursive;
@@ -235,8 +269,4 @@
   100% {
     transform: translate(200px, 200px);
   }
-
-  /* 100% {
-      transform: translate(0, 0);
-    } */
 }

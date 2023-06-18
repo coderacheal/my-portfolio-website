@@ -1,0 +1,121 @@
+.ribbon-case-study {
+  text-align: center;
+  font-size: 42px;
+  color: gray;
+  margin-top: 80px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.each-project {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.project-image-div {
+  background-image: url('../assets/food.jpg');
+  height: 95vh;
+  width: 40vw;
+  cursor: none;
+  background-size: cover;
+  background-size: 100% 100%;
+  transition: background-size 2s ease;
+  border: 0;
+}
+
+.project-image-div:hover {
+  background-size: 110%;
+  transition: 2s;
+}
+
+.projectTitle {
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  margin-top: 90px;
+  margin-left: 3%;
+  font-size: 120px;
+  text-align: center;
+  border: 0;
+  cursor: none;
+}
+
+.underline-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-reveal::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 4px;
+  background-color: black;
+  transition: width 0.5s ease;
+}
+
+.underline-reveal:hover::after {
+  width: 100%;
+}
+
+.project-brief {
+  font-size: 24px;
+  width: 60%;
+  margin: auto;
+  margin-top: 7%;
+  text-align: left;
+}
+
+.legacy-projects {
+  width: 50%;
+  margin: auto;
+  margin-top: 120px;
+  background-color: white;
+  color: rgb(160, 160, 160);
+  color: black;
+  font-size: 60px;
+  text-align: center;
+  position: relative;
+  cursor: none;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.legacy-projects::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 4px;
+  background-color: rgb(110, 110, 110);
+  transition: width 0.5s ease;
+}
+
+.legacy-projects:hover::after {
+  width: 100%;
+}
+
+.projectTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 10px;
+  background-color: black;
+  transition: width 0.5s ease;
+}
+
+.projectTitle:hover::after {
+  width: 100%;
+}

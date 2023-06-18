@@ -12,16 +12,28 @@
   height: 130px;
   border-radius: 50%;
   border: 1px solid #c5c5c5;
-  color: white;
+  color: rgb(155, 155, 155);
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: transform 0.1s ease-out;
+  background-color: rgb(202, 200, 192);
+}
+
+.cursor:active {
+  width: 80px;
+  height: 80px;
 }
 
 .cursor p {
-  margin-top: 40%;
-  margin-left: 20%;
+  margin-top: 25%;
+  margin-left: 25%;
+  color: rgb(0, 0, 0);
   color: white;
+  font-size: 22px;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  font-weight: bold;
 }
 
 .cursor::after {
