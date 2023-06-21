@@ -51,10 +51,46 @@ const Header = () => {
       <div className={`slidingMenu ${isActive ? 'active' : ''}`}>
         <div className="menu-counter-div">
           <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
-            <li className="nav-links"><Link to="/" onMouseEnter={() => handleHover(0)}>Home</Link></li>
-            <li className="nav-links"><Link to="/about" onMouseEnter={() => handleHover(1)}>About me </Link></li>
-            <li className="nav-links"><Link to="/projects" onMouseEnter={() => handleHover(2)}>Projects</Link></li>
-            <li className="nav-links"><Link to="/contact" onMouseEnter={() => handleHover(3)}>Contact </Link></li>
+            <li className="nav-links">
+              <Link to="/" onMouseEnter={() => handleHover(0)}>
+                <span>H</span>
+                <span>o</span>
+                <span>m</span>
+                <span>e</span>  
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/about" onMouseEnter={() => handleHover(1)}>
+                <span>A</span>
+                <span>b</span>
+                <span>o</span>
+                <span>u</span>
+                <span>t</span>
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/projects" onMouseEnter={() => handleHover(2)}>
+                <span>P</span>
+                <span>r</span>
+                <span>o</span>
+                <span>j</span>
+                <span>e</span>
+                <span>c</span>
+                <span>t</span>
+                <span>s</span>
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/contact" onMouseEnter={() => handleHover(3)}>
+                <span>C</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span> 
+              </Link>
+              </li>
           </ul>
           <div>
             <p className="menuTopDescription">FULL STACK DEVELOPER WITH A LOVE FOR ML& AI, BLOCKCHAIN AND BUILDING INTERACTIVE WEBSITES WITH REACT. LEARNING TO PLAY THE VIOLIN </p>
