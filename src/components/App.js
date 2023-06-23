@@ -5,6 +5,11 @@ import Loader from './Home-page/Loader';
 import AboutPage from './main-nav-pages/AboutPage';
 import ContactPage from './main-nav-pages/ContactPage';
 import ProjectsPage from './main-nav-pages/ProjectPage/ProjectsPage';
+import Sunday from './Indivual-Projects/Sunday';
+import Everest from './Indivual-Projects/Everest';
+import Waterfall from './Indivual-Projects/Waterfall';
+import Foretell from './Indivual-Projects/Foretell';
+import SchoolX from './Indivual-Projects/SchoolX';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +37,11 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/projects/sunday" element={<Sunday />} />
+        <Route path="/projects/waterfall" element={<Waterfall />} />
+        <Route path="/projects/foretell" element={<Foretell />} />
+        <Route path="/projects/schoolx" element={<SchoolX />} />
+        <Route path="/projects/everest" element={<Everest />} />
       </Routes>
     </Router>
   );

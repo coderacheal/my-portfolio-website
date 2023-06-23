@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import projects from '../../../styles/projects.module.css';
-import projectData from '../Data/projectData';
+import projectData from './Data/projectData';
 import Everest from '../../Indivual-Projects/Everest';
 import Foretell from '../../Indivual-Projects/Foretell';
 import SchoolX from '../../Indivual-Projects/SchoolX';

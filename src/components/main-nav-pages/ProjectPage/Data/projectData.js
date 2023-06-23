@@ -1,4 +1,4 @@
-import projectImage from '../../../assets/brooke-lark-V4MBq8kue3U-unsplash.jpg';
+import projectImage from '../../../../assets/brooke-lark-V4MBq8kue3U-unsplash.jpg'
 
 const projectData = [
   {
