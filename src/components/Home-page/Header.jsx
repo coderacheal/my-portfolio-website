@@ -56,7 +56,7 @@ const Header = () => {
                 <span>H</span>
                 <span>o</span>
                 <span>m</span>
-                <span>e</span>  
+                <span>e</span>
               </Link>
             </li>
             <li className="nav-links">
@@ -88,9 +88,9 @@ const Header = () => {
                 <span>t</span>
                 <span>a</span>
                 <span>c</span>
-                <span>t</span> 
+                <span>t</span>
               </Link>
-              </li>
+            </li>
           </ul>
           <div>
             <p className="menuTopDescription">FULL STACK DEVELOPER WITH A LOVE FOR ML& AI, BLOCKCHAIN AND BUILDING INTERACTIVE WEBSITES WITH REACT. LEARNING TO PLAY THE VIOLIN </p>
