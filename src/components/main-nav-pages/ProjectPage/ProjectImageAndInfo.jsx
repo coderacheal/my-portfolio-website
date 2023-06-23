@@ -7,6 +7,10 @@ import SchoolX from '../../Indivual-Projects/SchoolX';
 import Sunday from '../../Indivual-Projects/Sunday';
 import Waterfall from '../../Indivual-Projects/Waterfall';
 
+
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+
 const ProjectImageAndInfo = () => {
   const [scrollLeft, setScrollLeft] = useState(0);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -57,8 +61,6 @@ const ProjectImageAndInfo = () => {
     <div>
       <div className={projects.allProjectsImages} onWheel={handleScroll}>
 
-        {/* eslint-disable jsx-a11y/click-events-have-key-events */}
-        {/* eslint-disable jsx-a11y/no-static-element-interactions */}
         {projectData.map((project) => (
           <div
             className={projects.projectPlusInfo}
