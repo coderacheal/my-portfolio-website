@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [counter, setCounter] = useState(1);
   const [slideIn, setSlideIn] = useState(false);
   const [hebrewName, setHebrewName] = useState("רייצ'ל");
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsActive(false); // Close the sliding menu on location change
+  }, [location]);
 
   const handleClick = () => {
     setIsActive(!isActive);
