@@ -75,17 +75,36 @@
   margin: auto;
 }
 
+.projectListView::-webkit-scrollbar {
+  display: none;
+}
+
 .projectListView p {
+  /* text-align: center; */
   color: white;
-  font-size: 140px;
+  font-size: 120px;
   cursor: pointer;
   transition: 1s;
   border: 0;
-  border-bottom: 1px solid white;
+  border-top: 1px solid rgb(180, 180, 180);
+  /* border-bottom: 1px solid white; */
+  font-family: Montserrat, sans-serif;
+}
+
+
+.followImage {
+  width: 250px;
+  height: 350px;
+  position: fixed;
+  pointer-events: none;
+  cursor: none;
+  /* transform: translate(-50%, -50%); */
+  transition: transform 0.3s ease-in-out;
 }
 
 .projectListView span {
   padding-right: 70px;
+  padding-left: 20px;
 }
 
 .techStackDiv div p {
@@ -150,3 +169,4 @@
   font-size: 15px;
   margin-right: 8px;
 }
+

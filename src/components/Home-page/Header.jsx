@@ -54,41 +54,41 @@ const Header = () => {
             <li className="nav-links">
               <Link to="/" onMouseEnter={() => handleHover(0)}>
                 <span>H</span>
-                <span>o</span>
-                <span>m</span>
-                <span>e</span>
+                <span>O</span>
+                <span>M</span>
+                <span>E</span>
               </Link>
             </li>
             <li className="nav-links">
               <Link to="/about" onMouseEnter={() => handleHover(1)}>
                 <span>A</span>
-                <span>b</span>
-                <span>o</span>
-                <span>u</span>
-                <span>t</span>
+                <span>B</span>
+                <span>O</span>
+                <span>U</span>
+                <span>T</span>
               </Link>
             </li>
             <li className="nav-links">
               <Link to="/projects" onMouseEnter={() => handleHover(2)}>
                 <span>P</span>
-                <span>r</span>
-                <span>o</span>
-                <span>j</span>
-                <span>e</span>
-                <span>c</span>
-                <span>t</span>
-                <span>s</span>
+                <span>R</span>
+                <span>O</span>
+                <span>J</span>
+                <span>E</span>
+                <span>C</span>
+                <span>T</span>
+                <span>S</span>
               </Link>
             </li>
             <li className="nav-links">
               <Link to="/contact" onMouseEnter={() => handleHover(3)}>
                 <span>C</span>
-                <span>o</span>
-                <span>n</span>
-                <span>t</span>
-                <span>a</span>
-                <span>c</span>
-                <span>t</span>
+                <span>O</span>
+                <span>N</span>
+                <span>T</span>
+                <span>A</span>
+                <span>C</span>
+                <span>T</span>
               </Link>
             </li>
           </ul>
