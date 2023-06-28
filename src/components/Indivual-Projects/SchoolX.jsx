@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../Home-page/Header';
+import { Link } from 'react-router-dom';
+
 
 const SchoolX = () => (
   <div className="each-project-page">
-    <Header />
-    SchoolX
+    <Link to="/projects">Close</Link>
   </div>
 );
 

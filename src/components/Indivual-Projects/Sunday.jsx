@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../Home-page/Header';
+import { Link } from 'react-router-dom';
 
 const Sunday = () => (
   <div className="each-project-page">
-    <Header />
+    <Link to="/projects">Close</Link>
     Sunday
   </div>
 );

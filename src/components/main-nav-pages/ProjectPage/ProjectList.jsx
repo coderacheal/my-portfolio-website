@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import projects from '../../../styles/projects.module.css';
 // import projects from '../../../styles/projects.module.css';
 import catsImage from '../../../assets/cats.jpg';
@@ -69,21 +70,31 @@ const ProjectList = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('01')}>
+      <Link to="/projects/sunday">
+        <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('01')}>
         <span>01</span>IT&apos;S SUNDAY
-      </p>
-      <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('02')}>
+        </p>
+      </Link>
+      <Link to="/projects/everest">
+        <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('02')}>
         <span>02</span>EVEREST
-      </p>
-      <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('03')}>
+        </p>
+      </Link>
+      <Link to="/projects/waterfall">
+        <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('03')}>
         <span>03</span>WATERFALL
-      </p>
-      <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('04')}>
+        </p>
+      </Link>
+      <Link to="/projects/schoolx">
+        <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('04')}>
         <span>04</span>SCHOOL X
-      </p>
-      <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('05')}>
+        </p>
+      </Link>
+      <Link to="/projects/foretell">
+        <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('05')}>
         <span>05</span>FORETELL
-      </p>
+        </p>
+      </Link>
       {renderImage()}
     </div>
   );

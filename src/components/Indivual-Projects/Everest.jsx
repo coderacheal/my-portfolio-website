@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from '../Home-page/Header';
+import { Link } from 'react-router-dom';
 
 const Everest = () => (
   <div className="each-project-page">
-    <Header />
-    everest
-    <button></button>
+    <Link to="/projects">Close</Link>
   </div>
 );
 
