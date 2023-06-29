@@ -36,7 +36,8 @@
 
 .profile-get-in-touch {
   display: flex;
-  padding-top: 120px;
+
+  /* padding-top: 120px; */
   justify-content: space-between;
   width: 95%;
   margin: auto;
@@ -61,7 +62,7 @@
   color: white;
 }
 
-.profile-get-in-touch div{
+.profile-get-in-touch div {
   padding-top: 20vh;
 }
 
@@ -80,7 +81,6 @@
   margin: auto;
   font-size: 24px;
   padding-top: 30vh;
-
 }
 
 .email-div a {
@@ -101,7 +101,6 @@
   margin-top: 10vh;
   text-align: center;
   padding-bottom: 30vh;
-
 }
 
 .social-contact a {
@@ -112,8 +111,6 @@
   text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-
-
 }
 
 .contact-session-page p {
@@ -129,12 +126,12 @@
   font-weight: 300;
   color: white;
   padding: 20px;
-
-} 
+}
 
 .footer-links-social {
   display: flex;
   width: 12%;
+
   /* background-color: red; */
   justify-content: space-between;
 }

@@ -25,7 +25,7 @@ const ContactPage = () => (
       <div>
         <p>Full-Stack Developer</p>
       </div>
-      <div className='footer-links-social'>
+      <div className="footer-links-social">
         <div>
           <a href="https://github.com/coderacheal" target="blank">GITHUB</a>
         </div>

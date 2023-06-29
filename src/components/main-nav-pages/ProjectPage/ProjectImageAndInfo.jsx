@@ -8,7 +8,6 @@ import projectData from './Data/projectData';
 
 const ProjectImageAndInfo = () => {
   const [scrollLeft, setScrollLeft] = useState(0);
-  const [selectedProject, setSelectedProject] = useState(null);
 
   const handleScroll = (e) => {
     if (e.deltaY !== 0 && e.deltaX === 0) {
@@ -30,9 +29,9 @@ const ProjectImageAndInfo = () => {
             key={project.id}
           >
             <Link to={`/projects/${project.url_extension}`}>
-            <div>
-              <img src={project.image} alt="" className={projects.projectImage} />
-            </div>
+              <div>
+                <img src={project.image} alt="" className={projects.projectImage} />
+              </div>
             </Link>
             <span className={projects.connectingString} />
             <Link to={`/projects/${project.url_extension}`}>

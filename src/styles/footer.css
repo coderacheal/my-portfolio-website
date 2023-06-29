@@ -1,3 +1,13 @@
+.footer-component {
+  background-color: #f0f0f0;
+  padding-top: 50px;
+
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}
+
 .portfolio-footer {
   width: 85%;
   display: flex;
@@ -6,11 +16,6 @@
   text-align: center;
   padding: 50px 0;
   margin: auto;
-}
-
-.footer-component {
-  background-color: #f0f0f0;
-  padding-top: 50px;
 }
 
 .footer-text {

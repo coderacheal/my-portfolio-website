@@ -28,7 +28,6 @@ const ProjectList = () => {
   //   const containerOffset = event.currentTarget.getBoundingClientRect().top;
   //   setMousePosition({ x: event.clientX, y: event.clientY - containerOffset });
   // };
-  
 
   const handleMouseOverProject = (projectName) => {
     setHoveredProject(projectName);
@@ -41,8 +40,6 @@ const ProjectList = () => {
     '04': violinImage,
     '05': brookeLarkImage,
   };
-  
-  
 
   const renderImage = () => {
     if (!showImage || !hoveredProject || !projectImages[hoveredProject]) {
@@ -54,15 +51,14 @@ const ProjectList = () => {
         src={projectImages[hoveredProject]}
         alt="Following Mouse"
         className={projects.followImage}
-        style={{ 
-          left: mousePosition.x, 
+        style={{
+          left: mousePosition.x,
           top: mousePosition.y,
           // transform: 'translate(-50%, 0)',
         }}
       />
     );
   };
-
 
   return (
     <div
@@ -72,27 +68,32 @@ const ProjectList = () => {
     >
       <Link to="/projects/sunday">
         <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('01')}>
-        <span>01</span>IT&apos;S SUNDAY
+          <span>01</span>
+          IT&apos;S SUNDAY
         </p>
       </Link>
       <Link to="/projects/everest">
         <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('02')}>
-        <span>02</span>EVEREST
+          <span>02</span>
+          EVEREST
         </p>
       </Link>
       <Link to="/projects/waterfall">
         <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('03')}>
-        <span>03</span>WATERFALL
+          <span>03</span>
+          WATERFALL
         </p>
       </Link>
       <Link to="/projects/schoolx">
         <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('04')}>
-        <span>04</span>SCHOOL X
+          <span>04</span>
+          SCHOOL X
         </p>
       </Link>
       <Link to="/projects/foretell">
         <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('05')}>
-        <span>05</span>FORETELL
+          <span>05</span>
+          FORETELL
         </p>
       </Link>
       {renderImage()}
@@ -101,4 +102,3 @@ const ProjectList = () => {
 };
 
 export default ProjectList;
-

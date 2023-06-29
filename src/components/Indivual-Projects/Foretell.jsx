@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Foretell = () => (
   <div className="each-project-page">
-    <Link to="/projects">Close</Link>
+    <Link to="/projects" className="close-current-project">Close</Link>
     foretell
   </div>
 );
