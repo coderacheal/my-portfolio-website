@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [counter, setCounter] = useState(1);
   const [slideIn, setSlideIn] = useState(false);
   const [hebrewName, setHebrewName] = useState("רייצ'ל");
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsActive(false); // Close the sliding menu on location change
+  }, [location]);
 
   const handleClick = () => {
     setIsActive(!isActive);
@@ -51,10 +56,46 @@ const Header = () => {
       <div className={`slidingMenu ${isActive ? 'active' : ''}`}>
         <div className="menu-counter-div">
           <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
-            <li className="nav-links"><Link to="/" onMouseEnter={() => handleHover(0)}>Home</Link></li>
-            <li className="nav-links"><Link to="/about" onMouseEnter={() => handleHover(1)}>About me </Link></li>
-            <li className="nav-links"><Link to="/projects" onMouseEnter={() => handleHover(2)}>Projects</Link></li>
-            <li className="nav-links"><Link to="/contact" onMouseEnter={() => handleHover(3)}>Contact </Link></li>
+            <li className="nav-links">
+              <Link to="/" onMouseEnter={() => handleHover(0)}>
+                <span>H</span>
+                <span>O</span>
+                <span>M</span>
+                <span>E</span>
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/about" onMouseEnter={() => handleHover(1)}>
+                <span>A</span>
+                <span>B</span>
+                <span>O</span>
+                <span>U</span>
+                <span>T</span>
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/projects" onMouseEnter={() => handleHover(2)}>
+                <span>P</span>
+                <span>R</span>
+                <span>O</span>
+                <span>J</span>
+                <span>E</span>
+                <span>C</span>
+                <span>T</span>
+                <span>S</span>
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/contact" onMouseEnter={() => handleHover(3)}>
+                <span>C</span>
+                <span>O</span>
+                <span>N</span>
+                <span>T</span>
+                <span>A</span>
+                <span>C</span>
+                <span>T</span>
+              </Link>
+            </li>
           </ul>
           <div>
             <p className="menuTopDescription">FULL STACK DEVELOPER WITH A LOVE FOR ML& AI, BLOCKCHAIN AND BUILDING INTERACTIVE WEBSITES WITH REACT. LEARNING TO PLAY THE VIOLIN </p>

@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SchoolX = () => (
   <div className="each-project-page">
-    SchoolX
+    <Link to="/projects" className="close-current-project">Close</Link>
   </div>
 );
 

@@ -5,7 +5,6 @@ import HelloHero from './HelloHero';
 import ProjectCards from './ProjectCards';
 import Contact from './Contact';
 import AboutMe from './AboutMe';
-import HonourableMentions from './HonourableMentions';
 
 const HomePage = () => (
   <div className="welcome-page">
@@ -19,9 +18,6 @@ const HomePage = () => (
       </section>
       <section>
         <ProjectCards />
-      </section>
-      <section>
-        <HonourableMentions />
       </section>
       <section>
         <Contact />

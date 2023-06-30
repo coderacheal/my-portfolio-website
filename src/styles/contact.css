@@ -1,107 +1,3 @@
-.contact-intro {
-  width: 70%;
-  margin: auto;
-  color: black;
-  margin-top: 4%;
-}
-
-.contact-intro p {
-  font-size: 18px;
-}
-
-h1 {
-  color: rgba(4, 4, 52, 0.879);
-  font-size: 50px;
-}
-
-form {
-  width: 70%;
-  margin: auto;
-}
-
-.form-page {
-  overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 90px;
-  border-radius: 5px;
-  width: 100vw;
-  height: 100vh;
-}
-
-input {
-  border: 0;
-  border-bottom: 1px solid grey;
-  padding: 20px;
-  width: 80%;
-  margin-bottom: 40px;
-  outline: none;
-  font-size: 20px;
-}
-
-textarea {
-  border: 0;
-  border-bottom: 1px solid grey;
-  padding: 20px;
-  width: 80%;
-  font-size: 20px;
-  outline: none;
-}
-
-input::placeholder {
-  font-weight: lighter;
-}
-
-.submit-button {
-  padding: 15px;
-  margin-top: 40px;
-  background-color: rgb(232, 149, 241);
-  color: black;
-  border: 0;
-  border-radius: 3px;
-  font-weight: bold;
-  text-align: center;
-  font-size: 18px;
-  cursor: pointer;
-  width: 20%;
-  transition: 1s ease;
-  background-size: 200% 100%;
-  background-position: right bottom;
-}
-
-.submit-button:hover {
-  background-position: left bottom;
-  transform: scale(1.1);
-  color: white;
-  border: 0;
-}
-
-.mainPage {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  background-color: rgb(204, 253, 212);
-  align-self: flex-end;
-  position: absolute;
-  font-weight: bold;
-  left: 1000px;
-  height: 100px;
-  width: 100px;
-  padding: 20px;
-  text-align: center;
-  cursor: pointer;
-  transition: 3s ease-in-out;
-  color: rgb(41, 4, 41);
-}
-
-.mainPage:hover {
-  padding: 50px;
-  color: black;
-  background-color: mistyrose;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* new contact  */
 .contact-session {
   margin-top: 30px;
   background-color: #f0f0f0;
@@ -115,23 +11,80 @@ input::placeholder {
 }
 
 .work-together p {
-  width: 17%;
+  width: 40%;
   font-size: 24px;
   margin-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+/* full page  */
+
+.contact-session-page {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.send-message {
+  margin: 0;
+  padding-top: 35vh;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+}
+
+.profile-get-in-touch {
+  display: flex;
+
+  /* padding-top: 120px; */
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  padding-top: 20vh;
+}
+
+.profile-get-in-touch img {
+  height: 75vh;
+  width: 30vw;
+}
+
+.in-touch-comment-large {
+  font-size: 200px;
+  text-align: right;
+  line-height: 170px;
+  margin-bottom: 20px;
+}
+
+.in-touch-comment {
+  text-align: right;
+  font-size: 13px;
+  color: white;
+}
+
+.profile-get-in-touch div {
+  padding-top: 20vh;
 }
 
 .email-div {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
   margin: auto;
   margin-top: 40px;
   transition: 1s ease-in-out;
 }
 
-.email-div:hover {
-  opacity: 0.7;
-  text-decoration: wavy;
+.connect-via-social-ribbon {
+  text-align: center;
+  width: 15%;
+  margin: auto;
+  font-size: 24px;
+  padding-top: 30vh;
+}
+
+.email-div a {
+  color: white;
 }
 
 .email {
@@ -140,4 +93,45 @@ input::placeholder {
   font-size: 120px;
   text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
+}
+
+.social-contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  text-align: center;
+  padding-bottom: 30vh;
+}
+
+.social-contact a {
+  font-size: 130px;
+  margin: 0;
+  line-height: 130px;
+  padding: 0;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.contact-session-page p {
+  color: white;
+}
+
+.contact-footer {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: white;
+  padding: 20px;
+}
+
+.footer-links-social {
+  display: flex;
+  width: 12%;
+
+  /* background-color: red; */
+  justify-content: space-between;
 }
