@@ -33,13 +33,13 @@ const Header = () => {
     <div>
       <header className="header">
         {/* eslint-disable react/no-unescaped-entities */}
-        <p
+        <Link to='/'> <p
           className="rest"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          {hebrewName}
-        </p>
+           {hebrewName}
+        </p></Link>
         <nav className="nav-item">
           {/* eslint-disable jsx-a11y/click-events-have-key-events */}
           {/* eslint-disable jsx-a11y/no-static-element-interactions */}

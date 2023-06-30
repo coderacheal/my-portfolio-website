@@ -12,6 +12,7 @@
 @import 'project-cards.css';
 @import 'honourable-mentions.css';
 @import 'each-project.css';
+@import './projects/shared.css';
 
 body {
   margin: 0;

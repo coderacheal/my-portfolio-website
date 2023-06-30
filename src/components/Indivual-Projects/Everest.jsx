@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ProjectHeader from './components/ProjectHeader';
+import ProjectFooter from './components/ProjectFooter';
 
 const Everest = () => (
   <div className="each-project-page">
-    <Link to="/projects" className="close-current-project">Close</Link>
+    <ProjectHeader />
+    <ProjectFooter />
   </div>
 );
 
