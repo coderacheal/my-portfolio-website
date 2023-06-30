@@ -9,10 +9,10 @@ const Everest = () => {
   return (
     <div className="each-project-page">
       <ProjectHeader />
-      <NextProject nextProjectName={nextProjectName} backgroundColor='black'/>
+      <NextProject nextProjectName={nextProjectName} backgroundColor="black" />
       <ProjectFooter />
-  </div>
-  )
-}
-  
+    </div>
+  );
+};
+
 export default Everest;

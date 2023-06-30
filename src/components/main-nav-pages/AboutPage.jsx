@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCode, faBrain, faCertificate, faScrewdriverWrench
+  faCode, faBrain, faCertificate, faScrewdriverWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import workspace from '../../assets/office set up.jpg';
 import Footer from '../Home-page/Footer';
@@ -11,8 +11,7 @@ import NextProject from './ProjectPage/NextProject';
 const AboutPage = () => {
   const words = ['Passionate', 'full stack', 'developer'];
   const techStack = 'Tech Stack';
-  const nextProjectName = 'Project Sunday'
-
+  const nextProjectName = 'Project Sunday';
 
   return (
     <div className="about-me-main">
@@ -94,7 +93,7 @@ const AboutPage = () => {
           </div>
           <div className="eachTechStackSessions">
             <div className="fa-container">
-              <FontAwesomeIcon icon={faScrewdriverWrench} className="tech-fontawesome"/>
+              <FontAwesomeIcon icon={faScrewdriverWrench} className="tech-fontawesome" />
             </div>
             <h3 className="stackTitle">Tools & Frameworks</h3>
             <ul>
@@ -108,7 +107,7 @@ const AboutPage = () => {
           </div>
           <div className="eachTechStackSessions">
             <div className="fa-container">
-              <FontAwesomeIcon icon={faBrain} className="tech-fontawesome"/>
+              <FontAwesomeIcon icon={faBrain} className="tech-fontawesome" />
             </div>
             <h3 className="stackTitle">Machine Learning</h3>
             <ul>
@@ -130,7 +129,7 @@ const AboutPage = () => {
             </ul>
           </div>
         </div>
-      <NextProject nextProjectName={nextProjectName} route='/projects/sunday'/> 
+        <NextProject nextProjectName={nextProjectName} route="/projects/sunday" />
       </div>
       <Footer />
     </div>
@@ -138,5 +137,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
-//

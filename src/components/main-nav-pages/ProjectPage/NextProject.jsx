@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const NextProject = ({nextProjectName, backgroundColor, route}) => {
-
+const NextProject = ({ nextProjectName, backgroundColor, route }) => {
   const containerStyle = {
-    backgroundColor: backgroundColor,
-  }  
+    backgroundColor,
+  };
 
   return (
     <Link to={route}>
@@ -21,7 +21,17 @@ const NextProject = ({nextProjectName, backgroundColor, route}) => {
         </div>
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default NextProject
+NextProject.propTypes = {
+  nextProjectName: PropTypes.string.isRequired,
+  route: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string,
+};
+
+NextProject.defaultProps = {
+  backgroundColor: 'black',
+};
+
+export default NextProject;
