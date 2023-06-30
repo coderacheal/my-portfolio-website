@@ -43,6 +43,7 @@
 }
 
 .more-about-me-div {
+  margin-top: 15vh;
   display: flex;
   flex-direction: column;
 }
@@ -63,3 +64,155 @@
 .about-me-main {
   background-color: #f0f0f0;
 }
+
+
+/* About me  */
+
+.heroAboutMe, .techStack {
+  padding-top: 50vh;
+  margin: 0;
+  width: 75%;
+  margin: auto;
+  font-size: 110px;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px;
+}
+
+.techStack {
+  padding-top: 10vh;
+}
+
+.techStackSessions {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 75%;
+  margin: auto;
+  gap: 1vw;
+  margin-top: 10vh;
+  position: relative;
+}
+
+.officeSetup-and-text {
+  width: 75%;
+  margin: auto;
+}
+
+.officeSetup {
+  height: 50vh;
+  width: 40vw;
+  margin: auto;
+}
+
+.section-description {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-top: 5vh;
+}
+
+.about-sub-section {
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-description div span {
+  font-size: 18;
+  font-weight: bold;
+}
+
+.eachTechStackSessions {
+  border-radius: 5px;
+  /* color: white; */
+  border: 1px solid rgb(185, 185, 185);
+  border: 1px solid rgb(5, 205, 69);
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f0;
+  background-color: rgba(70,76,71,255);
+  background-color: rgb(129, 133, 129);
+}
+
+.eachTechStackSessions ul{
+  list-style-type: none;
+  padding-left: none;
+}
+
+.stackTitle {
+  text-align: center;
+  /* color: rgb(2, 2, 45); */
+  color: white;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.eachTechStackSessions ul li{
+  list-style-type: none;
+  font-size: 22px;
+  /* color: rgb(2, 2, 45); */
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fa-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-fontawesome {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+.view-latest-project-div {
+  display: flex;
+  margin-top: 15vh;
+  background-color: black;
+  height: 20vh;
+  color: white;
+}
+
+.view-latest-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+}
+
+
+.centered-content {
+  flex: 1; 
+}
+
+
+.nextProjectName {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.view-next-ribbon {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.long-arrow {
+  font-size: 100px;
+  /* width: 200px; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.down-arrow {
+  position: absolute;
+  font-size: 200px;
+  margin-top: 10vh;
+  right: 0;
+}
+

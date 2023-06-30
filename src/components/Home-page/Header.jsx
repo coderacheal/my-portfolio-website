@@ -5,7 +5,7 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [counter, setCounter] = useState(1);
   const [slideIn, setSlideIn] = useState(false);
-  const [hebrewName, setHebrewName] = useState("רייצ'ל");
+  const [hebrewName, setHebrewName] = useState('Racheal');
   const location = useLocation();
 
   useEffect(() => {
@@ -22,24 +22,28 @@ const Header = () => {
   };
 
   const handleMouseEnter = () => {
-    setHebrewName('Racheal');
+    setHebrewName("Let's go home");
+    // setHebrewName("רייצ'ל");
   };
 
   const handleMouseLeave = () => {
-    setHebrewName("רייצ'ל");
+    setHebrewName('Racheal');
   };
 
   return (
     <div>
       <header className="header">
         {/* eslint-disable react/no-unescaped-entities */}
-        <Link to='/'> <p
-          className="rest"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-           {hebrewName}
-        </p></Link>
+        <Link to="/">
+          {' '}
+          <p
+            className="rest"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            {hebrewName}
+          </p>
+        </Link>
         <nav className="nav-item">
           {/* eslint-disable jsx-a11y/click-events-have-key-events */}
           {/* eslint-disable jsx-a11y/no-static-element-interactions */}
