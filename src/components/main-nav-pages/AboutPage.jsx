@@ -1,23 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCode, faGear, faBrainCircuit, faFileCertificate,
+  faCode, faBrain, faCertificate, faScrewdriverWrench
 } from '@fortawesome/free-solid-svg-icons';
 import workspace from '../../assets/office set up.jpg';
 import Footer from '../Home-page/Footer';
 import Header from '../Home-page/Header';
 
+// import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
+
+
 const AboutPage = () => {
   const words = ['Passionate', 'full stack', 'developer'];
   const techStack = 'Tech Stack';
+  const ref = useRef(null);
+
+  useEffect(() => {
+    // IntersectionObserver setup and animation logic
+  }, [])
 
   return (
     <div className="about-me-main">
       <Header />
-      {/* <div className="down-arrow-container"> */}
-        <span className="long-arrow down-arrow">&darr;</span>
-      {/* </div> */}
+      <span className="long-arrow down-arrow">&darr;</span>
       <h2 className="heroAboutMe">
         {words.map((word, index) => (
           <span key={index}>
@@ -78,7 +84,6 @@ const AboutPage = () => {
             <span key={index}>{letter}</span>
           ))}
         </h2>
-        {/* <div className='overHead'></div> */}
         <div className="techStackSessions">
           <div className="eachTechStackSessions">
             <div className="fa-container">
@@ -89,14 +94,13 @@ const AboutPage = () => {
               <li>Python</li>
               <li>JavaScript</li>
               <li>Ruby</li>
-              <li>MySQL</li>
-              <li>PostgreSQL</li>
-              <li>SQL Server</li>
+              <li>SQL</li>
+              <li>(MySQL, PostgreSQL, SQL Server)</li>
             </ul>
           </div>
           <div className="eachTechStackSessions">
             <div className="fa-container">
-              <FontAwesomeIcon icon={faCode} className="tech-fontawesome" />
+              <FontAwesomeIcon icon={faScrewdriverWrench} className="tech-fontawesome"/>
             </div>
             <h3 className="stackTitle">Tools & Frameworks</h3>
             <ul>
@@ -110,7 +114,7 @@ const AboutPage = () => {
           </div>
           <div className="eachTechStackSessions">
             <div className="fa-container">
-              <FontAwesomeIcon icon={faCode} className="tech-fontawesome" />
+              <FontAwesomeIcon icon={faBrain} className="tech-fontawesome"/>
             </div>
             <h3 className="stackTitle">Machine Learning</h3>
             <ul>
@@ -123,7 +127,7 @@ const AboutPage = () => {
           </div>
           <div className="eachTechStackSessions">
             <div className="fa-container">
-              <FontAwesomeIcon icon={faCode} className="tech-fontawesome" />
+              <FontAwesomeIcon icon={faCertificate} className="tech-fontawesome" />
             </div>
             <h3 className="stackTitle">Certification</h3>
             <ul>
