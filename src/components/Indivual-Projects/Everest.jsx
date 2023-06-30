@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectHeader from './components/ProjectHeader';
 import ProjectFooter from './components/ProjectFooter';
-import NextProject from '../main-nav-pages/ProjectPage/NextProject';
+import NextProject from './components/NextProject';
 
 const Everest = () => {
   const nextProjectName = 'Project Waterfall';
@@ -9,7 +9,7 @@ const Everest = () => {
   return (
     <div className="each-project-page">
       <ProjectHeader />
-      <NextProject nextProjectName={nextProjectName} backgroundColor="black" />
+      <NextProject route='/projects/waterfall' nextProjectName={nextProjectName}/>
       <ProjectFooter />
     </div>
   );
