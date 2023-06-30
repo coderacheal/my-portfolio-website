@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCode, faBrain, faCertificate, faScrewdriverWrench
@@ -7,18 +6,13 @@ import {
 import workspace from '../../assets/office set up.jpg';
 import Footer from '../Home-page/Footer';
 import Header from '../Home-page/Header';
-
-// import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
-
+import NextProject from './ProjectPage/NextProject';
 
 const AboutPage = () => {
   const words = ['Passionate', 'full stack', 'developer'];
   const techStack = 'Tech Stack';
-  const ref = useRef(null);
+  const nextProjectName = 'Project Sunday'
 
-  useEffect(() => {
-    // IntersectionObserver setup and animation logic
-  }, [])
 
   return (
     <div className="about-me-main">
@@ -136,19 +130,7 @@ const AboutPage = () => {
             </ul>
           </div>
         </div>
-        <Link to="/projects/sunday">
-          <div className="view-latest-project-div">
-            <div className="view-latest-project">
-              <div className="centered-content">
-                <p className="view-next-ribbon">View Latest Project</p>
-                <p className="nextProjectName">Project Sunday</p>
-              </div>
-              <div>
-                <span className="long-arrow">&rarr;</span>
-              </div>
-            </div>
-          </div>
-        </Link>
+      <NextProject nextProjectName={nextProjectName} route='/projects/sunday'/> 
       </div>
       <Footer />
     </div>
