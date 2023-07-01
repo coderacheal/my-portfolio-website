@@ -1,12 +1,14 @@
 import React, { useRef, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import newImage from '../../../assets/budget.png';
+// import newImage from '../../../assets/budget.png';
 import carousel from '../../../styles/projects/carousel.module.css';
+import PropTypes from 'prop-types';
+
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
-const ProjectCarousel = () => {
+const ProjectCarousel = ({firstProject, secondProject, thirdProject}) => {
   const [selectedItem, setSelectedItem] = useState(0);
   const carouselRef = useRef(null);
 
@@ -24,16 +26,23 @@ const ProjectCarousel = () => {
       className={carousel.carouselDiv}
     >
       <div onClick={() => handleImageClick(1)}>
-        <img src={newImage} alt="First Project" className={carousel.oneProjectImage} />
+        <img src={firstProject} alt="First Project" className={carousel.oneProjectImage} />
       </div>
       <div onClick={() => handleImageClick(2)}>
-        <img src={newImage} alt="Second Project" className={carousel.oneProjectImage} />
+        <img src={secondProject} alt="Second Project" className={carousel.oneProjectImage} />
       </div>
       <div onClick={() => handleImageClick(0)}>
-        <img src={newImage} alt="Third Project" className={carousel.oneProjectImage} />
+        <img src={thirdProject} alt="Third Project" className={carousel.oneProjectImage} />
       </div>
     </Carousel>
   );
+};
+
+
+ProjectCarousel.propTypes = {
+  firstProject: PropTypes.string,
+  secondProject: PropTypes.string,
+  thirdProject: PropTypes.string,
 };
 
 export default ProjectCarousel;
