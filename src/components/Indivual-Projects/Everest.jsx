@@ -5,6 +5,7 @@ import NextProject from './components/NextProject';
 import ProjectHero from './components/ProjectHero';
 import Header from '../Home-page/Header';
 import ViewProject from './components/ViewProject';
+import ProjectSummary from './components/ProjectSummary';
 
 const Everest = () => {
   const nextProjectName = 'Project Waterfall';
@@ -16,6 +17,7 @@ const Everest = () => {
       <Header />
       <ProjectHero />
       <ViewProject projectGitHub={projectGitHub} projectWebsite={projectWebsite} />
+      <ProjectSummary />
       <NextProject route="/projects/waterfall" nextProjectName={nextProjectName} />
       <ProjectFooter />
     </div>
