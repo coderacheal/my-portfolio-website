@@ -29,7 +29,7 @@ const ProjectImageAndInfo = () => {
           >
             <Link to={`/projects/${project.url_extension}`}>
               <div>
-                <img src={project.image} alt="" className={projects.projectImage} />
+                <img src={project.projectImage} alt="" className={projects.projectImage} />
               </div>
             </Link>
             <span className={projects.connectingString} />
@@ -37,7 +37,7 @@ const ProjectImageAndInfo = () => {
               <div className={projects.projectInfo}>
                 <p className={projects.title}>{project.title}</p>
                 <div>
-                  <p className={projects.eachProjectDescription}>{project.projectDescription}</p>
+                  <p className={projects.eachProjectDescription}>{project.miniIntro}</p>
                 </div>
                 <div>
                   <div className={projects.techStackDiv}>

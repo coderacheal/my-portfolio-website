@@ -1,26 +1,31 @@
 import React from 'react';
-import ProjectFooter from './components/ProjectFooter';
-import NextProject from './components/NextProject';
-import ProjectHero from './components/ProjectHero';
-import Header from '../Home-page/Header';
-import ViewProject from './components/ViewProject';
-import ProjectSummary from './components/ProjectSummary';
-import ProjectCarousel from './components/ProjectCarousel';
+import ProjectTemplate from './components/ProjectTemplate';
+import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const Everest = () => {
-  const nextProjectName = 'Project Waterfall';
-  const projectGitHub = 'https://github.com/coderacheal/everest';
-  const projectWebsite = '/';
+  const everest = projectData[1];
 
   return (
     <div>
-      <Header />
-      <ProjectHero />
-      <ViewProject projectGitHub={projectGitHub} projectWebsite={projectWebsite} />
-      <ProjectSummary />
-      <ProjectCarousel />
-      <NextProject route="/projects/waterfall" nextProjectName={nextProjectName} />
-      <ProjectFooter />
+      <ProjectTemplate
+        projectName={everest.projectName}
+        projectDecription={everest.projectDecription}
+        projectImage={everest.projectImage}
+        projectYear={everest.projectYear}
+        projectGitHub={everest.projectGitHub}
+        projectWebsite={everest.projectWebsite}
+        miniIntro={everest.miniIntro}
+        builtFor={everest.builtFor}
+        projectSummaryOne={everest.projectSummaryOne}
+        projectSummaryTwo={everest.projectSummaryTwo}
+        firstCarouselImage={everest.firstCarouselImage}
+        secondCarouselImage={everest.secondCarouselImage}
+        thirdCarouselImage={everest.thirdCarouselImage}
+        nextProjectName={everest.nextProjectName}
+        route={everest.route}
+        backgroundColor={everest.backgroundColor}
+        viewProject={everest.viewProject}
+      />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React from 'react';
-// import projectImage from '../../../assets/headshot.jpg';
 // import projectImage from '../../../assets/finance-app.png';
-import hero from '../../../styles/projects/projectHero.module.css';
 import PropTypes from 'prop-types';
+import hero from '../../../styles/projects/projectHero.module.css';
 
-
-const ProjectHero = ({projectName, projectDecription, projectImage, projectYear}) => (
+const ProjectHero = ({
+  projectName, projectDecription, projectImage, projectYear,
+}) => (
   <div className={hero.projectHero}>
     <div className={hero.mainHeroSection}>
       <div>
@@ -33,12 +33,11 @@ const ProjectHero = ({projectName, projectDecription, projectImage, projectYear}
   </div>
 );
 
-
 ProjectHero.propTypes = {
-  projectName: PropTypes.string,
-  projectDecription: PropTypes.string,
-  projectImage: PropTypes.string,
-  projectYear: PropTypes.string,
+  projectName: PropTypes.string.isRequired,
+  projectDecription: PropTypes.string.isRequired,
+  projectImage: PropTypes.string.isRequired,
+  projectYear: PropTypes.number.isRequired,
 };
 
 export default ProjectHero;
