@@ -9,7 +9,7 @@ const SchoolX = () => {
     <div>
       <ProjectTemplate
         projectName={schoolx.projectName}
-        projectDecription={schoolx.projectDecription}
+        projectDescription={schoolx.projectDescription}
         projectImage={schoolx.projectImage}
         projectYear={schoolx.projectYear}
         projectGitHub={schoolx.projectGitHub}

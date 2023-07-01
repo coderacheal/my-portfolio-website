@@ -11,7 +11,7 @@ import ProjectCarousel from './ProjectCarousel';
 const ProjectTemplate = (props) => {
   const {
     projectName,
-    projectDecription,
+    projectDescription,
     projectImage,
     projectYear,
     projectGitHub,
@@ -34,7 +34,7 @@ const ProjectTemplate = (props) => {
       <Header />
       <ProjectHero
         projectName={projectName}
-        projectDecription={projectDecription}
+        projectDescription={projectDescription}
         projectImage={projectImage}
         projectYear={projectYear}
       />
@@ -66,7 +66,7 @@ const ProjectTemplate = (props) => {
 
 ProjectTemplate.propTypes = {
   projectName: PropTypes.string.isRequired,
-  projectDecription: PropTypes.string.isRequired,
+  projectDescription: PropTypes.string.isRequired,
   projectImage: PropTypes.string.isRequired,
   projectYear: PropTypes.number.isRequired,
   projectGitHub: PropTypes.string.isRequired,

@@ -22,35 +22,16 @@ const ProjectImageAndInfo = () => {
   return (
     <div>
       <div className={projects.allProjectsImages} onWheel={handleScroll}>
-        {projectData.map((project) => (
+        {projectData.map((project, index) => (
           <div
             className={projects.projectPlusInfo}
             key={project.id}
           >
             <Link to={`/projects/${project.url_extension}`}>
               <div>
+                <p>0{index + 1}</p>
                 <img src={project.projectImage} alt="" className={projects.projectImage} />
-              </div>
-            </Link>
-            <span className={projects.connectingString} />
-            <Link to={`/projects/${project.url_extension}`}>
-              <div className={projects.projectInfo}>
-                <p className={projects.title}>{project.title}</p>
-                <div>
-                  <p className={projects.eachProjectDescription}>{project.miniIntro}</p>
-                </div>
-                <div>
-                  <div className={projects.techStackDiv}>
-                    <div>
-                      <p className={projects.techStack}>{project.techStack[0]}</p>
-                      <p className={projects.techStack}>{project.techStack[1]}</p>
-                    </div>
-                    <div>
-                      <p className={projects.techStack}>{project.techStack[2]}</p>
-                      <p className={projects.techStack}>{project.techStack[3]}</p>
-                    </div>
-                  </div>
-                </div>
+                <p className=''>{project.title}</p>
               </div>
             </Link>
           </div>

@@ -9,7 +9,7 @@ const Sunday = () => {
     <div>
       <ProjectTemplate
         projectName={sunday.projectName}
-        projectDecription={sunday.projectDecription}
+        projectDescription={sunday.projectDescription}
         projectImage={sunday.projectImage}
         projectYear={sunday.projectYear}
         projectGitHub={sunday.projectGitHub}

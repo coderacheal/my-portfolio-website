@@ -80,15 +80,12 @@
 }
 
 .projectListView p {
-  /* text-align: center; */
   color: white;
   font-size: 120px;
   cursor: pointer;
   transition: 1s;
   border: 0;
   border-top: 1px solid rgb(180, 180, 180);
-
-  /* border-bottom: 1px solid white; */
   font-family: Montserrat, sans-serif;
 }
 
@@ -98,8 +95,6 @@
   position: fixed;
   pointer-events: none;
   cursor: none;
-
-  /* transform: translate(-50%, -50%); */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -108,7 +103,7 @@
   padding-left: 20px;
 }
 
-.techStackDiv div p {
+/* .techStackDiv div p {
   margin-bottom: 10px;
 }
 
@@ -123,13 +118,14 @@
   margin: auto;
   background-color: rgb(252, 252, 252);
   border-radius: 4px;
-}
+  position: relative;
+  /* right: 0; */
 
 .projectPlusInfo {
   display: flex;
 }
 
-.connectingString {
+/* .connectingString {
   display: block;
   height: 0.3px;
   background-color: greenyellow;
@@ -141,27 +137,25 @@
 .eachProjectDescription {
   white-space: normal;
   margin: auto;
-}
+} */
 
-.title {
+/* .title {
   text-align: center;
   font-weight: bold;
   font-family: Montserrat, sans-serif;
   padding: 10px;
   margin-top: 30px;
-}
+} */
 
-.techStackDiv {
+/* .techStackDiv {
   width: 100%;
-
-  /* margin: auto; */
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
 
-.techStack {
-  margin: auto;
+.techStack { */
+  /* margin: auto;
   padding: 8px 4px;
   border: 1px solid rgb(206, 252, 214);
   text-align: center;
@@ -169,4 +163,23 @@
   background-color: rgb(227, 255, 232);
   font-size: 15px;
   margin-right: 8px;
+} */
+/* 
+.hoveredDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255); /
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+} */
+
+/* .projectPlusInfo:hover .hoveredDiv {
+  opacity: 1;
 }
+ */ 

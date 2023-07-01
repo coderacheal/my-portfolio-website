@@ -9,7 +9,7 @@ const Waterfall = () => {
     <div>
       <ProjectTemplate
         projectName={waterfall.projectName}
-        projectDecription={waterfall.projectDecription}
+        projectDescription={waterfall.projectDescription}
         projectImage={waterfall.projectImage}
         projectYear={waterfall.projectYear}
         projectGitHub={waterfall.projectGitHub}

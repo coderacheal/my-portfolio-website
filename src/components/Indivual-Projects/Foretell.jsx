@@ -9,7 +9,7 @@ const Foretell = () => {
     <div>
       <ProjectTemplate
         projectName={foretell.projectName}
-        projectDecription={foretell.projectDecription}
+        projectDescription={foretell.projectDescription}
         projectImage={foretell.projectImage}
         projectYear={foretell.projectYear}
         projectGitHub={foretell.projectGitHub}

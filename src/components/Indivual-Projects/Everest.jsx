@@ -9,7 +9,7 @@ const Everest = () => {
     <div>
       <ProjectTemplate
         projectName={everest.projectName}
-        projectDecription={everest.projectDecription}
+        projectDescription={everest.projectDescription}
         projectImage={everest.projectImage}
         projectYear={everest.projectYear}
         projectGitHub={everest.projectGitHub}

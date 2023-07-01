@@ -1,3 +1,36 @@
 .App {
   text-align: center;
 }
+
+.container {
+  position: relative;
+}
+
+.bottom-div {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.hovered {
+  opacity: 0.5;
+}
+
+.top-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container:hover .top-div {
+  opacity: 1;
+}
+
