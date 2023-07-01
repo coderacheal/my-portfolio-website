@@ -68,9 +68,11 @@
 
 /* About me  */
 
-.heroAboutMe, .techStack {
+.heroAboutMe,
+.techStack {
   padding-top: 50vh;
-  margin: 0;
+
+  /* margin: 0; */
   width: 75%;
   margin: auto;
   font-size: 110px;
@@ -117,37 +119,40 @@
 }
 
 .section-description div span {
-  font-size: 18;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .eachTechStackSessions {
   border-radius: 5px;
+
   /* color: white; */
   border: 1px solid rgb(185, 185, 185);
   border: 1px solid rgb(5, 205, 69);
   font-family: 'Montserrat', sans-serif;
   background-color: #f0f0f0;
-  background-color: rgba(70,76,71,255);
+  background-color: rgba(70, 76, 71, 255);
   background-color: rgb(129, 133, 129);
 }
 
-.eachTechStackSessions ul{
+.eachTechStackSessions ul {
   list-style-type: none;
-  padding-left: none;
+  padding-left: 0;
 }
 
 .stackTitle {
   text-align: center;
+
   /* color: rgb(2, 2, 45); */
   color: white;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
 }
 
-.eachTechStackSessions ul li{
+.eachTechStackSessions ul li {
   list-style-type: none;
   font-size: 22px;
+
   /* color: rgb(2, 2, 45); */
   color: white;
   line-height: 40px;
@@ -168,8 +173,6 @@
   margin-top: 20px;
 }
 
-
-
 .view-latest-project-div {
   display: flex;
   margin-top: 15vh;
@@ -186,11 +189,9 @@
   margin: auto;
 }
 
-
 .centered-content {
-  flex: 1; 
+  flex: 1;
 }
-
 
 .nextProjectName {
   font-size: 50px;
@@ -204,6 +205,7 @@
 
 .long-arrow {
   font-size: 100px;
+
   /* width: 200px; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
@@ -216,4 +218,3 @@
   right: 0;
   margin-right: 30px;
 }
-

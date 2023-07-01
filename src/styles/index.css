@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import 'welcome-page.css';
 @import 'header.css';
 @import 'socials.css';
@@ -11,14 +12,22 @@
 @import 'hello-hero.css';
 @import 'project-cards.css';
 @import 'honourable-mentions.css';
+
 /* @import 'each-project.css'; */
-@import './projects/shared.css';
+
+/* @import './projects/shared.css'; */
+
 /* @import './projects/projectHero.css'; */
+
 /* @import './projects/project-header.modules.css'; */
 
 body {
   margin: 0;
-  font-family:
+  font-family: 'Montserrat', sans-serif;
+
+  /* font-family: ; */
+
+  /* font-family:
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -29,7 +38,7 @@ body {
     'Fira Sans',
     'Droid Sans',
     'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

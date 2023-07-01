@@ -8,13 +8,14 @@ import ViewProject from './components/ViewProject';
 
 const Everest = () => {
   const nextProjectName = 'Project Waterfall';
+  const projectGitHub = 'https://github.com/coderacheal/everest';
+  const projectWebsite = '/';
 
   return (
     <div>
       <Header />
-      {/* <ProjectHeader /> */}
       <ProjectHero />
-      <ViewProject />
+      <ViewProject projectGitHub={projectGitHub} projectWebsite={projectWebsite} />
       <NextProject route="/projects/waterfall" nextProjectName={nextProjectName} />
       <ProjectFooter />
     </div>

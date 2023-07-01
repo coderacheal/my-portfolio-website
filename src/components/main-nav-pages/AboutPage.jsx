@@ -19,9 +19,9 @@ const AboutPage = () => {
       <span className="long-arrow down-arrow">&darr;</span>
       <h2 className="heroAboutMe">
         {words.map((word, index) => (
-          <span key={index}>
-            {word.split('').map((letter, index) => (
-              <span key={index} className="" aria-hidden="true">{letter}</span>
+          <span key={words}>
+            {word.split('').map((letter) => (
+              <span key={word + letter} className="" aria-hidden="true">{letter}</span>
             ))}
             {index !== words.length - 1 && <br />}
           </span>
@@ -73,8 +73,8 @@ const AboutPage = () => {
       </div>
       <div>
         <h2 className="techStack">
-          {techStack.split('').map((letter, index) => (
-            <span key={index}>{letter}</span>
+          {techStack.split('').map((letter) => (
+            <span key={techStack + letter}>{letter}</span>
           ))}
         </h2>
         <div className="techStackSessions">
