@@ -82,19 +82,7 @@
   margin-bottom: 40px;
 }
 
-.techStack {
-  padding-top: 10vh;
-}
 
-.techStackSessions {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 75%;
-  margin: auto;
-  gap: 1vw;
-  margin-top: 10vh;
-  position: relative;
-}
 
 .officeSetup-and-text {
   width: 75%;
@@ -123,55 +111,6 @@
   font-weight: bold;
 }
 
-.eachTechStackSessions {
-  border-radius: 5px;
-
-  /* color: white; */
-  border: 1px solid rgb(185, 185, 185);
-  border: 1px solid rgb(5, 205, 69);
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f0f0f0;
-  background-color: rgba(70, 76, 71, 255);
-  background-color: rgb(129, 133, 129);
-}
-
-.eachTechStackSessions ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.stackTitle {
-  text-align: center;
-
-  /* color: rgb(2, 2, 45); */
-  color: white;
-  font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.eachTechStackSessions ul li {
-  list-style-type: none;
-  font-size: 22px;
-
-  /* color: rgb(2, 2, 45); */
-  color: white;
-  line-height: 40px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.fa-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tech-fontawesome {
-  color: white;
-  font-size: 35px;
-  text-align: center;
-  margin-top: 20px;
-}
 
 .view-latest-project-div {
   display: flex;
@@ -217,4 +156,124 @@
   margin-top: 7vh;
   right: 0;
   margin-right: 30px;
+}
+
+
+/* Flip card  */
+
+
+.techStack {
+  padding-top: 10vh;
+}
+
+.techStackSessions {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 75%;
+  margin: auto;
+  gap: 1vw;
+  margin-top: 10vh;
+  position: relative;
+}
+
+.eachTechStackSessions {
+  background-color: transparent;
+  width: 18vw;
+  height: 40vh;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+
+.eachTechStackSessions {
+  border-radius: 5px;
+  /* border: 1px solid rgb(185, 185, 185); */
+  /* border: 1px solid rgb(5, 205, 69); */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f0;
+  background-color: rgba(70, 76, 71, 255);
+  /* background-color: rgb(129, 133, 129); */
+}
+
+.eachTechStackSessions ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.fa-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.stackTitle {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  color: rgba(0, 0, 0);
+  color: white;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font: lighter;
+  padding: 0;
+}
+
+.eachTechStackSessions ul li {
+  list-style-type: none;
+  font-size: 17px;
+  color: black;
+  line-height: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+.tech-fontawesome {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.eachTechStackSessions:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(196, 199, 203);
+  color: white;
+  transform: rotateY(180deg);
 }

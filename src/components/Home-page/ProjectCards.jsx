@@ -70,7 +70,11 @@ const ProjectCards = () => {
             {' '}
 
           </Link>
-          <p className="project-brief">A FINANCE APP THAT ENABLES YOU TO TRACK YOUR EXPENSES BASED ON THE TYPE OF EXPENSES YOU DEFINE. COMPLETE WITH AUTHENTICATION, IT HELPS YOU STAY ON TOP OF THE DOLLAR</p>
+          <p className="project-brief">
+            A FINANCE APP THAT ENABLES YOU TO TRACK YOUR
+            EXPENSES BASED ON THE TYPE OF EXPENSES YOU DEFINE. COMPLETE WITH AUTHENTICATION,
+            IT HELPS YOU STAY ON TOP OF THE DOLLAR
+          </p>
         </div>
       </div>
       <div className="each-project">

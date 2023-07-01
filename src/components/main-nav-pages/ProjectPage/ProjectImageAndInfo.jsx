@@ -22,7 +22,6 @@ const ProjectImageAndInfo = () => {
   return (
     <div>
       <div className={projects.allProjectsImages} onWheel={handleScroll}>
-
         {projectData.map((project) => (
           <div
             className={projects.projectPlusInfo}

@@ -1,11 +1,11 @@
 import React from 'react';
-// import ProjectHeader from './components/ProjectHeader';
 import ProjectFooter from './components/ProjectFooter';
 import NextProject from './components/NextProject';
 import ProjectHero from './components/ProjectHero';
 import Header from '../Home-page/Header';
 import ViewProject from './components/ViewProject';
 import ProjectSummary from './components/ProjectSummary';
+import ProjectCarousel from './components/ProjectCarousel';
 
 const Everest = () => {
   const nextProjectName = 'Project Waterfall';
@@ -18,6 +18,7 @@ const Everest = () => {
       <ProjectHero />
       <ViewProject projectGitHub={projectGitHub} projectWebsite={projectWebsite} />
       <ProjectSummary />
+      <ProjectCarousel />
       <NextProject route="/projects/waterfall" nextProjectName={nextProjectName} />
       <ProjectFooter />
     </div>

@@ -62,10 +62,8 @@ const AboutPage = () => {
               <p className="about-sub-section">Interests</p>
             </div>
             <p className="more-about-me">
-              Oh, and did I mention?
-              {' '}
-              I&lsquo;m also learning to play the violin trying to create beautiful melodies
-              in my spare time.
+              Oh, and did I mention? I&lsquo;m also learning to play the violin trying to create
+              beautiful melodies in my spare time.
               {' '}
             </p>
           </div>
@@ -79,57 +77,84 @@ const AboutPage = () => {
         </h2>
         <div className="techStackSessions">
           <div className="eachTechStackSessions">
-            <div className="fa-container">
-              <FontAwesomeIcon icon={faCode} className="tech-fontawesome" />
+            <div className="flip-card-inner">
+              <div className="fa-container flip-card-front">
+                <FontAwesomeIcon icon={faCode} className="tech-fontawesome" />
+                <br />
+                <h3 className="stackTitle">Languages</h3>
+              </div>
+              <div className="flip-card-back">
+                <ul>
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>Ruby</li>
+                  <li>SQL</li>
+                  <li>(MySQL, PostgreSQL, SQL Server)</li>
+                </ul>
+              </div>
             </div>
-            <h3 className="stackTitle">Languages</h3>
-            <ul>
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>Ruby</li>
-              <li>SQL</li>
-              <li>(MySQL, PostgreSQL, SQL Server)</li>
-            </ul>
           </div>
           <div className="eachTechStackSessions">
-            <div className="fa-container">
-              <FontAwesomeIcon icon={faScrewdriverWrench} className="tech-fontawesome" />
+            <div className="flip-card-inner">
+              <div className="fa-container flip-card-front">
+                <FontAwesomeIcon
+                  icon={faScrewdriverWrench}
+                  className="tech-fontawesome"
+                />
+                <br />
+                <h3 className="stackTitle">Tools/Frameworks</h3>
+              </div>
+              <div className="flip-card-back">
+                <ul>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Rails</li>
+                  <li>Git</li>
+                  <li>APIs</li>
+                  <li>Linux</li>
+                </ul>
+              </div>
             </div>
-            <h3 className="stackTitle">Tools & Frameworks</h3>
-            <ul>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Rails</li>
-              <li>Git</li>
-              <li>APIs</li>
-              <li>Linux</li>
-            </ul>
           </div>
           <div className="eachTechStackSessions">
-            <div className="fa-container">
-              <FontAwesomeIcon icon={faBrain} className="tech-fontawesome" />
+            <div className="flip-card-inner">
+              <div className="fa-container flip-card-front">
+                <FontAwesomeIcon icon={faBrain} className="tech-fontawesome" />
+                <br />
+                <h3 className="stackTitle">AI/ML</h3>
+              </div>
+              <div className="flip-card-back">
+                <ul>
+                  <li>Scikit Learn</li>
+                  <li>TensorFlow</li>
+                  <li>HuggingFace</li>
+                  <li>Streamlit</li>
+                  <li>Gradio</li>
+                </ul>
+              </div>
             </div>
-            <h3 className="stackTitle">Machine Learning</h3>
-            <ul>
-              <li>Scikit Learn</li>
-              <li>TensorFlow</li>
-              <li>HuggingFace</li>
-              <li>Streamlit</li>
-              <li>Gradio</li>
-            </ul>
           </div>
           <div className="eachTechStackSessions">
-            <div className="fa-container">
-              <FontAwesomeIcon icon={faCertificate} className="tech-fontawesome" />
+            <div className="flip-card-inner">
+              <div className="fa-container flip-card-front">
+                <FontAwesomeIcon icon={faCertificate} className="tech-fontawesome" />
+                <br />
+                <h3 className="stackTitle">Certifications</h3>
+              </div>
+              <div className="flip-card-back">
+                <ul>
+                  <li>AWS Cloud Practitioner</li>
+                  <li>Certified Scrum Master</li>
+                </ul>
+              </div>
             </div>
-            <h3 className="stackTitle">Certification</h3>
-            <ul>
-              <li>AWS Cloud Practitioner</li>
-              <li>Certified Scrum Master</li>
-            </ul>
           </div>
         </div>
-        <NextProject nextProjectName={nextProjectName} route="/projects/sunday" viewProject="View latest Project" />
+        <NextProject
+          nextProjectName={nextProjectName}
+          route="/projects/sunday"
+          viewProject="View latest Project"
+        />
       </div>
       <Footer />
     </div>
