@@ -1,15 +1,14 @@
 import React from 'react';
-// import '../../../styles/projects/shared.css';
-import style from '../../../styles/projects/shared.css';
+import style from '../../../styles/projects/project-header.module.css';
 
 const ProjectHeader = () => (
   <header className={style.ProjectHeader}>
-    <h1 className="logo">My Website</h1>
-    <nav className="navbar">
-      <ul className="nav-list">
-        <li className="nav-item">Home</li>
-        <li className="nav-item">About</li>
-        <li className="nav-item">Contact</li>
+    <nav className={style.navBar}>
+      <h1 className={style.logo}>Racheal</h1>
+      <ul className={style.navList}>
+        <li className={style.navItem}>Home</li>
+        <li className={style.navItem}>About</li>
+        <li className={style.navItem}>Contact</li>
       </ul>
     </nav>
   </header>

@@ -6,7 +6,7 @@ import {
 import workspace from '../../assets/office set up.jpg';
 import Footer from '../Home-page/Footer';
 import Header from '../Home-page/Header';
-import NextProject from './ProjectPage/NextProject';
+import NextProject from '../Indivual-Projects/components/NextProject';
 
 const AboutPage = () => {
   const words = ['Passionate', 'full stack', 'developer'];
@@ -129,7 +129,7 @@ const AboutPage = () => {
             </ul>
           </div>
         </div>
-        <NextProject nextProjectName={nextProjectName} route="/projects/sunday" />
+        <NextProject nextProjectName={nextProjectName} route="/projects/sunday" viewProject="View latest Project" />
       </div>
       <Footer />
     </div>

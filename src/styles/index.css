@@ -11,8 +11,10 @@
 @import 'hello-hero.css';
 @import 'project-cards.css';
 @import 'honourable-mentions.css';
-@import 'each-project.css';
+/* @import 'each-project.css'; */
 @import './projects/shared.css';
+/* @import './projects/projectHero.css'; */
+/* @import './projects/project-header.modules.css'; */
 
 body {
   margin: 0;
