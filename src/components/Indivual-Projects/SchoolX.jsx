@@ -12,6 +12,7 @@ const SchoolX = () => {
         projectDescription={schoolx.projectDescription}
         projectImage={schoolx.projectImage}
         projectYear={schoolx.projectYear}
+        urlExtension={schoolx.urlExtension}
         projectGitHub={schoolx.projectGitHub}
         projectWebsite={schoolx.projectWebsite}
         miniIntro={schoolx.miniIntro}

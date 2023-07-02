@@ -4,7 +4,7 @@ import appImage from '../../../../assets/budget.png';
 const projectData = [
   {
     id: 1,
-    url_extension: 'sunday',
+    urlExtension: 'sunday',
     title: 'It\'s Sunday',
     projectName: 'Project Sunday',
     projectDescription: 'A chat app embedded with a Deep Learning model',
@@ -27,7 +27,7 @@ const projectData = [
   },
   {
     id: 2,
-    url_extension: 'everest',
+    urlExtension: 'everest',
     title: 'EVEREST',
     projectName: 'Project Everest',
     projectDescription: 'A rails app for managing your finances',
@@ -50,7 +50,7 @@ const projectData = [
   },
   {
     id: 3,
-    url_extension: 'waterfall',
+    urlExtension: 'waterfall',
     title: 'WATERFALL',
     projectName: 'Project Waterfall',
     projectDescription: 'A scrum tool to help with product management',
@@ -73,7 +73,7 @@ const projectData = [
   },
   {
     id: 4,
-    url_extension: 'schoolx',
+    urlExtension: 'schoolx',
     title: 'SCHOOLX',
     projectName: 'Project SchoolX',
     projectDescription: 'A database management system for schools in my district',
@@ -96,7 +96,7 @@ const projectData = [
   },
   {
     id: 5,
-    url_extension: 'foretell',
+    urlExtension: 'foretell',
     title: 'FORETELL',
     projectName: 'Project Foretell',
     projectDescription: 'A predictive app for customer churn',

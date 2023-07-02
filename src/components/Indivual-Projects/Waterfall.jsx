@@ -12,6 +12,7 @@ const Waterfall = () => {
         projectDescription={waterfall.projectDescription}
         projectImage={waterfall.projectImage}
         projectYear={waterfall.projectYear}
+        urlExtension={waterfall.urlExtension}
         projectGitHub={waterfall.projectGitHub}
         projectWebsite={waterfall.projectWebsite}
         miniIntro={waterfall.miniIntro}

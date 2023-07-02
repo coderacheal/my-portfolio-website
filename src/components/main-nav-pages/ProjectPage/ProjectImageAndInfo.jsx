@@ -5,6 +5,7 @@ import projectData from './Data/projectData';
 
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable  react/jsx-one-expression-per-line */
 
 const ProjectImageAndInfo = () => {
   const [scrollLeft, setScrollLeft] = useState(0);
@@ -27,11 +28,11 @@ const ProjectImageAndInfo = () => {
             className={projects.projectPlusInfo}
             key={project.id}
           >
-            <Link to={`/projects/${project.url_extension}`}>
+            <Link to={`/projects/${project.urlExtension}`}>
               <div>
                 <p>0{index + 1}</p>
                 <img src={project.projectImage} alt="" className={projects.projectImage} />
-                <p className=''>{project.title}</p>
+                <p className="">{project.title}</p>
               </div>
             </Link>
           </div>

@@ -11,6 +11,7 @@ import ProjectCarousel from './ProjectCarousel';
 const ProjectTemplate = (props) => {
   const {
     projectName,
+    urlExtension,
     projectDescription,
     projectImage,
     projectYear,
@@ -39,6 +40,7 @@ const ProjectTemplate = (props) => {
         projectYear={projectYear}
       />
       <ViewProject
+        urlExtension={urlExtension}
         projectGitHub={projectGitHub}
         projectWebsite={projectWebsite}
         miniIntro={miniIntro}
@@ -66,6 +68,7 @@ const ProjectTemplate = (props) => {
 
 ProjectTemplate.propTypes = {
   projectName: PropTypes.string.isRequired,
+  urlExtension: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
   projectImage: PropTypes.string.isRequired,
   projectYear: PropTypes.number.isRequired,

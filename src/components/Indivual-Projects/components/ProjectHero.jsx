@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import hero from '../../../styles/projects/projectHero.module.css';
 
 const ProjectHero = ({
-  projectName, projectDecription, projectImage, projectYear,
+  projectName, projectDescription, projectImage, projectYear,
 }) => (
   <div className={hero.projectHero}>
     <div className={hero.mainHeroSection}>
       <div>
         <p className={hero.boldProjectName}>{projectName}</p>
-        <p className={hero.shortProjectDescription}>{projectDecription}</p>
+        <p className={hero.shortProjectDescription}>{projectDescription}</p>
       </div>
       <div>
         <img src={projectImage} alt="Project Everest" className={hero.ProjectImage} />
@@ -35,7 +35,7 @@ const ProjectHero = ({
 
 ProjectHero.propTypes = {
   projectName: PropTypes.string.isRequired,
-  projectDecription: PropTypes.string.isRequired,
+  projectDescription: PropTypes.string.isRequired,
   projectImage: PropTypes.string.isRequired,
   projectYear: PropTypes.number.isRequired,
 };

@@ -12,6 +12,7 @@ const Everest = () => {
         projectDescription={everest.projectDescription}
         projectImage={everest.projectImage}
         projectYear={everest.projectYear}
+        urlExtension={everest.urlExtension}
         projectGitHub={everest.projectGitHub}
         projectWebsite={everest.projectWebsite}
         miniIntro={everest.miniIntro}

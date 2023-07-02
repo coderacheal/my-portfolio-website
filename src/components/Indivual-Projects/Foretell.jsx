@@ -12,6 +12,7 @@ const Foretell = () => {
         projectDescription={foretell.projectDescription}
         projectImage={foretell.projectImage}
         projectYear={foretell.projectYear}
+        urlExtension={foretell.urlExtension}
         projectGitHub={foretell.projectGitHub}
         projectWebsite={foretell.projectWebsite}
         miniIntro={foretell.miniIntro}

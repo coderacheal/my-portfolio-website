@@ -12,6 +12,7 @@ const Sunday = () => {
         projectDescription={sunday.projectDescription}
         projectImage={sunday.projectImage}
         projectYear={sunday.projectYear}
+        urlExtension={sunday.urlExtension}
         projectGitHub={sunday.projectGitHub}
         projectWebsite={sunday.projectWebsite}
         miniIntro={sunday.miniIntro}
