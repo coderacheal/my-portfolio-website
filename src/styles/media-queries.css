@@ -1,0 +1,13 @@
+
+
+
+/* .portfolio-content {
+
+} */
+
+@media (max-width: 600px) {
+    .portfolio-content {
+      /* Styles for screens smaller than 600px */
+      
+    }
+  }
