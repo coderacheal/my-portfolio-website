@@ -1,0 +1,36 @@
+
+.view-latest-project-div {
+  display: flex;
+  margin-top: 15vh;
+  background-color: black;
+  height: 20vh;
+  color: white;
+}
+
+.view-latest-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+}
+
+.centered-content {
+  flex: 1;
+}
+
+.nextProjectName {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.view-next-ribbon {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.long-arrow {
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}

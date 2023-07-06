@@ -10,11 +10,8 @@
 }
 
 h3 {
-  /* display: flex; */
   width: 50%;
   margin: auto;
-
-  /* background-color: red; */
   text-align: center;
   padding: 50px 0;
   color: rgb(102, 102, 102);

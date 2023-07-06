@@ -1,9 +1,6 @@
-/* Home page  */
 
 @media (max-width: 768px) {
-  /* .portfolio-content {
-    width: 100%;
-  } */
+  /* Home page  */
 
   .header {
     width: 100%;
@@ -75,7 +72,41 @@
     top: 5vh;
   }
   
+/* About Page */
 
+  .heroAboutMe,
+  .techStack {
+    width: 85%;
+    font-size: 90px;
+    line-height: 90px;
+  }
 
+  .officeSetup-and-text {
+    width: 85%;
+  }
+
+  .officeSetupImage {
+    height: 60vh;
+    width: 60vw;
+  }
+
+  .more-about-me {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .techStackSessions {
+    grid-template-columns: 50% 50%;
+  }
+
+  .eachTechStackSessions {
+    width: 100%;
+  }
+
+  .view-latest-project {
+    width: 90%;
+  }
 
 }
+
+
