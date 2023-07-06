@@ -16,8 +16,7 @@ const ProjectCards = () => {
   return (
     <div>
       <p className="ribbon-case-study">
-        CASE STUDIE
-        <u>S</u>
+        CASE STUDIES
       </p>
       <div className="each-project">
         <div className="project-details">
@@ -28,7 +27,7 @@ const ProjectCards = () => {
               onMouseEnter={handleSeeMoreMouseEnter}
               onMouseLeave={handleSeeMoreMouseLeave}
             >
-              IT&apos;S SUNDAY
+              SUNDAY
             </button>
           </Link>
           <p className="project-brief">

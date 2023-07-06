@@ -1,7 +1,8 @@
 .header {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding: 16px;
   color: #fff;
   padding-left: 100px;
@@ -11,35 +12,24 @@
   left: 0;
   right: 0;
   z-index: 12;
-  width: 100%;
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.rest {
   font-size: 30px;
   text-align: end;
   cursor: pointer;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .active {
   color: black;
 }
 
-.nav {
+/* .nav {
   display: flex;
   width: 100%;
-}
-
-.logo {
-  display: none;
-  text-decoration: none;
-}
+} */
 
 .hamburger {
   display: flex;
@@ -48,8 +38,8 @@
   list-style-type: none;
   height: 100%;
   width: 100%;
-  align-items: center;
-  align-content: center;
+  /* align-items: center; */
+  /* align-content: center; */
   gap: 0;
   flex-direction: column;
   transition: 0.3s;
@@ -87,13 +77,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .nav-item {
+  /* display: flex; */
+  /* justify-content: space-between; */
   margin-left: 25px;
   cursor: pointer;
   font-size: 22px;
   font-weight: bold;
+  width: 100%;
 }
 
 a {
@@ -105,10 +99,8 @@ a {
   display: flex;
   position: fixed;
   list-style-type: none;
-  height: 100%;
+  height: 90vh;
   background-color: black;
-  align-items: start;
-  align-content: start;
   left: -100%;
   top: 0;
   gap: 0;
@@ -117,23 +109,29 @@ a {
   transition: 1.2s;
   padding: 0;
   z-index: 10;
-  padding-top: 50px;
+  align-items: center;
+  padding-top: 70px;
+  margin: auto;
 }
 
 .slidingMenu.active {
   left: 0;
   margin: 0;
+  width: 100%;
 }
 
 .menu-counter-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
+  /* align-items: center; */
 }
 
 .nav-links-ul {
   list-style-type: none;
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .nav-links {
@@ -177,7 +175,7 @@ a {
   color: white;
   font-size: 200px;
   position: relative;
-  top: 250px;
+  top: 40%;
   margin-right: 80px;
   text-align: right;
 }

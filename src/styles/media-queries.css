@@ -1,13 +1,81 @@
+/* Home page  */
 
+@media (max-width: 768px) {
+  /* .portfolio-content {
+    width: 100%;
+  } */
 
-
-/* .portfolio-content {
-
-} */
-
-@media (max-width: 600px) {
-    .portfolio-content {
-      /* Styles for screens smaller than 600px */
-      
-    }
+  .header {
+    width: 100%;
   }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .email {
+    font-size: 70px;
+  }
+
+  .hello {
+    font-size: 180px;
+  }
+
+  .ribbon-case-study {
+    font-size: 32px;
+  }
+
+  .each-project {
+    width: 95%;
+  }
+
+  .projectTitle {
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+    width: 80%;
+    margin-top: 30px;
+  }
+  
+  .project-brief {
+    font-size: 24px;
+    width: 80%;
+  }
+
+  .project-image-div {
+    height: 75vh;
+  }
+
+  .portfolio-footer {
+    width: 95%;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+
+  .nav-links a {
+    font-size: 70px;
+    transition: 1s;
+  }
+
+  .menuFooterCounter {
+    display: none;
+  }
+
+  .menuTopDescription {
+    width: 60%;
+  }
+
+  .slidingMenuFooter {
+    top: 5vh;
+  }
+  
+
+
+
+}

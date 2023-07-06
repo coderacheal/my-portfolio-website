@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   const handleMouseEnter = () => {
-    setHebrewName("Let's go home");
+    setHebrewName('Home');
     // setHebrewName("רייצ'ל");
   };
 
@@ -37,7 +37,7 @@ const Header = () => {
         <Link to="/">
           {' '}
           <p
-            className="rest"
+            className="brand"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
