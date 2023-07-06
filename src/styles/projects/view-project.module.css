@@ -46,9 +46,34 @@ h1 {
   pointer-events: none;
 }
 
+.viewCodeWebsite {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .viewCode {
   padding: 10px;
   background-color: transparent;
   border: 1.5px solid white;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .projectBackground {
+    font-size: 150px;
+    padding-top: 30vh;
+  }
+
+  .introDiv {
+    width: 90%;
+  }
+
+  .viewCodeWebsite:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  .introDiv p {
+    margin-bottom: 20px;
+  }
 }

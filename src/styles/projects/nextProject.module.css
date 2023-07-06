@@ -1,5 +1,5 @@
 
-.view-latest-project-div {
+.viewLatestProjectDiv {
   display: flex;
   margin-top: 15vh;
   background-color: black;
@@ -7,7 +7,7 @@
   color: white;
 }
 
-.view-latest-project {
+.viewLatestProject {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +15,7 @@
   margin: auto;
 }
 
-.centered-content {
+.centeredContent {
   flex: 1;
 }
 
@@ -24,13 +24,21 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.view-next-ribbon {
+.viewNextRibbon {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
 
-.long-arrow {
+.longArrow {
   font-size: 100px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
+}
+
+@media (max-width: 768px) {
+
+  .viewLatestProject {
+    width: 90%;
+  }
+
 }

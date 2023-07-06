@@ -9,7 +9,6 @@ const ProjectSummary = ({ projectSummaryOne, projectSummaryTwo, builtFor }) => (
     <div className={summary.descriptionAndImage}>
       <div>
         <p className={summary.builtFor}>{builtFor}</p>
-        {/* <p className={summary.builtFor}>For all the personal finance lovers</p> */}
         <p className={summary.description}>{projectSummaryOne}</p>
         <p className={summary.description}>{projectSummaryTwo}</p>
       </div>

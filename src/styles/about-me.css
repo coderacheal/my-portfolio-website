@@ -104,13 +104,13 @@
   font-weight: bold;
 }
 
-
 .down-arrow {
   position: absolute;
   font-size: 200px;
   margin-top: 7vh;
   right: 0;
   margin-right: 30px;
+  font-weight: bold;
 }
 
 

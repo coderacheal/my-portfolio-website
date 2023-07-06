@@ -103,15 +103,12 @@
   }
 
   .view-latest-project {
-    width: 90%;
+    width: 100%;
   }
 
-
-/* Projects page */
-
-.projectListView p {
-  font-size: 20px;
-}
+  .nextProjectName {
+    font-size: 40px;
+  }
 
 }
 
