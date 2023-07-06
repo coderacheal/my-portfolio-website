@@ -68,7 +68,7 @@ const ProjectList = () => {
       <Link to="/projects/sunday">
         <p onMouseMove={handleMouseMove} onMouseEnter={() => handleMouseOverProject('01')}>
           <span>01</span>
-          IT&apos;S SUNDAY
+          SUNDAY
         </p>
       </Link>
       <Link to="/projects/everest">

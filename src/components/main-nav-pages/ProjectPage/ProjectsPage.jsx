@@ -4,6 +4,9 @@ import Header from '../../Home-page/Header';
 import ProjectImageAndInfo from './ProjectImageAndInfo';
 import ProjectList from './ProjectList';
 
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+
 const ProjectsPage = () => {
   const [divVisibility, setVisibility] = useState(true);
   const [displayText, setDisplayText] = useState('LIST VIEW');
@@ -29,8 +32,7 @@ const ProjectsPage = () => {
       </div>
       <div className={projects.projectsFooter}>
         <p>PROFESSIONAL PORTFOLIO</p>
-        {/* eslint-disable jsx-a11y/click-events-have-key-events */}
-        {/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */}
+
         <p
           className={projects.listView}
           onClick={() => {

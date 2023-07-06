@@ -12,11 +12,12 @@
   width: 90%;
   height: 80vh;
   margin: auto;
-  padding-top: 7%;
+  padding-top: 10%;
   overflow-x: auto;
   white-space: nowrap;
   gap: 50px;
   overflow: hidden;
+  /* margin-top: 80px; */
 }
 
 .allProjectsImages img {
@@ -105,4 +106,19 @@
 
 .projectPlusInfo {
   display: flex;
+}
+
+.projecImageTitle {
+  text-align: right;
+  margin-right: 15px;
+}
+
+
+@media (max-width: 768px) {
+
+  .projectListView p {
+    font-size: 70px;
+  }
+
+  
 }

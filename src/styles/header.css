@@ -34,16 +34,16 @@
 .hamburger {
   display: flex;
   cursor: pointer;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   list-style-type: none;
   height: 100%;
-  width: 100%;
-  /* align-items: center; */
-  /* align-content: center; */
+  /* width: 100%; */
+  align-items: center;
+  align-content: center;
   gap: 0;
   flex-direction: column;
   transition: 0.3s;
-  padding: 0;
+  padding-top: 5px;
   z-index: 10;
 }
 
