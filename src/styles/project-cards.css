@@ -1,3 +1,6 @@
+/* .homeProjectsImageAndDescription {
+} */
+
 .ribbon-case-study {
   text-align: center;
   font-size: 42px;
@@ -72,6 +75,10 @@
   margin: auto;
   margin-top: 7%;
   text-align: left;
+}
+
+.see-more-halo {
+  display: none;
 }
 
 .legacy-projects {

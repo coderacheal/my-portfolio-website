@@ -125,7 +125,5 @@
 .footer-links-social {
   display: flex;
   width: 12%;
-
-  /* background-color: red; */
   justify-content: space-between;
 }

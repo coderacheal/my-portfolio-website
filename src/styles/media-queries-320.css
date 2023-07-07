@@ -1,0 +1,114 @@
+@media (min-width: 320px) and (max-width: 426px) {
+    /* Home page  */
+
+  .hello {
+    font-size: 80px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .ribbon-case-study {
+    font-size: 28px;
+    color: rgb(5, 5, 58);
+  }
+
+  .projectTitle {
+    width: 100%;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .each-project {
+    width: 85%;
+    margin-bottom: -90px;
+    grid-template-columns: 1fr;
+  }
+
+  .project-image-div {
+    height: 65vh;
+    width: 85vw;
+  }
+
+  .project-brief {
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  
+  .email {
+    font-size: 30px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .portfolio-footer {
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .social-text-div {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .legacy-projects {
+    font-size: 30px;
+  }
+
+  .work-together p {
+    font-size: 15px;
+  }
+
+  .nav-links a {
+    font-size: 50px;
+    transition: 1s;
+  }
+
+  .menuTopDescription {
+   display: none;
+  }
+
+  .slidingMenuFooter {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links-ul {
+    padding-left: 10px;
+  }
+
+  .social-linkedin {
+    flex-direction: column;
+  }
+
+  .all-socials {
+    margin-right: 0px;
+  }
+
+  .see-more-halo {
+    display: flex;
+    position: relative;
+    bottom: 45vh;
+    left: 25vw;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    align-items: center;
+  }
+
+}

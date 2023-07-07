@@ -19,13 +19,9 @@
 
 .socials-div {
   display: flex;
-
-  /* width: 20%; */
   position: absolute;
   left: 90vw;
   top: 50vh;
-
-  /* justify-content: flex-end; */
 }
 
 .all-socials {
@@ -54,19 +50,3 @@
   background-color: rgb(80, 242, 80);
   border-radius: 2px;
 }
-
-/*
-.one {
-  width: 0.5px;
-  height: 150px;
-}
-
-.two {
-  width: 0.5px;
-  height: 40px;
-}
-
-.four {
-  width: 0.5px;
-  height: 90px;
-} */
