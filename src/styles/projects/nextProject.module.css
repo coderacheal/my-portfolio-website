@@ -15,9 +15,9 @@
   margin: auto;
 }
 
-.centeredContent {
+/* .centeredContent {
   flex: 1;
-}
+} */
 
 .nextProjectName {
   font-size: 50px;
@@ -41,4 +41,18 @@
     width: 90%;
   }
 
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .nextProjectName {
+    font-size: 40px;
+  }
+
+  .longArrow {
+    font-size: 50px;
+  }
+
+  .viewNextRibbon {
+    font-size: 13px;
+  }
 }

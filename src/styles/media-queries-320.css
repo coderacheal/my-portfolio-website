@@ -111,4 +111,39 @@
     align-items: center;
   }
 
+  /* About me  */
+
+  .heroAboutMe,
+  .techStack {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .techStackSessions {
+    grid-template-columns: 1fr;
+  }
+  
+  .nextProjectName {
+    font-size: 20px;
+  }
+
+  .officeSetupImage {
+    height: 40vh;
+    width: 85vw;
+  }
+
+  .section-description {
+    grid-template-columns: 1fr;
+  }
+
+  .more-about-me {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+
+  
+
 }

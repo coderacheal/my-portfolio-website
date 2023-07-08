@@ -32,7 +32,6 @@ const ProjectsPage = () => {
       </div>
       <div className={projects.projectsFooter}>
         <p>PROFESSIONAL PORTFOLIO</p>
-
         <p
           className={projects.listView}
           onClick={() => {
