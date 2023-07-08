@@ -1,8 +1,6 @@
 .contact-session {
   margin-top: 30px;
   padding: 10vh 0;
-
-  /* background-color: #f0f0f0; */
 }
 
 .work-together {
@@ -54,6 +52,10 @@
   line-height: 170px;
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.in-touch-comment-mini {
+  display: none;
 }
 
 .in-touch-comment {
