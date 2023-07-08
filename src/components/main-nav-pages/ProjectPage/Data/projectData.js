@@ -58,7 +58,7 @@ const projectData = [
     projectYear: 2021,
     projectGitHub: 'https://github.com/coderacheal/everest',
     projectWebsite: 'https://github.com/coderacheal/everest',
-    miniIntro: 'I CERTIFED AS A SCRUM MASTER TO BECOME A BETTER TEAM PLAYER AND DECIDED TO BUILD A PRODUCT MANAGEMENT TOOL FOR MY COMPANY WITH PURE JAVASCRIPT',
+    miniIntro: 'I certified as a scrum master to become a better team player and decided to build a product management tool for my company with pure JavaScript',
     projectSummaryOne: ' Everest is built with security and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam, aspernatur commodi facere,labore minima maxime explicabo, iste reiciendis quia inventore saepe delectus laudantium voluptatibus tempore nemo.',
     projectSummaryTwo: ' Everest is built with security and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam, aspernatur commodi facere,labore minima maxime explicabo, iste reiciendis quia inventore saepe delectus laudantium voluptatibus tempore nemo.',
     builtFor: 'For all the personal finance lovers',

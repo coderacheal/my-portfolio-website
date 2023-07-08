@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import view from '../../../styles/projects/view-project.module.css';
 
@@ -12,8 +12,8 @@ const ViewProject = ({
       <h1>Introduction</h1>
       <p>{miniIntro}</p>
       <div className={view.viewCodeWebsite}>
-        <Link to={projectGitHub} className={view.viewCode}>VIEW CODE</Link>
-        <Link to={projectWebsite} className={view.viewCode}>VIEW WEBSITE</Link>
+        <a href={projectGitHub} className={view.viewCode}>VIEW CODE</a>
+        <a href={projectWebsite} className={view.viewCode}>VIEW WEBSITE</a>
       </div>
     </div>
   </div>

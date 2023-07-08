@@ -77,3 +77,28 @@ h1 {
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .introDiv p {
+    width: 90%;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  .projectBackground {
+    font-size: 70px;
+    width: 95%;
+    padding-top: 40vh;
+  }
+
+  .viewCode {
+    font-size: 12px;
+    /* margin-right: 40px; */
+  }
+
+  .introDiv div {
+    width: 80%;
+  }
+}
+

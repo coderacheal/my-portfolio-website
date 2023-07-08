@@ -53,3 +53,18 @@ h3 {
   }
 
 }
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .descriptionAndImage {
+    flex-direction: column;
+  }
+
+  .projectImage {
+    display: none;
+  }
+
+  h3 {
+    width: 80%;
+  }
+  
+}
