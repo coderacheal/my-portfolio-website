@@ -39,12 +39,12 @@
 }
 
 .projectTitle {
-  width: 90%;
+  width: 95%;
   background-color: white;
   margin: auto;
   margin-top: 90px;
   margin-left: 3%;
-  font-size: 120px;
+  font-size: 90px;
   text-align: center;
   border: 0;
   cursor: none;
@@ -83,6 +83,7 @@
 }
 
 .legacy-projects {
+  display: block;
   width: 50%;
   margin: auto;
   margin-top: 120px;

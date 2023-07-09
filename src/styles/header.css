@@ -85,7 +85,7 @@ a {
   display: flex;
   position: fixed;
   list-style-type: none;
-  height: 90vh;
+  height: 100vh;
   background-color: black;
   left: -100%;
   top: 0;

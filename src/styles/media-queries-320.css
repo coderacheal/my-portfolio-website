@@ -24,6 +24,7 @@
 
   .each-project {
     width: 85%;
+
     /* margin-bottom: -90px; */
     grid-template-columns: 1fr;
     margin-bottom: 10px;
@@ -238,6 +239,3 @@
     line-height: 70px;
   }
 }
-
-
-

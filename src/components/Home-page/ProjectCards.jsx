@@ -50,16 +50,16 @@ const ProjectCards = () => {
           <p className="see-more-halo"> See more</p>
         </div>
       ))}
-
-      <div className="">
-        <div
+      <div>
+        <Link
+          to="/projects"
           type="button"
           className="legacy-projects"
           onMouseEnter={handleSeeMoreMouseEnter}
           onMouseLeave={handleSeeMoreMouseLeave}
         >
           SEE LEGACY PROJECTS
-        </div>
+        </Link>
       </div>
       {showSeeMoreMouse && <SeeMoreMouse />}
     </div>
