@@ -1,5 +1,4 @@
 @media (min-width: 1024px) and (max-width: 1300px) {
- 
   /* Home page  */
 
   .email {
@@ -17,7 +16,7 @@
     font-size: 24px;
     width: 100%;
   }
-  
+
 
   /* Header */
   .nav-links a {
@@ -68,12 +67,9 @@
     padding-bottom: 70px;
   }
 
-
   .hello-email-ribbon {
     display: block;
     font-size: 24px;
     text-align: center;
   }
-
-
 }
