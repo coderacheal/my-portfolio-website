@@ -1,0 +1,54 @@
+.viewProjectsection {
+  height: 50vh;
+  background-color: #222a4b;
+}
+
+.introDiv {
+  width: 60%;
+  margin: auto;
+  color: white;
+  z-index: 1;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 70px;
+}
+
+.introDiv p {
+  width: 50%;
+  margin: auto;
+  color: white;
+  line-height: 24px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.introDiv div {
+  margin: auto;
+  color: white;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectBackground {
+  font-size: 300px;
+  color: white;
+  opacity: 0.1;
+  position: absolute;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20vh;
+  pointer-events: none;
+}
+
+.viewCode {
+  padding: 10px;
+  background-color: transparent;
+  border: 1.5px solid white;
+  cursor: pointer;
+}

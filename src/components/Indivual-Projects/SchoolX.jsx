@@ -1,10 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ProjectTemplate from './components/ProjectTemplate';
+import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
-const SchoolX = () => (
-  <div className="each-project-page">
-    <Link to="/projects" className="close-current-project">Close</Link>
-  </div>
-);
+const SchoolX = () => {
+  const schoolx = projectData[3];
+
+  return (
+    <div>
+      <ProjectTemplate
+        projectName={schoolx.projectName}
+        projectDescription={schoolx.projectDescription}
+        projectImage={schoolx.projectImage}
+        projectYear={schoolx.projectYear}
+        urlExtension={schoolx.urlExtension}
+        projectGitHub={schoolx.projectGitHub}
+        projectWebsite={schoolx.projectWebsite}
+        miniIntro={schoolx.miniIntro}
+        builtFor={schoolx.builtFor}
+        projectSummaryOne={schoolx.projectSummaryOne}
+        projectSummaryTwo={schoolx.projectSummaryTwo}
+        firstCarouselImage={schoolx.firstCarouselImage}
+        secondCarouselImage={schoolx.secondCarouselImage}
+        thirdCarouselImage={schoolx.thirdCarouselImage}
+        nextProjectName={schoolx.nextProjectName}
+        route={schoolx.route}
+        backgroundColor={schoolx.backgroundColor}
+        viewProject={schoolx.viewProject}
+      />
+    </div>
+  );
+};
 
 export default SchoolX;

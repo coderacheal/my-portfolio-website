@@ -1,6 +1,8 @@
 .contact-session {
   margin-top: 30px;
-  background-color: #f0f0f0;
+  padding: 10vh 0;
+
+  /* background-color: #f0f0f0; */
 }
 
 .work-together {
@@ -14,7 +16,6 @@
   width: 40%;
   font-size: 24px;
   margin-top: 50px;
-  color: white;
   text-align: center;
 }
 
@@ -29,15 +30,13 @@
 .send-message {
   margin: 0;
   padding-top: 35vh;
-  color: white;
   font-size: 28px;
   text-align: center;
 }
 
 .profile-get-in-touch {
   display: flex;
-
-  /* padding-top: 120px; */
+  color: white;
   justify-content: space-between;
   width: 95%;
   margin: auto;
@@ -46,7 +45,7 @@
 
 .profile-get-in-touch img {
   height: 75vh;
-  width: 30vw;
+  width: 27vw;
 }
 
 .in-touch-comment-large {
@@ -54,6 +53,7 @@
   text-align: right;
   line-height: 170px;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .in-touch-comment {
@@ -73,6 +73,7 @@
   margin: auto;
   margin-top: 40px;
   transition: 1s ease-in-out;
+  margin-bottom: 20vh;
 }
 
 .connect-via-social-ribbon {
@@ -80,10 +81,7 @@
   width: 15%;
   margin: auto;
   font-size: 24px;
-  padding-top: 30vh;
-}
-
-.email-div a {
+  padding-top: 25vh;
   color: white;
 }
 
@@ -111,10 +109,6 @@
   text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-}
-
-.contact-session-page p {
-  color: white;
 }
 
 .contact-footer {

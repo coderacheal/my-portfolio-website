@@ -1,0 +1,67 @@
+.projectHero {
+  background-color: #0d1123;
+  height: 100vh;
+  overflow-y: auto;
+  top: 0;
+}
+
+.ProjectImage {
+  height: 40vh;
+  width: 20vw;
+}
+
+.mainHeroSection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30vh;
+  color: white;
+  width: 65%;
+  margin: auto;
+  align-items: center;
+
+  /* background-color: red; */
+}
+
+.boldProjectName {
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.shortProjectDescription {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.developerRole {
+  display: flex;
+  color: white;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.eachRole {
+  display: flex;
+  position: relative;
+  top: 20vh;
+}
+
+.eachRole p {
+  margin-right: 10px;
+
+  /* font-weight: bold; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.eachRole :nth-child(1) {
+  color: aqua;
+
+  /* margin-right: 10px; */
+
+  /* font-weight: bold; */
+
+  /* font-family: 'Montserrat', sans-serif; */
+}

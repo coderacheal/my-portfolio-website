@@ -1,11 +1,10 @@
 .footer-component {
   background-color: #f0f0f0;
-  padding-top: 50px;
 
-  /* position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0; */
+  /* background-color: #c8c8c8; */
+
+  /* background-color: rgba(28,31,46,255); */
+  padding-top: 50px;
 }
 
 .portfolio-footer {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Home-page/Header';
-import profile from '../../assets/food.jpg';
+import profile from '../../assets/smile.jpg';
 
 const ContactPage = () => (
   <div className="contact-session-page">
@@ -11,7 +11,7 @@ const ContactPage = () => (
         <div>
           <p className="in-touch-comment-large">GET IN</p>
           <p className="in-touch-comment-large">TOUCH</p>
-          <p className="in-touch-comment">I CREATE SLEEK INTERACTIVE WEBSITES THAT LEVERAGE ARTIFICIAL INTELLIGENCE.</p>
+          <p className="in-touch-comment">A FULL STACK DEVELOPER WITH A BACKGROUND IN DATA SCIENCE AND MACHINE LEARNING</p>
         </div>
       </div>
     </div>

@@ -1,11 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ProjectTemplate from './components/ProjectTemplate';
+import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
-const Foretell = () => (
-  <div className="each-project-page">
-    <Link to="/projects" className="close-current-project">Close</Link>
-    foretell
-  </div>
-);
+const Foretell = () => {
+  const foretell = projectData[4];
+
+  return (
+    <div>
+      <ProjectTemplate
+        projectName={foretell.projectName}
+        projectDescription={foretell.projectDescription}
+        projectImage={foretell.projectImage}
+        projectYear={foretell.projectYear}
+        urlExtension={foretell.urlExtension}
+        projectGitHub={foretell.projectGitHub}
+        projectWebsite={foretell.projectWebsite}
+        miniIntro={foretell.miniIntro}
+        builtFor={foretell.builtFor}
+        projectSummaryOne={foretell.projectSummaryOne}
+        projectSummaryTwo={foretell.projectSummaryTwo}
+        firstCarouselImage={foretell.firstCarouselImage}
+        secondCarouselImage={foretell.secondCarouselImage}
+        thirdCarouselImage={foretell.thirdCarouselImage}
+        nextProjectName={foretell.nextProjectName}
+        route={foretell.route}
+        backgroundColor={foretell.backgroundColor}
+        viewProject={foretell.viewProject}
+      />
+    </div>
+  );
+};
 
 export default Foretell;

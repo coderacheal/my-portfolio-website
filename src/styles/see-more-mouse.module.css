@@ -43,3 +43,8 @@
   border-radius: 50%;
   opacity: 0.4;
 }
+
+.projectImage {
+  height: 100px;
+  width: 100px;
+}
