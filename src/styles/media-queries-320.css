@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 769px) {
+@media (min-width: 280px) and (max-width: 769px) {
   /* Home page  */
 
   .hello {
@@ -24,8 +24,6 @@
 
   .each-project {
     width: 85%;
-
-    /* margin-bottom: -90px; */
     grid-template-columns: 1fr;
     margin-bottom: 10px;
   }
@@ -172,6 +170,7 @@
   .connect-via-social-ribbon {
     text-align: center;
     width: 60%;
+    font-size: 18px;
   }
 
   .contact-footer {
@@ -196,13 +195,12 @@
   }
 
   .in-touch-comment-mini {
-    display: flex;
-    width: 80%;
-    font-size: 25px;
+    display: block;
+    width: 90%;
+    font-size: 30px;
     text-align: center;
     line-height: 10px;
     margin: auto;
-    white-space: normal;
   }
 }
 
@@ -224,6 +222,13 @@
   .about-my-portfolio {
     position: relative;
     width: 100%;
+    margin: auto;
+  }
+
+  .in-touch-comment-mini {
+    font-size: 40px;
+    text-align: center;
+    line-height: 30px;
     margin: auto;
   }
 }
