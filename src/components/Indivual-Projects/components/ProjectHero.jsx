@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 import hero from '../../../styles/projects/projectHero.module.css';
 
 const ProjectHero = ({
-  projectName, projectDescription, projectImage, projectYear,
+  projectName,
+  projectDescription,
+  projectImage,
+  projectYear,
 }) => (
   <div className={hero.projectHero}>
     <div className={hero.mainHeroSection}>

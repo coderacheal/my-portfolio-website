@@ -21,7 +21,7 @@ const AboutPage = () => {
         {words.map((word, index) => (
           <span key={words}>
             {word.split('').map((letter) => (
-              <span key={word + letter} className="" aria-hidden="true">{letter}</span>
+              <span key={word + letter} className="passionate-dev" aria-hidden="true">{letter}</span>
             ))}
             {index !== words.length - 1 && <br />}
           </span>
@@ -29,7 +29,7 @@ const AboutPage = () => {
       </h2>
       <div className="officeSetup-and-text">
         <div className="officeSetup-div">
-          <img className="officeSetup" src={workspace} alt="workspace" />
+          <img className="officeSetupImage" src={workspace} alt="workspace" />
         </div>
         <div className="more-about-me-div">
           <div className="section-description">

@@ -32,7 +32,7 @@ const ProjectImageAndInfo = () => {
               <div>
                 <p>0{index + 1}</p>
                 <img src={project.projectImage} alt="" className={projects.projectImage} />
-                <p className="">{project.title}</p>
+                <p className={projects.projecImageTitle}>{project.title}</p>
               </div>
             </Link>
           </div>

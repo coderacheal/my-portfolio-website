@@ -1,0 +1,156 @@
+@media (min-width: 768px) and (max-width: 1025px) {
+  /* Home page  */
+
+  .header {
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .email {
+    font-size: 70px;
+  }
+
+  .hello {
+    font-size: 180px;
+  }
+
+  .ribbon-case-study {
+    font-size: 32px;
+  }
+
+  .each-project {
+    width: 95%;
+  }
+
+  .projectTitle {
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .project-brief {
+    font-size: 24px;
+    width: 80%;
+  }
+
+  .project-image-div {
+    height: 75vh;
+  }
+
+  .portfolio-footer {
+    width: 95%;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+
+  .nav-links a {
+    font-size: 70px;
+    transition: 1s;
+  }
+
+  .menuFooterCounter {
+    display: none;
+  }
+
+  .menuTopDescription {
+    width: 60%;
+  }
+
+  .slidingMenuFooter {
+    top: 5vh;
+  }
+
+  /* About Page */
+
+  .heroAboutMe,
+  .techStack {
+    width: 85%;
+    font-size: 90px;
+    line-height: 90px;
+  }
+
+  .officeSetup-and-text {
+    width: 85%;
+  }
+
+  .officeSetupImage {
+    height: 60vh;
+    width: 60vw;
+  }
+
+  .more-about-me {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .techStackSessions {
+    grid-template-columns: 50% 50%;
+  }
+
+  .eachTechStackSessions {
+    width: 100%;
+  }
+
+  .view-latest-project {
+    width: 100%;
+  }
+
+  .nextProjectName {
+    font-size: 40px;
+  }
+
+  /* Contact Page */
+
+  .profile-get-in-touch {
+    display: block;
+  }
+
+  .in-touch-comment-large {
+    display: none;
+  }
+
+  .in-touch-comment-mini {
+    display: block;
+    text-decoration: underline;
+    font-size: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin: auto;
+  }
+
+  .in-touch-comment {
+    display: none;
+  }
+
+  .profile-get-in-touch img {
+    display: none;
+  }
+
+  .connect-via-social-ribbon {
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+    padding-bottom: 70px;
+  }
+
+  .hello-email-ribbon {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer-links-social {
+    width: 25%;
+  }
+}

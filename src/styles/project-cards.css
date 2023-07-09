@@ -1,9 +1,13 @@
+/* .homeProjectsImageAndDescription {
+} */
+
 .ribbon-case-study {
   text-align: center;
   font-size: 42px;
   color: gray;
   margin-top: 80px;
-  text-decoration: underline;
+
+  /* text-decoration: underline; */
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -35,12 +39,12 @@
 }
 
 .projectTitle {
-  width: 90%;
+  width: 95%;
   background-color: white;
   margin: auto;
   margin-top: 90px;
   margin-left: 3%;
-  font-size: 120px;
+  font-size: 90px;
   text-align: center;
   border: 0;
   cursor: none;
@@ -74,7 +78,12 @@
   text-align: left;
 }
 
+.see-more-halo {
+  display: none;
+}
+
 .legacy-projects {
+  display: block;
   width: 50%;
   margin: auto;
   margin-top: 120px;

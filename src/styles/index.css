@@ -12,14 +12,11 @@
 @import 'hello-hero.css';
 @import 'project-cards.css';
 @import 'honourable-mentions.css';
+@import 'media-queries-768.css';
+@import 'media-queries-320.css';
+@import 'media-queries-1025.css';
 
-/* @import 'each-project.css'; */
-
-/* @import './projects/shared.css'; */
-
-/* @import './projects/projectHero.css'; */
-
-/* @import './projects/project-header.modules.css'; */
+/* @import 'projects/view-projects.css'; */
 
 body {
   margin: 0;

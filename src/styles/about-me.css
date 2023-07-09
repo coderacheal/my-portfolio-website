@@ -4,8 +4,6 @@
 .about-me-section {
   position: relative;
   margin: auto;
-
-  /* background-color: #f0f0f0; */
 }
 
 .about-me {
@@ -59,20 +57,15 @@
   font-weight: 300;
 }
 
-/* Main page  */
+/* Main About me page  */
 
 .about-me-main {
   background-color: #f0f0f0;
 }
 
-
-/* About me  */
-
 .heroAboutMe,
 .techStack {
   padding-top: 50vh;
-
-  /* margin: 0; */
   width: 75%;
   margin: auto;
   font-size: 110px;
@@ -87,7 +80,7 @@
   margin: auto;
 }
 
-.officeSetup {
+.officeSetupImage {
   height: 50vh;
   width: 40vw;
   margin: auto;
@@ -153,8 +146,9 @@
   margin-top: 7vh;
   right: 0;
   margin-right: 30px;
-}
 
+  /* font-weight: bold; */
+}
 
 /* Flip card  */
 
@@ -233,7 +227,6 @@
   margin-top: 20px;
 }
 
-
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
@@ -258,7 +251,6 @@
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {

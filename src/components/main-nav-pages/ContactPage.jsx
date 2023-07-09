@@ -9,8 +9,12 @@ const ContactPage = () => (
       <div className="profile-get-in-touch">
         <img src={profile} alt="myProfile" />
         <div>
+          <p className="hello-email-ribbon">SEND ME AN EMAIL</p>
           <p className="in-touch-comment-large">GET IN</p>
           <p className="in-touch-comment-large">TOUCH</p>
+          <a href="https://github.com/coderacheal" className="in-touch-comment-mini">HELLO@RACHEAL</a>
+          <br />
+          <a href="https://github.com/coderacheal" className="in-touch-comment-mini">APPIAHKUBI.COM</a>
           <p className="in-touch-comment">A FULL STACK DEVELOPER WITH A BACKGROUND IN DATA SCIENCE AND MACHINE LEARNING</p>
         </div>
       </div>

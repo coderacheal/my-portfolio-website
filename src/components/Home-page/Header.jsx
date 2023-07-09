@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [counter, setCounter] = useState(1);
@@ -22,7 +26,7 @@ const Header = () => {
   };
 
   const handleMouseEnter = () => {
-    setHebrewName("Let's go home");
+    setHebrewName('Home');
     // setHebrewName("רייצ'ל");
   };
 
@@ -33,20 +37,17 @@ const Header = () => {
   return (
     <div>
       <header className="header">
-        {/* eslint-disable react/no-unescaped-entities */}
-        <Link to="/">
-          {' '}
-          <p
-            className="rest"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            {hebrewName}
-          </p>
-        </Link>
         <nav className="nav-item">
-          {/* eslint-disable jsx-a11y/click-events-have-key-events */}
-          {/* eslint-disable jsx-a11y/no-static-element-interactions */}
+          <Link to="/">
+            {' '}
+            <p
+              className="brand"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              {hebrewName}
+            </p>
+          </Link>
           <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={handleClick}>
             <div>
               <span className="bar" />
@@ -69,24 +70,20 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-links">
-              <Link to="/about" onMouseEnter={() => handleHover(1)}>
+              <Link to="/projects" onMouseEnter={() => handleHover(1)}>
+                <span>W</span>
+                <span>O</span>
+                <span>R</span>
+                <span>K</span>
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/about" onMouseEnter={() => handleHover(2)}>
                 <span>A</span>
                 <span>B</span>
                 <span>O</span>
                 <span>U</span>
                 <span>T</span>
-              </Link>
-            </li>
-            <li className="nav-links">
-              <Link to="/projects" onMouseEnter={() => handleHover(2)}>
-                <span>P</span>
-                <span>R</span>
-                <span>O</span>
-                <span>J</span>
-                <span>E</span>
-                <span>C</span>
-                <span>T</span>
-                <span>S</span>
               </Link>
             </li>
             <li className="nav-links">

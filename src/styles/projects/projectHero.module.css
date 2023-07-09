@@ -1,13 +1,14 @@
 .projectHero {
   background-color: #0d1123;
   height: 100vh;
-  overflow-y: auto;
+
+  /* overflow-y: auto; */
   top: 0;
 }
 
 .ProjectImage {
-  height: 40vh;
-  width: 20vw;
+  height: 400px;
+  width: 300px;
 }
 
 .mainHeroSection {
@@ -18,8 +19,6 @@
   width: 65%;
   margin: auto;
   align-items: center;
-
-  /* background-color: red; */
 }
 
 .boldProjectName {
@@ -46,22 +45,78 @@
 .eachRole {
   display: flex;
   position: relative;
-  top: 20vh;
+  padding-top: 5%;
+
+  /* top: 20vh; */
 }
 
 .eachRole p {
   margin-right: 10px;
-
-  /* font-weight: bold; */
   font-family: 'Montserrat', sans-serif;
 }
 
 .eachRole :nth-child(1) {
   color: aqua;
+}
 
-  /* margin-right: 10px; */
+@media (min-width: 768px) and (max-width: 1300px) {
+  .eachRole {
+    flex-direction: column;
+    text-align: center;
+  }
 
-  /* font-weight: bold; */
+  .boldProjectName {
+    font-size: 70px;
+  }
 
-  /* font-family: 'Montserrat', sans-serif; */
+  .shortProjectDescription {
+    width: 70%;
+    text-align: left;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  .ProjectImage {
+    height: 300px;
+    width: 250px;
+  }
+
+  .mainHeroSection {
+    width: 85%;
+  }
+
+  .developerRole {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+  .developerRole {
+    display: none;
+  }
+
+  .mainHeroSection {
+    flex-direction: column;
+  }
+
+  .boldProjectName {
+    font-size: 65px;
+    margin-top: 70px;
+  }
+
+  .ProjectImage {
+    display: none;
+  }
+
+  .shortProjectDescription {
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .boldProjectName {
+    font-size: 80px;
+  }
 }

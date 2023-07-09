@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import nextProject from '../../../styles/projects/nextProject.module.css';
 
 const NextProject = ({
   nextProjectName, backgroundColor, route, viewProject,
@@ -11,14 +12,14 @@ const NextProject = ({
 
   return (
     <Link to={route}>
-      <div className="view-latest-project-div" style={containerStyle}>
-        <div className="view-latest-project">
-          <div className="centered-content">
-            <p className="view-next-ribbon">{viewProject}</p>
-            <p className="nextProjectName">{nextProjectName}</p>
+      <div className={nextProject.viewLatestProjectDiv} style={containerStyle}>
+        <div className={nextProject.viewLatestProject}>
+          <div className={nextProject.centeredContent}>
+            <p className={nextProject.viewNextRibbon}>{viewProject}</p>
+            <p className={nextProject.nextProjectName}>{nextProjectName}</p>
           </div>
           <div>
-            <span className="long-arrow">&rarr;</span>
+            <span className={nextProject.longArrow}>&rarr;</span>
           </div>
         </div>
       </div>

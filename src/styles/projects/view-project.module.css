@@ -46,9 +46,80 @@ h1 {
   pointer-events: none;
 }
 
+.viewCodeWebsite {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .viewCode {
   padding: 10px;
   background-color: transparent;
   border: 1.5px solid white;
   cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .projectBackground {
+    font-size: 150px;
+    padding-top: 30vh;
+  }
+
+  .introDiv {
+    width: 90%;
+  }
+
+  .viewCodeWebsite:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  .introDiv p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+  .introDiv p {
+    width: 90%;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  .projectBackground {
+    font-size: 70px;
+    width: 95%;
+    padding-top: 40vh;
+  }
+
+  .viewCode {
+    font-size: 12px;
+  }
+
+  .introDiv div {
+    width: 70%;
+  }
+
+  .introRibbon {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  .introDiv {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .introDiv {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .projectBackground {
+    font-size: 180px;
+    width: 95%;
+    padding-top: 30vh;
+  }
 }

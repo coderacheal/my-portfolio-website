@@ -1,0 +1,73 @@
+@media (min-width: 1024px) and (max-width: 1300px) {
+  /* Home page  */
+
+  .email {
+    font-size: 100px;
+  }
+
+  .projectTitle {
+    width: 100%;
+    font-size: 70px;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .project-brief {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  /* Header */
+  .nav-links a {
+    font-size: 70px;
+  }
+
+  .menuFooterCounter {
+    font-size: 140px;
+    top: 25%;
+  }
+
+  .slidingMenuFooter {
+    top: 20px;
+  }
+
+  /* contact page */
+
+  .profile-get-in-touch {
+    display: block;
+  }
+
+  .in-touch-comment-large {
+    display: none;
+  }
+
+  .in-touch-comment-mini {
+    display: block;
+    text-decoration: underline;
+    font-size: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin: auto;
+  }
+
+  .in-touch-comment {
+    display: none;
+  }
+
+  .profile-get-in-touch img {
+    display: none;
+  }
+
+  .connect-via-social-ribbon {
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+    padding-bottom: 70px;
+  }
+
+  .hello-email-ribbon {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,60 @@
+
+.viewLatestProjectDiv {
+  display: flex;
+  margin-top: 15vh;
+  background-color: black;
+  height: 20vh;
+  color: white;
+}
+
+.viewLatestProject {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+}
+
+/* .centeredContent {
+  flex: 1;
+} */
+
+.nextProjectName {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.viewNextRibbon {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.longArrow {
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .viewLatestProject {
+    width: 90%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+  .viewLatestProject {
+    width: 90%;
+  }
+
+  .nextProjectName {
+    font-size: 40px;
+  }
+
+  .longArrow {
+    font-size: 50px;
+  }
+
+  .viewNextRibbon {
+    font-size: 13px;
+  }
+}

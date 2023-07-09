@@ -1,10 +1,10 @@
 .oneProjectImage {
-  height: 500px;
-  width: 400px;
+  height: 650px;
+  width: 100px;
 }
 
 .carouselDiv {
   padding: 10vh 0;
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
