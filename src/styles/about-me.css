@@ -150,7 +150,6 @@
   /* font-weight: bold; */
 }
 
-
 /* Flip card  */
 
 .techStack {
@@ -228,7 +227,6 @@
   margin-top: 20px;
 }
 
-
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
@@ -253,7 +251,6 @@
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
