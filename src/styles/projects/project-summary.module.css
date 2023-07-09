@@ -33,8 +33,7 @@ h3 {
   width: 30vw;
 }
 
-@media (max-width: 768px) {
-
+@media (min-width: 768px) and (max-width: 1025px) {
   .descriptionAndImage {
     width: 90%;
   }
@@ -51,12 +50,12 @@ h3 {
     height: 50vh;
     width: 40vw;
   }
-
 }
 
-@media (min-width: 320px) and (max-width: 426px) {
+@media (min-width: 320px) and (max-width: 769px) {
   .descriptionAndImage {
     flex-direction: column;
+    width: 90%;
   }
 
   .projectImage {
@@ -66,5 +65,16 @@ h3 {
   h3 {
     width: 80%;
   }
-  
+
+  .description {
+    width: 95%;
+    line-height: 24px;
+    margin-top: 15px;
+  }
+
+  .builtFor {
+    font-size: 18px;
+    width: 95%;
+  }
 }
+

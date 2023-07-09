@@ -59,7 +59,7 @@ h1 {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .projectBackground {
     font-size: 150px;
     padding-top: 30vh;
@@ -78,7 +78,7 @@ h1 {
   }
 }
 
-@media (min-width: 320px) and (max-width: 426px) {
+@media (min-width: 320px) and (max-width: 769px) {
   .introDiv p {
     width: 90%;
     line-height: 20px;
@@ -94,11 +94,26 @@ h1 {
 
   .viewCode {
     font-size: 12px;
-    /* margin-right: 40px; */
   }
 
   .introDiv div {
-    width: 80%;
+    width: 70%;
+  }
+
+  .introRibbon {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  .introDiv {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .introDiv {
+    width: 65%;
   }
 }
 

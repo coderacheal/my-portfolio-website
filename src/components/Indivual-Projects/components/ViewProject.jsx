@@ -9,7 +9,7 @@ const ViewProject = ({
   <div className={view.viewProjectsection}>
     <p className={view.projectBackground}>{urlExtension}</p>
     <div className={view.introDiv}>
-      <h1>Introduction</h1>
+      <h1 className={view.introRibbon}>Introduction</h1>
       <p>{miniIntro}</p>
       <div className={view.viewCodeWebsite}>
         <a href={projectGitHub} className={view.viewCode}>VIEW CODE</a>

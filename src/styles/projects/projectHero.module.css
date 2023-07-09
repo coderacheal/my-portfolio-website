@@ -1,6 +1,7 @@
 .projectHero {
   background-color: #0d1123;
   height: 100vh;
+
   /* overflow-y: auto; */
   top: 0;
 }
@@ -45,6 +46,7 @@
   display: flex;
   position: relative;
   padding-top: 5%;
+
   /* top: 20vh; */
 }
 
@@ -57,7 +59,7 @@
   color: aqua;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .eachRole {
     flex-direction: column;
     text-align: center;
@@ -86,10 +88,9 @@
   .developerRole {
     margin-top: 50px;
   }
-
 }
 
-@media (min-width: 320px) and (max-width: 426px) {
+@media (min-width: 320px) and (max-width: 769px) {
   .developerRole {
     display: none;
   }
@@ -112,6 +113,10 @@
     width: 100%;
     text-align: left;
   }
-  
+}
 
+@media (min-width: 480px) and (max-width: 769px) {
+  .boldProjectName {
+    font-size: 80px;
+  }
 }

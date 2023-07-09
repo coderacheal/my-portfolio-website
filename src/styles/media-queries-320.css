@@ -1,5 +1,5 @@
-@media (min-width: 320px) and (max-width: 426px) {
-    /* Home page  */
+@media (min-width: 320px) and (max-width: 769px) {
+  /* Home page  */
 
   .hello {
     font-size: 80px;
@@ -24,8 +24,9 @@
 
   .each-project {
     width: 85%;
-    margin-bottom: -90px;
+    /* margin-bottom: -90px; */
     grid-template-columns: 1fr;
+    margin-bottom: 10px;
   }
 
   .project-image-div {
@@ -40,7 +41,6 @@
     margin-left: 0;
   }
 
-  
   .email {
     font-size: 30px;
   }
@@ -76,7 +76,11 @@
   }
 
   .menuTopDescription {
-   display: none;
+    display: none;
+  }
+
+  .menuFooterCounter {
+    display: none;
   }
 
   .slidingMenuFooter {
@@ -93,14 +97,14 @@
   }
 
   .all-socials {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .see-more-halo {
     display: flex;
-    position: relative;
-    bottom: 45vh;
-    left: 25vw;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
     background-color: white;
     width: 80px;
     height: 80px;
@@ -122,7 +126,7 @@
   .techStackSessions {
     grid-template-columns: 1fr;
   }
-  
+
   .nextProjectName {
     font-size: 20px;
   }
@@ -160,8 +164,6 @@
     line-height: 60px;
   }
 
-
-
   .in-touch-comment {
     display: none;
   }
@@ -195,14 +197,47 @@
   .in-touch-comment-mini {
     display: flex;
     width: 80%;
-    display: flex;
     font-size: 25px;
     text-align: center;
     line-height: 10px;
     margin: auto;
+    white-space: normal;
   }
-  
-  
-  
-
 }
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .hello {
+    font-size: 120px;
+  }
+
+  .each-project {
+    position: relative;
+    bottom: -10px;
+  }
+
+  .description {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .about-my-portfolio {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 769px) {
+  .officeSetupImage {
+    height: 60vh;
+  }
+
+  .heroAboutMe,
+  .techStack {
+    font-size: 65px;
+    line-height: 70px;
+  }
+}
+
+
+

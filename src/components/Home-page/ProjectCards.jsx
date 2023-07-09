@@ -19,7 +19,7 @@ const ProjectCards = () => {
   return (
     <div className="homeProjectsImageAndDescription">
       <p className="ribbon-case-study">
-        CASE STUDIES
+        RECENT WORK
       </p>
       {topThreeProjects.map((eachProject) => (
         <div className="each-project" key={eachProject.id}>
@@ -47,10 +47,6 @@ const ProjectCards = () => {
               onMouseLeave={handleSeeMoreMouseLeave}
             />
           </Link>
-          {/* <div className="see-more-halo">
-            <p>See</p>
-            <p>more</p>
-          </div> */}
           <p className="see-more-halo"> See more</p>
         </div>
       ))}

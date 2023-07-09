@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   /* Home page  */
 
   .header {
@@ -36,7 +36,7 @@
     width: 80%;
     margin-top: 30px;
   }
-  
+
   .project-brief {
     font-size: 24px;
     width: 80%;
@@ -70,8 +70,8 @@
   .slidingMenuFooter {
     top: 5vh;
   }
-  
-/* About Page */
+
+  /* About Page */
 
   .heroAboutMe,
   .techStack {
@@ -109,7 +109,4 @@
   .nextProjectName {
     font-size: 40px;
   }
-
 }
-
-
