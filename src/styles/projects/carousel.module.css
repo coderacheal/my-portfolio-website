@@ -8,25 +8,3 @@
   width: 100%;
   margin: auto;
 }
-
-@media (min-width: 768px) and (max-width: 1025px) {
-  /* .carouselDiv {
-    width: 100%;
-  } */
-
-  .oneProjectImage {
-    height: 450px;
-    width: 300px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 769px) {
-  .carouselDiv {
-    width: 100%;
-  }
-
-  .oneProjectImage {
-    height: 350px;
-    width: 300px;
-  }
-}
