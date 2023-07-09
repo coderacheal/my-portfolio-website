@@ -59,7 +59,7 @@ h1 {
   cursor: pointer;
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1300px) {
   .projectBackground {
     font-size: 150px;
     padding-top: 30vh;
@@ -113,5 +113,13 @@ h1 {
 @media (min-width: 480px) and (max-width: 769px) {
   .introDiv {
     width: 65%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .projectBackground {
+    font-size: 180px;
+    width: 95%;
+    padding-top: 30vh;
   }
 }

@@ -65,7 +65,7 @@
 }
 
 .profile-get-in-touch div {
-  padding-top: 20vh;
+  padding-top: 12vh;
 }
 
 .email-div {
@@ -80,7 +80,7 @@
 
 .connect-via-social-ribbon {
   text-align: center;
-  width: 15%;
+  width: 35%;
   margin: auto;
   font-size: 24px;
   padding-top: 25vh;
@@ -131,8 +131,8 @@
 }
 
 .hello-email-ribbon {
-  display: none;
-  text-align: center;
+  display: block;
+  text-align: right;
   padding-bottom: 50px;
   font-size: 17px;
 }

@@ -149,5 +149,11 @@
   .hello-email-ribbon {
     display: block;
     font-size: 24px;
+    text-align: center;
   }
+
+  .footer-links-social {
+    width: 25%;
+  }
+
 }

@@ -207,6 +207,15 @@
     line-height: 10px;
     margin: auto;
   }
+
+  .hello-email-ribbon {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-links-social {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 769px) {
@@ -239,7 +248,10 @@
 
   .hello-email-ribbon {
     display: block;
+    text-align: center;
   }
+
+  
 }
 
 @media (min-width: 550px) and (max-width: 769px) {
@@ -255,5 +267,6 @@
 
   .hello-email-ribbon {
     display: block;
+    text-align: center;
   }
 }
