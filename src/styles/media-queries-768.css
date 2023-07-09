@@ -124,7 +124,7 @@
   .in-touch-comment-mini {
     display: block;
     text-decoration: underline;
-    font-size: 75px;
+    font-size: 70px;
     text-align: center;
     line-height: 70px;
     margin: auto;
@@ -145,6 +145,9 @@
     padding-bottom: 70px;
   }
 
-  
 
+  .hello-email-ribbon {
+    display: block;
+    font-size: 24px;
+  }
 }

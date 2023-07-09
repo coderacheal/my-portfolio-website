@@ -147,6 +147,11 @@
 
 
   /* Contact Page  */
+
+  .hello-email-ribbon {
+    display: block;
+  }
+
   .social-contact a {
     font-size: 40px;
     line-height: 50px;
@@ -231,6 +236,10 @@
     line-height: 30px;
     margin: auto;
   }
+
+  .hello-email-ribbon {
+    display: block;
+  }
 }
 
 @media (min-width: 550px) and (max-width: 769px) {
@@ -242,5 +251,9 @@
   .techStack {
     font-size: 65px;
     line-height: 70px;
+  }
+
+  .hello-email-ribbon {
+    display: block;
   }
 }
