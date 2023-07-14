@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Socials from './Socials';
 
+/* eslint-disable no-unused-vars */
+
 const HelloHero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showFirstElement, setShowFirstElement] = useState(true);
   const [showSecondElement, setShowSecondElement] = useState(false);
+
+  const HandleVisibility = () => {
+    setIsVisible(false);
+  };
 
   useEffect(() => {
     const hasRenderedBefore = sessionStorage.getItem('hasRenderedBefore');

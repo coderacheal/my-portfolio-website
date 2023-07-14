@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
