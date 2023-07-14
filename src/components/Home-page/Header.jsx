@@ -70,7 +70,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-links">
-              <Link to="/projects" onMouseEnter={() => handleHover(1)}>
+              <Link to="/work" onMouseEnter={() => handleHover(1)}>
                 <span>W</span>
                 <span>O</span>
                 <span>R</span>

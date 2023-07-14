@@ -1,17 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import Socials from './Socials';
-// eslint-disable react/no-unused-vars
 
 const HelloHero = () => {
-  const [isVisible, setIsVisible] = useState(false); // eslint-disable-line no-unused-vars
+  const [isVisible, setIsVisible] = useState(false);
   const [showFirstElement, setShowFirstElement] = useState(true);
   const [showSecondElement, setShowSecondElement] = useState(false);
 
   useEffect(() => {
+    const hasRenderedBefore = sessionStorage.getItem('hasRenderedBefore');
+    if (hasRenderedBefore) {
+      setShowFirstElement(false);
+      setShowSecondElement(true);
+    } else {
+      sessionStorage.setItem('hasRenderedBefore', 'true');
+    }
+
     const timer = setTimeout(() => {
       setShowFirstElement(false);
       setShowSecondElement(true);
-    }, 3000);
+    }, 17000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,18 +29,18 @@ const HelloHero = () => {
         <div>
           {showFirstElement && <p className={`hello fade-in ${isVisible ? 'visible' : ''}`}>Hello</p>}
           {showSecondElement && (
-          <div className="about-my-portfolio">
-            <p className="tiny-about-me"> &lt; /About me/ &gt; </p>
-            <p className="description">I am RACHEAL, I create</p>
-            <p className="description">interactive websites that</p>
-            <p className="description">leverage AI and ML</p>
-            <p>
-              {' '}
-              <u>Full Stack</u>
-              {' '}
-              Developer
-            </p>
-          </div>
+            <div className="about-my-portfolio">
+              <p className="tiny-about-me"> &lt; /About me/ &gt; </p>
+              <p className="description">I am RACHEAL, I create</p>
+              <p className="description">interactive websites that</p>
+              <p className="description">leverage AI and ML</p>
+              <p>
+                {' '}
+                <u>Full Stack</u>
+                {' '}
+                Developer
+              </p>
+            </div>
           )}
         </div>
       </div>
@@ -43,3 +50,5 @@ const HelloHero = () => {
 };
 
 export default HelloHero;
+
+// eslint-disable react/no-unused-vars

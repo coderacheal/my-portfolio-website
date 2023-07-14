@@ -18,7 +18,7 @@ const App = () => {
     // Simulating an asynchronous task
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 4000);
   }, []);
 
   return (
@@ -28,20 +28,20 @@ const App = () => {
           path="/"
           element={(
             <div>
-              {isLoading ? (<div className="loader"><Loader duration={1000} /></div>
+              {isLoading ? (<div className="loader"><Loader duration={4000} /></div>
               ) : (
                 <div className="content"><HomePage /></div>)}
             </div>
       )}
         />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/work" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/projects/sunday" element={<Sunday />} />
-        <Route path="/projects/waterfall" element={<Waterfall />} />
-        <Route path="/projects/foretell" element={<Foretell />} />
-        <Route path="/projects/schoolx" element={<SchoolX />} />
-        <Route path="/projects/everest" element={<Everest />} />
+        <Route path="/work/sunday" element={<Sunday />} />
+        <Route path="/work/waterfall" element={<Waterfall />} />
+        <Route path="/work/foretell" element={<Foretell />} />
+        <Route path="/work/schoolx" element={<SchoolX />} />
+        <Route path="/work/everest" element={<Everest />} />
       </Routes>
     </Router>
   );

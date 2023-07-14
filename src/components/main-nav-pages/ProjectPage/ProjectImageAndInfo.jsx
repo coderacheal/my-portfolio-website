@@ -28,7 +28,7 @@ const ProjectImageAndInfo = () => {
             className={projects.projectPlusInfo}
             key={project.id}
           >
-            <Link to={`/projects/${project.urlExtension}`}>
+            <Link to={`/work/${project.urlExtension}`}>
               <div>
                 <p>0{index + 1}</p>
                 <img src={project.projectImage} alt="" className={projects.projectImage} />

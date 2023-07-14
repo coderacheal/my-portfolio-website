@@ -1,13 +1,17 @@
 .viewProjectsection {
   height: 50vh;
-  background-color: #222a4b;
+  /* background-color: #293256; */
+  /* background-color: #222a4b; */
+  background-color: #a3a3a3;
+
 }
 
 .introDiv {
   width: 60%;
   margin: auto;
-  color: white;
+  color: rgb(57, 57, 57);
   z-index: 1;
+  font-size: 20px;
 }
 
 h1 {
@@ -15,15 +19,18 @@ h1 {
   text-align: center;
   margin-top: 0;
   padding-top: 70px;
+  color: rgb(75, 73, 73);
+
 }
 
 .introDiv p {
   width: 50%;
   margin: auto;
-  color: white;
+  color: rgb(57, 57, 57);
   line-height: 24px;
   text-align: justify;
   margin-bottom: 30px;
+  color: rgb(75, 73, 73);
 }
 
 .introDiv div {
@@ -55,8 +62,11 @@ h1 {
 .viewCode {
   padding: 10px;
   background-color: transparent;
+  color: black;
+  font-size: 15px;
   border: 1.5px solid white;
   cursor: pointer;
+  color: white;
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {

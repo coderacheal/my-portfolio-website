@@ -194,6 +194,7 @@
 .fa-container {
   display: flex;
   flex-direction: column;
+  color: white;
 
   /* align-items: center; */
   justify-content: center;
@@ -214,7 +215,7 @@
 .eachTechStackSessions ul li {
   list-style-type: none;
   font-size: 17px;
-  color: black;
+  color: white;
   line-height: 20px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;

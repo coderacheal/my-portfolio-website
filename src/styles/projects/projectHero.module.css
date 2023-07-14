@@ -1,5 +1,7 @@
 .projectHero {
   background-color: #0d1123;
+  /* background-color: #e1dfdd; */
+  background-color: #535e5a;
   height: 100vh;
 
   /* overflow-y: auto; */
@@ -15,23 +17,26 @@
   display: flex;
   justify-content: space-between;
   padding-top: 30vh;
-  color: white;
+  color: black;
   width: 65%;
   margin: auto;
   align-items: center;
 }
 
 .boldProjectName {
-  font-size: 70px;
+  font-size: 80px;
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 .shortProjectDescription {
+  display: block;
   font-size: 18px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   margin-top: 25px;
   text-align: center;
+  color: white;
 }
 
 .developerRole {

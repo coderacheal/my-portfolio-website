@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
@@ -21,38 +22,40 @@ const ProjectCards = () => {
       <p className="ribbon-case-study">
         RECENT WORK
       </p>
-      {topThreeProjects.map((eachProject) => (
-        <div className="each-project" key={eachProject.id}>
-          <div className="project-details">
-            <Link to="/projects/sunday">
-              <button
-                type="button"
-                className="projectTitle underline-reveal"
+      <div className="wrapper">
+        {topThreeProjects.map((eachProject) => (
+          <div className="each-project" key={eachProject.id}>
+            <div className="project-details">
+              <Link to={`{/work/${eachProject.urlExtension}`}>
+                <button
+                  type="button"
+                  className="projectTitle underline-reveal"
+                  onMouseEnter={handleSeeMoreMouseEnter}
+                  onMouseLeave={handleSeeMoreMouseLeave}
+                >
+                  {eachProject.title}
+                </button>
+              </Link>
+              <p className="project-brief">
+                {eachProject.miniIntro}
+              </p>
+            </div>
+            <div className="parallaxContainer">
+              <img
+                src={eachProject.projectImage}
+                alt=""
+                className="parallaxProjectImage"
                 onMouseEnter={handleSeeMoreMouseEnter}
                 onMouseLeave={handleSeeMoreMouseLeave}
-              >
-                {eachProject.title}
-              </button>
-            </Link>
-            <p className="project-brief">
-              {eachProject.miniIntro}
-            </p>
+              />
+            </div>
+            <p className="see-more-halo"> See more</p>
           </div>
-          <Link to="/projects/sunday">
-            <button
-              aria-label="first project"
-              type="button"
-              className="project-image-div"
-              onMouseEnter={handleSeeMoreMouseEnter}
-              onMouseLeave={handleSeeMoreMouseLeave}
-            />
-          </Link>
-          <p className="see-more-halo"> See more</p>
-        </div>
-      ))}
+        ))}
+      </div>
       <div>
         <Link
-          to="/projects"
+          to="/work"
           type="button"
           className="legacy-projects"
           onMouseEnter={handleSeeMoreMouseEnter}
