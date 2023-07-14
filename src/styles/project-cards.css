@@ -13,6 +13,11 @@
   font-weight: 300;
 }
 
+.imageImage {
+  width: 500px;
+  height: 700px;
+}
+
 .each-project {
   width: 80%;
   display: grid;
@@ -31,6 +36,7 @@
   background-size: 100% 100%;
   transition: background-size 2s ease;
   border: 0;
+  transform: translateZ(-10px);
 }
 
 .project-image-div:hover {
@@ -127,4 +133,23 @@
 
 .projectTitle:hover::after {
   width: 100%;
+}
+
+.parallaxContainer {
+  /* Add styles for the parallax container */
+  overflow: hidden;
+  perspective: 1000px; /* Adjust perspective value as needed */
+}
+
+.parallaxProjectImage {
+  /* Add styles for the project image */
+  width: 100%;
+  height: auto;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px); /* Adjust translateZ value as needed */
+  transition: transform 0.4s ease-in-out;
+}
+
+.parallaxProjectImage:hover {
+  transform: translateZ(0);
 }

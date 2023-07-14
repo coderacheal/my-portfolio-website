@@ -1,4 +1,4 @@
-@media (min-width: 280px) and (max-width: 769px) {
+@media (min-width: 280px) and (max-width: 767px) {
   /* Home page  */
 
   .hello {
@@ -126,6 +126,10 @@
     grid-template-columns: 1fr;
   }
 
+  .eachTechStackSessions {
+    width: 100%;
+  }
+
   .nextProjectName {
     font-size: 20px;
   }
@@ -135,9 +139,9 @@
     width: 85vw;
   }
 
-  .section-description {
+  /* .section-description {
     grid-template-columns: 1fr;
-  }
+  } */
 
   .more-about-me {
     width: 100%;

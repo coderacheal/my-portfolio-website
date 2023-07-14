@@ -22,7 +22,7 @@ const projectData = [
     nextProjectName: 'Project Everest',
     backgroundColor: 'green',
     viewProject: 'View Next Project',
-    route: '/projects/everest',
+    route: '/work/everest',
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
   },
   {
@@ -45,7 +45,7 @@ const projectData = [
     nextProjectName: 'Project Waterfall',
     backgroundColor: 'orange',
     viewProject: 'View Next Project',
-    route: '/projects/waterfall',
+    route: '/work/waterfall',
     techStack: ['RAILS', 'POSTGRES', 'TAILWIND', 'DEVISE'],
   },
   {
@@ -68,7 +68,7 @@ const projectData = [
     nextProjectName: 'Project Schoolx',
     backgroundColor: 'indigo',
     viewProject: 'View Next Project',
-    route: '/projects/schoolx',
+    route: '/work/schoolx',
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
   },
   {
@@ -91,7 +91,7 @@ const projectData = [
     nextProjectName: 'Project Foretell',
     backgroundColor: 'green',
     viewProject: 'View Next Project',
-    route: '/projects/foretell',
+    route: '/work/foretell',
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
   },
   {
@@ -114,7 +114,7 @@ const projectData = [
     nextProjectName: 'Project Sunday',
     backgroundColor: 'mistyrose',
     viewProject: 'First Project',
-    route: '/projects/sunday',
+    route: '/work/sunday',
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
   },
 ];

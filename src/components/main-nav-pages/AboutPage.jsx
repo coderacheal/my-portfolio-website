@@ -82,8 +82,6 @@ const AboutPage = () => {
                 <FontAwesomeIcon icon={faCode} className="tech-fontawesome" />
                 <br />
                 <h3 className="stackTitle">Languages</h3>
-              </div>
-              <div className="flip-card-back">
                 <ul>
                   <li>Python</li>
                   <li>JavaScript</li>
@@ -91,6 +89,9 @@ const AboutPage = () => {
                   <li>SQL</li>
                   <li>(MySQL, PostgreSQL, SQL Server)</li>
                 </ul>
+              </div>
+              <div className="flip-card-back">
+                <p>Thank you</p>
               </div>
             </div>
           </div>
@@ -103,8 +104,6 @@ const AboutPage = () => {
                 />
                 <br />
                 <h3 className="stackTitle">Tools/Frameworks</h3>
-              </div>
-              <div className="flip-card-back">
                 <ul>
                   <li>React</li>
                   <li>Redux</li>
@@ -114,6 +113,9 @@ const AboutPage = () => {
                   <li>Linux</li>
                 </ul>
               </div>
+              <div className="flip-card-back">
+                <p>Thank you</p>
+              </div>
             </div>
           </div>
           <div className="eachTechStackSessions">
@@ -122,8 +124,6 @@ const AboutPage = () => {
                 <FontAwesomeIcon icon={faBrain} className="tech-fontawesome" />
                 <br />
                 <h3 className="stackTitle">AI/ML</h3>
-              </div>
-              <div className="flip-card-back">
                 <ul>
                   <li>Scikit Learn</li>
                   <li>TensorFlow</li>
@@ -131,6 +131,9 @@ const AboutPage = () => {
                   <li>Streamlit</li>
                   <li>Gradio</li>
                 </ul>
+              </div>
+              <div className="flip-card-back">
+                <p>Thank you</p>
               </div>
             </div>
           </div>
@@ -140,19 +143,20 @@ const AboutPage = () => {
                 <FontAwesomeIcon icon={faCertificate} className="tech-fontawesome" />
                 <br />
                 <h3 className="stackTitle">Certifications</h3>
-              </div>
-              <div className="flip-card-back">
                 <ul>
                   <li>AWS Cloud Practitioner</li>
                   <li>Certified Scrum Master</li>
                 </ul>
+              </div>
+              <div className="flip-card-back">
+                <p>Thank you</p>
               </div>
             </div>
           </div>
         </div>
         <NextProject
           nextProjectName={nextProjectName}
-          route="/projects/sunday"
+          route="/work/sunday"
           viewProject="View latest Project"
         />
       </div>
