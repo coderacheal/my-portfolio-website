@@ -18,33 +18,27 @@
   white-space: nowrap;
   gap: 50px;
   overflow: hidden;
-
 }
 
 .projectImage {
   width: 390px;
   height: 550px;
   margin-right: 10px;
-  background-color: red;
   transition: transform 1s ease-in-out;
 }
 
 .projectPlusInfo {
-  transition: filter 01s;
+  transition: filter 1s;
+  display: flex;
 }
 
 .greyedOut {
   filter: grayscale(100%);
 }
 
-.projectImage {
-  transition: transform 1s;
-}
-
 .hoveredImg {
   transform: scale(1.05);
 }
-
 
 .projectInfo p {
   width: 80%;
@@ -110,16 +104,22 @@
   position: fixed;
   pointer-events: none;
   cursor: none;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 3s ease-in-out;
+}
+
+.followImageDiv {
+  bottom: -350px;
+  transition: 1.2s;
+  margin: auto;
+}
+
+.followImageDiv.active {
+  bottom: 0;
 }
 
 .projectListView span {
   padding-right: 70px;
   padding-left: 20px;
-}
-
-.projectPlusInfo {
-  display: flex;
 }
 
 .projecImageTitle {
