@@ -26,16 +26,12 @@
   height: 550px;
   margin-right: 10px;
   background-color: red;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .projectPlusInfo {
-  transition: filter 0.3s;
+  transition: filter 01s;
 }
-
-/* .hovered {
-  filter: grayscale(100%);
-} */
 
 .greyedOut {
   filter: grayscale(100%);

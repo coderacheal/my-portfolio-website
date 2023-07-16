@@ -47,6 +47,7 @@ const HelloHero = () => {
                 Developer
               </p>
             </div>
+
           )}
         </div>
       </div>
@@ -56,5 +57,3 @@ const HelloHero = () => {
 };
 
 export default HelloHero;
-
-// eslint-disable react/no-unused-vars
