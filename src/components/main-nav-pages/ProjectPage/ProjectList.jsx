@@ -51,9 +51,8 @@ const ProjectList = () => {
         alt="Following Mouse"
         className={projects.followImage}
         style={{
-          left: mousePosition.x,
-          top: mousePosition.y,
-          // transform: 'translate(-50%, 0)',
+          left: mousePosition.x - 250 / 2,
+          top: mousePosition.y - 350 / 2,
         }}
       />
     );
