@@ -3,8 +3,6 @@
 .ProjectDiv {
   width: 100vw;
   height: 100vh;
-
-  /* background-color: #e1dfdd; */
   background-color: #222;
   overflow: hidden;
 }
@@ -12,8 +10,7 @@
 .allProjectsImages {
   display: flex;
   width: 90%;
-
-  /* height: 80vh; */
+  scroll-snap-type: x mandatory;
   height: 75vh;
   margin: auto;
   padding-top: 7%;
@@ -21,19 +18,37 @@
   white-space: nowrap;
   gap: 50px;
   overflow: hidden;
+
 }
 
-.allProjectsImages img {
+.projectImage {
   width: 390px;
   height: 550px;
   margin-right: 10px;
+  background-color: red;
+  transition: transform 0.5s ease-in-out;
 }
 
-/* .allProjectsImages img:nth-child(even) {
-  width: 350px;
-  height: 450px;
-  vertical-align: middle;
+.projectPlusInfo {
+  transition: filter 0.3s;
+}
+
+/* .hovered {
+  filter: grayscale(100%);
 } */
+
+.greyedOut {
+  filter: grayscale(100%);
+}
+
+.projectImage {
+  transition: transform 1s;
+}
+
+.hoveredImg {
+  transform: scale(1.05);
+}
+
 
 .projectInfo p {
   width: 80%;
