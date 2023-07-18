@@ -30,7 +30,7 @@ const App = () => {
     // Simulating an asynchronous task
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 1000);
   }, []);
 
   return (
@@ -41,7 +41,7 @@ const App = () => {
           path="/"
           element={(
             <div>
-              {isLoading ? (<div className="loader"><Loader duration={4000} /></div>
+              {isLoading ? (<div className="loader"><Loader duration={1000} /></div>
               ) : (
                 <div className="content"><HomePage /></div>)}
             </div>

@@ -44,7 +44,7 @@ const ProjectImageAndInfo = () => {
                 <p>0{index + 1}</p>
                 <img
                   src={project.projectImage}
-                  alt=""
+                  alt={project.projectName}
                   className={`${projects.projectImage} ${hoveredImage === index ? projects.hoveredImg : ''}`}
                 />
                 <p className={projects.projecImageTitle}>{project.title}</p>

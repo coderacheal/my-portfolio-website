@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCode, faBrain, faCertificate, faScrewdriverWrench,
@@ -13,6 +13,24 @@ const AboutPage = () => {
   const techStack = 'Tech Stack';
   const nextProjectName = 'Project Sunday';
 
+  const [visibleLetters, setVisibleLetters] = useState([]);
+
+  useEffect(() => {
+    const timeoutIds = [];
+
+    words.forEach((word, index) => {
+      const timeoutId = setTimeout(() => {
+        setVisibleLetters((prevVisibleLetters) => [...prevVisibleLetters, index]);
+      }, 1000 * index);
+
+      timeoutIds.push(timeoutId);
+    });
+
+    return () => {
+      timeoutIds.forEach((timeoutId) => clearTimeout(timeoutId));
+    };
+  }, []);
+
   return (
     <div className="about-me-main">
       <Header />
@@ -21,7 +39,13 @@ const AboutPage = () => {
         {words.map((word, index) => (
           <span key={words}>
             {word.split('').map((letter) => (
-              <span key={word + letter} className="passionate-dev" aria-hidden="true">{letter}</span>
+              <span
+                key={word + letter}
+                className={`passionate-dev ${visibleLetters.includes(index) ? 'fade-in' : ''}`}
+                aria-hidden="true"
+              >
+                {letter}
+              </span>
             ))}
             {index !== words.length - 1 && <br />}
           </span>

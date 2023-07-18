@@ -6,6 +6,10 @@ import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const ProjectCards = () => {
   const topThreeProjects = projectData.slice(0, 3);
+  const [projectID, setprojectID] = useState("")
+
+
+  const seeAction = 'See more';
 
   const [showSeeMoreMouse, setShowSeeMoreMouse] = useState(false);
 
@@ -40,16 +44,9 @@ const ProjectCards = () => {
                 {eachProject.miniIntro}
               </p>
             </div>
-            <div className="parallaxContainer">
-              <img
-                src={eachProject.projectImage}
-                alt=""
-                className="parallaxProjectImage"
-                onMouseEnter={handleSeeMoreMouseEnter}
-                onMouseLeave={handleSeeMoreMouseLeave}
-              />
-            </div>
-            <p className="see-more-halo"> See more</p>
+            <Link to={`{/work/${eachProject.urlExtension}`} className="project-img-link">
+              <p className="project-id">0{eachProject.id}</p>
+            </Link>
           </div>
         ))}
       </div>
@@ -61,12 +58,24 @@ const ProjectCards = () => {
           onMouseEnter={handleSeeMoreMouseEnter}
           onMouseLeave={handleSeeMoreMouseLeave}
         >
-          SEE LEGACY PROJECTS
+          RECENT WORK GALLERY
         </Link>
       </div>
-      {showSeeMoreMouse && <SeeMoreMouse />}
+      {showSeeMoreMouse && <SeeMoreMouse seeAction={seeAction} />}
     </div>
   );
 };
 
 export default ProjectCards;
+
+
+{/* <div className="parallaxContainer">
+              <img
+                src={eachProject.projectImage}
+                alt={eachProject.projectName}
+                className="parallaxProjectImage"
+                onMouseEnter={handleSeeMoreMouseEnter}
+                onMouseLeave={handleSeeMoreMouseLeave}
+              />
+            </div>
+            <p className="see-more-halo">See more</p> */}

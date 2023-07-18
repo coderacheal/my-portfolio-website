@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
-/* .projectSection {
-  padding-bottom: 150px;
-} */
-
 .case-study-intro {
   width: 50%;
   margin: auto;
@@ -22,19 +18,47 @@
   font-size: 30px;
 }
 
+.project-img-link {
+  height: 440px;
+  background-image: url('../assets/fm.png');
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  /* background-color: red; */
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 2s;
+  /* border: 2px solid white; */
+}
+
+.project-img-link:hover {
+  z-index: 2;
+  transform: scale(1.1);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.project-id {
+  font-size: 140px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: right;
+  margin-right: 20px;
+}
+
+
 .project1,
 .project3 {
-  /* background-image: url('Crypto_app.png'); */
-
-  /* background-repeat: no-repeat; */
   height: 440px;
   margin: auto;
-  width: 50%;
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 90px;
   background-color: white;
-
-  /* color: black; */
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-position 0.4s, transform 0.3s;
@@ -44,22 +68,12 @@
 
 .project1:hover,
 .project3:hover {
-  /* background-color: linear-gradient(to left, rgb(255, 96, 27) 50%, #fff 50%,); */
-
-  /* background-color: green; */
   z-index: 2;
   transform: scale(1.1);
-
-  /* color: black; */
   background-size: 200% 100%;
   background-position: right bottom;
 }
 
-/* .view-button-odd:hover {
-  background-position: left bottom;
-  transform: scale(1.1);
-  color: white;
-} */
 
 .project2 {
   background-image: url('../assets/cute-cat.jpg');

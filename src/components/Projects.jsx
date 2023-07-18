@@ -7,6 +7,7 @@ const Projects = () => (
       <h2 className="my-latest-work">My Latest Work</h2>
     </div>
     <div className="allProjects">
+      
       <div to="/contact" className="project1">
         <p className="project-number-odd">01</p>
         <div className="about-case-study-odd">

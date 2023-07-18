@@ -1,16 +1,12 @@
-/* .homeProjectsImageAndDescription {
-} */
-
 .ribbon-case-study {
   text-align: center;
   font-size: 42px;
   color: gray;
   margin-top: 80px;
-
-  /* text-decoration: underline; */
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  padding: 50px
 }
 
 .imageImage {
@@ -23,7 +19,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   margin: auto;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -144,12 +140,26 @@
 .parallaxProjectImage {
   /* Add styles for the project image */
   width: 100%;
-  height: auto;
-  transform-style: preserve-3d;
-  transform: translateZ(-50px); /* Adjust translateZ value as needed */
-  transition: transform 0.4s ease-in-out;
+  height: 70vh;
 }
 
 .parallaxProjectImage:hover {
   transform: translateZ(0);
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.passionate-dev {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+}
+

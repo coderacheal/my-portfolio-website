@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+// import { Document, Page, pdfjs } from 'react-pdf';
 import Socials from './Socials';
+// import cv from '../Utils/cv.pdf';
 
 /* eslint-disable no-unused-vars */
 
@@ -51,9 +53,19 @@ const HelloHero = () => {
           )}
         </div>
       </div>
+    
       <Socials />
     </section>
   );
 };
 
 export default HelloHero;
+
+
+// <Document
+// file={cv}
+// onLoad={console.error}
+// style={{ width: '100vw', height: 'auto' }}
+// >
+// <Page pageIndex={0} />Hello
+// </Document>
