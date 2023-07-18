@@ -6,8 +6,7 @@ import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const ProjectCards = () => {
   const topThreeProjects = projectData.slice(0, 3);
-  const [projectID, setprojectID] = useState("")
-
+  // const [projectID, setprojectID] = useState('');
 
   const seeAction = 'See more';
 
@@ -45,7 +44,10 @@ const ProjectCards = () => {
               </p>
             </div>
             <Link to={`{/work/${eachProject.urlExtension}`} className="project-img-link">
-              <p className="project-id">0{eachProject.id}</p>
+              <p className="project-id">
+                0
+                {eachProject.id}
+              </p>
             </Link>
           </div>
         ))}
@@ -67,15 +69,3 @@ const ProjectCards = () => {
 };
 
 export default ProjectCards;
-
-
-{/* <div className="parallaxContainer">
-              <img
-                src={eachProject.projectImage}
-                alt={eachProject.projectName}
-                className="parallaxProjectImage"
-                onMouseEnter={handleSeeMoreMouseEnter}
-                onMouseLeave={handleSeeMoreMouseLeave}
-              />
-            </div>
-            <p className="see-more-halo">See more</p> */}

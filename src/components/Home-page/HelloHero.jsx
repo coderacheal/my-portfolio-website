@@ -53,14 +53,13 @@ const HelloHero = () => {
           )}
         </div>
       </div>
-    
+
       <Socials />
     </section>
   );
 };
 
 export default HelloHero;
-
 
 // <Document
 // file={cv}
