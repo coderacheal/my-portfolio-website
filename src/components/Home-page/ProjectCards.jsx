@@ -5,7 +5,7 @@ import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const ProjectCards = () => {
-  const topThreeProjects = projectData.slice(0, 3);
+  const topThreeProjects = projectData.slice(0, 4);
   // const [projectID, setprojectID] = useState('');
 
   const seeAction = 'See more';
@@ -29,7 +29,7 @@ const ProjectCards = () => {
         {topThreeProjects.map((eachProject) => (
           <div className="each-project" key={eachProject.id}>
             <div className="project-details">
-              <Link to={`{/work/${eachProject.urlExtension}`}>
+              <Link to={`/work/${eachProject.urlExtension}`}>
                 <button
                   type="button"
                   className="projectTitle underline-reveal"
@@ -43,7 +43,7 @@ const ProjectCards = () => {
                 {eachProject.miniIntro}
               </p>
             </div>
-            <Link to={`{/work/${eachProject.urlExtension}`} className="project-img-link">
+            <Link to={`/work/${eachProject.urlExtension}`} className="project-img-link">
               <p className="project-id">
                 0
                 {eachProject.id}

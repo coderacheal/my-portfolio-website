@@ -28,6 +28,7 @@ const ProjectTemplate = (props) => {
     route,
     backgroundColor,
     viewProject,
+    backgroundImage,
   } = props;
 
   return (
@@ -38,6 +39,7 @@ const ProjectTemplate = (props) => {
         projectDescription={projectDescription}
         projectImage={projectImage}
         projectYear={projectYear}
+        backgroundImage={backgroundImage}
       />
       <ViewProject
         urlExtension={urlExtension}
@@ -85,6 +87,7 @@ ProjectTemplate.propTypes = {
   route: PropTypes.string.isRequired,
   viewProject: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string.isRequired,
 };
 
 export default ProjectTemplate;

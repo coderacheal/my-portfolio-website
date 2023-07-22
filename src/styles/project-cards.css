@@ -45,7 +45,8 @@
   background-color: white;
   margin: auto;
   margin-top: 90px;
-  margin-left: 3%;
+
+  /* margin-left: 3%; */
   font-size: 90px;
   text-align: center;
   border: 0;
@@ -64,12 +65,15 @@
   bottom: -3px;
   width: 0;
   height: 4px;
-  background-color: black;
+  background-color: yellow;
+  color: red;
   transition: width 0.5s ease;
 }
 
 .underline-reveal:hover::after {
-  width: 100%;
+  width: 70%;
+
+  /* writing-mode: var(); */
 }
 
 .project-brief {
@@ -116,6 +120,7 @@
   width: 100%;
 }
 
+/*
 .projectTitle::after {
   content: '';
   position: absolute;
@@ -133,9 +138,9 @@
 
 .parallaxContainer {
   /* Add styles for the parallax container */
-  overflow: hidden;
+
+/* overflow: hidden;
   perspective: 1000px; /* Adjust perspective value as needed */
-}
 
 .parallaxProjectImage {
   /* Add styles for the project image */

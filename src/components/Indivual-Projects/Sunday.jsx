@@ -3,7 +3,7 @@ import ProjectTemplate from './components/ProjectTemplate';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const Sunday = () => {
-  const sunday = projectData[0];
+  const sunday = projectData[3];
 
   return (
     <div>
