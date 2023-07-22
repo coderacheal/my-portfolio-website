@@ -1,6 +1,6 @@
 import projectImage from '../../../../assets/brooke-lark-V4MBq8kue3U-unsplash.jpg';
 import appImage from '../../../../assets/budget.png';
-import imgg from '../../../../assets/bubbles.png';
+import bgImg from '../../../../assets/bubbles.png';
 
 const projectData = [
   {
@@ -17,7 +17,7 @@ const projectData = [
     projectSummaryOne: ' Everest is built with security and user experience in mind. It has a clean fun interface the aims to make bidgeting fun A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
     projectSummaryTwo: ' Tools include Rails, Postgres and Devise for authentication.',
     builtFor: 'For all the personal finance lovers',
-    backgroundImage: `url(../../assets/bubbles.png)`,
+    backgroundImage: bgImg,
     firstCarouselImage: appImage,
     secondCarouselImage: appImage,
     thirdCarouselImage: appImage,
@@ -42,7 +42,7 @@ const projectData = [
     projectSummaryOne: ' Everest is built with security and user experience in mind. It has a clean fun interface the aims to make bidgeting fun A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
     projectSummaryTwo: ' Tools include Rails, Postgres and Devise for authentication.',
     builtFor: 'For all the personal finance lovers',
-    backgroundImage: `url(${imgg})`,
+    backgroundImage: bgImg,
     firstCarouselImage: appImage,
     secondCarouselImage: appImage,
     thirdCarouselImage: appImage,
@@ -66,7 +66,7 @@ const projectData = [
     projectSummaryOne: ' Everest is built with security and user experience in mind. It has a clean fun interface the aims to make bidgeting fun A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
     projectSummaryTwo: ' Tools include Rails, Postgres and Devise for authentication.',
     builtFor: 'For all the personal finance lovers',
-    backgroundImage: `url(${imgg})`,
+    backgroundImage: bgImg,
     firstCarouselImage: appImage,
     secondCarouselImage: appImage,
     thirdCarouselImage: appImage,
@@ -90,7 +90,7 @@ const projectData = [
     projectSummaryOne: ' Everest is built with security and Lorem ipsum,dolor sit amet consectetur adipisicing elit. Voluptate numquam repellendus quas',
     projectSummaryTwo: ' Everest is built with security and Lorem ipsum, dolor sit',
     builtFor: 'For all the personal finance lovers',
-    backgroundImage: `url(${imgg})`,
+    backgroundImage: bgImg,
     firstCarouselImage: appImage,
     secondCarouselImage: appImage,
     thirdCarouselImage: appImage,

@@ -1,12 +1,11 @@
 .projectHero {
-  background-color: #0d1123;
-
-  /* background-color: #e1dfdd; */
-  background-color: #535e5a;
+  /* background-color: #0d1123; */
+  /* background-color: #535e5a; */
   height: 100vh;
-
-  /* overflow-y: auto; */
   top: 0;
+  background-image: url('../../assets/bubbles.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .ProjectImage {
@@ -22,6 +21,7 @@
   width: 65%;
   margin: auto;
   align-items: center;
+ 
 }
 
 .boldProjectName {

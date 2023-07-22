@@ -2,9 +2,7 @@ import React from 'react';
 // import projectImage from '../../../assets/finance-app.png';
 import PropTypes from 'prop-types';
 import hero from '../../../styles/projects/projectHero.module.css';
-import imgg from '../../../assets/bubbles.png';
-
-
+// import imgg from '../../../assets/bubbles.png';
 
 const ProjectHero = ({
   projectName,
@@ -15,12 +13,11 @@ const ProjectHero = ({
 
 }) => {
   const backgroundStyle = {
-    backgroundImage: backgroundImage,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundImage,
+
   };
 
-  console.log(backgroundStyle)
+  console.log(backgroundStyle);
 
   return (
     <div className={hero.projectHero} style={backgroundStyle}>

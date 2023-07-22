@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectTemplate from './components/ProjectTemplate';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
- import imgg from '../../assets/bubbles.png'
+// import imgg from '../../assets/bubbles.png';
 
 const Everest = () => {
   const everest = projectData[0];
