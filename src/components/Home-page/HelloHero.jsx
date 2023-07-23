@@ -60,11 +60,3 @@ const HelloHero = () => {
 };
 
 export default HelloHero;
-
-// <Document
-// file={cv}
-// onLoad={console.error}
-// style={{ width: '100vw', height: 'auto' }}
-// >
-// <Page pageIndex={0} />Hello
-// </Document>

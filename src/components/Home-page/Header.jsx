@@ -9,7 +9,6 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [counter, setCounter] = useState(1);
   const [slideIn, setSlideIn] = useState(false);
-  const [hebrewName, setHebrewName] = useState('Racheal');
   const location = useLocation();
 
   useEffect(() => {
@@ -25,15 +24,6 @@ const Header = () => {
     setCounter(index + 1);
   };
 
-  const handleMouseEnter = () => {
-    setHebrewName('Home');
-    // setHebrewName("רייצ'ל");
-  };
-
-  const handleMouseLeave = () => {
-    setHebrewName('Racheal');
-  };
-
   return (
     <div>
       <header className="header">
@@ -42,10 +32,8 @@ const Header = () => {
             {' '}
             <p
               className="brand"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
             >
-              {hebrewName}
+              Racheal
             </p>
           </Link>
           <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={handleClick}>

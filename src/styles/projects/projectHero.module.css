@@ -1,5 +1,6 @@
 .projectHero {
   /* background-color: #0d1123; */
+
   /* background-color: #535e5a; */
   height: 100vh;
   top: 0;
@@ -21,7 +22,6 @@
   width: 65%;
   margin: auto;
   align-items: center;
- 
 }
 
 .boldProjectName {

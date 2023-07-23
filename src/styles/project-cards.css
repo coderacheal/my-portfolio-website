@@ -23,6 +23,10 @@
   position: relative;
 }
 
+.project-details {
+  text-align: center;
+}
+
 .project-image-div {
   background-image: url('../assets/food.jpg');
   height: 95vh;
@@ -41,39 +45,36 @@
 }
 
 .projectTitle {
-  width: 95%;
   background-color: white;
   margin: auto;
   margin-top: 90px;
-
-  /* margin-left: 3%; */
-  font-size: 90px;
+  display: inline-block;
   text-align: center;
+  font-size: 90px;
   border: 0;
   cursor: none;
 }
 
-.underline-reveal {
-  position: relative;
+.project-img-link {
+  height: 440px;
+  background-image: url('../assets/fm.png');
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 2s;
+  position: relative; /* Set the element as relative to allow absolute positioning */
   overflow: hidden;
 }
 
-.underline-reveal::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 4px;
-  background-color: yellow;
-  color: red;
-  transition: width 0.5s ease;
-}
-
-.underline-reveal:hover::after {
-  width: 70%;
-
-  /* writing-mode: var(); */
+.project-img-link:hover {
+  z-index: 2;
+  background-position: right bottom;
+  transition: 2s;
 }
 
 .project-brief {
@@ -103,6 +104,8 @@
   border: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  padding-top: 70px;
+  transition: width 0.5s ease;
 }
 
 .legacy-projects::after {
@@ -120,51 +123,85 @@
   width: 100%;
 }
 
-/*
-.projectTitle::after {
+.project-id {
+  right: 0;
+  font-size: 140px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  text-align: right;
+}
+
+.not {
+  opacity: 0;
+}
+
+
+
+/* Add the linear gradient on hover using the ::before pseudo-element */
+.project-img-link::before {
   content: '';
   position: absolute;
+  top: 0;
+  left: -100%; /* Move the gradient to the left initially, so it's hidden */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(18, 18, 18, 0.5), black);
+  z-index: -1; /* Place the gradient behind the content */
+  transition: left 0.5s; /* Add a transition to smoothly move the gradient */
+}
+
+.project-img-link:hover::before {
+  left: 0; /* Move the gradient to the right to show it on hover */
+}
+
+.overlay {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.overlay.active {
+  display: flex;
   left: 0;
-  bottom: -3px;
+  margin: 0;
+  width: 100%;
+}
+
+/* Define a CSS class to handle the underlining animation */
+.underline-on-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Create the underline effect using a pseudo-element */
+.underline-on-hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 0;
-  height: 10px;
-  background-color: black;
-  transition: width 0.5s ease;
+  height: 4px;
+  background: #000; /* Change this to the color you want for the underline */
+  transition: width 0.5s ease; /* Adjust the transition duration as needed */
 }
 
-.projectTitle:hover::after {
+/* Set the hover effect to animate the width of the pseudo-element */
+.underline-on-hover:hover::after {
   width: 100%;
+  animation: underlineSlide 0.5s forwards;
 }
 
-.parallaxContainer {
-  /* Add styles for the parallax container */
+/* Define the @keyframes animation to make the underline slide from left to right */
+@keyframes underlineSlide {
+  from {
+    width: 0;
 
-/* overflow: hidden;
-  perspective: 1000px; /* Adjust perspective value as needed */
-
-.parallaxProjectImage {
-  /* Add styles for the project image */
-  width: 100%;
-  height: 70vh;
-}
-
-.parallaxProjectImage:hover {
-  transform: translateZ(0);
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
+    /* ruby-span: 100%; */
   }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.passionate-dev {
-  opacity: 0;
-  animation: fade-in 2s ease-in-out forwards;
 }

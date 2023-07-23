@@ -52,9 +52,9 @@
   border-radius: 40px;
   width: 100px;
   text-align: center;
-  background-color:  rgb(9, 229, 9);
-  /* bottom: 20px; */
-  /* background-color: red; */
+  background-color: rgb(9, 229, 9);
+  transition: 1s;
+  animation: bounce 5s infinite;
 }
 
 .downloadCV:hover {
@@ -62,5 +62,16 @@
 }
 
 .downloadCV:active {
-  background-color:  rgb(9, 229, 9);
+  background-color: rgb(9, 229, 9);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Initial and final position (no vertical movement) */
+  }
+
+  50% {
+    transform: translateY(-20px); /* The element will bounce 20px upwards */
+  }
 }

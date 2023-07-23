@@ -6,7 +6,18 @@ import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const ProjectCards = () => {
   const topThreeProjects = projectData.slice(0, 4);
-  // const [projectID, setprojectID] = useState('');
+  const [isVisible, setIsVisible] = useState(false);
+  const [hoveredProjectId, setHoveredProjectId] = useState(null);
+
+  const HandleVisibility = (projectId) => {
+    setIsVisible(true);
+    setHoveredProjectId(projectId);
+  };
+
+  const HandleInVisibility = () => {
+    setIsVisible(false);
+    setHoveredProjectId(null);
+  };
 
   const seeAction = 'See more';
 
@@ -22,9 +33,11 @@ const ProjectCards = () => {
 
   return (
     <div className="homeProjectsImageAndDescription">
-      <p className="ribbon-case-study">
-        RECENT WORK
-      </p>
+      <div className="ribbon-case-study">
+        <p className="underline-on-hover">
+          RECENT WORK
+        </p>
+      </div>
       <div className="wrapper">
         {topThreeProjects.map((eachProject) => (
           <div className="each-project" key={eachProject.id}>
@@ -32,9 +45,7 @@ const ProjectCards = () => {
               <Link to={`/work/${eachProject.urlExtension}`}>
                 <button
                   type="button"
-                  className="projectTitle underline-reveal"
-                  onMouseEnter={handleSeeMoreMouseEnter}
-                  onMouseLeave={handleSeeMoreMouseLeave}
+                  className="projectTitle underline-on-hover"
                 >
                   {eachProject.title}
                 </button>
@@ -43,12 +54,20 @@ const ProjectCards = () => {
                 {eachProject.miniIntro}
               </p>
             </div>
-            <Link to={`/work/${eachProject.urlExtension}`} className="project-img-link">
-              <p className="project-id">
-                0
-                {eachProject.id}
-              </p>
-            </Link>
+            <div
+              className="project-img-link"
+              onMouseEnter={() => HandleVisibility(eachProject.id)}
+              onMouseLeave={HandleInVisibility}
+            >
+              <Link
+                to={`/work/${eachProject.urlExtension}`}
+              >
+                <p className={`${isVisible && hoveredProjectId === eachProject.id ? 'project-id' : 'not'}`}>
+                  0
+                  {eachProject.id}
+                </p>
+              </Link>
+            </div>
           </div>
         ))}
       </div>

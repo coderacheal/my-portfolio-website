@@ -110,8 +110,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-
-  /* align-items: center; */
 }
 
 .nav-links-ul {
@@ -187,6 +185,6 @@ a {
 .social-linkedin {
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  width: 15%;
   color: rgb(233, 217, 217);
 }

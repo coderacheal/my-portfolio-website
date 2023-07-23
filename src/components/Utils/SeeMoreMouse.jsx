@@ -20,7 +20,7 @@ const SeeMoreMouse = ({ seeAction }) => {
   return (
     <div className="cursor-container">
       <div className={seemore.cursor} style={{ left: mousePosition.x, top: mousePosition.y }}>
-        <p>{seeAction}</p>
+        {seeAction}
       </div>
     </div>
   );

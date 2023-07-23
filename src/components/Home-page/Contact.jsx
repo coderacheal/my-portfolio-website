@@ -3,7 +3,7 @@ import SeeMoreMouse from '../Utils/SeeMoreMouse';
 
 const Contact = () => {
   const [showSendEmailMouse, setSendEmailMouse] = useState(false);
-  const seeAction = 'Send mail';
+  const seeAction = 'Say             hello';
 
   const handleShowSenEmailMouseEnter = () => {
     setSendEmailMouse(true);
@@ -27,15 +27,11 @@ const Contact = () => {
           onMouseLeave={handleShowSenEmailMouseLeave}
         >
           HELLO@RACHEAL
-        </a>
-        <a
-          href="mailto:coderacheal@gmail.com"
-          className="email"
-          onMouseEnter={handleShowSenEmailMouseEnter}
-          onMouseLeave={handleShowSenEmailMouseLeave}
-        >
+          {' '}
+          <br />
           APPIAHKUBI.COM
         </a>
+
       </div>
       {showSendEmailMouse && <SeeMoreMouse seeAction={seeAction} />}
     </div>
