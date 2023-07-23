@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import 'welcome-page.css';
+@import 'App.css';
+/* @import 'welcome-page.css'; */
 @import 'header.css';
 @import 'socials.css';
 @import 'floating.css';
@@ -16,26 +17,11 @@
 @import 'media-queries-320.css';
 @import 'media-queries-1025.css';
 
-/* @import 'projects/view-projects.css'; */
+
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-
-  /* font-family: ; */
-
-  /* font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

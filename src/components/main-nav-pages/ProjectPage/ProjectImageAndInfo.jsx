@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../../../styles/projects.module.css';
 import projectData from './Data/projectData';
+import SeeMoreMouse from '../../Utils/SeeMoreMouse';
 
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -21,6 +22,11 @@ const ProjectImageAndInfo = () => {
     }
   };
 
+
+  const handleSeeMoreMouseEnter = () => {
+    setShowSeeMoreMouse(true);
+  };
+
   const handleImageHover = (index) => {
     setHoveredImage(index);
   };
@@ -30,8 +36,12 @@ const ProjectImageAndInfo = () => {
   };
 
   return (
-    <div>
-      <div className={projects.allProjectsImages} onWheel={handleScroll}>
+    <div id={projects.main}>
+      <div
+        className={projects.allProjectsImages}
+        onWheel={handleScroll}
+        // onMouseEnter={handleSeeMoreMouseEnter}
+      >
         {projectData.map((project, index) => (
           <div
             className={`${projects.projectPlusInfo} ${hoveredImage !== null && hoveredImage !== index ? projects.greyedOut : ''}`}
@@ -39,19 +49,32 @@ const ProjectImageAndInfo = () => {
             onMouseEnter={() => handleImageHover(index)}
             onMouseLeave={handleImageLeave}
           >
-            <Link to={`/work/${project.urlExtension}`}>
-              <div>
-                <p>0{index + 1}</p>
+            <Link
+              to={`/work/${project.urlExtension}`}
+              className={projects.projectLinkTag}
+            >
+              <div
+                className={projects.imageContainer}
+                key={project.id}
+              >
+                <div
+                  className={projects.projectImageDiv}
+                />
+                <p style={{ width: '75%', margin: '0 auto' }}>0{index + 1} </p>
                 <img
                   src={project.projectImage}
                   alt={project.projectName}
-                  className={`${projects.projectImage} ${hoveredImage === index ? projects.hoveredImg : ''}`}
+                  className={projects.projectImage}
+                  style={index % 2 === 0 ? { width: '90%', height: '90%' } : { width: '70%', height: '70%' }}
                 />
-                <p className={projects.projecImageTitle}>{project.title}</p>
+
+                <p style={{ textAlign: 'right', width: '85%' }}>{project.title}</p>
               </div>
+
             </Link>
           </div>
         ))}
+
       </div>
     </div>
   );

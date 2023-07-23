@@ -7,6 +7,11 @@
   overflow: hidden;
 }
 
+.projectLinkTag {
+  margin: auto;
+  align-items: center;
+}
+
 .allProjectsImages {
   display: flex;
   width: 90%;
@@ -16,15 +21,37 @@
   padding-top: 7%;
   overflow-x: auto;
   white-space: nowrap;
-  gap: 50px;
+  gap: 100px;
   overflow: hidden;
 }
 
+.imageContainer {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center; 
+}
+
+
+.projectImageDiv {
+  z-index: 51;
+}
+
 .projectImage {
-  width: 390px;
-  height: 550px;
-  margin-right: 10px;
+  align-self: center;
   transition: transform 1s ease-in-out;
+  z-index: 11;
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+}
+
+.projecImageTitle {
+  display: flex;
+  justify-content: space-between;
 }
 
 .projectPlusInfo {
@@ -34,10 +61,6 @@
 
 .greyedOut {
   filter: grayscale(100%);
-}
-
-.hoveredImg {
-  transform: scale(1.05);
 }
 
 .projectInfo p {
@@ -120,11 +143,6 @@
 .projectListView span {
   padding-right: 70px;
   padding-left: 20px;
-}
-
-.projecImageTitle {
-  text-align: right;
-  margin-right: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {

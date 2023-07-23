@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router, Routes, Route, useLocation,
 } from 'react-router-dom';
+
+import Lenis from '@studio-freight/lenis';
 import HomePage from './Home-page/HomePage';
 import Loader from './Home-page/Loader';
 import AboutPage from './main-nav-pages/AboutPage';
@@ -26,6 +28,23 @@ const ScrollToTop = () => {
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  const lenis = new Lenis();
+
+  lenis.on('scroll', (e) => {
+    console.log(e);
+  });
+
+  lenis.on('scroll', (e) => {
+    console.log(e);
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 
   useEffect(() => {
     // Simulating an asynchronous task

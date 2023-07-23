@@ -1,8 +1,8 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-main {
+/* main {
   width: 100%;
 }
 
@@ -36,4 +36,49 @@ main {
 
 .container:hover .top-div {
   opacity: 1;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Mouse Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#c6e6ca, #ffb6c1); /* Mint Green to Pink Rose */
+  border-radius: 5px;
+}
+
+/* Mouse Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#ffb6c1, #c6e6ca); /* Pink Rose to Mint Green */
+}
+
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+} 
