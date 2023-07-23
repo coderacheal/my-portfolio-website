@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 
-const Header = () => {
+const Header = ({ color }) => {
   const [isActive, setIsActive] = useState(false);
   const [counter, setCounter] = useState(1);
   const [slideIn, setSlideIn] = useState(false);
   const location = useLocation();
+
+  const containerStyle = {
+    color,
+  };
 
   useEffect(() => {
     setIsActive(false); // Close the sliding menu on location change
@@ -32,6 +37,7 @@ const Header = () => {
             {' '}
             <p
               className="brand"
+              style={containerStyle}
             >
               Racheal
             </p>
@@ -105,6 +111,14 @@ const Header = () => {
       </div>
     </div>
   );
+};
+
+Header.propTypes = {
+  color: PropTypes.string,
+};
+
+Header.defaultProps = {
+  color: 'white',
 };
 
 export default Header;

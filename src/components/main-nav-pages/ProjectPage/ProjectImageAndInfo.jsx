@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../../../styles/projects.module.css';
 import projectData from './Data/projectData';
-import SeeMoreMouse from '../../Utils/SeeMoreMouse';
 
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -22,11 +21,6 @@ const ProjectImageAndInfo = () => {
     }
   };
 
-
-  const handleSeeMoreMouseEnter = () => {
-    setShowSeeMoreMouse(true);
-  };
-
   const handleImageHover = (index) => {
     setHoveredImage(index);
   };
@@ -40,7 +34,6 @@ const ProjectImageAndInfo = () => {
       <div
         className={projects.allProjectsImages}
         onWheel={handleScroll}
-        // onMouseEnter={handleSeeMoreMouseEnter}
       >
         {projectData.map((project, index) => (
           <div

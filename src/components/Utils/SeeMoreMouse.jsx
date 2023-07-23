@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import seemore from '../../styles/see-more-mouse.module.css';
 
-const SeeMoreMouse = ({ seeAction, mouseStyles }) => {
+const SeeMoreMouse = ({ seeAction }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -28,10 +28,10 @@ const SeeMoreMouse = ({ seeAction, mouseStyles }) => {
 
 SeeMoreMouse.propTypes = {
   seeAction: PropTypes.string.isRequired,
-  mouseStyles: PropTypes.shape = {
-    backgroundColor: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
-  },
+  // mouseStyles: PropTypes.shape = {
+  //   backgroundColor: PropTypes.string.isRequired,
+  //   color: PropTypes.string.isRequired,
+  // },
 };
 
 export default SeeMoreMouse;

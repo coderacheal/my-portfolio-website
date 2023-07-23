@@ -12,8 +12,12 @@ const AboutPage = () => {
   const words = ['Passionate', 'full stack', 'developer'];
   const techStack = 'Tech Stack';
   const nextProjectName = 'Project Sunday';
-
+  const color = 'black';
   const [visibleLetters, setVisibleLetters] = useState([]);
+
+  // const textcolor = {
+  //   color,
+  // }
 
   useEffect(() => {
     const timeoutIds = [];
@@ -33,7 +37,7 @@ const AboutPage = () => {
 
   return (
     <div className="about-me-main">
-      <Header />
+      <Header color={color} />
       <span className="long-arrow down-arrow">&darr;</span>
       <h2 className="heroAboutMe">
         {words.map((word, index) => (

@@ -16,6 +16,7 @@ import Foretell from './Indivual-Projects/Foretell';
 import SchoolX from './Indivual-Projects/SchoolX';
 import Sage from './Indivual-Projects/Sage';
 
+/* eslint-disable import/no-extraneous-dependencies */
 const ScrollToTop = () => {
   const location = useLocation();
 
