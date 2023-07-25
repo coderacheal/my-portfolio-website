@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
@@ -54,20 +53,17 @@ const ProjectCards = () => {
                 {eachProject.miniIntro}
               </p>
             </div>
-            <div
+            <Link
+              to={`/work/${eachProject.urlExtension}`}
               className="project-img-link"
               onMouseEnter={() => HandleVisibility(eachProject.id)}
               onMouseLeave={HandleInVisibility}
             >
-              <Link
-                to={`/work/${eachProject.urlExtension}`}
-              >
-                <p className={`${isVisible && hoveredProjectId === eachProject.id ? 'project-id' : 'not'}`}>
-                  0
-                  {eachProject.id}
-                </p>
-              </Link>
-            </div>
+              <p className={`${isVisible && hoveredProjectId === eachProject.id ? 'project-id' : 'not'}`}>
+                0
+                {eachProject.id}
+              </p>
+            </Link>
           </div>
         ))}
       </div>

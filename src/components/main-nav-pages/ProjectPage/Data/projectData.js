@@ -13,19 +13,20 @@ const projectData = [
     projectYear: 2023,
     projectGitHub: 'https://github.com/coderacheal/everest',
     projectWebsite: 'https://github.com/coderacheal/everest',
-    miniIntro: 'A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
-    projectSummaryOne: ' Everest is built with security and user experience in mind. It has a clean fun interface the aims to make bidgeting fun A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
-    projectSummaryTwo: ' Tools include Rails, Postgres and Devise for authentication.',
+    miniIntro: 'Want to budget in a fun and interactive app? Everest is a budgeting app that allows you to track your expenses by setting limit for various categories',
+    projectSummaryOne: ' Everest is built with security and user experience in mind. It has a clean fun interface the aims to make bidgeting fun ',
+    projectSummaryTwo: ' The app enables you to track your expenses based on the type of categories you define. Complete with user authentication, it helps you stay on top of the dollar. Tools used include Rails, PostgreSQL and Devise for authentication.',
     builtFor: 'For all the personal finance lovers',
     backgroundImage: bgImg,
     firstCarouselImage: appImage,
     secondCarouselImage: appImage,
     thirdCarouselImage: appImage,
-    nextProjectName: 'Project Waterfall',
+    nextProjectName: 'Project Sunday',
     backgroundColor: 'orange',
     viewProject: 'View Next Project',
-    route: '/work/sage',
+    route: '/work/sunday',
     techStack: ['RAILS', 'POSTGRES', 'TAILWIND', 'DEVISE'],
+    color: 'black',
   },
 
   {
@@ -51,6 +52,7 @@ const projectData = [
     viewProject: 'View Next Project',
     route: '/work/schoolx',
     techStack: ['REACT', 'REDUX'],
+    color: 'black',
   },
   {
     id: 3,
@@ -75,6 +77,7 @@ const projectData = [
     viewProject: 'View Next Project',
     route: '/work/sunday',
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
+    color: 'black',
   },
   {
     id: 4,
@@ -99,70 +102,33 @@ const projectData = [
     viewProject: 'View Next Project',
     route: '/work/sage',
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
+    color: 'black',
+  },
+  {
+    id: 6,
+    urlExtension: 'foretell',
+    title: 'FORETELL',
+    projectName: 'Project Foretell',
+    projectDescription: 'A predictive app for customer churn',
+    projectImage,
+    projectYear: 2023,
+    projectGitHub: 'https://github.com/coderacheal/everest',
+    projectWebsite: 'https://github.com/coderacheal/everest',
+    miniIntro: 'A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
+    projectSummaryOne: ' Everest is built with security and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam, aspernaturcommodi facere,labore minima maxime explicabo, iste reiciendis quia inventore saepe delectus',
+    projectSummaryTwo: ' Everest is built with security and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam, aspernatur commodi facere,labore minima maxime explicabo, iste reiciendis quia inventore saepe delectu laudantium voluptatibus tempore nemo.',
+    builtFor: 'For all the personal finance lovers',
+    firstCarouselImage: appImage,
+    secondCarouselImage: appImage,
+    thirdCarouselImage: appImage,
+    nextProjectName: 'Project Sunday',
+    backgroundColor: 'mistyrose',
+    viewProject: 'First Project',
+    route: '/work/sunday',
+    techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
+    color: 'black',
   },
 
 ];
 
 export default projectData;
-
-// {
-//   id: 4,
-//   urlExtension: 'waterfall',
-//   title: 'WATERFALL',
-//   projectName: 'Project Waterfall',
-//   projectDescription: 'A scrum tool to help with product management',
-//   projectImage,
-//   projectYear: 2021,
-//   projectGitHub: 'https://github.com/coderacheal/everest',
-//   projectWebsite: 'https://github.com/coderacheal/everest',
-//   miniIntro: 'I certified as a scrum master to become a better team player and
-//  decided to build a product management tool for my company with pure JavaScript',
-//   projectSummaryOne: ' Everest is built with security and Lorem ipsum, dolor sit
-// met consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam,
-// aspernatur commodi facere,labore minima maxime explicabo, iste reiciendis quia inventore
-// saepe delectus laudantium voluptatibus tempore nemo.',
-//   projectSummaryTwo: ' Everest is built with security and Lorem ipsum, dolor
-// sit amet consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam,
-//  aspernatur commodi facere,labore minima maxime explicabo, iste reiciendis quia inventore
-// saepe delectus laudantium voluptatibus tempore nemo.',
-//   builtFor: 'For all the personal finance lovers',
-//   firstCarouselImage: appImage,
-//   secondCarouselImage: appImage,
-//   thirdCarouselImage: appImage,
-//   nextProjectName: 'Project Schoolx',
-//   backgroundColor: 'indigo',
-//   viewProject: 'View Next Project',
-//   route: '/work/foretell',
-//   techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
-// },
-
-// {
-//   id: 6,
-//   urlExtension: 'foretell',
-//   title: 'FORETELL',
-//   projectName: 'Project Foretell',
-//   projectDescription: 'A predictive app for customer churn',
-//   projectImage,
-//   projectYear: 2023,
-//   projectGitHub: 'https://github.com/coderacheal/everest',
-//   projectWebsite: 'https://github.com/coderacheal/everest',
-//   miniIntro: 'A finance app that enables you to track your expenses based on the type
-// of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
-//   projectSummaryOne: ' Everest is built with security and Lorem ipsum, dolor sit amet
-// consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam, aspernatur
-// commodi facere,labore minima maxime explicabo, iste reiciendis quia inventore saepe delectus
-//  laudantium voluptatibus tempore nemo.',
-//   projectSummaryTwo: ' Everest is built with security and Lorem ipsum, dolor sit amet
-// consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam, aspernatur
-// commodi facere,labore minima maxime explicabo, iste reiciendis quia inventore saepe delectus
-// laudantium voluptatibus tempore nemo.',
-//   builtFor: 'For all the personal finance lovers',
-//   firstCarouselImage: appImage,
-//   secondCarouselImage: appImage,
-//   thirdCarouselImage: appImage,
-//   nextProjectName: 'Project Sunday',
-//   backgroundColor: 'mistyrose',
-//   viewProject: 'First Project',
-//   route: '/work/sunday',
-//   techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
-// },

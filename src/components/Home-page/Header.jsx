@@ -97,6 +97,7 @@ const Header = ({ color }) => {
             <p className="menuFooterCounter">
               0
               <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>{counter}</span>
+              <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>{counter}</span>
             </p>
           </div>
         </div>

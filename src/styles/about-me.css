@@ -102,6 +102,8 @@
   font-weight: bold;
 }
 
+
+
 .view-latest-project-div {
   display: flex;
   margin-top: 15vh;
@@ -167,24 +169,15 @@
 }
 
 .eachTechStackSessions {
-  /* background-color: transparent; */
   width: 18vw;
   height: 40vh;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
-
-  /* background-color: #f0f0f0; */
   background-color: rgba(70, 76, 71, 255);/* Remove this if you don't want the 3D effect */
 }
 
-/* .eachTechStackSessions {
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f0f0f0;
-  background-color: rgba(70, 76, 71, 255);
-} */
 
 .eachTechStackSessions ul {
   list-style-type: none;
@@ -195,8 +188,6 @@
   display: flex;
   flex-direction: column;
   color: white;
-
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -213,19 +204,25 @@
 }
 
 .eachTechStackSessions ul li {
-  list-style-type: none;
+  list-style-type:circle;
   font-size: 17px;
   color: white;
-  line-height: 20px;
-  text-align: center;
+  line-height: 30px;
+  text-align: left;
   font-family: 'Montserrat', sans-serif;
+  /* background-color: red; */
+  width: 70%;
+  margin: auto;
 }
 
 .tech-fontawesome {
   color: white;
   font-size: 35px;
   text-align: center;
-  margin-top: 20px;
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  margin-bottom: 10px;
 }
 
 /* This container is needed to position the front and back side */
@@ -255,13 +252,23 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  /* background-color: #bbb; */
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
+  display: flex;
   background-color: rgb(196, 199, 203);
   color: white;
   transform: rotateY(180deg);
+}
+
+.easterEgg {
+  display: flex;
+  align-self: center;
+  font-size: 18px;
+  color: black;
+  width: 85%;
+  margin: auto;
+
 }

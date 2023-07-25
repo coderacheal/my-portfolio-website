@@ -48,7 +48,14 @@ const HelloHero = () => {
                 {' '}
                 Developer
               </p>
-              <a className="downloadCV" href="https://drive.google.com/file/d/1XbydvbHH7NWL7jQ8qsNyEfTkQ22CxH52/view?usp=sharing" target="_blank" rel="noopener noreferrer">View CV</a>
+              <a
+                className="downloadCV"
+                href="https://docs.google.com/document/d/1vAV1Zcc6cSSp_SBLvWE7637mKdN788IKIBJq2cJblkI/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View CV
+              </a>
             </div>
           )}
         </div>

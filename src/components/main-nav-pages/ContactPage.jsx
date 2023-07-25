@@ -1,20 +1,26 @@
 import React from 'react';
 import Header from '../Home-page/Header';
-import profile from '../../assets/smile.jpg';
+// import SeeMoreMouse from '../Utils/SeeMoreMouse';
 
 const ContactPage = () => (
   <div className="contact-session-page">
     <Header />
     <div>
       <div className="profile-get-in-touch">
-        <img src={profile} alt="myProfile" />
-        <div>
+        <div className="emai-contact-div">
           <p className="hello-email-ribbon">SEND ME AN EMAIL</p>
-          <p className="in-touch-comment-large">GET IN</p>
-          <p className="in-touch-comment-large">TOUCH</p>
-          <a href="https://github.com/coderacheal" className="in-touch-comment-mini">HELLO@RACHEAL</a>
-          <br />
-          <a href="https://github.com/coderacheal" className="in-touch-comment-mini">APPIAHKUBI.COM</a>
+          <a
+            className="in-touch-comment-large"
+            href="mailto:coderacheal@gmail.com"
+          >
+            HELLO@RACHEAL
+            {' '}
+            <br />
+            APPIAHKUBI.COM
+          </a>
+          {/* <a href="https://github.com/coderacheal" className="in-touch-comment-mini">HELLO@RACHEAL</a>
+            <br />
+            <a href="https://github.com/coderacheal" className="in-touch-comment-mini">APPIAHKUBI.COM</a> */}
           <p className="in-touch-comment">A FULL STACK DEVELOPER WITH A BACKGROUND IN DATA SCIENCE AND MACHINE LEARNING</p>
         </div>
       </div>
@@ -43,5 +49,4 @@ const ContactPage = () => (
     </div>
   </div>
 );
-
 export default ContactPage;

@@ -39,29 +39,49 @@
   width: 95%;
   margin: auto;
   padding-top: 20vh;
+  height: 80vh;
 }
 
-.profile-get-in-touch img {
-  height: 75vh;
-  width: 27vw;
+.emai-contact-div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .in-touch-comment-large {
-  font-size: 200px;
-  text-align: right;
-  line-height: 170px;
+  display: block;
+  width: 100%;
+  font-size: 110px;
+  text-align: center;
+  line-height: 120px;
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
+  padding: 50px 0;
+  text-decoration: underline;
 }
 
-.in-touch-comment-mini {
-  display: none;
+.hello-email-ribbon {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 30px;
 }
+
 
 .in-touch-comment {
   text-align: right;
-  font-size: 13px;
+  font-size: 14px;
   color: white;
+  display: block;
+  width: 95%;
+  text-align: right;
+  position: absolute;
+  bottom: 30px;
+  margin: auto;
+}
+
+.in-touch-comment {
+ 
 }
 
 .profile-get-in-touch div {
@@ -131,9 +151,3 @@
   justify-content: space-between;
 }
 
-.hello-email-ribbon {
-  display: block;
-  text-align: right;
-  padding-bottom: 50px;
-  font-size: 17px;
-}

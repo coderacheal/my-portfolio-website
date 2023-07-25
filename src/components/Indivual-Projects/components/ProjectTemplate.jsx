@@ -29,6 +29,7 @@ const ProjectTemplate = (props) => {
     backgroundColor,
     viewProject,
     backgroundImage,
+    color,
   } = props;
 
   return (
@@ -40,6 +41,7 @@ const ProjectTemplate = (props) => {
         projectImage={projectImage}
         projectYear={projectYear}
         backgroundImage={backgroundImage}
+        color={color}
       />
       <ViewProject
         urlExtension={urlExtension}

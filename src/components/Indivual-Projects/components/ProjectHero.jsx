@@ -1,8 +1,6 @@
 import React from 'react';
-// import projectImage from '../../../assets/finance-app.png';
 import PropTypes from 'prop-types';
 import hero from '../../../styles/projects/projectHero.module.css';
-// import imgg from '../../../assets/bubbles.png';
 
 const ProjectHero = ({
   projectName,
@@ -10,11 +8,12 @@ const ProjectHero = ({
   projectImage,
   projectYear,
   backgroundImage,
+  color
 
 }) => {
   const backgroundStyle = {
     backgroundImage,
-
+    color
   };
 
   console.log(backgroundStyle);
@@ -24,7 +23,7 @@ const ProjectHero = ({
       <div className={hero.mainHeroSection}>
         <div>
           <p className={hero.boldProjectName}>{projectName}</p>
-          <p className={hero.shortProjectDescription}>{projectDescription}</p>
+          <p className={hero.shortProjectDescription} style={color}>{projectDescription}</p>
         </div>
         <div>
           <img src={projectImage} alt="Project Everest" className={hero.ProjectImage} />
@@ -54,7 +53,7 @@ ProjectHero.propTypes = {
   projectImage: PropTypes.string.isRequired,
   projectYear: PropTypes.number.isRequired,
   backgroundImage: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default ProjectHero;
-// A rails app for managing your finances

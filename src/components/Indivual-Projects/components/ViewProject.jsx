@@ -13,7 +13,7 @@ const ViewProject = ({
       <p>{miniIntro}</p>
       <div className={view.viewCodeWebsite}>
         <a href={projectGitHub} className={view.viewCode} target="_blank" rel="noreferrer">VIEW CODE</a>
-        <a href={projectWebsite} className={view.viewCode} target="_blank" rel="noreferrer">VIEW WEBSITE</a>
+        <a href={projectWebsite} className={view.viewCode} target="_blank" rel="noreferrer">VISIT WEBSITE</a>
       </div>
     </div>
   </div>
