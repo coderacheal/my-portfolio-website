@@ -1,7 +1,6 @@
 .projectHero {
-  /* background-color: #0d1123; */
-
-  /* background-color: #535e5a; */
+  display: flex;
+  align-items: center;
   height: 100vh;
   top: 0;
   background-image: url('../../assets/bubbles.png');
@@ -10,17 +9,18 @@
 }
 
 .ProjectImage {
-  height: 400px;
-  width: 300px;
+  height: 350px;
+  /* width: 500px; */
 }
 
 .mainHeroSection {
   display: flex;
   justify-content: space-between;
-  padding-top: 30vh;
+  padding-top: 15vh;
   color: black;
-  width: 65%;
+  width: 90%;
   margin: auto;
+
   align-items: center;
 }
 
@@ -38,15 +38,20 @@
   font-family: 'Montserrat', sans-serif;
   margin-top: 25px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .developerRole {
   display: flex;
-  color: white;
-  width: 80%;
+  width: 100%;
   margin: auto;
-  justify-content: space-between;
+  position: absolute;
+  bottom: 40px;
+  color: rgb(57, 67, 53);
+  align-self: center;
+  justify-content: space-around;
+  font-weight: bolder;
+  /* background-color: red; */
 }
 
 .eachRole {
@@ -63,7 +68,7 @@
 }
 
 .eachRole :nth-child(1) {
-  color: aqua;
+  color: rgb(247, 4, 211);
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {

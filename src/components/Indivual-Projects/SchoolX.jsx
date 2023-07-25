@@ -26,6 +26,8 @@ const SchoolX = () => {
         route={schoolx.route}
         backgroundColor={schoolx.backgroundColor}
         viewProject={schoolx.viewProject}
+        summaryImage={schoolx.summaryImage}
+        
       />
     </div>
   );

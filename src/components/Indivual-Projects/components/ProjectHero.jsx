@@ -8,12 +8,12 @@ const ProjectHero = ({
   projectImage,
   projectYear,
   backgroundImage,
-  color
+  color,
 
 }) => {
   const backgroundStyle = {
     backgroundImage,
-    color
+    color,
   };
 
   console.log(backgroundStyle);

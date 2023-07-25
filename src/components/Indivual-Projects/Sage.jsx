@@ -3,7 +3,7 @@ import ProjectTemplate from './components/ProjectTemplate';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const Sage = () => {
-  const sage = projectData[1];
+  const sage = projectData[3];
 
   return (
     <div>
@@ -26,6 +26,7 @@ const Sage = () => {
         route={sage.route}
         backgroundColor={sage.backgroundColor}
         viewProject={sage.viewProject}
+        summaryImage={sage.summaryImage}
       />
     </div>
   );

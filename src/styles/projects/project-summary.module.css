@@ -1,3 +1,7 @@
+.summaryDiv {
+  padding: 70px 0;
+}
+
 .descriptionAndImage {
   display: flex;
   width: 70%;
@@ -29,9 +33,9 @@ h3 {
   margin-top: 20px;
 }
 
-.projectImage {
-  height: 60vh;
-  width: 30vw;
+.projectSummaryImage {
+  height: 50vh;
+  /* width: 20vw; */
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {

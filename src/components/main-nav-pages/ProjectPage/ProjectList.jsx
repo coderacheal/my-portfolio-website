@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../../../styles/projects.module.css';
-import catsImage from '../../../assets/cats.jpg';
+import everest from '../../../assets/Expense-created.png';
 import brookeLarkImage from '../../../assets/brooke-lark-V4MBq8kue3U-unsplash.jpg';
 import ericMartyImage from '../../../assets/eric-marty-MsVZcS1r_ng-unsplash.jpg';
 import violinImage from '../../../assets/violin.png';
@@ -29,7 +29,7 @@ const ProjectList = () => {
   };
 
   const projectImages = {
-    1: catsImage,
+    1: everest,
     2: brookeLarkImage,
     3: ericMartyImage,
     4: violinImage,

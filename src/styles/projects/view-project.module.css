@@ -1,10 +1,7 @@
 .viewProjectsection {
   height: 50vh;
-
-  /* background-color: #293256; */
-
-  /* background-color: #222a4b; */
-  background-color: #a3a3a3;
+  /* background-color: #e6ffde; */
+  background-color: rgba(134, 135, 134, 0.3);
 }
 
 .introDiv {
@@ -43,6 +40,7 @@ h1 {
 .projectBackground {
   font-size: 300px;
   color: white;
+  /* color: rgb(207, 207, 207); */
   opacity: 0.1;
   position: absolute;
   width: 95%;
@@ -62,8 +60,17 @@ h1 {
   padding: 10px;
   background-color: transparent;
   font-size: 15px;
-  border: 1.5px solid white;
   cursor: pointer;
+  color: black;
+  background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: background-position 0.4s, transform 0.3s;
+}
+
+.viewCode:hover {
+  background-position: left bottom;
+  transform: scale(1.1);
   color: white;
 }
 

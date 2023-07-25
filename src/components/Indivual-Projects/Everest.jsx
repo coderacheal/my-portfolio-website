@@ -27,6 +27,7 @@ const Everest = () => {
         route={everest.route}
         backgroundColor={everest.backgroundColor}
         viewProject={everest.viewProject}
+        summaryImage={everest.summaryImage}
       />
     </div>
   );
