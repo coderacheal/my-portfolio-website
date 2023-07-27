@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Lenis from '@studio-freight/lenis';
+// import Lenis from '@studio-freight/lenis';
 import projects from '../../../styles/projects.module.css';
 import projectData from './Data/projectData';
 
@@ -11,26 +11,6 @@ import projectData from './Data/projectData';
 const ProjectImageAndInfo = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
   const [scrollLeft, setScrollLeft] = useState(0);
-
-  // const lenis = new Lenis({
-  //   orientation: 'horizontal',
-  //   smoothWheel: true,
-  // });
-
-  // lenis.on('scroll', (e) => {
-  //   console.log(e);
-  // });
-
-  // lenis.on('scroll', (e) => {
-  //   console.log(e);
-  // });
-
-  // function raf(time) {
-  //   lenis.raf(time);
-  //   requestAnimationFrame(raf);
-  // }
-
-  // requestAnimationFrame(raf);
 
   const handleScroll = (e) => {
     if (e.deltaY !== 0 && e.deltaX === 0) {
@@ -76,7 +56,7 @@ const ProjectImageAndInfo = () => {
                 />
                 <p style={{ width: '75%', margin: '0 auto' }}>0{index + 1} </p>
                 <img
-                  src={project.projectImage}
+                  src={project.summaryImage}
                   alt={project.projectName}
                   className={projects.projectImage}
                   style={index % 2 === 0 ? { width: '90%', height: '90%' } : { width: '70%', height: '70%' }}

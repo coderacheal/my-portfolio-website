@@ -28,6 +28,7 @@ const Everest = () => {
         backgroundColor={everest.backgroundColor}
         viewProject={everest.viewProject}
         summaryImage={everest.summaryImage}
+        backgroundImage={everest.backgroundImage}
       />
     </div>
   );

@@ -27,6 +27,7 @@ const Sage = () => {
         backgroundColor={sage.backgroundColor}
         viewProject={sage.viewProject}
         summaryImage={sage.summaryImage}
+        backgroundImage={sage.backgroundImage}
       />
     </div>
   );

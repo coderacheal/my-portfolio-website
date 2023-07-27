@@ -27,7 +27,8 @@ const SchoolX = () => {
         backgroundColor={schoolx.backgroundColor}
         viewProject={schoolx.viewProject}
         summaryImage={schoolx.summaryImage}
-        
+        backgroundImage={schoolx.backgroundImage}
+
       />
     </div>
   );

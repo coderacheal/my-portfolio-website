@@ -12,18 +12,18 @@ const ProjectHero = ({
 
 }) => {
   const backgroundStyle = {
-    backgroundImage,
+    backgroundImage: `url(${backgroundImage})`,
     color,
   };
 
-  console.log(backgroundStyle);
+  // console.log(backgroundStyle);
 
   return (
     <div className={hero.projectHero} style={backgroundStyle}>
       <div className={hero.mainHeroSection}>
         <div>
           <p className={hero.boldProjectName}>{projectName}</p>
-          <p className={hero.shortProjectDescription} style={color}>{projectDescription}</p>
+          <p className={hero.shortProjectDescription}>{projectDescription}</p>
         </div>
         <div>
           <img src={projectImage} alt="Project Everest" className={hero.ProjectImage} />

@@ -62,7 +62,8 @@ h1 {
   font-size: 15px;
   cursor: pointer;
   color: black;
-  background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%);
+  /* background: linear-gradient(to right, rgb(255, 96, 27) 50%, #fff 50%); */
+  background: linear-gradient(to right, rgb(8, 8, 8) 50%, #fff 50%);
   background-position: right bottom;
   background-size: 200% 100%;
   transition: background-position 0.4s, transform 0.3s;

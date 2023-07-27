@@ -4,7 +4,6 @@ import everest1 from '../../../../assets/signup-everest.png';
 import everest2 from '../../../../assets/category_added.png';
 import everest3 from '../../../../assets/Expense-created.png';
 
-
 import appImage from '../../../../assets/budget.png';
 import bgImg from '../../../../assets/bubbles.png';
 
@@ -53,7 +52,7 @@ const projectData = [
     firstCarouselImage: appImage,
     secondCarouselImage: appImage,
     thirdCarouselImage: appImage,
-    nextProjectName: 'Project Everest',
+    nextProjectName: 'Project SchoolX',
     backgroundColor: 'green',
     viewProject: 'View Next Project',
     route: '/work/schoolx',
@@ -72,7 +71,7 @@ const projectData = [
     projectYear: 2023,
     projectGitHub: 'https://github.com/coderacheal/everest',
     projectWebsite: 'https://github.com/coderacheal/everest',
-    miniIntro: 'Bulit to help local schools in my home district, SchoolX is a desktop application that helps schools to track their income and revenue and visualize their data.',
+    miniIntro: 'Built to help local schools in my home district, SchoolX is a desktop application that helps schools to track their income and revenue and visualize their data.',
     projectSummaryOne: ' Everest is built with security and user experience in mind. It has a clean fun interface the aims to make bidgeting fun A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
     projectSummaryTwo: ' Tools include Rails, Postgres and Devise for authentication.',
     builtFor: 'For all the personal finance lovers',
@@ -80,7 +79,7 @@ const projectData = [
     firstCarouselImage: appImage,
     secondCarouselImage: appImage,
     thirdCarouselImage: appImage,
-    nextProjectName: 'Project Foretell',
+    nextProjectName: 'Project Sage',
     backgroundColor: 'green',
     viewProject: 'View Next Project',
     route: '/work/sage',
@@ -107,7 +106,7 @@ const projectData = [
     firstCarouselImage: appImage,
     secondCarouselImage: appImage,
     thirdCarouselImage: appImage,
-    nextProjectName: 'Project Waterfall',
+    nextProjectName: 'Project Everest',
     backgroundColor: 'rgb(255, 103, 2)',
     viewProject: 'View Next Project',
     route: '/work/everest',
@@ -115,30 +114,6 @@ const projectData = [
     color: 'black',
     summaryImage: everestSummaryImage,
   },
-  // {
-  //   id: 5,
-  //   urlExtension: 'foretell',
-  //   title: 'FORETELL',
-  //   projectName: 'Project Foretell',
-  //   projectDescription: 'A predictive app for customer churn',
-  //   projectImage: everestprojectImage,
-  //   projectYear: 2023,
-  //   projectGitHub: 'https://github.com/coderacheal/everest',
-  //   projectWebsite: 'https://github.com/coderacheal/everest',
-  //   miniIntro: 'A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
-  //   projectSummaryOne: ' Everest is built with security and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam, aspernaturcommodi facere,labore minima maxime explicabo, iste reiciendis quia inventore saepe delectus',
-  //   projectSummaryTwo: ' Everest is built with security and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate numquam repellendus quas quisquam, aspernatur commodi facere,labore minima maxime explicabo, iste reiciendis quia inventore saepe delectu laudantium voluptatibus tempore nemo.',
-  //   builtFor: 'For all the personal finance lovers',
-  //   firstCarouselImage: appImage,
-  //   secondCarouselImage: appImage,
-  //   thirdCarouselImage: appImage,
-  //   nextProjectName: 'Project Sunday',
-  //   backgroundColor: 'mistyrose',
-  //   viewProject: 'First Project',
-  //   route: '/work/everest',
-  //   techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
-  //   color: 'black',
-  // },
 
 ];
 

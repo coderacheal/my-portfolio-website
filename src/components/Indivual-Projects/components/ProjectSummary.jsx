@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import budget from '../../../assets/budget.png';
 import summary from '../../../styles/projects/project-summary.module.css';
 
 const ProjectSummary = ({
-  projectSummaryOne, projectSummaryTwo, builtFor, summaryImage
+  projectSummaryOne, projectSummaryTwo, builtFor, summaryImage,
 }) => (
   <div className={summary.summaryDiv}>
     <h3>Project Summary</h3>
