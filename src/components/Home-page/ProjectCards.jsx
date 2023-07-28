@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import PropTypes from 'prop-types';
-import SeeMoreMouse from '../Utils/SeeMoreMouse';
+// import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const ProjectCards = () => {
@@ -19,17 +19,17 @@ const ProjectCards = () => {
     setHoveredProjectId(null);
   };
 
-  const seeAction = 'See more';
+  // const seeAction = 'See more';
 
-  const [showSeeMoreMouse, setShowSeeMoreMouse] = useState(false);
+  // const [showSeeMoreMouse, setShowSeeMoreMouse] = useState(false);
 
-  const handleSeeMoreMouseEnter = () => {
-    setShowSeeMoreMouse(true);
-  };
+  // const handleSeeMoreMouseEnter = () => {
+  //   setShowSeeMoreMouse(true);
+  // };
 
-  const handleSeeMoreMouseLeave = () => {
-    setShowSeeMoreMouse(false);
-  };
+  // const handleSeeMoreMouseLeave = () => {
+  //   setShowSeeMoreMouse(false);
+  // };
 
   // const backgroundStyle = {
   //   backgroundImage: `url(${projectCardImage})`,
@@ -83,8 +83,8 @@ const ProjectCards = () => {
           to="/work"
           type="button"
           className="legacy-projects"
-          onMouseEnter={handleSeeMoreMouseEnter}
-          onMouseLeave={handleSeeMoreMouseLeave}
+          // onMouseEnter={handleSeeMoreMouseEnter}
+          // onMouseLeave={handleSeeMoreMouseLeave}
         >
           RECENT WORK GALLERY
         </Link>
