@@ -13,7 +13,7 @@ import sage4 from '../../../../assets/sage4.png';
 
 import schoolxSummary from '../../../../assets/schoolxWelcome.png';
 import schoolx1 from '../../../../assets/schoolxWorkspace.png';
-import schoolx2 from '../../../../assets/schoolxWelcome.png';
+// import schoolx2 from '../../../../assets/schoolxWelcome.png';
 // import schoolx3 from '../../../../assets/schoolx3.png';
 
 // import appImage from '../../../../assets/budget.png';
@@ -89,7 +89,7 @@ const projectData = [
     builtFor: 'For all the personal finance lovers',
     backgroundImage: '',
     firstCarouselImage: schoolx1,
-    secondCarouselImage: schoolx2,
+    secondCarouselImage: schoolxSummary,
     thirdCarouselImage: schoolxSummary,
     nextProjectName: 'Project Everest',
     backgroundColor: 'green',

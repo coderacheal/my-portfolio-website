@@ -94,8 +94,8 @@ const ProjectCards = () => {
   );
 };
 
-ProjectCards.propTypes = {
-  projectCardImage: PropTypes.string.isRequired,
-};
+// ProjectCards.propTypes = {
+//   projectCardImage: PropTypes.string.isRequired,
+// };
 
 export default ProjectCards;

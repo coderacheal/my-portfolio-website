@@ -81,7 +81,6 @@ html.lenis {
   pointer-events: none;
 }
 
-
 /* Add CSS for the slide-in animation */
 .slide-in {
   transform: translateX(-50px); /* Start position before sliding in */

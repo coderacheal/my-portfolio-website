@@ -138,8 +138,6 @@
   opacity: 0;
 }
 
-
-
 /* Add the linear gradient on hover using the ::before pseudo-element */
 .project-img-link::before {
   content: '';
