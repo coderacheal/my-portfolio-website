@@ -56,7 +56,7 @@ const Header = ({ color }) => {
         <div className="menu-counter-div">
           <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
             <li className="nav-links">
-              <Link to="/" onMouseEnter={() => handleHover(0)} >
+              <Link to="/" onMouseEnter={() => handleHover(0)}>
                 <span>H</span>
                 <span>O</span>
                 <span>M</span>
@@ -124,6 +124,3 @@ Header.defaultProps = {
 };
 
 export default Header;
-
-
-

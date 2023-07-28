@@ -11,12 +11,11 @@ import sage2 from '../../../../assets/sage2.png';
 import sage3 from '../../../../assets/sage3.png';
 import sage4 from '../../../../assets/sage4.png';
 
+import schoolxProjectImage from '../../../../assets/gradient.jpg';
 import schoolxSummary from '../../../../assets/schoolxWelcome.png';
 import schoolx1 from '../../../../assets/schoolxWorkspace.png';
-// import schoolx2 from '../../../../assets/schoolxWelcome.png';
-// import schoolx3 from '../../../../assets/schoolx3.png';
-
-// import appImage from '../../../../assets/budget.png';
+import schoolx2 from '../../../../assets/schoolxSummary.png';
+import schoolx3 from '../../../../assets/studentDetails.png';
 
 const projectData = [
   {
@@ -69,7 +68,7 @@ const projectData = [
     viewProject: 'View Next Project',
     route: '/work/schoolx',
     techStack: ['REACT', 'REDUX'],
-    color: 'black',
+    color: 'white',
     summaryImage: sageSummaryImage,
     projectCardImage: sage2,
   },
@@ -79,25 +78,25 @@ const projectData = [
     title: 'SCHOOLX',
     projectName: 'Project SchoolX',
     projectDescription: 'A database management system for junior high schools',
-    projectImage: schoolxSummary,
-    projectYear: 2020,
+    projectImage: schoolx1,
+    projectYear: 2021,
     projectGitHub: 'https://github.com/coderacheal/schoolx',
     projectWebsite: 'https://github.com/coderacheal/everest',
     miniIntro: 'Built to help local schools in my home district, SchoolX is a desktop application that helps schools to track their income and revenue and visualize their data.',
-    projectSummaryOne: ' Everest is built with security and user experience in mind. It has a clean fun interface the aims to make bidgeting fun A finance app that enables you to track your expenses based on the type of expenses you define. Complete with authentication, it helps you stay on top of the dollar.',
-    projectSummaryTwo: ' Tools include Rails, Postgres and Devise for authentication.',
-    builtFor: 'For all the personal finance lovers',
-    backgroundImage: '',
+    projectSummaryOne: 'SchoolX is a project that enables junior high schools in poor districts that cannot afford their own management sytems a way to manage a bulk of their administrative task in student registration, fees logging, staffing and expenditure tracking. It is light weight desktop application, that makes school management seamless',
+    projectSummaryTwo: ' Tools include Python, SQL, and KivyMD for material design',
+    builtFor: 'A management app for schools',
+    backgroundImage: schoolxProjectImage,
     firstCarouselImage: schoolx1,
-    secondCarouselImage: schoolxSummary,
-    thirdCarouselImage: schoolxSummary,
+    secondCarouselImage: schoolx2,
+    thirdCarouselImage: schoolx3,
     nextProjectName: 'Project Everest',
     backgroundColor: 'green',
     viewProject: 'View Next Project',
     route: '/work/everest',
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
-    color: 'black',
-    summaryImage: schoolxSummary,
+    color: 'white',
+    summaryImage: schoolx2,
     projectCardImage: schoolxSummary,
   },
 

@@ -13,17 +13,19 @@ const ProjectHero = ({
 }) => {
   const backgroundStyle = {
     backgroundImage: `url(${backgroundImage})`,
-    color,
   };
 
-  // console.log(backgroundStyle);
+  const projectColor = {
+    color: color,
+  }
+  
 
   return (
     <div className={hero.projectHero} style={backgroundStyle}>
       <div className={hero.mainHeroSection}>
         <div>
-          <p className={hero.boldProjectName}>{projectName}</p>
-          <p className={hero.shortProjectDescription}>{projectDescription}</p>
+          <p className={hero.boldProjectName} style={projectColor}>{projectName}</p>
+          <p className={hero.shortProjectDescription} style={projectColor}>{projectDescription}</p>
         </div>
         <div>
           <img src={projectImage} alt="Project Everest" className={hero.ProjectImage} />
@@ -32,15 +34,15 @@ const ProjectHero = ({
       <div className={hero.developerRole}>
         <div className={hero.eachRole}>
           <p>ROLE</p>
-          <p>FULL-STACK DEVELOPER</p>
+          <p style={projectColor}>FULL-STACK DEVELOPER</p>
         </div>
         <div className={hero.eachRole}>
           <p>CONTEXT</p>
-          <p>PERSONAL PROJECTS</p>
+          <p style={projectColor}>PERSONAL PROJECTS</p>
         </div>
         <div className={hero.eachRole}>
           <p>YEAR</p>
-          <p>{projectYear}</p>
+          <p style={projectColor}>{projectYear}</p>
         </div>
       </div>
     </div>

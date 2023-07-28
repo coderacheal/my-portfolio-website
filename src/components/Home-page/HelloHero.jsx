@@ -6,8 +6,7 @@ import Socials from './Socials';
 const HelloHero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showFirstElement, setShowFirstElement] = useState(true);
-  const [showSecondElement, setShowSecondElement] = useState(false); 
-
+  const [showSecondElement, setShowSecondElement] = useState(false);
 
   const HandleVisibility = () => {
     setIsVisible(false);
@@ -17,16 +16,14 @@ const HelloHero = () => {
     const timer = setTimeout(() => {
       setShowFirstElement(false);
       setShowSecondElement(true);
-      
     }, 3000);
 
     const visbility = setTimeout(() => {
       setIsVisible(true);
-    }, 500)
+    }, 500);
 
     return () => clearTimeout(timer, visbility);
   }, []);
-
 
   return (
     <section className="hero-intro">

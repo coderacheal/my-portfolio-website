@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
-const ProjectCards = ({projectCardImage}) => {
+const ProjectCards = ({ projectCardImage }) => {
   const topThreeProjects = projectData.slice(0, 4);
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredProjectId, setHoveredProjectId] = useState(null);
