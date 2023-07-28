@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-} 
+}
 
- main {
+main {
   width: 100%;
 }
 
@@ -38,9 +38,9 @@
   opacity: 1;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,500&display=swap');
+
 /* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
@@ -61,8 +61,6 @@ body {
   background: linear-gradient(#ffb6c1, #c6e6ca); /* Pink Rose to Mint Green */
 }
 
-
-
 html.lenis {
   height: auto;
 }
@@ -80,8 +78,8 @@ html.lenis {
 }
 
 .lenis.lenis-scrolling iframe {
-   pointer-events: none;
-} 
+  pointer-events: none;
+}
 
 
 /* Add CSS for the slide-in animation */
@@ -95,4 +93,3 @@ html.lenis {
   transform: translateX(0); /* Slide to the original position */
   opacity: 1; /* Fade in when in view */
 }
-

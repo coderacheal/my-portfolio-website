@@ -13,7 +13,6 @@
   }
 
   .project-brief {
-    width: 80%;
     margin: auto;
     font-size: 22px;
     width: 100%;
@@ -44,13 +43,10 @@
     text-align: right;
   }
 
-  
   .in-touch-comment-large {
     font-size: 90px;
     line-height: 90px;
-    
   }
-
 
   .connect-via-social-ribbon {
     text-align: center;

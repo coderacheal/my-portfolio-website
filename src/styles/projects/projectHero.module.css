@@ -10,6 +10,7 @@
 
 .ProjectImage {
   height: 350px;
+
   /* width: 500px; */
 }
 
@@ -50,6 +51,7 @@
   align-self: center;
   justify-content: space-around;
   font-weight: bolder;
+
   /* background-color: red; */
 }
 

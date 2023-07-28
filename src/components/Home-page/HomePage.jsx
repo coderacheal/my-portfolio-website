@@ -6,12 +6,12 @@ import HelloHero from './HelloHero';
 import ProjectCards from './ProjectCards';
 import Contact from './Contact';
 
-const HomePage = (projectCardImage) => (
+const HomePage = () => (
   <div className="welcome-page">
     <main className="portfolio-content">
       <Header />
       <HelloHero />
-      <ProjectCards projectCardImage={projectCardImage} />
+      <ProjectCards />
       <Contact />
       <Footer />
     </main>
@@ -79,7 +79,8 @@ export default HomePage;
 //           <HelloHero className={helloHeroVisible ? 'slide-in' : ''} />
 //         </div>
 //         <div ref={projectCardsRef}>
-//           <ProjectCards className={projectCardsVisible ? 'slide-in' : ''} projectCardImage={projectCardImage} />
+//           <ProjectCards className={projectCardsVisible ? 'slide-in' : ''}
+//            projectCardImage={projectCardImage} />
 //         </div>
 //         <div ref={contactRef}>
 //           <Contact className={contactVisible ? 'slide-in' : ''} />

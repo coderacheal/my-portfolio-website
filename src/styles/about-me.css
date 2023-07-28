@@ -102,8 +102,6 @@
   font-weight: bold;
 }
 
-
-
 .view-latest-project-div {
   display: flex;
   margin-top: 15vh;
@@ -178,7 +176,6 @@
   background-color: rgba(70, 76, 71, 255);/* Remove this if you don't want the 3D effect */
 }
 
-
 .eachTechStackSessions ul {
   list-style-type: none;
   padding-left: 0;
@@ -204,12 +201,13 @@
 }
 
 .eachTechStackSessions ul li {
-  list-style-type:circle;
+  list-style-type: circle;
   font-size: 17px;
   color: white;
   line-height: 30px;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
+
   /* background-color: red; */
   width: 70%;
   margin: auto;
@@ -270,5 +268,4 @@
   color: black;
   width: 85%;
   margin: auto;
-
 }

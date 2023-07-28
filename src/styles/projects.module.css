@@ -4,7 +4,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #222;
-  background-color: rgba(83,94,90,255);
+  background-color: rgba(83, 94, 90, 255);
   overflow: hidden;
 }
 
@@ -32,9 +32,8 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  justify-content: center; 
+  justify-content: center;
 }
-
 
 .projectImageDiv {
   z-index: 51;
@@ -153,16 +152,15 @@
 }
 
 @media (min-width: 320px) and (max-width: 769px) {
-
   .imageContainer {
     width: 250px;
     height: 300px;
     display: flex;
     flex-direction: column;
     margin: auto;
-    justify-content: center; 
+    justify-content: center;
   }
-  
+
   .projectListView p {
     font-size: 30px;
   }
@@ -211,7 +209,6 @@
     gap: 100px;
     overflow: hidden;
   } */
-  
 
   .allProjectsImages img {
     width: 85vw;

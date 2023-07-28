@@ -13,7 +13,7 @@ import NextProject from '../Indivual-Projects/components/NextProject';
 const AboutPage = () => {
   const words = ['Passionate', 'full stack', 'developer'];
   const techStack = 'Tech Stack';
-  const nextProjectName = 'Project Sunday';
+  const nextProjectName = 'Project Everest';
   const color = 'black';
   const [visibleLetters, setVisibleLetters] = useState([]);
 
@@ -247,7 +247,7 @@ const AboutPage = () => {
           </div>
         </div>
         <NextProject
-          nextProjectName='Project Everest'
+          nextProjectName={nextProjectName}
           route="/work/everest"
           viewProject="View latest Project"
         />

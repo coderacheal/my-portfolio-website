@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import projects from '../../../styles/projects.module.css';
 import Header from '../../Home-page/Header';
-import ProjectImageAndInfo from './ProjectImageAndInfo';
+// import ProjectImageAndInfo from './ProjectImageAndInfo';
 import ProjectList from './ProjectList';
 
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -9,20 +9,20 @@ import ProjectList from './ProjectList';
 
 const ProjectsPage = () => {
   const [divVisibility, setVisibility] = useState(true);
-  const [displayText, setDisplayText] = useState('LIST VIEW');
+  // const [displayText, setDisplayText] = useState('LIST VIEW');
 
-  const handleProjectVisibility = () => {
-    setVisibility(!divVisibility);
-  };
+  // const handleProjectVisibility = () => {
+  //   setVisibility(!divVisibility);
+  // };
 
-  const handleTextChange = () => {
-    setDisplayText((currentText) => {
-      if (currentText === 'LIST VIEW') {
-        return 'IMAGE VIEW';
-      }
-      return 'LIST VIEW';
-    });
-  };
+  // const handleTextChange = () => {
+  //   setDisplayText((currentText) => {
+  //     if (currentText === 'LIST VIEW') {
+  //       return 'IMAGE VIEW';
+  //     }
+  //     return 'LIST VIEW';
+  //   });
+  // };
 
   return (
     <div className={projects.ProjectDiv}>
