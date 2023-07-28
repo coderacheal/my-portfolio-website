@@ -11,10 +11,10 @@ import sage2 from '../../../../assets/sage2.png';
 import sage3 from '../../../../assets/sage3.png';
 import sage4 from '../../../../assets/sage4.png';
 
-import schoolxSummary from '../../../../assets/summarySchoolx.png';
-import schoolx1 from '../../../../assets/schooxLogin.png';
-import schoolx2 from '../../../../assets/schoolx2.png';
-import schoolx3 from '../../../../assets/schoolx3.png';
+import schoolxSummary from '../../../../assets/schoolxWelcome.png';
+import schoolx1 from '../../../../assets/schoolxWorkspace.png';
+import schoolx2 from '../../../../assets/schoolxWelcome.png';
+// import schoolx3 from '../../../../assets/schoolx3.png';
 
 // import appImage from '../../../../assets/budget.png';
 
@@ -79,7 +79,7 @@ const projectData = [
     title: 'SCHOOLX',
     projectName: 'Project SchoolX',
     projectDescription: 'A database management system for junior high schools',
-    projectImage: schoolx3,
+    projectImage: schoolxSummary,
     projectYear: 2020,
     projectGitHub: 'https://github.com/coderacheal/schoolx',
     projectWebsite: 'https://github.com/coderacheal/everest',
@@ -90,7 +90,7 @@ const projectData = [
     backgroundImage: '',
     firstCarouselImage: schoolx1,
     secondCarouselImage: schoolx2,
-    thirdCarouselImage: schoolx3,
+    thirdCarouselImage: schoolxSummary,
     nextProjectName: 'Project Everest',
     backgroundColor: 'green',
     viewProject: 'View Next Project',
@@ -98,7 +98,7 @@ const projectData = [
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
     color: 'black',
     summaryImage: schoolxSummary,
-    projectCardImage: schoolx3,
+    projectCardImage: schoolxSummary,
   },
 
   // {

@@ -21,7 +21,7 @@ const Contact = () => {
       </div>
       <div className="email-div">
         <a
-          href="mailto:coderacheal@gmail.com"
+          href="mailto:hello@rachealappiahkubi.com"
           className="email"
           onMouseEnter={handleShowSendEmailMouseEnter}
           onMouseLeave={handleShowSendEmailMouseLeave}

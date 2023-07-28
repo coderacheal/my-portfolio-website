@@ -11,7 +11,7 @@ const ContactPage = () => (
           <p className="hello-email-ribbon">SEND ME AN EMAIL</p>
           <a
             className="in-touch-comment-large"
-            href="mailto:coderacheal@gmail.com"
+            href="mailto:hello@rachealappiahkubi.com"
           >
             HELLO@RACHEAL
             {' '}

@@ -28,7 +28,7 @@
 }
 
 .project-image-div {
-  background-image: url('../assets/food.jpg');
+  /* background-image: url('../assets/food.jpg'); */
   height: 95vh;
   width: 40vw;
   cursor: none;

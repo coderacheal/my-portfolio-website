@@ -247,7 +247,7 @@ const AboutPage = () => {
           </div>
         </div>
         <NextProject
-          nextProjectName={nextProjectName}
+          nextProjectName='Project Everest'
           route="/work/everest"
           viewProject="View latest Project"
         />
