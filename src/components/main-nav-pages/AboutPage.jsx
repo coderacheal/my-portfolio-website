@@ -42,6 +42,8 @@ const AboutPage = () => {
     if (inView3) {
       setIsInView3(true);
     }
+
+    setVisibleLetters();
   }, [inView1, inView2, inView3]);
 
   return (

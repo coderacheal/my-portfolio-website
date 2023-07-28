@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Header from './Header';
 import Footer from './Footer';
 import HelloHero from './HelloHero';
@@ -18,9 +18,9 @@ const HomePage = () => (
   </div>
 );
 
-HomePage.propTypes = {
-  projectCardImage: PropTypes.string.isRequired,
-};
+// HomePage.propTypes = {
+//   projectCardImage: PropTypes.string.isRequired,
+// };
 
 export default HomePage;
 
