@@ -1,4 +1,4 @@
-@media (min-width: 767px) and (max-width: 1025px) {
+@media (min-width: 767px) and (max-width: 1024px) {
   /* Home page  */
 
   .header {
@@ -38,7 +38,7 @@
   }
 
   .project-brief {
-    font-size: 24px;
+    font-size: 20px;
     width: 80%;
   }
 
@@ -69,6 +69,16 @@
 
   .slidingMenuFooter {
     top: 5vh;
+  }
+
+  .downloadCV {
+    left: 50px;
+    top: 250px;
+  }
+
+  .project-img-link {
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   /* About Page */
@@ -102,6 +112,10 @@
     width: 100%;
   }
 
+  .tech-fontawesome {
+    display: none;
+  }
+
   .view-latest-project {
     width: 100%;
   }
@@ -112,29 +126,18 @@
 
   /* Contact Page */
 
-  .profile-get-in-touch {
-    display: block;
-  }
-
   .in-touch-comment-large {
-    display: none;
-  }
-
-  .in-touch-comment-mini {
-    display: block;
-    text-decoration: underline;
     font-size: 70px;
-    text-align: center;
     line-height: 70px;
-    margin: auto;
   }
 
   .in-touch-comment {
-    display: none;
-  }
-
-  .profile-get-in-touch img {
-    display: none;
+    display: block;
+    width: 95%;
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
   }
 
   .connect-via-social-ribbon {

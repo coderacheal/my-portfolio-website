@@ -3,7 +3,7 @@ import ProjectTemplate from './components/ProjectTemplate';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const SchoolX = () => {
-  const schoolx = projectData[3];
+  const schoolx = projectData[2];
 
   return (
     <div>
@@ -26,6 +26,9 @@ const SchoolX = () => {
         route={schoolx.route}
         backgroundColor={schoolx.backgroundColor}
         viewProject={schoolx.viewProject}
+        summaryImage={schoolx.summaryImage}
+        backgroundImage={schoolx.backgroundImage}
+
       />
     </div>
   );

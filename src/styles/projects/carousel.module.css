@@ -5,6 +5,12 @@
 
 .carouselDiv {
   padding: 10vh 0;
-  width: 100%;
+  width: 80vw;
   margin: auto;
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
+  .oneProjectImage {
+    height: 50vh;
+  }
 }

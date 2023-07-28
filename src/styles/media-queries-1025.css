@@ -7,14 +7,20 @@
 
   .projectTitle {
     width: 100%;
-    font-size: 70px;
+    font-size: 50px;
     text-align: left;
     margin-left: 0;
   }
 
   .project-brief {
-    font-size: 24px;
+    margin: auto;
+    font-size: 22px;
     width: 100%;
+  }
+
+  .project-img-link {
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   /* Header */
@@ -33,35 +39,19 @@
 
   /* contact page */
 
-  .profile-get-in-touch {
-    display: block;
+  .in-touch-comment {
+    text-align: right;
   }
 
   .in-touch-comment-large {
-    display: none;
-  }
-
-  .in-touch-comment-mini {
-    display: block;
-    text-decoration: underline;
-    font-size: 70px;
-    text-align: center;
-    line-height: 70px;
-    margin: auto;
-  }
-
-  .in-touch-comment {
-    display: none;
-  }
-
-  .profile-get-in-touch img {
-    display: none;
+    font-size: 90px;
+    line-height: 90px;
   }
 
   .connect-via-social-ribbon {
     text-align: center;
     width: 80%;
-    font-size: 18px;
+    font-size: 24px;
     padding-bottom: 70px;
   }
 

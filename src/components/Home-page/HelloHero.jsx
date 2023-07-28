@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+// import { Document, Page, pdfjs } from 'react-pdf';
 import Socials from './Socials';
+// import cv from '../Utils/cv.pdf';
 
 /* eslint-disable no-unused-vars */
 
@@ -46,15 +48,22 @@ const HelloHero = () => {
                 {' '}
                 Developer
               </p>
+              <a
+                className="downloadCV"
+                href="https://docs.google.com/document/d/1vAV1Zcc6cSSp_SBLvWE7637mKdN788IKIBJq2cJblkI/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View CV
+              </a>
             </div>
           )}
         </div>
       </div>
+
       <Socials />
     </section>
   );
 };
 
 export default HelloHero;
-
-// eslint-disable react/no-unused-vars

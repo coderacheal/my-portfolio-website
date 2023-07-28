@@ -3,7 +3,7 @@ import ProjectTemplate from './components/ProjectTemplate';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const Sunday = () => {
-  const sunday = projectData[0];
+  const sunday = projectData[3];
 
   return (
     <div>
@@ -26,6 +26,8 @@ const Sunday = () => {
         route={sunday.route}
         backgroundColor={sunday.backgroundColor}
         viewProject={sunday.viewProject}
+        summaryImage={sunday.summaryImage}
+        backgroundImage={sunday.backgroundImage}
       />
     </div>
   );

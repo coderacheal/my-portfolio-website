@@ -3,37 +3,65 @@
 .ProjectDiv {
   width: 100vw;
   height: 100vh;
-
-  /* background-color: #e1dfdd; */
   background-color: #222;
+  background-color: rgba(83, 94, 90, 255);
   overflow: hidden;
+}
+
+.projectLinkTag {
+  margin: auto;
+  align-items: center;
 }
 
 .allProjectsImages {
   display: flex;
   width: 90%;
-
-  /* height: 80vh; */
+  scroll-snap-type: x mandatory;
   height: 75vh;
   margin: auto;
   padding-top: 7%;
   overflow-x: auto;
   white-space: nowrap;
-  gap: 50px;
+  gap: 100px;
   overflow: hidden;
 }
 
-.allProjectsImages img {
-  width: 390px;
-  height: 550px;
-  margin-right: 10px;
+.imageContainer {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
 }
 
-/* .allProjectsImages img:nth-child(even) {
-  width: 350px;
-  height: 450px;
-  vertical-align: middle;
-} */
+.projectImageDiv {
+  z-index: 51;
+}
+
+.projectImage {
+  align-self: center;
+  transition: transform 1s ease-in-out;
+  z-index: 11;
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+}
+
+.projecImageTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectPlusInfo {
+  transition: filter 1s;
+  display: flex;
+}
+
+.greyedOut {
+  filter: grayscale(100%);
+}
 
 .projectInfo p {
   width: 80%;
@@ -99,21 +127,22 @@
   position: fixed;
   pointer-events: none;
   cursor: none;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 3s ease-in-out;
+}
+
+.followImageDiv {
+  bottom: -350px;
+  transition: 1.2s;
+  margin: auto;
+}
+
+.followImageDiv.active {
+  bottom: 0;
 }
 
 .projectListView span {
   padding-right: 70px;
   padding-left: 20px;
-}
-
-.projectPlusInfo {
-  display: flex;
-}
-
-.projecImageTitle {
-  text-align: right;
-  margin-right: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -123,6 +152,15 @@
 }
 
 @media (min-width: 320px) and (max-width: 769px) {
+  .imageContainer {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+
   .projectListView p {
     font-size: 30px;
   }
@@ -153,13 +191,24 @@
   .allProjectsImages {
     flex-direction: column;
     gap: 50px;
-    overflow: auto;
+    overflow-y: auto;
     align-items: center;
     margin-top: 10vh;
     height: 75vh;
-
-    /* background-color: red; */
   }
+
+  /* .allProjectsImages {
+    display: flex;
+    width: 90%;
+    scroll-snap-type: x mandatory;
+    height: 75vh;
+    margin: auto;
+    padding-top: 7%;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 100px;
+    overflow: hidden;
+  } */
 
   .allProjectsImages img {
     width: 85vw;
@@ -182,7 +231,5 @@
     width: 65vw;
     height: 65vh;
     margin: auto;
-
-    /* margin-right: 0 5%; */
   }
 }

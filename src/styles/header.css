@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 12;
+  z-index: 21;
 }
 
 .nav-item {
@@ -40,7 +40,7 @@
   flex-direction: column;
   transition: 0.3s;
   padding-top: 5px;
-  z-index: 10;
+  z-index: 20;
 }
 
 .bar {
@@ -94,7 +94,7 @@ a {
   width: 100%;
   transition: 1.2s;
   padding: 0;
-  z-index: 10;
+  z-index: 20;
   align-items: center;
   padding-top: 70px;
   margin: auto;
@@ -110,8 +110,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-
-  /* align-items: center; */
 }
 
 .nav-links-ul {
@@ -167,9 +165,16 @@ a {
   text-align: right;
 }
 
-.sliding-digit.slide-in {
+.sliding-digit {
+  color: yellow;
+  background-color: red;
+}
+
+.sliding-digit,
+.slide-in {
   transition: transform 0.5s ease;
   transform: translateY(100%);
+  color: white;
 }
 
 .slidingMenuFooter {
@@ -187,6 +192,6 @@ a {
 .social-linkedin {
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  width: 15%;
   color: rgb(233, 217, 217);
 }

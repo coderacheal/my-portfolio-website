@@ -26,6 +26,8 @@ const Foretell = () => {
         route={foretell.route}
         backgroundColor={foretell.backgroundColor}
         viewProject={foretell.viewProject}
+        summaryImage={foretell.summaryImage}
+        backgroundImage={foretell.backgroundImage}
       />
     </div>
   );

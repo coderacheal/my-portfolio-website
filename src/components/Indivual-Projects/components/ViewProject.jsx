@@ -12,8 +12,8 @@ const ViewProject = ({
       <h1 className={view.introRibbon}>Introduction</h1>
       <p>{miniIntro}</p>
       <div className={view.viewCodeWebsite}>
-        <a href={projectGitHub} className={view.viewCode}>VIEW CODE</a>
-        <a href={projectWebsite} className={view.viewCode}>VIEW WEBSITE</a>
+        <a href={projectGitHub} className={view.viewCode} target="_blank" rel="noreferrer">VIEW CODE</a>
+        <a href={projectWebsite} className={view.viewCode} target="_blank" rel="noreferrer">VISIT WEBSITE</a>
       </div>
     </div>
   </div>
@@ -25,8 +25,5 @@ ViewProject.propTypes = {
   projectWebsite: PropTypes.string.isRequired,
   miniIntro: PropTypes.string.isRequired,
 };
-
-// A finance app that enables you to track your expenses based on the type of expenses
-// you define. Complete with authentication, it helps you stay on top of the dollar.
 
 export default ViewProject;

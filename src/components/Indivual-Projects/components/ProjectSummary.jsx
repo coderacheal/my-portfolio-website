@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import budget from '../../../assets/budget.png';
 import summary from '../../../styles/projects/project-summary.module.css';
 
-const ProjectSummary = ({ projectSummaryOne, projectSummaryTwo, builtFor }) => (
-  <div>
+const ProjectSummary = ({
+  projectSummaryOne, projectSummaryTwo, builtFor, summaryImage,
+}) => (
+  <div className={summary.summaryDiv}>
     <h3>Project Summary</h3>
     <div className={summary.descriptionAndImage}>
       <div>
@@ -13,7 +14,7 @@ const ProjectSummary = ({ projectSummaryOne, projectSummaryTwo, builtFor }) => (
         <p className={summary.description}>{projectSummaryTwo}</p>
       </div>
       <div>
-        <img src={budget} alt="Project" className={summary.projectImage} />
+        <img src={summaryImage} alt="Project" className={summary.projectSummaryImage} />
       </div>
     </div>
     <div />
@@ -24,6 +25,7 @@ ProjectSummary.propTypes = {
   projectSummaryOne: PropTypes.string.isRequired,
   projectSummaryTwo: PropTypes.string.isRequired,
   builtFor: PropTypes.string.isRequired,
+  summaryImage: PropTypes.string.isRequired,
 
 };
 
