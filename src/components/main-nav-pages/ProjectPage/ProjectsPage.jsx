@@ -42,7 +42,7 @@ const ProjectsPage = () => (
           {' '}
           {displayText}
         </p> */}
-      <p>&copy;2023</p>
+      <p>Portfolio &copy;2023</p>
     </div>
   </div>
 );
