@@ -89,7 +89,7 @@ const ProjectCards = () => {
           RECENT WORK GALLERY
         </Link>
       </div>
-      {showSeeMoreMouse && <SeeMoreMouse seeAction={seeAction} />}
+      {/* {showSeeMoreMouse && <SeeMoreMouse seeAction={seeAction} />} */}
     </div>
   );
 };
