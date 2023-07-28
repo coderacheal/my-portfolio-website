@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
-const ProjectCards = () => {
+const ProjectCards = ({ projectCardImage }) => {
   const topThreeProjects = projectData.slice(0, 4);
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredProjectId, setHoveredProjectId] = useState(null);
@@ -30,6 +31,10 @@ const ProjectCards = () => {
     setShowSeeMoreMouse(false);
   };
 
+  // const backgroundStyle = {
+  //   backgroundImage: `url(${projectCardImage})`,
+  // };
+
   return (
     <div className="homeProjectsImageAndDescription">
       <div className="ribbon-case-study">
@@ -38,34 +43,40 @@ const ProjectCards = () => {
         </p>
       </div>
       <div className="wrapper">
-        {topThreeProjects.map((eachProject) => (
-          <div className="each-project" key={eachProject.id}>
-            <div className="project-details">
-              <Link to={`/work/${eachProject.urlExtension}`}>
-                <button
-                  type="button"
-                  className="projectTitle underline-on-hover"
-                >
-                  {eachProject.title}
-                </button>
+        {topThreeProjects.map((eachProject) => {
+          const backgroundStyle = {
+            backgroundImage: `url(${eachProject.projectCardImage})`,
+          };
+          return (
+            <div className="each-project" key={eachProject.id}>
+              <div className="project-details">
+                <Link to={`/work/${eachProject.urlExtension}`}>
+                  <button
+                    type="button"
+                    className="projectTitle underline-on-hover"
+                  >
+                    {eachProject.title}
+                  </button>
+                </Link>
+                <p className="project-brief">
+                  {eachProject.miniIntro}
+                </p>
+              </div>
+              <Link
+                to={`/work/${eachProject.urlExtension}`}
+                className="project-img-link"
+                style={backgroundStyle}
+                onMouseEnter={() => HandleVisibility(eachProject.id)}
+                onMouseLeave={HandleInVisibility}
+              >
+                <p className={`${isVisible && hoveredProjectId === eachProject.id ? 'project-id' : 'not'}`}>
+                  0
+                  {eachProject.id}
+                </p>
               </Link>
-              <p className="project-brief">
-                {eachProject.miniIntro}
-              </p>
             </div>
-            <Link
-              to={`/work/${eachProject.urlExtension}`}
-              className="project-img-link"
-              onMouseEnter={() => HandleVisibility(eachProject.id)}
-              onMouseLeave={HandleInVisibility}
-            >
-              <p className={`${isVisible && hoveredProjectId === eachProject.id ? 'project-id' : 'not'}`}>
-                0
-                {eachProject.id}
-              </p>
-            </Link>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <div>
         <Link
@@ -81,6 +92,10 @@ const ProjectCards = () => {
       {showSeeMoreMouse && <SeeMoreMouse seeAction={seeAction} />}
     </div>
   );
+};
+
+ProjectCards.propTypes = {
+  projectCardImage: PropTypes.string.isRequired,
 };
 
 export default ProjectCards;

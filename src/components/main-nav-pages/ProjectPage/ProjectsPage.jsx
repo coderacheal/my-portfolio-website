@@ -28,11 +28,12 @@ const ProjectsPage = () => {
     <div className={projects.ProjectDiv}>
       <Header />
       <div>
-        {divVisibility ? (<ProjectImageAndInfo />) : (<ProjectList />)}
+        {/* {divVisibility ? (<ProjectImageAndInfo />) : (<ProjectList />)} */}
+        <ProjectList />
       </div>
       <div className={projects.projectsFooter}>
         <p>PROFESSIONAL PORTFOLIO</p>
-        <p
+        {/* <p
           className={projects.listView}
           onClick={() => {
             handleProjectVisibility();
@@ -41,7 +42,7 @@ const ProjectsPage = () => {
         >
           {' '}
           {displayText}
-        </p>
+        </p> */}
         <p>&copy;2023</p>
       </div>
     </div>

@@ -56,27 +56,27 @@ const App = () => {
 
   return (
     <Router>
-      {/* <ScrollToTop /> */}
-      <Routes>
-        <Route
-          path="/"
-          element={(
-            <div>
-              {isLoading ? (<div className="loader"><Loader duration={1000} /></div>
-              ) : (
-                <div className="content"><HomePage /></div>)}
-            </div>
-      )}
-        />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/work" element={<ProjectsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/work/sunday" element={<Sunday />} />
-        <Route path="/work/sage" element={<Sage />} />
-        <Route path="/work/foretell" element={<Foretell />} />
-        <Route path="/work/schoolx" element={<SchoolX />} />
-        <Route path="/work/everest" element={<Everest />} />
-      </Routes>
+      <ScrollToTop />
+        <Routes>
+          <Route
+            path="/"
+            element={(
+              <div>
+                {isLoading ? (<div className="loader"><Loader duration={1000} /></div>
+                ) : (
+                  <div className="content"><HomePage /></div>)}
+              </div>
+        )}
+          />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/work" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/work/sunday" element={<Sunday />} />
+          <Route path="/work/sage" element={<Sage />} />
+          <Route path="/work/foretell" element={<Foretell />} />
+          <Route path="/work/schoolx" element={<SchoolX />} />
+          <Route path="/work/everest" element={<Everest />} />
+        </Routes>
     </Router>
   );
 };

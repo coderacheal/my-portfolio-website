@@ -3,9 +3,9 @@
   align-items: center;
   height: 100vh;
   top: 0;
-  /* background-image: url('../../assets/bubbles.png'); */
   background-size: cover;
   background-position: center;
+  background-color: rgb(56, 56, 56);
 }
 
 .ProjectImage {
@@ -20,7 +20,6 @@
   color: black;
   width: 90%;
   margin: auto;
-
   align-items: center;
 }
 

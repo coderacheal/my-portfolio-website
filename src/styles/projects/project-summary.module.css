@@ -3,9 +3,16 @@
 }
 
 .descriptionAndImage {
-  display: flex;
+  display: grid;
+  grid-template-columns: 60% 40%;
   width: 70%;
   margin: auto;
+  /* background-color: red; */
+}
+
+.descriptionAndImage div {
+  align-items: center;
+  margin: 0 auto;
 }
 
 h3 {
@@ -35,6 +42,8 @@ h3 {
 
 .projectSummaryImage {
   height: 50vh;
+  margin: 0 auto;
+  background-color: yellow;
   /* width: 20vw; */
 }
 

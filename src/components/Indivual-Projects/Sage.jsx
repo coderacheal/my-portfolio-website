@@ -3,7 +3,7 @@ import ProjectTemplate from './components/ProjectTemplate';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const Sage = () => {
-  const sage = projectData[3];
+  const sage = projectData[1];
 
   return (
     <div>
