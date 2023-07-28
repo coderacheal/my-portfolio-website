@@ -69,7 +69,8 @@
 //                 onMouseEnter={() => HandleVisibility(eachProject.id)}
 //                 onMouseLeave={HandleInVisibility}
 //               >
-//                 <p className={`${isVisible && hoveredProjectId === eachProject.id ? 'project-id' : 'not'}`}>
+//                 <p className={`${isVisible && hoveredProjectId === eachProject.id ? 
+// 'project-id' : 'not'}`}>
 //                   0
 //                   {eachProject.id}
 //                 </p>
