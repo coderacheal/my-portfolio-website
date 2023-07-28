@@ -1,35 +1,32 @@
 import React, { useEffect, useState } from 'react';
-// import { Document, Page, pdfjs } from 'react-pdf';
 import Socials from './Socials';
-// import cv from '../Utils/cv.pdf';
 
 /* eslint-disable no-unused-vars */
 
 const HelloHero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showFirstElement, setShowFirstElement] = useState(true);
-  const [showSecondElement, setShowSecondElement] = useState(false);
+  const [showSecondElement, setShowSecondElement] = useState(false); 
+
 
   const HandleVisibility = () => {
     setIsVisible(false);
   };
 
   useEffect(() => {
-    const hasRenderedBefore = sessionStorage.getItem('hasRenderedBefore');
-    if (hasRenderedBefore) {
-      setShowFirstElement(false);
-      setShowSecondElement(true);
-    } else {
-      sessionStorage.setItem('hasRenderedBefore', 'true');
-    }
-
     const timer = setTimeout(() => {
       setShowFirstElement(false);
       setShowSecondElement(true);
-    }, 17000);
+      
+    }, 3000);
 
-    return () => clearTimeout(timer);
+    const visbility = setTimeout(() => {
+      setIsVisible(true);
+    }, 500)
+
+    return () => clearTimeout(timer, visbility);
   }, []);
+
 
   return (
     <section className="hero-intro">
@@ -60,7 +57,6 @@ const HelloHero = () => {
           )}
         </div>
       </div>
-
       <Socials />
     </section>
   );

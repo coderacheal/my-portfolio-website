@@ -16,11 +16,16 @@
   margin: auto;
   align-self: center;
   color: rgb(233, 217, 217);
+  /* transition: 0.5s; */
+  opacity: 0; /* Start with 0 opacity to be faded in */
+  transition: opacity 2s ease-in
 }
 
+
+
 .fade-in {
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 1s ease-in;
 }
 
 .visible {

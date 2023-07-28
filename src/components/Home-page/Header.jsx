@@ -56,7 +56,7 @@ const Header = ({ color }) => {
         <div className="menu-counter-div">
           <ul className={`nav-links-ul ${isActive ? 'active' : ''}`}>
             <li className="nav-links">
-              <Link to="/" onMouseEnter={() => handleHover(0)}>
+              <Link to="/" onMouseEnter={() => handleHover(0)} >
                 <span>H</span>
                 <span>O</span>
                 <span>M</span>
@@ -96,8 +96,9 @@ const Header = ({ color }) => {
             <p className="menuTopDescription">FULL STACK DEVELOPER WITH A LOVE FOR ML& AI, BLOCKCHAIN AND BUILDING INTERACTIVE WEBSITES WITH REACT. LEARNING TO PLAY THE VIOLIN </p>
             <p className="menuFooterCounter">
               0
-              <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>{counter}</span>
-              <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>{counter}</span>
+              {/* <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>{counter}</span> */}
+              {/* <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>{counter}</span> */}
+              <span className={`sliding-digit ${slideIn ? '' : 'slideOut'}`}>{counter}</span>
             </p>
           </div>
         </div>
@@ -123,3 +124,6 @@ Header.defaultProps = {
 };
 
 export default Header;
+
+
+
