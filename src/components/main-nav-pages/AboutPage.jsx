@@ -56,7 +56,7 @@ const AboutPage = () => {
             {word.split('').map((letter) => (
               <span
                 key={word + letter}
-                className={`passionate-dev ${visibleLetters.includes(index) ? 'fade-in' : ''}`}
+                className="passionate-dev"
                 aria-hidden="true"
               >
                 {letter}

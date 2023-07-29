@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
+/* body {
+  background-color: pink;
+} */
+
+html, body, .ProjectDiv {
+  height: 100%;
+  margin: 0;
+}
+
 .ProjectDiv {
   width: 100vw;
   height: 100vh;
-  /* background-color: #222; */
   background-color: rgba(83, 94, 90, 255);
-  overflow: hidden;
+
+  /* background-color: red; */
+  /* overflow: hidden; */
 }
 
 .projectLinkTag {
@@ -80,8 +90,6 @@
   margin: auto;
 }
 
-
-
 .projectsFooter p {
   color: white;
   font-size: 14px;
@@ -90,6 +98,8 @@
   font-family: Montserrat, sans-serif;
   font-weight: 300;
 }
+
+/* List view */
 
 .linkToProject {
   transition: 1.5s;
@@ -107,21 +117,35 @@
   line-height: 10px;
 }
 
+/* .projectListView {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90vh;
+  z-index: 5;
+  overflow-y: auto;
+  font-family: Montserrat, sans-serif;
+  line-height: 170px;
+  margin: auto;
+  background-color: blue;
+  justify-content: center;
+} */
+
 .projectListView {
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 77%;
+  height: 90vh;
   z-index: 5;
-  position: absolute;
-  top: 13%;
-  left: 5%;
   overflow-y: auto;
   font-family: Montserrat, sans-serif;
   line-height: 170px;
-  margin: 2% auto;
-  justify-items: center;
-  /* align-items: center; */
+  margin: auto;
+  justify-content: center;
+}
+
+.align {
+  margin-top: 10%;
 }
 
 .projectListView::-webkit-scrollbar {
@@ -167,10 +191,15 @@
   padding-left: 20px;
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 767px) and (max-width: 1025px) {
   .projectListView p {
     font-size: 70px;
   }
+
+  .align {
+    margin-top: 20%;
+  }
+  
 }
 
 @media (min-width: 320px) and (max-width: 769px) {
@@ -218,19 +247,6 @@
     margin-top: 10vh;
     height: 75vh;
   }
-
-  /* .allProjectsImages {
-    display: flex;
-    width: 90%;
-    scroll-snap-type: x mandatory;
-    height: 75vh;
-    margin: auto;
-    padding-top: 7%;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 100px;
-    overflow: hidden;
-  } */
 
   .allProjectsImages img {
     width: 85vw;

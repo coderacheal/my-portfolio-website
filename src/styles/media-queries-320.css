@@ -116,6 +116,7 @@
 
   .legacy-projects {
     margin: 0 auto;
+    font-size: 30px;
   }
 
   .contact-session {
@@ -126,6 +127,7 @@
   .work-together p {
     margin-top: 0;
     align-self: center;
+    font-size: 17px;
   }
 
   .downloadCV {

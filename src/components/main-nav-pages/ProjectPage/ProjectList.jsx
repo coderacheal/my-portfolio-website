@@ -59,13 +59,13 @@ const ProjectList = () => (
   <div
     className={projects.projectListView}
   >
-    <div>
+    <div class={projects.align}>
       {projectData.map((each) => (
-        <div key={each.id} className={projects.linkToProject}>
+        <div key={each.id} >
           <Link to={`/work/${each.urlExtension}`}>
             {/* onMouseMove={handleMouseMove}
             onMouseEnter={() => handleMouseOverProject(each.id)} */}
-            <p>
+            <p className={projects.linkToProject}>
               <span>
                 0
                 {each.id}

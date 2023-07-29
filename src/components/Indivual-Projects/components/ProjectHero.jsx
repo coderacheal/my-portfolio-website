@@ -16,9 +16,8 @@ const ProjectHero = ({
   };
 
   const projectColor = {
-    color: color,
-  }
-  
+    color,
+  };
 
   return (
     <div className={hero.projectHero} style={backgroundStyle}>

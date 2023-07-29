@@ -26,13 +26,14 @@ const ProjectsPage = () => (
 
   <div className={projects.ProjectDiv}>
     <Header />
-    <div>
-      {/* {divVisibility ? (<ProjectImageAndInfo />) : (<ProjectList />)} */}
-      <ProjectList />
-    </div>
-    <div className={projects.projectsFooter}>
-      <p>PROFESSIONAL PORTFOLIO</p>
-      {/* <p
+    <ProjectList />
+    {/* <div> */}
+    {/* {divVisibility ? (<ProjectImageAndInfo />) : (<ProjectList />)} */}
+    {/* <ProjectList /> */}
+    {/* </div> */}
+    {/* <div className={projects.projectsFooter}> */}
+    {/* <p>PROFESSIONAL PORTFOLIO</p> */}
+    {/* <p
           className={projects.listView}
           onClick={() => {
             handleProjectVisibility();
@@ -42,8 +43,8 @@ const ProjectsPage = () => (
           {' '}
           {displayText}
         </p> */}
-      <p>Portfolio &copy;2023</p>
-    </div>
+    {/* <p>Portfolio &copy;2023</p> */}
+    {/* </div> */}
   </div>
 );
 export default ProjectsPage;

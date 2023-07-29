@@ -69,8 +69,11 @@ h3 {
 
 @media (min-width: 320px) and (max-width: 769px) {
   .descriptionAndImage {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
     width: 90%;
+    margin: auto;
   }
 
   .projectImage {
@@ -90,5 +93,9 @@ h3 {
   .builtFor {
     font-size: 18px;
     width: 95%;
+  }
+
+  .projectSummaryImage {
+    display: none;
   }
 }
