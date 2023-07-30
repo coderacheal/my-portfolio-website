@@ -2,17 +2,13 @@ import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router, Routes, Route, useLocation,
 } from 'react-router-dom';
-
 import Lenis from '@studio-freight/lenis';
 import HomePage from './Home-page/HomePage';
 import Loader from './Home-page/Loader';
 import AboutPage from './main-nav-pages/AboutPage';
 import ContactPage from './main-nav-pages/ContactPage';
 import ProjectsPage from './main-nav-pages/ProjectPage/ProjectsPage';
-import Sunday from './Indivual-Projects/Sunday';
 import Everest from './Indivual-Projects/Everest';
-// import Waterfall from './Indivual-Projects/Waterfall';
-import Foretell from './Indivual-Projects/Foretell';
 import SchoolX from './Indivual-Projects/SchoolX';
 import Sage from './Indivual-Projects/Sage';
 
@@ -51,7 +47,7 @@ const App = () => {
     // Simulating an asynchronous task
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 100000);
   }, []);
 
   return (
@@ -62,7 +58,7 @@ const App = () => {
           path="/"
           element={(
             <div>
-              {isLoading ? (<div className="loader"><Loader duration={1000} /></div>
+              {isLoading ? (<div className="loader"><Loader duration={3000} /></div>
               ) : (
                 <div className="content"><HomePage /></div>)}
             </div>
@@ -71,9 +67,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/work" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/work/sunday" element={<Sunday />} />
         <Route path="/work/sage" element={<Sage />} />
-        <Route path="/work/foretell" element={<Foretell />} />
         <Route path="/work/schoolx" element={<SchoolX />} />
         <Route path="/work/everest" element={<Everest />} />
       </Routes>

@@ -58,3 +58,53 @@
   left: 100px;
   width: 20%;
 }
+
+@media (min-width: 280px) and (max-width: 768px) {
+  .loaderMyName {
+    font-size: 20px;
+  }
+
+  .loaderNameDiv {
+    top: 60px;
+    left: 20px;
+    width: 80%;
+  }
+
+  .dynamicPercentage {
+    font-size: 50px;
+    bottom: 10vh;
+    right: 10vw;
+    position: fixed;
+    color: rgb(233, 217, 217);
+  }
+
+  .loadingline {
+    width: 80%;
+  }
+
+  .progressBar {
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    left: 3vh;
+    position: fixed;
+    border-radius: 4px;
+  }
+
+  .loaderMyYear {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .loaderNameDiv {
+    top: 60px;
+    left: 20px;
+    width: 80%;
+  }
+
+  .loaderMyYear {
+    text-align: left;
+  }
+}

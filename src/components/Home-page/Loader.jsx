@@ -25,7 +25,7 @@ const Loader = ({ duration = 1000 }) => {
         <p className={styles.loaderMyYear}>PORTFOLIO &copy;2023</p>
       </div>
       <div className={styles.loadingPercentage}>
-        <MouseHalo />
+
         <p className={styles.dynamicPercentage}>
           {progress}
           %
@@ -37,6 +37,7 @@ const Loader = ({ duration = 1000 }) => {
           />
         </div>
       </div>
+      <MouseHalo />
     </div>
   );
 };
