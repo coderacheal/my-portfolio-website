@@ -1,7 +1,5 @@
 .viewProjectsection {
   height: 50vh;
-
-  /* background-color: #e6ffde; */
   background-color: rgba(134, 135, 134, 0.3);
 }
 
@@ -92,7 +90,9 @@ h1 {
 
   .introDiv p {
     margin-bottom: 20px;
+    width: 70%;
   }
+
 }
 
 @media (min-width: 320px) and (max-width: 769px) {

@@ -51,6 +51,8 @@ h3 {
 @media (min-width: 768px) and (max-width: 1025px) {
   .descriptionAndImage {
     width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .builtFor {
@@ -59,11 +61,17 @@ h3 {
 
   .description {
     line-height: 20px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .projectImage {
     height: 50vh;
     width: 40vw;
+  }
+
+  .projectSummaryImage {
+    display: none;
   }
 }
 
@@ -71,7 +79,6 @@ h3 {
   .descriptionAndImage {
     display: grid;
     grid-template-columns: 1fr;
-    /* flex-direction: column; */
     width: 90%;
     margin: auto;
   }
@@ -95,6 +102,22 @@ h3 {
     width: 95%;
   }
 
+  .projectSummaryImage {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+  .descriptionAndImage {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+
+  
   .projectSummaryImage {
     display: none;
   }
