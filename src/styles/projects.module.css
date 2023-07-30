@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
-html, body, .ProjectDiv {
+html,
+body,
+.ProjectDiv {
   /* height: 100%; */
   margin: 0;
 }
@@ -79,7 +81,6 @@ html, body, .ProjectDiv {
   left: 0;
   right: 0;
   position: fixed;
-  margin: auto;
 }
 
 .projectsFooter p {
@@ -98,9 +99,7 @@ html, body, .ProjectDiv {
 }
 
 .linkToProject:hover {
-  /* background-color: red; */
   background-color: rgb(28, 28, 28);
-  color: rgba(83, 94, 90,);
 }
 
 .listView {
@@ -191,7 +190,6 @@ html, body, .ProjectDiv {
   .align {
     margin-top: 20%;
   }
-  
 }
 
 @media (min-width: 320px) and (max-width: 769px) {

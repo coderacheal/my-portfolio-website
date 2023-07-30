@@ -127,7 +127,6 @@ a {
   width: 50%;
 }
 
-
 .nav-links a {
   display: flex;
   font-family: 'Lato', sans-serif;
@@ -169,12 +168,14 @@ a {
 
 .sliding-digit {
   color: yellow;
+
   /* background-color: red; */
 }
 
 .sliding-digit,
 .slide-in {
   /* transition: transform 0.5s ease; */
+
   /* transform: translateY(100%); */
   color: white;
 }

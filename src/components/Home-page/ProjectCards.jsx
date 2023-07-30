@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
-const ProjectCards = ({ projectCardImage }) => {
+const ProjectCards = () => {
   const topThreeProjects = projectData.slice(0, 4);
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredProjectId, setHoveredProjectId] = useState(null);
@@ -29,10 +28,6 @@ const ProjectCards = ({ projectCardImage }) => {
 
   const handleSeeMoreMouseLeave = () => {
     setShowSeeMoreMouse(false);
-  };
-
-  const backgroundStyle = {
-    backgroundImage: `url(${projectCardImage})`,
   };
 
   return (
