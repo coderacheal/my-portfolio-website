@@ -15,7 +15,7 @@ const AboutPage = () => {
   const techStack = 'Tech Stack';
   const nextProjectName = 'Project Everest';
   const color = 'black';
-  const [visibleLetters, setVisibleLetters] = useState([]);
+  // const [visibleLetters, setVisibleLetters] = useState([]);
 
   const [isInView1, setIsInView1] = useState(false);
   const [ref1, inView1] = useInView({
@@ -43,7 +43,7 @@ const AboutPage = () => {
       setIsInView3(true);
     }
 
-    setVisibleLetters();
+    // setVisibleLetters();
   }, [inView1, inView2, inView3]);
 
   return (
