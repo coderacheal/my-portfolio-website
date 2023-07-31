@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://rachealappiahkubi.com/static/css/main.1ae26a28.css",
-    "main.js": "https://rachealappiahkubi.com/static/js/main.561a7eed.js",
+    "main.js": "https://rachealappiahkubi.com/static/js/main.40fb9639.js",
     "static/media/bubbles.png": "https://rachealappiahkubi.com/static/media/bubbles.8ce92c48d2ffc8891549.png",
     "static/media/signup-everest.png": "https://rachealappiahkubi.com/static/media/signup-everest.cdb4c1c6664d8b8ce4ed.png",
     "static/media/studentDetails.png": "https://rachealappiahkubi.com/static/media/studentDetails.da938e09fafbd5fa51e2.png",
@@ -20,10 +20,10 @@
     "static/media/gradient.jpg": "https://rachealappiahkubi.com/static/media/gradient.ac782722162d6edb3026.jpg",
     "index.html": "https://rachealappiahkubi.com/index.html",
     "main.1ae26a28.css.map": "https://rachealappiahkubi.com/static/css/main.1ae26a28.css.map",
-    "main.561a7eed.js.map": "https://rachealappiahkubi.com/static/js/main.561a7eed.js.map"
+    "main.40fb9639.js.map": "https://rachealappiahkubi.com/static/js/main.40fb9639.js.map"
   },
   "entrypoints": [
     "static/css/main.1ae26a28.css",
-    "static/js/main.561a7eed.js"
+    "static/js/main.40fb9639.js"
   ]
 }
