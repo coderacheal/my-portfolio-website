@@ -45,7 +45,7 @@ const HelloHero = () => {
               </p>
               <a
                 className="downloadCV"
-                href="https://docs.google.com/document/d/1vAV1Zcc6cSSp_SBLvWE7637mKdN788IKIBJq2cJblkI/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1UA3AVeLdr-mDuFDNGN5DUTEyf56g5fp_/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
