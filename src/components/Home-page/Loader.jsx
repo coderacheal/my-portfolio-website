@@ -5,18 +5,39 @@ import styles from '../../styles/styles.module.css';
 
 const Loader = ({ duration = 1000 }) => {
   const [progress, setProgress] = useState(0);
-  // const duration = 2000;
+  const [loadingComplete, setLoadingComplete] = useState(false);
+  const [loadingStartTime, setLoadingStartTime] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((prevProgress) => {
-        const newProgress = prevProgress + 3;
-        return newProgress <= 100 ? newProgress : 100;
-      });
-    }, duration / 40);
+    const handleLoad = () => {
+      setLoadingComplete(true);
+    };
 
-    return () => clearInterval(interval);
-  }, [duration]);
+    setLoadingStartTime(Date.now()); // Record the time when loading starts
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+      return undefined;
+    };
+  }, []);
+
+  // eslint-disable-next-line consistent-return
+  useEffect(() => {
+    if (loadingComplete) {
+      // If loading is complete, set progress to 100%
+      setProgress(100);
+    } else {
+      const interval = setInterval(() => {
+        // Calculate the loading progress based on the time elapsed
+        const elapsedTime = Date.now() - loadingStartTime;
+        const newProgress = (elapsedTime / duration) * 100;
+        setProgress(newProgress <= 100 ? newProgress : 100);
+      }, duration / 40);
+
+      return () => clearInterval(interval);
+    }
+  }, [duration, loadingComplete, loadingStartTime]);
 
   return (
     <div className={styles.loader}>
@@ -25,15 +46,18 @@ const Loader = ({ duration = 1000 }) => {
         <p className={styles.loaderMyYear}>PORTFOLIO &copy;2023</p>
       </div>
       <div className={styles.loadingPercentage}>
-
         <p className={styles.dynamicPercentage}>
-          {progress}
+          {Math.round(progress)}
           %
+          {/* Round the progress to a whole number */}
         </p>
         <div className={styles.loadingline}>
           <span
             className={styles.progressBar}
-            style={{ width: `${progress - 10}%`, transition: `${duration / 40}ms linear` }}
+            style={{
+              width: loadingComplete ? '100%' : `${progress - 10}%`,
+              transition: `${duration / 40}ms linear`,
+            }}
           />
         </div>
       </div>

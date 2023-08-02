@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {
-  HashRouter as Router, Routes, Route, useLocation,
+  HashRouter as Router,
+  Routes,
+  Route,
+  useLocation,
 } from 'react-router-dom';
 import Lenis from '@studio-freight/lenis';
 import HomePage from './Home-page/HomePage';
@@ -46,10 +49,28 @@ const App = () => {
   requestAnimationFrame(raf);
 
   useEffect(() => {
-    // Simulating an asynchronous task
-    setTimeout(() => {
+    // Show the loader during initial load or refresh
+    setIsLoading(true);
+
+    const handleLoad = () => {
+      // Loading is complete, dismiss the loader
       setIsLoading(false);
-    }, 4000);
+    };
+
+    const handleReadyStateChange = () => {
+      if (document.readyState === 'complete') {
+        // Loading is complete, dismiss the loader
+        setIsLoading(false);
+      }
+    };
+
+    window.addEventListener('load', handleLoad);
+    document.addEventListener('readystatechange', handleReadyStateChange);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+      document.removeEventListener('readystatechange', handleReadyStateChange);
+    };
   }, []);
 
   return (
@@ -60,20 +81,29 @@ const App = () => {
           path="/"
           element={(
             <div>
-              {isLoading ? (<div className="loader"><Loader duration={4000} /></div>
+              {isLoading ? (
+                <div className="loader">
+                  <Loader />
+                </div>
               ) : (
-                <div className="content"><HomePage /></div>)}
+                <div className="content">
+                  <HomePage />
+                </div>
+              )}
             </div>
-        )}
+          )}
         />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/work" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/work/sunday" element={<Sunday />} />
         <Route path="/work/sage" element={<Sage />} />
+        <Route path="/work/foretell" element={<Foretell />} />
         <Route path="/work/schoolx" element={<SchoolX />} />
         <Route path="/work/everest" element={<Everest />} />
       </Routes>
     </Router>
   );
 };
+
 export default App;
