@@ -1,12 +1,15 @@
 .viewProjectsection {
   height: 50vh;
-  background-color: rgba(134, 135, 134, 0.3);
+  background-color: rgba(228, 165, 245, 0.3);
+
+  background-color: rgba(216, 132, 226, 0.3);
 }
 
 .introDiv {
   width: 60%;
   margin: auto;
   color: rgb(57, 57, 57);
+  /* color: rgb(50, 30, 30); */
   z-index: 1;
   font-size: 20px;
 }
@@ -38,15 +41,14 @@ h1 {
 
 .projectBackground {
   font-size: 300px;
-  color: white;
-
-  /* color: rgb(207, 207, 207); */
+  color: rgb(173, 165, 165);
+  color: rgb(196, 151, 200);
+  color: rgb(218, 153, 224);
   opacity: 0.1;
   position: absolute;
   width: 95%;
   margin: auto;
   text-align: center;
-  padding-top: 20vh;
   pointer-events: none;
 }
 

@@ -8,7 +8,7 @@ const Socials = () => (
   <div className="socials-div">
     <div className="social-and-pole">
       <div className="all-socials">
-        <a href="https://www.twitter.com/racheal" target="blank"><i aria-label="Input Label" className="fa-brands fa-twitter" /></a>
+        <a href="https://twitter.com/racheal_kubi" target="blank"><i aria-label="Input Label" className="fa-brands fa-twitter" /></a>
         <a href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="blank"><i aria-label="Input Label" className="fa-brands fa-linkedin-in" /></a>
         <a href="https://github.com/coderacheal" target="blank"><i aria-label="Input Label" className="fa-brands fa-github" /></a>
         <a href="https://medium.com/@coderacheal" target="blank"><i aria-label="Input Label" className="fa-brands fa-medium" /></a>

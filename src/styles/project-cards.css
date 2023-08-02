@@ -28,7 +28,6 @@
 }
 
 .project-image-div {
-  /* background-image: url('../assets/food.jpg'); */
   height: 95vh;
   width: 40vw;
   cursor: none;
@@ -59,6 +58,7 @@
   height: 440px;
   background-size: contain;
   background-position: center;
+  /* background-repeat: no-repeat; */
   margin: auto;
   width: 100%;
   margin-top: 50px;
@@ -78,10 +78,13 @@
 
 .project-brief {
   font-size: 24px;
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-top: 7%;
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 34px;
 }
 
 .see-more-halo {
@@ -183,7 +186,7 @@
   bottom: 0;
   left: 0;
   width: 0;
-  height: 4px;
+  height: 1px;
   background: #000; /* Change this to the color you want for the underline */
   transition: width 0.5s ease; /* Adjust the transition duration as needed */
 }

@@ -31,6 +31,9 @@ const ProjectTemplate = (props) => {
     backgroundImage,
     color,
     summaryImage,
+    height,
+    width,
+    role,
   } = props;
 
   return (
@@ -43,6 +46,7 @@ const ProjectTemplate = (props) => {
         projectYear={projectYear}
         backgroundImage={backgroundImage}
         color={color}
+        role={role}
       />
       <ViewProject
         urlExtension={urlExtension}
@@ -55,6 +59,8 @@ const ProjectTemplate = (props) => {
         projectSummaryTwo={projectSummaryTwo}
         builtFor={builtFor}
         summaryImage={summaryImage}
+        height={height}
+        width={width}
       />
       <ProjectCarousel
         firstCarouselImage={firstCarouselImage}
@@ -94,6 +100,9 @@ ProjectTemplate.propTypes = {
   backgroundImage: PropTypes.string.isRequired,
   summaryImage: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  role: PropTypes.string.isRequired,
 };
 
 export default ProjectTemplate;

@@ -4,9 +4,10 @@
 }
 
 .carouselDiv {
-  padding: 10vh 0;
-  width: 80vw;
+  /* padding: 10vh 0; */
+  width: 70vw;
   margin: auto;
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 280px) and (max-width: 767px) {

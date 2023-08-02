@@ -6,13 +6,13 @@ import everest3 from '../../../../assets/Expense-created.png';
 import everestHero from '../../../../assets/bubbles.png';
 
 // import sageHero from '../../../../assets/sageHero.png';
-import sageSummaryImage from '../../../../assets/sageSummary.png';
+// import sageSummaryImage from '../../../../assets/sageSummary.png';
 import sage2 from '../../../../assets/sage2.png';
 import sage3 from '../../../../assets/sage3.png';
 import sage4 from '../../../../assets/sage4.png';
 
 import schoolxProjectImage from '../../../../assets/gradient.jpg';
-import schoolxSummary from '../../../../assets/schoolxWelcome.png';
+// import schoolxSummary from '../../../../assets/schoolxWelcome.png';
 import schoolx1 from '../../../../assets/schoolxWorkspace.png';
 import schoolx2 from '../../../../assets/schoolxSummary.png';
 import schoolx3 from '../../../../assets/studentDetails.png';
@@ -44,6 +44,9 @@ const projectData = [
     color: 'black',
     summaryImage: everestSummaryImage,
     projectCardImage: everest2,
+    summaryImageHeight: '50vh',
+    summaryImageWidth: '20vw',
+    role: 'FULL-STACK DEVELOPER',
   },
   {
     id: 2,
@@ -69,8 +72,11 @@ const projectData = [
     route: '/work/schoolx',
     techStack: ['REACT', 'REDUX'],
     color: 'white',
-    summaryImage: sageSummaryImage,
+    summaryImage: sage2,
     projectCardImage: sage2,
+    summaryImageHeight: '50vh',
+    summaryImageWidth: '35vw',
+    role: 'FRONT-END DEVELOPER',
   },
   {
     id: 3,
@@ -78,7 +84,7 @@ const projectData = [
     title: 'SCHOOLX',
     projectName: 'Project SchoolX',
     projectDescription: 'A database management system for junior high schools',
-    projectImage: schoolx1,
+    projectImage: schoolx2,
     projectYear: 2021,
     projectGitHub: 'https://github.com/coderacheal/schoolx',
     projectWebsite: 'https://github.com/coderacheal/schoolx',
@@ -91,13 +97,16 @@ const projectData = [
     secondCarouselImage: schoolx2,
     thirdCarouselImage: schoolx3,
     nextProjectName: 'Project Everest',
-    backgroundColor: 'green',
+    backgroundColor: 'black',
     viewProject: 'View Next Project',
     route: '/work/everest',
     techStack: ['JAVASCRIPT', 'PYTHON', 'TensorFlow.js', 'Pytorch'],
     color: 'white',
     summaryImage: schoolx2,
-    projectCardImage: schoolxSummary,
+    projectCardImage: schoolx2,
+    summaryImageHeight: '50vh',
+    summaryImageWidth: '35vw',
+    role: 'FULL-STACK DEVELOPER',
   },
 
   // {

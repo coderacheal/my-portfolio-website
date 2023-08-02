@@ -8,9 +8,9 @@ const Footer = () => (
         <p className="footer-text">Full Stack Developer</p>
       </div>
       <div className="social-text-div">
-        <a className="footer-text" href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="_blank" rel="noreferrer">LINKEDIN</a>
-        <a className="footer-text" href="https://github.com/coderacheal" target="_blank" rel="noreferrer">GITHUB</a>
-        <a className="footer-text" href="https://github.com/coderacheal" target="_blank" rel="noreferrer">MEDIUM</a>
+        <a className="footer-text underline-on-hover" href="https://www.linkedin.com/in/racheal-appiah-kubi/" target="_blank" rel="noreferrer">LINKEDIN</a>
+        <a className="footer-text underline-on-hover" href="https://github.com/coderacheal" target="_blank" rel="noreferrer">GITHUB</a>
+        <a className="footer-text underline-on-hover" href="https://github.com/coderacheal" target="_blank" rel="noreferrer">MEDIUM</a>
       </div>
       <div>
         <p className="footer-text">Built with React</p>

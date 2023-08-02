@@ -9,6 +9,7 @@ const ProjectHero = ({
   projectYear,
   backgroundImage,
   color,
+  role,
 
 }) => {
   const backgroundStyle = {
@@ -33,7 +34,7 @@ const ProjectHero = ({
       <div className={hero.developerRole}>
         <div className={hero.eachRole}>
           <p>ROLE</p>
-          <p style={projectColor}>FULL-STACK DEVELOPER</p>
+          <p style={projectColor}>{role}</p>
         </div>
         <div className={hero.eachRole}>
           <p>CONTEXT</p>
@@ -55,6 +56,7 @@ ProjectHero.propTypes = {
   projectYear: PropTypes.number.isRequired,
   backgroundImage: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  role: PropTypes.string.isRequired,
 };
 
 export default ProjectHero;

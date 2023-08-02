@@ -29,6 +29,9 @@ const Sage = () => {
         summaryImage={sage.summaryImage}
         backgroundImage={sage.backgroundImage}
         color={sage.color}
+        height={sage.summaryImageHeight}
+        width={sage.summaryImageWidth}
+        role={sage.role}
       />
     </div>
   );

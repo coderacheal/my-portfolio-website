@@ -29,6 +29,9 @@ const SchoolX = () => {
         summaryImage={schoolx.summaryImage}
         backgroundImage={schoolx.backgroundImage}
         color={schoolx.color}
+        height={schoolx.summaryImageHeight}
+        width={schoolx.summaryImageWidth}
+        role={schoolx.role}
       />
     </div>
   );

@@ -11,19 +11,22 @@ const NextProject = ({
   };
 
   return (
-    <Link to={route}>
-      <div className={nextProject.viewLatestProjectDiv} style={containerStyle}>
-        <div className={nextProject.viewLatestProject}>
-          <div className={nextProject.centeredContent}>
-            <p className={nextProject.viewNextRibbon}>{viewProject}</p>
-            <p className={nextProject.nextProjectName}>{nextProjectName}</p>
-          </div>
-          <div>
-            <span className={nextProject.longArrow}>&rarr;</span>
+    <div className={nextProject.nextProjectLink}>
+      <Link to={route}>
+        <div className={nextProject.viewLatestProjectDiv} style={containerStyle}>
+          <div className={nextProject.viewLatestProject}>
+            <div className={nextProject.centeredContent}>
+              <p className={nextProject.viewNextRibbon}>{viewProject}</p>
+              <p className={nextProject.nextProjectName}>{nextProjectName}</p>
+            </div>
+            <div>
+              <span className={nextProject.longArrow}>&rarr;</span>
+            </div>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
+
   );
 };
 

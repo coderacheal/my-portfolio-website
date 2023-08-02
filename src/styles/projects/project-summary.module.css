@@ -1,5 +1,7 @@
 .summaryDiv {
+  display: flex;
   padding: 70px 0;
+  flex-direction: column;
 }
 
 .descriptionAndImage {
@@ -23,6 +25,9 @@ h3 {
   padding: 50px 0;
   color: rgb(27, 27, 27);
   font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
 }
 
 .builtFor {
@@ -38,14 +43,45 @@ h3 {
   margin: auto;
   line-height: 34px;
   text-align: justify;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
+  font-size: 20px;
 }
 
 .projectSummaryImage {
-  height: 50vh;
-  width: 70vh;
   margin: 0 auto;
-  border: 1px solid grey;
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.carouselRibbon {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 130px;
+  font-weight: 200;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: auto;
+}
+
+/* Create the underline effect using a pseudo-element */
+.carouselRibbon::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #000; /* Change this to the color you want for the underline */
+  transition: width 0.5s ease; /* Adjust the transition duration as needed */
+}
+
+/* Set the hover effect to animate the width of the pseudo-element */
+.carouselRibbon:hover::after {
+  width: 100%;
+  animation: underlineSlide 0.5s forwards;
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {
