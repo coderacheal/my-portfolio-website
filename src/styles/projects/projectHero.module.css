@@ -5,7 +5,8 @@
   top: 0;
   background-size: cover;
   background-position: center;
-  background-color: rgb(56, 56, 56);
+
+  /* background-color: rgb(56, 56, 56); */
 }
 
 .ProjectImage {

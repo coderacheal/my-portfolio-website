@@ -12,7 +12,7 @@ const ProjectSummary = ({
 
   return (
     <div className={summary.summaryDiv}>
-      <h3>Project Summary</h3>
+      <h3 className={`${summary.carouselRibbon} ${summary.projectSummaryRibbon}`}>Project Summary</h3>
       <div className={summary.descriptionAndImage}>
         <div>
           <p className={summary.builtFor}>{builtFor}</p>

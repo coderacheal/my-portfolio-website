@@ -9,8 +9,7 @@
   grid-template-columns: 60% 40%;
   width: 70%;
   margin: auto;
-
-  /* background-color: red; */
+  padding-top: 50px;
 }
 
 .descriptionAndImage div {
@@ -22,7 +21,8 @@ h3 {
   width: 50%;
   margin: auto;
   text-align: center;
-  padding: 50px 0;
+
+  /* padding-top: 120px; */
   color: rgb(27, 27, 27);
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
@@ -62,7 +62,8 @@ h3 {
   text-transform: uppercase;
   position: relative;
   display: inline-block;
-  cursor: pointer;
+
+  /* cursor: pointer; */
   margin: auto;
 }
 
@@ -82,6 +83,14 @@ h3 {
 .carouselRibbon:hover::after {
   width: 100%;
   animation: underlineSlide 0.5s forwards;
+}
+
+.projectSummaryRibbon {
+  width: auto;
+  display: inline-block;
+  padding: 0;
+  font-size: 32px;
+  padding-top: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {

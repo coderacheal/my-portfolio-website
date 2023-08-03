@@ -1,10 +1,9 @@
-.oneProjectImage {
+/* .oneProjectImage {
   height: 650px;
   width: 100px;
-}
+} */
 
 .carouselDiv {
-  /* padding: 10vh 0; */
   width: 70vw;
   margin: auto;
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);

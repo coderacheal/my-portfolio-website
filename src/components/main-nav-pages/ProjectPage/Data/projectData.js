@@ -10,9 +10,10 @@ import everestHero from '../../../../assets/bubbles.png';
 import sage2 from '../../../../assets/sage2.png';
 import sage3 from '../../../../assets/sage3.png';
 import sage4 from '../../../../assets/sage4.png';
+import sageHero from '../../../../assets/honeycomb.jpg';
 
-import schoolxProjectImage from '../../../../assets/gradient.jpg';
-// import schoolxSummary from '../../../../assets/schoolxWelcome.png';
+// import schoolxProjectImage from '../../../../assets/gradient.jpg';
+import schoolxHero from '../../../../assets/schoolxHero.jpg';
 import schoolx1 from '../../../../assets/schoolxWorkspace.png';
 import schoolx2 from '../../../../assets/schoolxSummary.png';
 import schoolx3 from '../../../../assets/studentDetails.png';
@@ -62,7 +63,7 @@ const projectData = [
     projectSummaryOne: ' Welcome to Sage, a real-time platform providing the latest data on cryptocurrency prices and market metrics. With Sage, you can stay up-to-date with the ever-changing crypto landscape and visualize the trends for each coin effortlessly.',
     projectSummaryTwo: ' Tools include React, the coingecko API, Redux for state management, and ChartJS for visualizations',
     builtFor: 'Read the markets on your phone',
-    backgroundImage: '',
+    backgroundImage: sageHero,
     firstCarouselImage: sage3,
     secondCarouselImage: sage4,
     thirdCarouselImage: sage2,
@@ -92,7 +93,7 @@ const projectData = [
     projectSummaryOne: 'SchoolX is a project that enables junior high schools in poor districts that cannot afford their own management sytems a way to manage a bulk of their administrative task in student registration, fees logging, staffing and expenditure tracking. It is light weight desktop application, that makes school management seamless',
     projectSummaryTwo: ' Tools include Python, SQL, and KivyMD for material design',
     builtFor: 'A management app for schools',
-    backgroundImage: schoolxProjectImage,
+    backgroundImage: schoolxHero,
     firstCarouselImage: schoolx1,
     secondCarouselImage: schoolx2,
     thirdCarouselImage: schoolx3,

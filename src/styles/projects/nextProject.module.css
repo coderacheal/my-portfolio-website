@@ -1,24 +1,21 @@
-
 .viewLatestProjectDiv {
   display: flex;
   margin-top: 15vh;
   background-color: black;
   height: 20vh;
   color: white;
-  
+  transition: 2s;
 }
 
 .nextProjectLink {
   transition: 2s;
-  opacity: 0.8;
 }
 
 .nextProjectLink:hover {
-  opacity: 1;
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
-  /* transition: 2s; */
+  opacity: 0.8;
+  background-color: green;
 }
-
 
 .viewLatestProject {
   display: flex;
@@ -48,9 +45,9 @@
 
 .nextProjectWrapper {
   position: relative;
+
   /* overflow: hidden; */
 }
-
 
 .filter {
   position: absolute;
@@ -67,7 +64,6 @@
 }
 
 /* Add any additional styles you need for the component here */
-
 
 @media (min-width: 768px) and (max-width: 1025px) {
   .viewLatestProject {
