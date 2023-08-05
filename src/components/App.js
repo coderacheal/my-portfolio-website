@@ -3,6 +3,7 @@ import {
   HashRouter as Router, Routes, Route, useLocation,
 } from 'react-router-dom';
 import Lenis from '@studio-freight/lenis';
+import { AnimatePresence } from 'framer-motion';
 import HomePage from './Home-page/HomePage';
 import Loader from './Home-page/Loader';
 import AboutPage from './main-nav-pages/AboutPage';
@@ -14,6 +15,7 @@ import SchoolX from './Indivual-Projects/SchoolX';
 import Sage from './Indivual-Projects/Sage';
 
 /* eslint-disable import/no-extraneous-dependencies */
+
 const ScrollToTop = () => {
   const location = useLocation();
 
@@ -25,6 +27,7 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
+  // const location = useLocation()
   const [isLoading, setIsLoading] = useState(true);
 
   const lenis = new Lenis();
@@ -62,16 +65,18 @@ const App = () => {
       <div>
         {isLoading ? (<div className="loader"><Loader /></div>
         ) : (
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/work" element={<ProjectsPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/work/sage" element={<Sage />} />
-            <Route path="/work/foretell" element={<Foretell />} />
-            <Route path="/work/schoolx" element={<SchoolX />} />
-            <Route path="/work/everest" element={<Everest />} />
-          </Routes>
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/work" element={<ProjectsPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/work/sage" element={<Sage />} />
+              <Route path="/work/foretell" element={<Foretell />} />
+              <Route path="/work/schoolx" element={<SchoolX />} />
+              <Route path="/work/everest" element={<Everest />} />
+            </Routes>
+          </AnimatePresence>
         )}
       </div>
     </Router>
