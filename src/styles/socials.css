@@ -3,8 +3,8 @@
   font-size: 15px;
   margin-top: 35px;
   border-radius: 50%;
-  padding: 5px;
-  background: linear-gradient(to right, #fff 50%, #000 50%);
+  padding: 8px;
+  background: linear-gradient(to right, lime 50%, #000 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   background-color: black;

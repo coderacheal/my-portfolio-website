@@ -18,6 +18,13 @@ import schoolx1 from '../../../../assets/schoolxWorkspace.png';
 import schoolx2 from '../../../../assets/schoolxSummary.png';
 import schoolx3 from '../../../../assets/studentDetails.png';
 
+const PageTransition = {
+  initial: { y: '100%' },
+  animate: { y: 0 },
+  exit: { y: '100%' },
+  transition: { duration: 2 },
+};
+
 const projectData = [
   {
     id: 1,
@@ -144,3 +151,5 @@ const projectData = [
 ];
 
 export default projectData;
+
+export { PageTransition };

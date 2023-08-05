@@ -51,15 +51,18 @@
   text-align: center;
   font-size: 90px;
   border: 0;
-  cursor: none;
+  cursor: pointer;
 }
 
 .project-img-link {
-  height: 440px;
-  background-size: contain;
-  background-position: center;
+  height: 60vh;
 
-  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background- */
   margin: auto;
   width: 100%;
   margin-top: 50px;
@@ -73,7 +76,14 @@
 
 .project-img-link:hover {
   z-index: 2;
-  background-position: right bottom;
+
+  /* background-position: right bottom; */
+  transition: 2s;
+}
+
+.not {
+  text-align: right;
+  opacity: 0;
   transition: 2s;
 }
 
@@ -138,9 +148,7 @@
   text-align: right;
 }
 
-.not {
-  opacity: 0;
-}
+
 
 /* Add the linear gradient on hover using the ::before pseudo-element */
 .project-img-link::before {
@@ -177,8 +185,6 @@
 .underline-on-hover {
   position: relative;
   display: inline-block;
-
-  /* cursor: pointer; */
 }
 
 /* Create the underline effect using a pseudo-element */

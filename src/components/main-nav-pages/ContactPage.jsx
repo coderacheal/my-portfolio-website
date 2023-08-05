@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Home-page/Header';
+// import transition from '../Home-page/transition';
 // import SeeMoreMouse from '../Utils/SeeMoreMouse';
 
 const ContactPage = () => (
