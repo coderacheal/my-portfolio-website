@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 import Header from '../../Home-page/Header';
 import ViewProject from './ViewProject';
 import ProjectHero from './ProjectHero';
@@ -39,41 +40,48 @@ const ProjectTemplate = (props) => {
   return (
     <div>
       <Header />
-      <ProjectHero
-        projectName={projectName}
-        projectDescription={projectDescription}
-        projectImage={projectImage}
-        projectYear={projectYear}
-        backgroundImage={backgroundImage}
-        color={color}
-        role={role}
-      />
-      <ViewProject
-        urlExtension={urlExtension}
-        projectGitHub={projectGitHub}
-        projectWebsite={projectWebsite}
-        miniIntro={miniIntro}
-      />
-      <ProjectSummary
-        projectSummaryOne={projectSummaryOne}
-        projectSummaryTwo={projectSummaryTwo}
-        builtFor={builtFor}
-        summaryImage={summaryImage}
-        height={height}
-        width={width}
-      />
-      <ProjectCarousel
-        firstCarouselImage={firstCarouselImage}
-        secondCarouselImage={secondCarouselImage}
-        thirdCarouselImage={thirdCarouselImage}
-      />
-      <NextProject
-        nextProjectName={nextProjectName}
-        route={route}
-        backgroundColor={backgroundColor}
-        viewProject={viewProject}
-      />
-      <Footer />
+      <motion.div
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        exit={{ scaleY: 0 }}
+        transition={{ duration: 1.5 }}
+      >
+        <ProjectHero
+          projectName={projectName}
+          projectDescription={projectDescription}
+          projectImage={projectImage}
+          projectYear={projectYear}
+          backgroundImage={backgroundImage}
+          color={color}
+          role={role}
+        />
+        <ViewProject
+          urlExtension={urlExtension}
+          projectGitHub={projectGitHub}
+          projectWebsite={projectWebsite}
+          miniIntro={miniIntro}
+        />
+        <ProjectSummary
+          projectSummaryOne={projectSummaryOne}
+          projectSummaryTwo={projectSummaryTwo}
+          builtFor={builtFor}
+          summaryImage={summaryImage}
+          height={height}
+          width={width}
+        />
+        <ProjectCarousel
+          firstCarouselImage={firstCarouselImage}
+          secondCarouselImage={secondCarouselImage}
+          thirdCarouselImage={thirdCarouselImage}
+        />
+        <NextProject
+          nextProjectName={nextProjectName}
+          route={route}
+          backgroundColor={backgroundColor}
+          viewProject={viewProject}
+        />
+        <Footer />
+      </motion.div>
     </div>
   );
 };

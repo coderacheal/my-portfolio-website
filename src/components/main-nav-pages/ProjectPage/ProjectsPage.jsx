@@ -27,10 +27,10 @@ const ProjectsPage = () => (
   <div className={projects.ProjectDiv}>
     <Header />
     <motion.div
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
-      exit={{ scaleY: 0 }}
-      transition={{ duration: 1.5 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 2 }}
     >
       <ProjectList />
     </motion.div>

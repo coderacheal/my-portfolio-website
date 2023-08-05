@@ -1,6 +1,6 @@
-.cursor-container {
+.cursorContainer {
   display: flex;
-  justify-content: center; /* Center horizontally */
+  justify-content: center; 
   align-items: center;
 }
 
@@ -34,9 +34,3 @@
   border-radius: 50%;
   opacity: 0.4;
 }
-
-/*
-.projectImage {
-  height: 100px;
-  width: 100px;
-} */

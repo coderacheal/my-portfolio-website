@@ -56,13 +56,8 @@
 
 .project-img-link {
   height: 60vh;
-
-  /* background-size: contain; */
+  background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* background- */
   margin: auto;
   width: 100%;
   margin-top: 50px;
@@ -76,8 +71,6 @@
 
 .project-img-link:hover {
   z-index: 2;
-
-  /* background-position: right bottom; */
   transition: 2s;
 }
 
@@ -113,7 +106,7 @@
   font-size: 60px;
   text-align: center;
   position: relative;
-  cursor: none;
+  /* cursor: none; */
   border: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -147,8 +140,6 @@
   transition: opacity 1s ease-in-out;
   text-align: right;
 }
-
-
 
 /* Add the linear gradient on hover using the ::before pseudo-element */
 .project-img-link::before {

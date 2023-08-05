@@ -27,7 +27,6 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
-  // const location = useLocation()
   const [isLoading, setIsLoading] = useState(true);
 
   const lenis = new Lenis();

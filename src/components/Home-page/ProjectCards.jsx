@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
@@ -45,14 +46,21 @@ const ProjectCards = () => {
           return (
             <div className="each-project" key={eachProject.id}>
               <div className="project-details">
-                <Link to={`/work/${eachProject.urlExtension}`}>
-                  <button
-                    type="button"
-                    className="projectTitle underline-on-hover"
-                  >
-                    {eachProject.title}
-                  </button>
-                </Link>
+                <motion.div
+                  initial={{ scaleY: 0 }}
+                  animate={{ scaleY: 1 }}
+                  exit={{ scaleY: 0 }}
+                  transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <Link to={`/work/${eachProject.urlExtension}`}>
+                    <button
+                      type="button"
+                      className="projectTitle underline-on-hover"
+                    >
+                      {eachProject.title}
+                    </button>
+                  </Link>
+                </motion.div>
                 <p className="project-brief">
                   {eachProject.miniIntro}
                 </p>
