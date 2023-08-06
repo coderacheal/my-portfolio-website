@@ -5,6 +5,7 @@ import Footer from './Footer';
 import HelloHero from './HelloHero';
 import ProjectCards from './ProjectCards';
 import Contact from './Contact';
+// import Loader from './Loader';
 
 const HomePage = () => (
   <motion.div
@@ -15,6 +16,7 @@ const HomePage = () => (
   >
     <div className="welcome-page">
       <main className="portfolio-content">
+
         <Header />
         <HelloHero />
         <ProjectCards />

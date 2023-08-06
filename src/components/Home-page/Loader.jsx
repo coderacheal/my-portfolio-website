@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from 'react';
+// import PropTypes from 'prop-types';
 import MouseHalo from '../Utils/MouseHalo';
 import styles from '../../styles/styles.module.css';
 
 const Loader = () => {
   const [progress, setProgress] = useState(0);
+  const duration = 2000;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const startTime = performance.timing.navigationStart;
-      const endTime = performance.timing.loadEventEnd;
-      const elapsedTime = (endTime - startTime);
-      setProgress(elapsedTime);
+      setProgress((prevProgress) => {
+        const newProgress = prevProgress + 3;
+        return newProgress <= 100 ? newProgress : 100;
+      });
+    }, duration / 40);
 
-      return () => clearInterval(interval);
-    });
-  }, []);
+    return () => clearInterval(interval);
+  }, [duration]);
 
   return (
     <div className={styles.loader}>
@@ -23,23 +25,37 @@ const Loader = () => {
         <p className={styles.loaderMyYear}>PORTFOLIO &copy;2023</p>
       </div>
       <div className={styles.loadingPercentage}>
+        <MouseHalo />
         <p className={styles.dynamicPercentage}>
-          {/* {progress} */}
-          10%
+          {progress}
+          %
         </p>
         <div className={styles.loadingline}>
           <span
             className={styles.progressBar}
-            style={{
-              width: `${progress}%`,
-              transition: 'width 100ms linear',
-            }}
+            style={{ width: `${progress - 10}%`, transition: `${duration / 40}ms linear` }}
           />
         </div>
       </div>
-      <MouseHalo />
     </div>
   );
 };
 
+// Loader.propTypes = {
+//   duration: PropTypes.number.isRequired,
+// };
+
 export default Loader;
+
+// const [progress, setProgress] = useState(0);
+
+// useEffect(() => {
+//   const interval = setInterval(() => {
+//     const startTime = performance.timing.navigationStart;
+//     const endTime = performance.timing.loadEventEnd;
+//     const elapsedTime = (endTime - startTime);
+//     setProgress(elapsedTime);
+
+//     return () => clearInterval(interval);
+//   });
+// }, []);
