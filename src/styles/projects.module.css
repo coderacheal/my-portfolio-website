@@ -11,6 +11,7 @@ body,
   width: 100vw;
   height: 100vh;
   background-color: rgba(83, 94, 90, 255);
+  background-color: black;
 }
 
 .projectLinkTag {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 // import Lenis from '@studio-freight/lenis';
 import projects from '../../../styles/projects.module.css';
