@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const PageTransition = () => {
-  return (
-    <div className='pageTransition'> 
-      
-    </div>
-  )
-}
+const PageTransition = () => (
+  <div className="pageTransition" />
+);
 
-export default PageTransition
+export default PageTransition;

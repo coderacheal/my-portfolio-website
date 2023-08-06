@@ -5,7 +5,6 @@ import Footer from './Footer';
 import HelloHero from './HelloHero';
 import ProjectCards from './ProjectCards';
 import Contact from './Contact';
-import Transition from './Transition';
 
 const HomePage = () => (
   <motion.div

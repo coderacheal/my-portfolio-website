@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "https://rachealappiahkubi.com/static/css/main.137c6850.css",
-    "main.js": "https://rachealappiahkubi.com/static/js/main.c2d19e8e.js",
+    "main.css": "https://rachealappiahkubi.com/static/css/main.a01d3324.css",
+    "main.js": "https://rachealappiahkubi.com/static/js/main.09f7c0b4.js",
     "static/media/bubbles.png": "https://rachealappiahkubi.com/static/media/bubbles.8ce92c48d2ffc8891549.png",
     "static/media/signup-everest.png": "https://rachealappiahkubi.com/static/media/signup-everest.cdb4c1c6664d8b8ce4ed.png",
+    "static/media/schoolxHero.jpg": "https://rachealappiahkubi.com/static/media/schoolxHero.5eafab2bbda609ce99b0.jpg",
     "static/media/studentDetails.png": "https://rachealappiahkubi.com/static/media/studentDetails.da938e09fafbd5fa51e2.png",
     "static/media/schoolxWorkspace.png": "https://rachealappiahkubi.com/static/media/schoolxWorkspace.8823c13fac995c592367.png",
+    "static/media/honeycomb.jpg": "https://rachealappiahkubi.com/static/media/honeycomb.74b9db733735005d474a.jpg",
     "static/media/Expense-created.png": "https://rachealappiahkubi.com/static/media/Expense-created.0ebce394eb4b903cd75a.png",
     "static/media/cat_selected.png": "https://rachealappiahkubi.com/static/media/cat_selected.ae2a47fc86c48f6101e7.png",
     "static/media/category_added.png": "https://rachealappiahkubi.com/static/media/category_added.b597a30c7daa49450cf9.png",
@@ -15,13 +17,12 @@
     "static/media/office set up.jpg": "https://rachealappiahkubi.com/static/media/office set up.9716039ada0033598a65.jpg",
     "static/media/everest-mobile.png": "https://rachealappiahkubi.com/static/media/everest-mobile.10ab51c3f23bd618275e.png",
     "static/media/sage2.png": "https://rachealappiahkubi.com/static/media/sage2.1de34d4351aefaeb5190.png",
-    "static/media/gradient.jpg": "https://rachealappiahkubi.com/static/media/gradient.ac782722162d6edb3026.jpg",
     "index.html": "https://rachealappiahkubi.com/index.html",
-    "main.137c6850.css.map": "https://rachealappiahkubi.com/static/css/main.137c6850.css.map",
-    "main.c2d19e8e.js.map": "https://rachealappiahkubi.com/static/js/main.c2d19e8e.js.map"
+    "main.a01d3324.css.map": "https://rachealappiahkubi.com/static/css/main.a01d3324.css.map",
+    "main.09f7c0b4.js.map": "https://rachealappiahkubi.com/static/js/main.09f7c0b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.137c6850.css",
-    "static/js/main.c2d19e8e.js"
+    "static/css/main.a01d3324.css",
+    "static/js/main.09f7c0b4.js"
   ]
 }
