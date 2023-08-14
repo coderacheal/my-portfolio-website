@@ -71,10 +71,10 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/work" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/work/sage" element={<Sage />} />
-          <Route path="/work/foretell" element={<Foretell />} />
-          <Route path="/work/schoolx" element={<SchoolX />} />
-          <Route path="/work/everest" element={<Everest />} />
+          <Route path="/sage" element={<Sage />} />
+          <Route path="/foretell" element={<Foretell />} />
+          <Route path="/schoolx" element={<SchoolX />} />
+          <Route path="/everest" element={<Everest />} />
         </Routes>
         {/* )}
         </div> */}

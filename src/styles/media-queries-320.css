@@ -29,14 +29,16 @@
     margin-bottom: 10px;
   }
 
-  .project-image-div {
+  /* .project-image-div {
     height: 45vh;
     width: 85vw;
-  }
+  } */
 
   .project-img-link {
     margin: 0;
     margin-bottom: 30px;
+    height: 40vh;
+    width: 80vw;
   }
 
   .project-brief {

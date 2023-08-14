@@ -28,6 +28,10 @@ const Sunday = () => {
         viewProject={sunday.viewProject}
         summaryImage={sunday.summaryImage}
         backgroundImage={sunday.backgroundImage}
+        color={sunday.color}
+        height={sunday.summaryImageHeight}
+        width={sunday.summaryImageWidth}
+        role={sunday.role}
       />
     </div>
   );

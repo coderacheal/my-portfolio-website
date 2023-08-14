@@ -17,7 +17,7 @@ const HelloHero = () => {
 
     const visbility = setTimeout(() => {
       setIsVisible(true);
-    }, 1000);
+    }, 300);
 
     const secondvisbility = () => {
       setsecondIsVisible(true);

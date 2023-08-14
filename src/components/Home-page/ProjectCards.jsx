@@ -5,7 +5,7 @@ import SeeMoreMouse from '../Utils/SeeMoreMouse';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const ProjectCards = () => {
-  const topThreeProjects = projectData.slice(0, 4);
+  const topThreeProjects = projectData.slice(0, 3);
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredProjectId, setHoveredProjectId] = useState(null);
 
@@ -42,6 +42,8 @@ const ProjectCards = () => {
         {topThreeProjects.map((eachProject) => {
           const backgroundStyle = {
             backgroundImage: `url(${eachProject.projectCardImage})`,
+            height: '45vh',
+            width: '40vw',
           };
           return (
             <div className="each-project" key={eachProject.id}>
@@ -52,7 +54,7 @@ const ProjectCards = () => {
                   exit={{ scaleY: 0 }}
                   transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <Link to={`/work/${eachProject.urlExtension}`}>
+                  <Link to={`/${eachProject.urlExtension}`}>
                     <button
                       type="button"
                       className="projectTitle underline-on-hover"
@@ -66,7 +68,7 @@ const ProjectCards = () => {
                 </p>
               </div>
               <Link
-                to={`/work/${eachProject.urlExtension}`}
+                to={`/${eachProject.urlExtension}`}
                 className="project-img-link"
                 style={backgroundStyle}
                 onMouseEnter={() => HandleVisibility(eachProject.id)}
@@ -91,7 +93,7 @@ const ProjectCards = () => {
           onMouseEnter={handleSeeMoreMouseEnter}
           onMouseLeave={handleSeeMoreMouseLeave}
         >
-          RECENT WORK GALLERY
+          VIEW MORE IN GALLERY
         </Link>
       </div>
       {showSeeMoreMouse && <SeeMoreMouse seeAction={seeAction} />}

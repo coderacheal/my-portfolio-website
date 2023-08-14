@@ -86,6 +86,7 @@ body,
   left: 0;
   right: 0;
   position: fixed;
+  /* background-color: red; */
 }
 
 .projectsFooter p {
@@ -113,33 +114,36 @@ body,
   line-height: 10px;
 }
 
+.projectListViewDiv {
+  /* background-color: red; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 90%; */
+  /* height: 100vh; */
+  /* z-index: 5; */
+  /* overflow-y: hidden; */
+  font-family: Montserrat, sans-serif;
+  /* line-height: 170px; */
+  /* margin: auto; */
+  /* padding-top: 15vh; */
+  /* justify-content: center; */
+}
+
 .projectListView {
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 90vh;
-  z-index: 5;
-  overflow-y: auto;
-  font-family: Montserrat, sans-serif;
-  line-height: 170px;
+  height: 500px;
+  /* z-index: 5; */
+  overflow: auto;
+  /* overflow-y: auto; */
+  /* font-family: Montserrat, sans-serif; */
+  /* line-height: 140px; */
   margin: auto;
-  padding-top: 5vh;
+  padding-top: 20vh;
+  justify-content: center;
   /* background-color: blue; */
-  justify-content: center;
 }
-
-/* .projectListView {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  height: 90vh;
-  z-index: 5;
-  overflow-y: auto;
-  font-family: Montserrat, sans-serif;
-  line-height: 170px;
-  margin: auto;
-  justify-content: center;
-}  */
 
 .align {
   margin-top: 10%;
@@ -151,8 +155,9 @@ body,
 
 .projectListView p {
   color: white;
-  font-size: 140px;
+  font-size: 85px;
   cursor: pointer;
+  line-height: 120px;
   transition: 1s;
   border: 0;
   border-top: 1px solid rgb(180, 180, 180);
@@ -189,8 +194,14 @@ body,
 }
 
 @media (min-width: 767px) and (max-width: 1025px) {
+
+  .projectListView {
+    padding-top: 15vh;
+    justify-content: center;
+  }
   .projectListView p {
     font-size: 70px;
+    line-height: 110px;
   }
 
   .align {
@@ -199,6 +210,11 @@ body,
 }
 
 @media (min-width: 320px) and (max-width: 769px) {
+  .projectListView {
+    padding-top: 15vh;
+    justify-content: center;
+  }
+
   .imageContainer {
     width: 250px;
     height: 300px;
@@ -210,6 +226,7 @@ body,
 
   .projectListView p {
     font-size: 30px;
+    line-height: 100px;
   }
 
   .projectListView span {

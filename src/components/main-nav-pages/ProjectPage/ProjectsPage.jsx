@@ -9,7 +9,7 @@ import ProjectList from './ProjectList';
 
 const ProjectsPage = () => {
   const [divVisibility, setVisibility] = useState(true);
-  const [displayText, setDisplayText] = useState('LIST VIEW');
+  const [displayText, setDisplayText] = useState('IMAGE VIEW');
 
   const handleProjectVisibility = () => {
     setVisibility(!divVisibility);
@@ -17,10 +17,10 @@ const ProjectsPage = () => {
 
   const handleTextChange = () => {
     setDisplayText((currentText) => {
-      if (currentText === 'LIST VIEW') {
-        return 'IMAGE VIEW';
+      if (currentText === 'IMAGE VIEW') {
+        return 'LIST VIEW';
       }
-      return 'LIST VIEW';
+      return 'IMAGE VIEW';
     });
   };
 
@@ -28,7 +28,7 @@ const ProjectsPage = () => {
     <div className={projects.ProjectDiv}>
       <Header />
       <div>
-        {divVisibility ? (<ProjectImageAndInfo />) : (<ProjectList />)}
+        {divVisibility ? (<ProjectList />) : (<ProjectImageAndInfo />)}
       </div>
       <div className={projects.projectsFooter}>
         <p>PROFESSIONAL PORTFOLIO</p>
