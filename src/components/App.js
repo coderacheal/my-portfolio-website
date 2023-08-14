@@ -13,6 +13,7 @@ import Everest from './Indivual-Projects/Everest';
 import Foretell from './Indivual-Projects/Foretell';
 import SchoolX from './Indivual-Projects/SchoolX';
 import Sage from './Indivual-Projects/Sage';
+import Sunday from './Indivual-Projects/Sunday';
 
 /* eslint-disable import/no-extraneous-dependencies */
 
@@ -75,6 +76,7 @@ const App = () => {
           <Route path="/foretell" element={<Foretell />} />
           <Route path="/schoolx" element={<SchoolX />} />
           <Route path="/everest" element={<Everest />} />
+          <Route path="/sunday" element={<Sunday />} />
         </Routes>
         {/* )}
         </div> */}

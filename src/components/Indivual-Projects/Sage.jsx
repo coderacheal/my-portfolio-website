@@ -32,6 +32,7 @@ const Sage = () => {
         height={sage.summaryImageHeight}
         width={sage.summaryImageWidth}
         role={sage.role}
+        viewProjectbackgroundColor={sage.viewProjectbackgroundColor}
       />
     </div>
   );

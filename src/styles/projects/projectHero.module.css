@@ -5,8 +5,6 @@
   top: 0;
   background-size: cover;
   background-position: center;
-
-  /* background-color: rgb(56, 56, 56); */
 }
 
 .ProjectImage {
@@ -92,7 +90,7 @@
 
   .ProjectImage {
     height: 300px;
-    width: 250px;
+    width: 380px;
   }
 
   .mainHeroSection {

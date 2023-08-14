@@ -32,6 +32,7 @@ const SchoolX = () => {
         height={schoolx.summaryImageHeight}
         width={schoolx.summaryImageWidth}
         role={schoolx.role}
+        viewProjectbackgroundColor={schoolx.viewProjectbackgroundColor}
       />
     </div>
   );

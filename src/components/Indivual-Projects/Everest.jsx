@@ -33,6 +33,7 @@ const Everest = () => {
         height={everest.summaryImageHeight}
         width={everest.summaryImageWidth}
         role={everest.role}
+        viewProjectbackgroundColor={everest.viewProjectbackgroundColor}
       />
     </div>
   );

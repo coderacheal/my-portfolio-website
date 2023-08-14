@@ -149,6 +149,11 @@ h3 {
   .projectSummaryImage {
     display: none;
   }
+
+  .carouselRibbon {
+    font-size: 30px;
+  }
+  
 }
 
 @media (min-width: 1025px) and (max-width: 1350px) {

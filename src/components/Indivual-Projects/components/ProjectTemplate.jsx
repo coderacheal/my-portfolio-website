@@ -35,6 +35,7 @@ const ProjectTemplate = (props) => {
     height,
     width,
     role,
+    viewProjectbackgroundColor,
   } = props;
 
   return (
@@ -60,6 +61,7 @@ const ProjectTemplate = (props) => {
           projectGitHub={projectGitHub}
           projectWebsite={projectWebsite}
           miniIntro={miniIntro}
+          viewProjectbackgroundColor={viewProjectbackgroundColor}
         />
         <ProjectSummary
           projectSummaryOne={projectSummaryOne}
@@ -111,6 +113,7 @@ ProjectTemplate.propTypes = {
   height: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
+  viewProjectbackgroundColor: PropTypes.string.isRequired,
 };
 
 export default ProjectTemplate;
