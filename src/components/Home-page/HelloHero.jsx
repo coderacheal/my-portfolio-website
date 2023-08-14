@@ -5,12 +5,9 @@ import Socials from './Socials';
 
 const HelloHero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [secondIsVisible, setsecondIsVisible] = useState(false);
   const [showFirstElement, setShowFirstElement] = useState(true);
   const [showSecondElement, setShowSecondElement] = useState(false);
-
-  const HandleVisibility = () => {
-    setIsVisible(false);
-  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -20,9 +17,13 @@ const HelloHero = () => {
 
     const visbility = setTimeout(() => {
       setIsVisible(true);
-    }, 500);
+    }, 1000);
 
-    return () => clearTimeout(timer, visbility);
+    const secondvisbility = () => {
+      setsecondIsVisible(true);
+    };
+
+    return () => clearTimeout(timer, visbility, secondvisbility);
   }, []);
 
   return (
@@ -31,7 +32,7 @@ const HelloHero = () => {
         <div>
           {showFirstElement && <p className={`hello fade-in ${isVisible ? 'visible' : ''}`}>Hello</p>}
           {showSecondElement && (
-            <div className="about-my-portfolio">
+            <div className={`about-my-portfolio ${secondIsVisible ? 'fade-in-about' : ''}`}>
               <p className="tiny-about-me"> &lt; /About me/ &gt; </p>
               <p className="description">I am RACHEAL, I create</p>
               <p className="description">interactive websites that</p>

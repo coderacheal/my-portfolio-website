@@ -1,6 +1,5 @@
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import Lenis from '@studio-freight/lenis';
 import projects from '../../../styles/projects.module.css';
 import projectData from './Data/projectData';
 
@@ -31,11 +30,8 @@ const ProjectImageAndInfo = () => {
   };
 
   return (
-    <div id={projects.main}>
-      <div
-        className={projects.allProjectsImages}
-        onWheel={handleScroll}
-      >
+    <div>
+      <div className={projects.allProjectsImages} onWheel={handleScroll}>
         {projectData.map((project, index) => (
           <div
             className={`${projects.projectPlusInfo} ${hoveredImage !== null && hoveredImage !== index ? projects.greyedOut : ''}`}
@@ -43,32 +39,19 @@ const ProjectImageAndInfo = () => {
             onMouseEnter={() => handleImageHover(index)}
             onMouseLeave={handleImageLeave}
           >
-            <Link
-              to={`/work/${project.urlExtension}`}
-              className={projects.projectLinkTag}
-            >
-              <div
-                className={projects.imageContainer}
-                key={project.id}
-              >
-                <div
-                  className={projects.projectImageDiv}
-                />
-                <p style={{ width: '75%', margin: '0 auto' }}>0{index + 1} </p>
+            <Link to={`/work/${project.urlExtension}`}>
+              <div>
+                <p>0{index + 1}</p>
                 <img
                   src={project.summaryImage}
                   alt={project.projectName}
-                  className={projects.projectImage}
-                  style={index % 2 === 0 ? { width: '90%', height: '90%' } : { width: '70%', height: '70%' }}
+                  className={`${projects.projectImage} ${hoveredImage === index ? projects.hoveredImg : ''}`}
                 />
-
-                <p style={{ textAlign: 'right', width: '85%' }}>{project.title}</p>
+                <p className={projects.projecImageTitle}>{project.title}</p>
               </div>
-
             </Link>
           </div>
         ))}
-
       </div>
     </div>
   );

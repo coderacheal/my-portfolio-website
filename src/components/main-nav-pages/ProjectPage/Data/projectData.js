@@ -6,7 +6,7 @@ import everest3 from '../../../../assets/Expense-created.png';
 import everestHero from '../../../../assets/bubbles.png';
 
 // import sageHero from '../../../../assets/sageHero.png';
-// import sageSummaryImage from '../../../../assets/sageSummary.png';
+import sageSummaryImage from '../../../../assets/sage-mobile.png';
 import sage2 from '../../../../assets/sage2.png';
 import sage3 from '../../../../assets/sage3.png';
 import sage4 from '../../../../assets/sage4.png';
@@ -80,7 +80,7 @@ const projectData = [
     route: '/work/schoolx',
     techStack: ['REACT', 'REDUX'],
     color: 'white',
-    summaryImage: sage2,
+    summaryImage: sageSummaryImage,
     projectCardImage: sage2,
     summaryImageHeight: '50vh',
     summaryImageWidth: '35vw',

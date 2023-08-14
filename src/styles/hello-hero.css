@@ -16,8 +16,6 @@
   margin: auto;
   align-self: center;
   color: rgb(233, 217, 217);
-
-  /* transition: 0.5s; */
   opacity: 0; /* Start with 0 opacity to be faded in */
   transition: opacity 2s ease-in;
 }
@@ -27,11 +25,16 @@
   transition: opacity 1s ease-in;
 }
 
+.fade-in-about {
+  opacity: 1;
+  transition: 2s;
+}
+
 .visible {
   opacity: 1;
 }
 
-.about-me.visible {
+.about-me {
   opacity: 1;
 }
 
@@ -40,6 +43,7 @@
   width: 100%;
   color: rgb(233, 217, 217);
   margin: auto;
+  transition: opacity 2s ease-in;
 }
 
 .description {

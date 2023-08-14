@@ -1,10 +1,9 @@
-import { React, useState} from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
 import projects from '../../../styles/projects.module.css';
 import Header from '../../Home-page/Header';
 import ProjectImageAndInfo from './ProjectImageAndInfo';
 import ProjectList from './ProjectList';
-// import { useState } from 'react';
+
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 
@@ -28,17 +27,8 @@ const ProjectsPage = () => {
   return (
     <div className={projects.ProjectDiv}>
       <Header />
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 2 }}
-      >
-        <ProjectList />
-      </motion.div>
       <div>
         {divVisibility ? (<ProjectImageAndInfo />) : (<ProjectList />)}
-        <ProjectList />
       </div>
       <div className={projects.projectsFooter}>
         <p>PROFESSIONAL PORTFOLIO</p>
@@ -52,9 +42,10 @@ const ProjectsPage = () => {
           {' '}
           {displayText}
         </p>
-        <p>Portfolio &copy;2023</p>
+        <p>&copy;2023</p>
       </div>
     </div>
   );
 };
+
 export default ProjectsPage;
