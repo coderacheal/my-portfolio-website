@@ -96,10 +96,6 @@ const Header = ({ color }) => {
             <p className="menuTopDescription">FULL STACK DEVELOPER WITH A LOVE FOR ML& AI, BLOCKCHAIN AND BUILDING INTERACTIVE WEBSITES WITH REACT. LEARNING TO PLAY THE VIOLIN </p>
             <p className="menuFooterCounter">
               0
-              {/* <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>
-              {counter}</span> */}
-              {/* <span className={`sliding-digit ${slideIn ? 'slide-in' : 'slideOut'}`}>
-              {counter}</span> */}
               <span className={`sliding-digit ${slideIn ? '' : 'slideOut'}`}>{counter}</span>
             </p>
           </div>
