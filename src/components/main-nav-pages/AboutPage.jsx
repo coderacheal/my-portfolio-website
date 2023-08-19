@@ -246,7 +246,7 @@ const AboutPage = () => {
                   <h3 className="stackTitle">Certifications</h3>
                   <ul>
                     <li>Certified AWS Cloud Practitioner</li>
-                    {/* <li>Certified Scrum Master</li> */}
+                    <li>Certified Scrum Master (PSM I)</li>
                   </ul>
                 </div>
                 <div className="flip-card-back">
@@ -257,7 +257,7 @@ const AboutPage = () => {
           </div>
           <NextProject
             nextProjectName={nextProjectName}
-            route="/work/everest"
+            route="/everest"
             viewProject="View latest Project"
           />
         </div>

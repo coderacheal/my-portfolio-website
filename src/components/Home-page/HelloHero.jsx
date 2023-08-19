@@ -36,8 +36,7 @@ const HelloHero = () => {
               <p className="tiny-about-me"> &lt; /About me/ &gt; </p>
               <p className="description">I am RACHEAL, I create</p>
               <p className="description">interactive websites that</p>
-              <p className="description">leverage data</p>
-              {/* <p className="description">leverage AI and ML</p> */}
+              <p className="description">leverage AI and ML</p>
               <p>
                 {' '}
                 <u>Full Stack</u>
