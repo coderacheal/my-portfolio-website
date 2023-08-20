@@ -52,7 +52,7 @@ const projectData = [
     color: 'black',
     summaryImage: everestSummaryImage,
     projectCardImage: everest2,
-    summaryImageHeight: '50vh',
+    summaryImageHeight: '60vh',
     summaryImageWidth: '20vw',
     role: 'FULL-STACK DEVELOPER',
     viewProjectbackgroundColor: 'rgba(216, 132, 226, 0.3)',
