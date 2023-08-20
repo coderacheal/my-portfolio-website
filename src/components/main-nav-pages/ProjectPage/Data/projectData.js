@@ -56,6 +56,7 @@ const projectData = [
     summaryImageWidth: '20vw',
     role: 'FULL-STACK DEVELOPER',
     viewProjectbackgroundColor: 'rgba(216, 132, 226, 0.3)',
+    viewProjectTextColor: '',
   },
   {
     id: 2,
@@ -68,8 +69,8 @@ const projectData = [
     projectGitHub: 'https://github.com/coderacheal/sage',
     projectWebsite: 'https://sage-zodq.onrender.com',
     miniIntro: 'Sage is a simple clean web app that fetches real time crypto data from an API. It is built with react and uses redux for state management',
-    projectSummaryOne: ' Welcome to Sage, a real-time platform providing the latest data on cryptocurrency prices and market metrics. With Sage, you can stay up-to-date with the ever-changing crypto landscape and visualize the trends for each coin effortlessly.',
-    projectSummaryTwo: ' Tools include React, the coingecko API, Redux for state management, and ChartJS for visualizations',
+    projectSummaryOne: 'Introducing Sage, your gateway to real-time insights into cryptocurrency markets. Stay in the know with up-to-the-minute data on cryptocurrency prices and market metrics. Sage\'s, intuitive interface is designed to provide a comprehensive overview of each coin\'s performance, allowing you to visualize trends and patterns with ease.',
+    projectSummaryTwo: 'Sage is built with React for seamless interactivity, the Coingecko API for accurate market data, Redux for efficient state management, and ChartJS for visually stunning data representations.',
     builtFor: 'Read the markets on your phone',
     backgroundImage: sageHero,
     firstCarouselImage: sage3,
@@ -83,10 +84,11 @@ const projectData = [
     color: 'white',
     summaryImage: sageSummaryImage,
     projectCardImage: sage2,
-    summaryImageHeight: '50vh',
-    summaryImageWidth: '35vw',
+    summaryImageHeight: '75vh',
+    summaryImageWidth: '25vw',
     role: 'FRONT-END DEVELOPER',
-    viewProjectbackgroundColor: 'grey',
+    viewProjectbackgroundColor: 'rgb(0, 0, 0, 0.9)',
+    viewProjectTextColor: 'white',
   },
   {
     id: 3,
@@ -116,7 +118,8 @@ const projectData = [
     projectCardImage: schoolx2,
     summaryImageHeight: '50vh',
     summaryImageWidth: '35vw',
-    viewProjectbackgroundColor: 'yellow',
+    viewProjectbackgroundColor: 'rgb(223, 182, 255)',
+    viewProjectTextColor: '',
   },
 
   // {
@@ -151,6 +154,7 @@ const projectData = [
   //   summaryImageHeight: '50vh',
   //   summaryImageWidth: '20vw',
   //   viewProjectbackgroundColor: 'rgba(216, 132, 226, 0.3)',
+  // viewProjectTextColor: ''
   // },
 
 ];

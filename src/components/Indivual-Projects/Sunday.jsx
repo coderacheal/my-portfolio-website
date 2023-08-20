@@ -33,6 +33,7 @@ const Sunday = () => {
         width={sunday.summaryImageWidth}
         role={sunday.role}
         viewProjectbackgroundColor={sunday.viewProjectbackgroundColor}
+        viewProjectTextColor={sunday.viewProjectTextColor}
       />
     </div>
   );

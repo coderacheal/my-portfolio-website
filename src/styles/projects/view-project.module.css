@@ -74,27 +74,9 @@ h1 {
   color: white;
 }
 
-@media (min-width: 768px) and (max-width: 1300px) {
-  .projectBackground {
-    font-size: 150px;
-    padding-top: 30vh;
-  }
 
-  .introDiv {
-    width: 90%;
-  }
 
-  .viewCodeWebsite:nth-child(2) {
-    margin-left: 50px;
-  }
-
-  .introDiv p {
-    margin-bottom: 20px;
-    width: 70%;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 769px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .introDiv p {
     width: 90%;
     line-height: 20px;
@@ -103,11 +85,8 @@ h1 {
   }
 
   .projectBackground {
-    font-size: 70px;
-    width: 95%;
-    padding-top: 40vh;
+    display: none;
   }
-
   .viewCode {
     font-size: 12px;
   }
@@ -129,6 +108,27 @@ h1 {
 @media (min-width: 480px) and (max-width: 769px) {
   .introDiv {
     width: 65%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .projectBackground {
+    font-size: 250px;
+    width: 95%;
+    /* margin-top: 10%; */
+  }
+
+  .introDiv {
+    width: 90%;
+  }
+
+  .viewCodeWebsite:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  .introDiv p {
+    margin-bottom: 20px;
+    width: 70%;
   }
 }
 

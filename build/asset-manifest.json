@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://rachealappiahkubi.com/static/css/main.565f3cac.css",
-    "main.js": "https://rachealappiahkubi.com/static/js/main.b0296a9b.js",
+    "main.css": "https://rachealappiahkubi.com/static/css/main.f657b3c7.css",
+    "main.js": "https://rachealappiahkubi.com/static/js/main.e0e8dc5b.js",
     "static/media/bubbles.png": "https://rachealappiahkubi.com/static/media/bubbles.8ce92c48d2ffc8891549.png",
     "static/media/signup-everest.png": "https://rachealappiahkubi.com/static/media/signup-everest.cdb4c1c6664d8b8ce4ed.png",
     "static/media/schoolxHero.jpg": "https://rachealappiahkubi.com/static/media/schoolxHero.5eafab2bbda609ce99b0.jpg",
@@ -16,13 +16,14 @@
     "static/media/sage4.png": "https://rachealappiahkubi.com/static/media/sage4.17fbd468cb37a413957d.png",
     "static/media/office set up.jpg": "https://rachealappiahkubi.com/static/media/office set up.9716039ada0033598a65.jpg",
     "static/media/everest-mobile.png": "https://rachealappiahkubi.com/static/media/everest-mobile.10ab51c3f23bd618275e.png",
+    "static/media/sage-mobile.png": "https://rachealappiahkubi.com/static/media/sage-mobile.9ee11dd1353c9857e4df.png",
     "static/media/sage2.png": "https://rachealappiahkubi.com/static/media/sage2.1de34d4351aefaeb5190.png",
     "index.html": "https://rachealappiahkubi.com/index.html",
-    "main.565f3cac.css.map": "https://rachealappiahkubi.com/static/css/main.565f3cac.css.map",
-    "main.b0296a9b.js.map": "https://rachealappiahkubi.com/static/js/main.b0296a9b.js.map"
+    "main.f657b3c7.css.map": "https://rachealappiahkubi.com/static/css/main.f657b3c7.css.map",
+    "main.e0e8dc5b.js.map": "https://rachealappiahkubi.com/static/js/main.e0e8dc5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.565f3cac.css",
-    "static/js/main.b0296a9b.js"
+    "static/css/main.f657b3c7.css",
+    "static/js/main.e0e8dc5b.js"
   ]
 }

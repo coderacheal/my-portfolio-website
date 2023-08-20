@@ -17,7 +17,7 @@
 .each-project {
   width: 80%;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 40%;
   margin: auto;
   margin-bottom: 50px;
   position: relative;
@@ -54,7 +54,7 @@
   background-size: contain;
   background-position: center;
   margin: auto;
-  width: 100%;
+  width: 80%;
   margin-top: 50px;
   margin-bottom: 90px;
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
@@ -83,6 +83,9 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   line-height: 34px;
+  background-color: rgb(208, 149, 254);
+  background-color: rgb(223, 182, 255);
+  background-color: rgb(0, 0, 0, 0.7);
 }
 
 .see-more-halo {
@@ -91,7 +94,7 @@
 
 .legacy-projects {
   display: block;
-  width: 50%;
+  width: 45%;
   margin: auto;
   margin-top: 100px;
   background-color: white;
