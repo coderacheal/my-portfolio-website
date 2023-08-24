@@ -31,7 +31,7 @@ const projectData = [
     urlExtension: 'everest',
     title: 'EVEREST',
     projectName: 'Project Everest',
-    projectDescription: 'A rails app for managing your finances',
+    projectDescription: 'An app for managing your finances',
     projectImage: everestprojectImage,
     projectYear: 2023,
     projectGitHub: 'https://github.com/coderacheal/everest',
