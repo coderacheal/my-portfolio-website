@@ -4,6 +4,139 @@
   box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* .slider {
+  background-color: red;
+} */
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.custom-next-arrow {
+  right: 0;
+}
+
+.right {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(125, 249, 81);
+  padding: 15px;
+  color: white;
+  width: 30px;
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.right:hover {
+  background-color: rgba(204, 204, 204, 0.5);
+  color: rgb(85, 245, 27);
+}
+
+.right:active {
+  background-color: rgb(85, 245, 27);
+  color: black;
+}
+
+.left {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(204, 204, 204, 0.5);
+  padding: 15px;
+  color: white;
+  width: 30px;
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  /* color: rgb(85, 245, 27); */
+}
+
+.left:hover {
+  background-color: rgb(125, 249, 81);
+}
+
+.left:active {
+  background-color: rgba(204, 204, 204, 0.5);
+  color: rgb(55, 177, 10);
+}
+
+
+
+
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.availableClasses {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.classThumbnail {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.fade {
+  color: rgb(150, 150, 150);
+}
+
+.imageNameLink {
+  text-decoration: none;
+}
+
+.courseName {
+  margin-bottom: 0;
+}
+
+.dots {
+  margin: 10px;
+
+  /* margin-bottom: 10px; */
+  color: grey;
+  font-size: 25px;
+}
+
+.classDescription {
+  width: 60%;
+  margin: auto;
+  font-weight: 400;
+}
+
+.socialLinksForCourses {
+  margin-top: 20px;
+}
+
+.course_socials {
+  /* background-color: rgb(203, 203, 203); */
+  padding: 5px;
+  color: grey;
+  border-radius: 50%;
+  border: 3px solid rgb(203, 203, 203);
+}
+
+.image {
+  height: 300px;
+}
+
+
+.sliderDiv {
+  display: flex;
+}
+
+
 @media (min-width: 280px) and (max-width: 767px) {
   .oneProjectImage {
     height: 50vh;
