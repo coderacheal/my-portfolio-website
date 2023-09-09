@@ -67,6 +67,7 @@ This is my portfolio website bulit with React
 
 - **Add Sunday, an AI project that can predict the sentiment of test before you send them**
 - **Enhamce user interaction**
+- **Enhamce page transition effect**
 - **Add an easter egg**
   
   
