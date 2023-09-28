@@ -6,7 +6,7 @@
   padding: 8px;
   background: linear-gradient(to right, lime 50%, #000 50%);
   background-size: 200% 100%;
-  background-position: right bottom;
+  background-position: left bottom;
   background-color: black;
   transition: background-position 0.4s, transform 0.3s;
 }
