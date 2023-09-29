@@ -86,6 +86,7 @@ body,
   left: 0;
   right: 0;
   position: fixed;
+
   /* background-color: red; */
 }
 
@@ -116,16 +117,26 @@ body,
 
 .projectListViewDiv {
   /* background-color: red; */
+
   /* display: flex; */
+
   /* flex-direction: column; */
+
   /* width: 90%; */
+
   /* height: 100vh; */
+
   /* z-index: 5; */
+
   /* overflow-y: hidden; */
   font-family: Montserrat, sans-serif;
+
   /* line-height: 170px; */
+
   /* margin: auto; */
+
   /* padding-top: 15vh; */
+
   /* justify-content: center; */
 }
 
@@ -134,14 +145,19 @@ body,
   flex-direction: column;
   width: 90%;
   height: 500px;
+
   /* z-index: 5; */
   overflow: auto;
+
   /* overflow-y: auto; */
+
   /* font-family: Montserrat, sans-serif; */
+
   /* line-height: 140px; */
   margin: auto;
   padding-top: 20vh;
   justify-content: center;
+
   /* background-color: blue; */
 }
 
@@ -194,11 +210,11 @@ body,
 }
 
 @media (min-width: 767px) and (max-width: 1025px) {
-
   .projectListView {
     padding-top: 15vh;
     justify-content: center;
   }
+
   .projectListView p {
     font-size: 70px;
     line-height: 110px;

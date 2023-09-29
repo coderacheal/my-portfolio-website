@@ -64,11 +64,6 @@
   color: rgb(55, 177, 10);
 }
 
-
-
-
-
-
 .wrapper {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -131,11 +126,9 @@
   height: 300px;
 }
 
-
 .sliderDiv {
   display: flex;
 }
-
 
 @media (min-width: 280px) and (max-width: 767px) {
   .oneProjectImage {
@@ -146,7 +139,6 @@
     width: 90vw;
   }
 }
-
 
 @media (min-width: 280px) and (max-width: 320px) {
   .oneProjectImage {

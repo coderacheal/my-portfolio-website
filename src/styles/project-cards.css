@@ -100,10 +100,12 @@
   font-size: 55px;
   text-align: center;
   position: relative;
+
   /* cursor: none; */
   border: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+
   /* padding-top: 70px; */
   transition: width 0.5s ease;
 }

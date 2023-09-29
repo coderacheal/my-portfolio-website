@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import { CustomNextArrow, CustomPrevArrow } from './CarouselArrows';
 
-import projects from '../../main-nav-pages/ProjectPage/Data/projectData'
+import projects from '../../main-nav-pages/ProjectPage/Data/projectData';
 
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -17,7 +17,6 @@ import projects from '../../main-nav-pages/ProjectPage/Data/projectData'
 const ProjectCarousel = () => {
   const [selectedItem, setSelectedItem] = useState(0);
   // const carouselRef = useRef(null);
-
 
   // const handleImageClick = (index) => {
   //   setSelectedItem(index);

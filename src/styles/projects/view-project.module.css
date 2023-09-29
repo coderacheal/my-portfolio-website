@@ -74,8 +74,6 @@ h1 {
   color: white;
 }
 
-
-
 @media (min-width: 320px) and (max-width: 767px) {
   .introDiv p {
     width: 90%;
@@ -87,6 +85,7 @@ h1 {
   .projectBackground {
     display: none;
   }
+
   .viewCode {
     font-size: 12px;
   }
@@ -115,6 +114,7 @@ h1 {
   .projectBackground {
     font-size: 250px;
     width: 95%;
+
     /* margin-top: 10%; */
   }
 
