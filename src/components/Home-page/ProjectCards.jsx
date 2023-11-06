@@ -38,6 +38,10 @@ const ProjectCards = () => {
           RECENT WORK
         </p>
       </div>
+      {/* <div className=''>
+        <p>Web Development</p>
+        <p>Data Science</p>
+      </div> */}
       <div className="wrapper">
         {topThreeProjects.map((eachProject) => {
           const backgroundStyle = {

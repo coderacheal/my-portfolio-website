@@ -3,7 +3,7 @@ import ProjectTemplate from './components/ProjectTemplate';
 import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 
 const SchoolX = () => {
-  const schoolx = projectData[2];
+  const schoolx = projectData[3];
 
   return (
     <div>

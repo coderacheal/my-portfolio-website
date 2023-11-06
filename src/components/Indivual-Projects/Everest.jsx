@@ -4,7 +4,7 @@ import projectData from '../main-nav-pages/ProjectPage/Data/projectData';
 // import imgg from '../../assets/bubbles.png';
 
 const Everest = () => {
-  const everest = projectData[0];
+  const everest = projectData[1];
 
   return (
     <div>
